@@ -27,7 +27,8 @@
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 

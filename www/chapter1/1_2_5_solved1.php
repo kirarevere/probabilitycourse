@@ -21,7 +21,8 @@
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
