@@ -25,7 +25,11 @@
 
 </head><body>
 	<div id="container">
+		<!-- Header - hidden from print -->
+		<span class="hide_print">
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
+		</span>
+		<!-- /Header -->
 		
 		<div id="wrapper">
 			<div id="content">
