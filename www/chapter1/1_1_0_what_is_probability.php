@@ -14,6 +14,10 @@
 	<script type="text/javascript"
   			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
+
+	<script type="text/javascript">
+		$("#printButton").click(print());
+	</script>
 	
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
@@ -44,7 +48,9 @@
 			<div class="left"><h2>1.1 Introduction: What Is Probability?</h2></div>
     		<div class="right hide_print">
 			<a href="videos/chapter1/video1_1.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="chapter1/what_is_probability_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a>
+<!--			<a href="chapter1/what_is_probability_print.html"> -->
+<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/>
+<!--			</a> -->
 			</div>
     		<div class="clear"></div>
 			
