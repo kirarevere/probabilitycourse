@@ -34,21 +34,23 @@
 
 </head><body>
 	<div id="container">
+		<span class='hide_print'>
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
-		
+		</span>
 		<div id="wrapper">
 			<div id="content">
 			<div class="thinblock">
-				<div class="left"><a>&larr; </a><a href="chapter1/1_1_0_what_is_probability.php">previous</a></div>
-    			<div class="right"><a href="chapter1/1_2_0_review_set_theory.php">next</a><a> &rarr;</a></div>
+				<div class="left hide_print"><a>&larr; </a><a href="chapter1/1_1_0_what_is_probability.php">previous</a></div>
+    			<div class="right hide_print"><a href="chapter1/1_2_0_review_set_theory.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>
 			<hr />
 						
 			<div class="left"><h2>1.1.1 Example: Communication Systems</h2></div>
-    		<div class="right">
+    		<div class="right hide_print">
 			<a href="videos/chapter1/video1_1.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="chapter1/example_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+			<a href="chapter1/example_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a>
+			</div>
     		<div class="clear"></div>
 			
 			<p>Communication systems play a central role in our lives. Everyday, we use our 
@@ -88,11 +90,11 @@
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer hide_print">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
 	</div>
