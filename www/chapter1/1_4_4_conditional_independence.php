@@ -35,16 +35,19 @@
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
+		<span class="hide_print">
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_4_3_bayes_rule.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_4_5_solved3.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -52,7 +55,7 @@
 			<hr />
 						
 			<div class="left"><h2>1.4.4 Conditional Independence</h2></div>
-    		<div class="right"><a href="chapter1/conditional_independence_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+    		<div class="right hide_print"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>
 			
 			<p>As we mentioned earlier, almost any concept that is defined for probability can also be extended 
@@ -182,12 +185,13 @@
 			which means $A$ and $B$ are not conditionally independent given $C$.</p>
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_4_3_bayes_rule.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_4_5_solved3.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
+		<span class="hide_print">
 		<div id="menu">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
@@ -195,6 +199,7 @@
 		<div id="footer">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
+		</span>
 	</div>
 </body>
 </html>

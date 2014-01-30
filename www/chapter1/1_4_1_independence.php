@@ -28,16 +28,19 @@
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
+		<span class="hide_print">
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_4_0_conditional_probability.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_4_2_total_probability.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -45,8 +48,8 @@
 			<hr />
 						
 			<div class="left"><h2>1.4.1 Independence</h2></div>
-    		<div class="right"><a href="videos/chapter1/video1_6.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="chapter1/independence_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+    		<div class="right hide_print"><a href="videos/chapter1/video1_6.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
+			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>
 			
 			<p>Let $A$ be the event that it rains tomorrow, and suppose that $P(A)=\frac{1}{3}$. Also suppose that 
@@ -383,12 +386,13 @@
 			</div>
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_4_0_conditional_probability.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_4_2_total_probability.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
+		<span class="hide_print">
 		<div id="menu">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
@@ -396,6 +400,7 @@
 		<div id="footer">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
+		</span>
 	</div>
 </body>
 </html>
