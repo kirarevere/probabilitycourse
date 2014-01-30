@@ -18,8 +18,9 @@
 	<script type="text/javascript">
 		window.onLoad = function() {
 			document.getElementById('printButton')
-				.addEventListener('click',function(e) {
-					print()});
+				.onclick = function() {
+					print();
+				}
 		}
 	</script>
 	
