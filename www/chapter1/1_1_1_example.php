@@ -49,7 +49,7 @@
 			<div class="left"><h2>1.1.1 Example: Communication Systems</h2></div>
     		<div class="right hide_print">
 			<a href="videos/chapter1/video1_1.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/>
+			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/>
 			</div>
     		<div class="clear"></div>
 			
@@ -84,7 +84,7 @@
 			and manage its effects.</p>
 			
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_1_0_what_is_probability.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_2_0_review_set_theory.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
