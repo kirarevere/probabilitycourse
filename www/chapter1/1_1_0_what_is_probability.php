@@ -15,15 +15,6 @@
   			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
 
-	<script type="text/javascript">
-		window.onload = function() {
-			document.getElementById('printButton')
-				.onclick = function() {
-					print();
-				}
-		}
-	</script>
-	
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
 	
