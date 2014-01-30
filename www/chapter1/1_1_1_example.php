@@ -49,7 +49,7 @@
 			<div class="left"><h2>1.1.1 Example: Communication Systems</h2></div>
     		<div class="right hide_print">
 			<a href="videos/chapter1/video1_1.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="chapter1/example_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a>
+			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/>
 			</div>
     		<div class="clear"></div>
 			
@@ -90,13 +90,15 @@
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu hide_print">
+		<span class="hide_print">
+		<div id="menu">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer hide_print">
+		<div id="footer">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
+		</span>
 	</div>
 </body>
 </html>
