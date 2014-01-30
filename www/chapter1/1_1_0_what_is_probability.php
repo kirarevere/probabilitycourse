@@ -105,12 +105,14 @@
     			<div class="clear"></div>
     		</div>		
 		</div>
+		<span class="hide_print">
 		<div id="menu">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
 		<div id="footer">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
+		</span>
 		</div>
 	</div>
 </body>
