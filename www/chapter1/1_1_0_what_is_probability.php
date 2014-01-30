@@ -40,7 +40,7 @@
 			<hr />
 						
 			<div class="left"><h2>1.1 Introduction: What Is Probability?</h2></div>
-    		<div class="right">
+    		<div class="right hide_print">
 			<a href="videos/chapter1/video1_1.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
 			<a href="chapter1/what_is_probability_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a>
 			</div>
