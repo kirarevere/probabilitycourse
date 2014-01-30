@@ -16,7 +16,7 @@
 	</script>
 
 	<script type="text/javascript">
-		window.onLoad = function() {
+		window.onload = function() {
 			document.getElementById('printButton')
 				.onclick = function() {
 					print();
