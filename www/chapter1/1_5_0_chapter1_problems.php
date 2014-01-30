@@ -60,7 +60,7 @@
                 <li>Find $\bar{A} \cup \left(B-C\right)$</li>
                 <li>Do $A,B,$ and $C$ form a partition of $S$?</li>
             </ol></p> 
-
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>When working with real numbers, our universal set is $\mathbb{R}$. Find each of the following sets.
 			<ol type="a">
@@ -70,6 +70,7 @@
                 <li>$[6,8] - (2,7)$</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>For each of the following Venn diagrams, write the set denoted by the shaded area.
 			<ol type="a">
@@ -79,6 +80,7 @@
 				<li><br><img src="images/chapter1/1d.png" width="200" height="185" alt="3d" title="3d" border="0" /></li><br>
 			</ol> </p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>A coin is tossed twice. Let $S$ be the set of all possible pairs that can be observed, i.e., 
 			$S=\{H,T\} \times \{H,T\}=\{(H,H),(H,T),(T,H),(T,T)\}.$ Write the following sets by listing their elements.
@@ -88,6 +90,7 @@
                 <li>$C$: The two coin tosses result in different outcomes.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>Let $A=\{1,2,\cdots,100\}$. For any $i \in \mathbb{N}$, Define $A_i$ as the set of numbers 
 			in $A$ that are divisible by $i$. For example:<br>
@@ -98,6 +101,7 @@
                 <li>Find $|A_2 \cup A_3 \cup A_5|$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Suppose that $A_1$, $A_2$, $A_3$ form a partition of the universal set $S$. Let $B$ be an 
 			arbitrary set. Assume that we know:
@@ -106,6 +110,7 @@
 			$$|B \cap A_3|=15$$
   			Find $|B|$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Determine whether each of the following sets is countable or uncountable.
 			<ol type="a">
@@ -114,16 +119,19 @@
                 <li>$C=\{(X,Y) \in \mathbb{R}^2 |\quad x^2+y^2 \leq 1\}$</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>Let $A_n=\left[0,\frac{n-1}{n}\right)=\{x \in \mathbb{R}|\quad 0 \leq x < \frac{n-1}{n}\}$, for $n=2,3,\cdots$. Define
 			$$A=\bigcup_{n=1}^{\infty}A_n= A_1 \cup A_2 \cup A_3 \cdots$$
 			Find $A$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>Let $A_n=[0,\frac{1}{n})=\{x \in \mathbb{R}|\quad 0 \leq x < \frac{1}{n}\}$ for $n=1,2,\cdots$. Define
 			$$A_n=\bigcap_{n=1}^{\infty}A_n=A_1 \cap A_2 \cap \cdots$$
 			Find $A$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>In this problem our goal is to show that sets that are not in the form of intervals 
 			may also be uncountable. In particular, consider the set $A$ defined as the set of 
@@ -137,10 +145,12 @@
             </ol>
 			From (a) and (b) we conclude that the set $2^\mathbb{N}$ is uncountable.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>**<br>
 			<p>Show the set $[0,1)$ is uncountable. That is you can never provide a list in the form 
 			of $\{a_1,a_2,a_3,\cdots\}$ that contains all the elements in $[0,1)$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Recall that
 			<table align="center">			
@@ -165,6 +175,7 @@
                 <li>If we know $f(x)=2$, what can we say about $x$?</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Two teams $A$ and $B$ play a soccer match, and we are interested in the winner. 
 			The sample space can be defined as
@@ -177,6 +188,7 @@
                 <li>Find the probability that $B$ wins or a draw occurs.</li>
             </ol></p>
 
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>Let $A$ and $B$ be two events such that
 			$$P(A)=0.4, P(B)=0.7, P(A \cup B)=0.9$$
@@ -189,6 +201,7 @@
                 <li>Find $P(A \cap (B \cup A^c))$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>I roll a fair dice twice and obtain two numbers. $X_1=$ result of the first roll, 
 			$X_2=$ result of the second roll.
@@ -198,6 +211,7 @@
                 <li>Find the probability that $X_1 \neq 2$ and $ X_2 \geq 4$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Consider a random experiment with a sample space.
 			$$S=\{1,2,3,\cdots\}$$
@@ -210,12 +224,14 @@
                 <li>Find $P(\{3,4,5,\cdots\})$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Four teams $A,B,C,$ and $D$ compete in a tournament, and exactly one of them will win the tournament. Teams $A$ and $B$ have the same chance of 
 			winning the tournament. Team $C$ is twice as likely to win the tournament as team $D$. The probability 
 			that either team $A$ or team $C$ wins the tournament is $0.6$. Find the probabilities of each team 
 			winning the tournament.</p>
 
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $T$ be the time needed to complete a job at a certain factory. By using the historical data, we know that
 			\begin{equation}
@@ -229,6 +245,7 @@
                 <li>Find the probability that $1 \leq T \leq 3$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>You choose a point $(A,B)$ uniformly at random in the unit square $\{(x,y):0 \leq x,y \leq 1\}$.<br>
 			<img src="images/chapter1/2.png" width="200" height="200" alt="19" title="19" border="0" /><br>
@@ -236,6 +253,7 @@
 			$$AX^2+X+B=0$$
 			has real solutions?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>** (continuity of probability)<br>
 			<p><ol type="a">
                 <li>Let $A_1, A_2, A_3, \cdots$ be a sequence of increasing events, that is
@@ -248,11 +266,13 @@
 				$$P\left(\bigcap_{i=1}^{\infty}A_i\right)=\lim_{n\rightarrow \infty}P(A_i)$$</li>
             </ol> </p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>** (continuity of probability)<br>
 			<p>For any sequence of events $A_1,A_2,A_3,\cdots$. Prove
 			$$P\left(\bigcup_{i=1}^{\infty}A_i \right)=\lim_{n\rightarrow\infty}P\left(\bigcup_{i=1}^{n}A_i \right)$$
 			$$P\left(\bigcap_{i=1}^{\infty}A_i \right)=\lim_{n\rightarrow\infty}P\left(\bigcap_{i=1}^{n}A_i \right)$$</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Suppose that of all the customers at a coffee shop:
 			<ul>
@@ -263,6 +283,7 @@
 			Given that a randomly chosen customer has purchased a piece of cake, what is the probability 
 			that he/she has also purchased a cup of coffee?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $A,B$, and $C$ be three events with probabilities given:<br>
 			<img src="images/chapter1/3.png" width="250" height="210" alt="23" title="23" border="0" /><br>
@@ -273,6 +294,7 @@
                 <li>Find $P(B|A,C)=P(B|A \cap C)$</li>
             </ol> </p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>A real number $X$ is selected uniformly at random in the interval $[0,10]$.
 			<ol type="a">
@@ -281,6 +303,7 @@
                 <li>Find $P\left(3 \leq X \leq 8| X \leq 4\right)$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>A professor thinks students who live on campus are more likely to get $A$s in the 
 			probability course. To check this theory, the professor combines the data from the past few years:
@@ -292,10 +315,12 @@
             </ol>
 			Does this data suggest that "getting an $A$" and "living on campus" are dependent or independent?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>I roll a dice $n$ times, $n \in \mathbb{N}$. Find the probability that numbers 
 			$1$ and $6$ are both observed at least once.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Consider a communication system. At any given time, the communication channel is in 
 			good condition with probability $0.8$ and is in bad condition with probability $0.2$. 
@@ -310,11 +335,13 @@
                 <li>Using the tree find $P(G|E^c).$</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>In a factory there are $100$ units of a certain product, $5$ of which are defective. 
 			We pick three units from the 100 units at random. What is the probability that exactly 
 			one of them is defective?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span> Reliability<br>
 			<p>Real-life systems often are composed of several components. For example, a system may consist 
 			of two components that are connected in parallel as shown in Figure 1.28. When the system's 
@@ -340,6 +367,7 @@
 				<li><br><img src="images/chapter1/5e.png" width="200" height="123" alt="29e" title="29e" border="0" /></li><br>
 			</ol>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>You choose a point $(X,Y)$ uniformly at random in the unit square.
 			$$S=\{(x,y) \in \mathbb{R}^2: 0 \leq x \leq 1, 0 \leq y \leq 1\}$$
@@ -351,6 +379,7 @@
                 <li>Are $A$ and $B$ independent?</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>One way to design a spam filter is to look at the words in an email. In particular, some words 
 			are more frequent in spam emails. Suppose that we have the following information:
@@ -362,6 +391,7 @@
 			Suppose that an email is checked and found out to contain the word refinance. What is the 
 			probability that the email is a spam?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
 			<p>You would like to go from point $A$ to point $B$ in Figure 1.28. There are 5 bridges on different 
 			branches of the river as shown in Figure 1.29.
@@ -376,6 +406,7 @@
                 <li>Find $P(B_3|A)$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span>* <a href="http://en.wikipedia.org/wiki/Monty_Hall_problem">(The Monty Hall Problem)</a><br>
 			<p>You are in a game show, and the host gives you the choice of three doors. Behind one door is a car and 
 			behind the others are goats. You pick a door, say door $1$. The host who knows what is behind the doors 

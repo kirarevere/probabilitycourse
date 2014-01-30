@@ -58,6 +58,7 @@
                 <li>Find $P(X=0 | X < 2)$</li>
             </ol> </p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X$ be the number of the cars being repaired at a repair shop. We have the following information:
 			<ul>
@@ -68,9 +69,11 @@
             </ul>
 			Find the PMF of $X$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>I roll two dice and observe two numbers $X$ and $Y$. If $Z=X-Y$, find the range and PMF of $Z$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X$ and $Y$ be two independent discrete random variables with the following PMFs:			
             \begin{equation}
@@ -104,11 +107,13 @@
                 <li>Find $P(X < Y)$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>$50$ students live in a dormitory. The parking lot has the capacity for $30$ cars. If each student 
 			has a car with probability $\frac{1}{2}$ (independently from other students), what is the probability 
 			that there won't be enough parking spaces for all the cars?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span> (The Matching Problem)<br>
 			<p>$N$ guests arrive at a party. Each person is wearing a hat. We collect all the hats and then randomly 
 			redistribute the hats, giving each person one of the $N$ hats randomly. Let $X_N$ be the 
@@ -117,6 +122,7 @@
 			<p><i>Hint:</i> We previously found that $P(X_N=0)=\frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}- \cdots (-1)^N\frac{1}{N!}$, 
 			$\quad$ for $\quad$ $N=1,2, \cdots $. Using this, find $P(X_N=k)$ for all $k \in \{0,1, \cdots N\}$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>For each of the following random variables, find $P(X > 5)$, $P(2 < X\leq6)$ and $P(X > 5|X < 8)$.
 			<ol type="a">
@@ -127,6 +133,7 @@
                 <li>$X \sim Poisson(5)$</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Suppose you take a pass-fail test repeatedly until you pass the test for the first time. On your 
 			first try, you have $50$ percent chance of passing the test:
@@ -143,6 +150,7 @@
                 <li>Given that you take the test more than once, find the probability that you take the test exactly twice.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>In this problem, we would like to show that the geometric random variable is <b>memoryless</b>. Let 
 			$X \sim Geometric(p)$. Show that
@@ -153,6 +161,7 @@
 			failed coin tosses do not impact the distribution of waiting time from this point forward. The 
 			reason for this is that the coin tosses are independent.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>An urn consists of $20$ red balls and $30$ green balls. We choose $10$ balls at random from the urn. The 
 			sampling is done <b>without</b> replacement (repetition not allowed).
@@ -162,6 +171,7 @@
 				that there are exactly $4$ red balls?</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>The number of emails that I get in a weekday (Monday through Friday) can be modeled by a Poisson 
 			distribution with an average of  $\frac{1}{6}$ emails per minute. The number of emails that I 
@@ -174,6 +184,7 @@
 				any emails in that interval. What is the probability that the chosen day is a weekday?</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X$ be a discrete random variable with the following PMF:
               \begin{equation}
@@ -189,6 +200,7 @@
               \end{equation}
   			 Find and plot the CDF of $X$.</p>
 			 
+			<hr /><br />
 			 <span class='problem'>Problem </span><br>
 			 <p>Let $X$ be a discrete random variable with the following CDF:			    
               \begin{equation}
@@ -203,6 +215,7 @@
               \end{equation}
 			 Find the range and PMF of $X$.</p>
 			 
+			<hr /><br />
 			 <span class='problem'>Problem </span><br>
 			 <p>Let $X$ be a discrete random variable with the following PMF
               \begin{equation}
@@ -220,9 +233,11 @@
                   <li>If $Y=\frac{2}{X}$, find $EY$.</li>
              </ol></p> 
 			 
+			<hr /><br />
 			 <span class='problem'>Problem </span><br>
 			 <p>Let $X \sim Geometric(\frac{1}{3})$, and let $Y=|X-5|$. Find the range and PMF of $Y$.</p>
 			 
+			<hr /><br />
 			 <span class='problem'>Problem </span><br>
 			 <p>Let $X$ be a discrete random variable with the following PMF
               \begin{equation}
@@ -244,15 +259,19 @@
               \end{equation}
   			  Find the PMF of $Y$.</p>
 			  
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X \sim Geometric(p)$. Find $Var(X)$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X \sim Pascal(m,p)$. Find $Var(X)$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Suppose that $Y=-2X+3$. If we know $EY=1$ and $EY^2=9$, find $EX$ and $Var(X)$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>There are $1000$ households in a town. Specifically, there are are $100$ households with one 
 			member, $200$ households with 2 members, $300$ households with $3$ members, $200$ households 
@@ -267,6 +286,7 @@
 				of people in the household where the chosen person lives. Find the PMF and the expected value of $Y$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span> <a href="http://probabilitycourse.com/bibliography.html#wiki-St-Petersburg">(St. Petersburg Paradox)</a><br>
 			<p>Here is a famous problem called the St. Petersburg Paradox. Wikipedia states the problem as 
 			follows: "A casino offers a game of chance for a single player in which a fair coin is tossed at 
@@ -287,11 +307,13 @@
 				wins in this case. Find $EY$.</li>
             </ol></p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X$ be a random variable with mean $EX=\mu$. Define the function $f(\alpha)$ as
 			$$f(\alpha)=E[(X-\alpha)^2]$$
 			Find the value of $\alpha$ that minimizes $f$.</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>You are offered to play the following game. You roll a fair die once and observe the result which 
 			is shown by the random variable $X$. At this point, you can stop the game and win $X$ dollars. 
@@ -299,6 +321,7 @@
 			you will win $Y$ dollars. Let $W$ be the value that you win in this game. What strategy do you 
 			use to maximize $EW$? What is the maximum $EW$ you can achieve using your strategy?</p>
 			
+			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>The <b>median</b> of a random variable $X$ is defined as any number $m$ that satisfies both of the 
 			following conditions:
