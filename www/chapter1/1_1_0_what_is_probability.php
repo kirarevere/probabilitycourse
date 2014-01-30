@@ -34,7 +34,9 @@
 		<div id="wrapper">
 			<div id="content">
 			<div class="thinblock">
+					<span class="hide_print">
     			<div class="right"><a href="chapter1/1_1_1_example.php">next</a><a> &rarr;</a></div>
+					</span>
     			<div class="clear"></div>
     		</div>
 			<hr />
@@ -101,7 +103,7 @@
 			
 			<hr />
 			<div class="thinblock">
-    			<div class="right"><a href="chapter1/1_1_1_example.php">next</a><a> &rarr;</a></div>
+    			<div class="right hide_print"><a href="chapter1/1_1_1_example.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
