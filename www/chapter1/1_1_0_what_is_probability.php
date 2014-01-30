@@ -16,7 +16,8 @@
 	</script>
 
 	<script type="text/javascript">
-		$("#printButton").click(print());
+		document.getElementById('printButton')
+			.addEventListener('click',print());
 	</script>
 	
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
