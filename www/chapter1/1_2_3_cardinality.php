@@ -123,17 +123,18 @@
 						 Thus
 						 $$|B|=10$$						 
 						 </p>
-						 
+							<p>Note that another way to solve this problem is using a Venn diagram as shown in Figure 1.11.</p>
+						<figure>
+									<img src="images/chapter1/venn-inc-exc_b.png" width="350" height="315" alt="Inclusion-exclusion diagram" title="Inclusion-exclusion diagram" border="0" />
+									<figcaption>Fig.1.11 - Inclusion-exclusion Venn diagram.</figcaption>
+						</figure>
+					 
 						 </li>
 					 </ul>
 					 </li>
 				 </ul>
 			</div>
-			<p>Note that another way to solve this problem is using a Venn diagram as shown in Figure 1.11.</p>
-			<figure>
-  					<img src="images/chapter1/venn-inc-exc_b.png" width="350" height="315" alt="Inclusion-exclusion diagram" title="Inclusion-exclusion diagram" border="0" />
-  					<figcaption>Fig.1.11 - Inclusion-exclusion Venn diagram.</figcaption>
-			</figure>
+
 			<hr /><br>
 			
 			<b><font size="3">Infinite Sets:</font></b>
