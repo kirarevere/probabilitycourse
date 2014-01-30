@@ -1,7 +1,7 @@
 $(window).load(function(){
 	$('#printButton').click(function(e) {
 		print();
-	}
+	});
 	$('#menu li').click(function(ev) {
 		$(this).find('>ul').slideToggle().end().siblings().find('ul').slideUp();
 		ev.stopPropagation();
