@@ -33,11 +33,13 @@
 
 </head><body>
 	<div id="container">
+		<span class="hide_print">
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_2_0_review_set_theory.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_2_2_set_operations.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -45,9 +47,9 @@
 			<hr />
 						
 			<div class="left"><h2>1.2.1 Venn Diagrams</h2></div>
-    		<div class="right">
+    		<div class="right hide_print">
 			<a href="videos/chapter1/video1_2.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="chapter1/venn_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+			<img id="printButton" src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
 			<p>Venn diagrams are very useful in visualizing relation between sets. In a <b>Venn diagram</b> 
@@ -69,18 +71,20 @@
 			<br>
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_2_0_review_set_theory.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_2_2_set_operations.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
+		<span class="hide_print">
 		<div id="menu">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
 		<div id="footer">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
+		</span>
 		</div>
 	</div>
 </body>

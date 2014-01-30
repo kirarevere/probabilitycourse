@@ -1,5 +1,13 @@
+body {
+	color: black;
+}
+
+a {
+	color: black;
+}
+
 .hide_print { display: none; }
 
 b {
-	font-weight: 500;
+	font-weight: 100;
 }

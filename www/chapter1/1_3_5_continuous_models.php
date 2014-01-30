@@ -36,16 +36,19 @@
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
+		<span class="hide_print">
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_3_4_discrete_models.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_3_6_solved2.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -53,8 +56,8 @@
 			<hr />
 						
 			<div class="left"><h2>1.3.5 Continuous Probability Models</h2></div>
-    		<div class="right"><a href="videos/chapter1/video1_4.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="chapter1/continuous_models_print.html"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+    		<div class="right hide_print"><a href="videos/chapter1/video1_4.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
+			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>
 			
 			<p>Consider a scenario where your sample space $S$ is, for example, $[0,1]$. This is an uncountable set; 
@@ -178,12 +181,13 @@
 			integrals to find probabilities for continuous probability models, as we will see later.</p>	
 			
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter1/1_3_4_discrete_models.php">previous</a></div>
     			<div class="right"><a href="chapter1/1_3_6_solved2.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
+		<span class="hide_print">
 		<div id="menu">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
@@ -191,6 +195,7 @@
 		<div id="footer">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
+		</span>
 	</div>
 </body>
 </html>
