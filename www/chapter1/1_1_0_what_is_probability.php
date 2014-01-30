@@ -16,7 +16,11 @@
 	</script>
 
 	<script type="text/javascript">
-		document.getElementById('printButton').addEventListener('click',print());
+		window.onLoad = function() {
+			document.getElementById('printButton')
+				.addEventListener('click',function(e) {
+					print()});
+		}
 	</script>
 	
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
