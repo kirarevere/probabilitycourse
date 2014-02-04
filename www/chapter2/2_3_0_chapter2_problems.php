@@ -19,17 +19,20 @@
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
+		<span class="hide_print">
 		<script type="text/javascript" src="javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_2_3_solved2_2.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_1_random_variables.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -37,8 +40,8 @@
 			<hr />
 						
 			<div class="left"><h2>2.3 End of Chapter Problems</h2></div>
-    		<div class="right">			
-			<a href="http://probabilitycourse.com/chapter2/chapter2_problems__print.html"><img src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+    		<div class="right hide_print">			
+			<img src="http://probabilitycourse.com/images/print.png" id="printButton" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
 			<span class='problem'>Problem </span><br>
@@ -213,17 +216,17 @@
 			Write a set of recursive equations to compute $a_n$.</p>		
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_2_3_solved2_2.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_1_random_variables.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu" class="hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer" class="hide_print">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
 	</div>

@@ -11,3 +11,5 @@ a {
 b {
 	font-weight: 100;
 }
+
+.solvedprob ul ul { display:block; }

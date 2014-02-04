@@ -20,7 +20,8 @@
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
@@ -30,7 +31,7 @@
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_2_0_using_recursion.php">previous</a></div>
     			<div class="right"><a href="chapter2/2_2_2_recursion_with_conditioning.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -38,8 +39,8 @@
 			<hr />
 						
 			<div class="left"><h2>2.2.1 Solving Linear Homogeneous Recurrence <br>Equations with Constant Coefficients</h2></div>
-    		<div class="right">
-			<a href="http://probabilitycourse.com/chapter2/linear_homogeneous_print.html"><img src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+    		<div class="right hide_print">
+			<img src="http://probabilitycourse.com/images/print.png" id="printButton" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
     		<div class="clear"></div>
 			
 			<p>Suppose that we have the following recursive equation:
@@ -106,17 +107,17 @@
 			mathematically using induction.</p>
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_2_0_using_recursion.php">previous</a></div>
     			<div class="right"><a href="chapter2/2_2_2_recursion_with_conditioning.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu" class="hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer" class="hide_print">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
 	</div>

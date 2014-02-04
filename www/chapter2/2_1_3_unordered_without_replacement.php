@@ -21,16 +21,19 @@
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
+		<span class="hide_print">
 		<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_1_2_ordered_without_replacement.php">previous</a></div>
     			<div class="right"><a href="chapter2/2_1_4_unordered_with_replacement.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -38,9 +41,9 @@
 			<hr />
 						
 			<div class="left"><h2>2.1.3 Unordered Sampling without Replacement: <br>Combinations</h2></div>
-    		<div class="right">
+    		<div class="right hide_print">
 			<a href="http://probabilitycourse.com/videos/chapter2/video2_3.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="http://probabilitycourse.com/chapter2/unordered_without_replacement_print.html"><img src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+			<img src="http://probabilitycourse.com/images/print.png" id="printButton" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
 			<p>Here we have a set with $n$ elements, e.g., $A=\{1, 2, 3,....n\}$ and we want to draw $k$ samples 
@@ -437,17 +440,17 @@
 			$${n \choose n_1,n_2,...,n_r}=\frac{n!}{n_1! n_2! ... n_r!} p_1^{n_1} p_2^{n_2} ... p_r^{n_r}$$</p>
 			
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_1_2_ordered_without_replacement.php">previous</a></div>
     			<div class="right"><a href="chapter2/2_1_4_unordered_with_replacement.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu" class="hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer" class="hide_print">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
 	</div>
