@@ -31,7 +31,7 @@
 			<div id="content">
 			<div class="thinblock">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_2_exponential.php">previous</a></div>
-    			<div class="right"><a href="chapter4/4_2_4_other_distr.php">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="chapter4/4_2_4_Gamma_distribution.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>
 			<hr />
@@ -85,7 +85,7 @@
 			For all $k \in \{0,1,2,..,\}$.  Thus, we have shown that for a standard normal random variable $Z$, we have
 			$$EZ=EZ^3=EZ^5=....=0.$$
 			In particular, the standard normal distribution has zero mean. This is not surprising as we can see 
-			from Figure 4.6 that the PDF is symmetric around the origin, so we expect that $EZ=0$. Next, let's find $EZ^2$.
+			from Figure 4.6 that the PDF is symmetric around the origin, so we expect that $EZ=0$. Next, let&#39;s find $EZ^2$.
 			<table align="center">			
             <tr>
               <td>$EZ^2$</td>
@@ -202,7 +202,7 @@
             </tr>
 			<tr>
               <td></td>
-              <td>$=\frac{1}{\sigma} \Phi'\left(\frac{x-\mu}{\sigma}\right) \hspace{20pt} \textrm{chain rule for derivative}$</td>
+              <td>$=\frac{1}{\sigma} \Phi&#39;\left(\frac{x-\mu}{\sigma}\right) \hspace{20pt} \textrm{chain rule for derivative}$</td>
             </tr>
 			<tr>
               <td></td>
@@ -348,7 +348,7 @@
 			<hr />
 			<div class="thinblock">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_2_exponential.php">previous</a></div>
-    			<div class="right"><a href="chapter4/4_2_4_other_distr.php">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="chapter4/4_2_4_Gamma_distribution.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>

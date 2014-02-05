@@ -1,6 +1,7 @@
 $(window).load(function(){
 	$('#printButton').click(function(e) {
 		print();
+		return false;
 	});
 	$('#menu li').click(function(ev) {
 		$(this).find('>ul').slideToggle().end().siblings().find('ul').slideUp();
