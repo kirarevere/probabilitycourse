@@ -67,11 +67,13 @@
 			
 				<!-- Video / Print buttons -->
 				<div class="right hide_print">
+<!-- No video
 					<a href="#"><img src="http://probabilitycourse.com/images/video_icon_lg.png" 
 							alt="Video Available" 
 							title="Video Available" 
 							border="0" 
 							style="vertical-align: middle;"/></a>
+		No Video -->
 					<img src="http://probabilitycourse.com/images/print.png" 
 							id="printButton"
 							width="40" 
