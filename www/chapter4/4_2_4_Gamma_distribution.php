@@ -74,13 +74,14 @@
 							border="0" 
 							style="vertical-align: middle;"/></a>
 		No Video -->
-					<img src="http://probabilitycourse.com/images/print.png" 
-							id="printButton"
+					<a href="javascript:window.print()">
+						<img src="http://probabilitycourse.com/images/print.png" 
 							width="40" 
 							height="40" 
 							alt="Printer Friendly" 
 							title="Printer Friendly" 
 							style="vertical-align: middle;"/>
+					</a>
 				</div>
 				<!-- /Video and Print buttons -->
 				<br style="clear:both;" />
