@@ -102,8 +102,137 @@
 					Figure [x] shows the gamma function for positive real values.
 				</p>
 				<p>
-					Note that for $\alpha=1$
+					Note that for $\alpha=1$, we can write
+					$$ \Gamma(1) = \int_0^\infty e^{-x} dx $$
+					$$ = 1 $$
+					Using the change of variable $x = \lambda y$, we can show the following equation that is often useful when working with
+					the gamma distribution:
+					$$ \Gamma(\alpha) = \lambda^{\alpha} \int_0^\infty y^{\alpha-1} e^{-\lambda y} dy \hspace{20pt} \textrm{for } \alpha,\lambda &gt; 0.$$
+					Also, using integration by parts it can be shown that
+					$$ \Gamma(\alpha + 1) = \alpha\Gamma(\alpha), \hspace{20pt} \textrm{for } \alpha &gt; 0.$$
+					Note that if $\alpha = n$, where $n$ is a positive integer, the above equation reduces to
+					$$ n! = n \cdot (n-1)!.$$
 				</p>
+			
+				<!-- Properties of gamma function -->
+				<div style="padding: 15px; border: black 1px solid;">
+					<h3 style="font-weight: 400; text-align: center;">
+						Properties of the gamma function
+					</h3>
+					For and positive real number $\alpha$:
+					<ol type="1">
+						<li> $\Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} dx$.</li>
+						<li> 
+							$\int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx = \frac{\Gamma(\alpha)}{\lambda^{\alpha}}, 
+							\hspace{20pt} \textrm{for } \lambda &gt; 0.$
+						</li>
+						<li> $\Gamma(\alpha + 1) = \alpha \Gamma(\alpha).$ </li>
+						<li> $\Gamma(n) = (n - 1)!, \textrm{ for } n = 1,2,3,\cdots .$</li>
+						<li> $\Gamma(\frac{1}{2}) = \sqrt{\pi}$</li>
+					</ol>
+				</div>
+				<!-- /Properties of gamma function -->
+
+				<br /><hr />
+				<span class="example">Example </span><br />
+				Answer the following questions:
+				<ol type="1">
+					<li> Find $\Gamma(\frac{7}{2}).$</li>
+					<li>
+						Find the value of the following integral:
+						$$ I = \int_0^\infty x^{6} e^{-5x} dx.$$
+					</li>
+				</ol>
+				<!-- Solution -->
+				<div class="solvedprob">
+					<ul>
+						<li>
+							<a><b>Solution</b></a>
+							<ul>
+								<ol type="1">
+									<li> 
+										To find $\Gamma(\frac{7}{2}),$ we can write
+										$$ \Gamma(\frac{7}{2}) = \frac{5}{2} \cdot \Gamma(\frac{5}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
+										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \Gamma(\frac{3}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
+										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \sqrt{\pi} \hspace{20pt} \textrm{(using Property 5)}$$
+										$$ = \frac{15}{8} \sqrt{\pi}.$$
+									</li>
+									<li>
+										Using Property 2 with $\alpha = 7$ and $\lambda = 5$, we obtain
+										$$ I = \int_0^\infty x^{6} e^{-5x} dx $$
+										$$ = \frac{\Gamma(7)}{5^7} $$
+										$$ = \frac{6!}{5^7} \hspace{20pt} \textrm{(using Property 4)} $$
+										$$ \approx 0.0092 $$
+									</li>
+								</ol>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /Solution -->
+				<hr /><br />
+
+				<b>Gamma Distribution:</b><br />
+				We now define the gamma distribution by providing its PDF:
+	
+				<div style="padding: 15px; border: black 1px solid">
+					A continuous random variable $X$ is said to have a <i>gamma</i> distribution with parameters
+					$\alpha &gt; 0 \textrm{ and } \lambda &gt; 0 $, shown as $X ~ Gamma(\alpha,\lambda)$, if its PDF
+					is given by
+					$$ 
+						f_X(x) = \left\{
+						\begin{array}{l l}
+						\frac{\lambda^{\alpha} x^{\alpha-1} e^{-\lambda x}}{\Gamma(\alpha)} \hspace {5pt} x &gt; 0\\
+						0 \hspace{56pt} \textrm{otherwise}
+						\end{array}\right.
+					$$
+				</div>
+				If we let $\alpha = 1$, we obtain
+				$$
+					f_X(x) = \left\{
+					\begin{array}{l l}
+					\lambda e^{-\lambda x} \hspace{20pt} x &gt; 0\\
+					0 \hspace{41pt} \textrm{otherwise}
+					\end{array}\right.
+				$$
+				Thus, we conclude $Gamma(1,\lambda) = Exponential(\lambda)$. More generally, if you sum $n$
+				independent $Exponential(\lambda)$ random variables, then you will get a $Gamma(n,\lambda)$
+				random variable. We will prove this later on using the moment generating function. The gamma
+				distribution is also related to the normal distribution as will be discussed later. Figure [x]
+				shows the PDS of the gamma distribution for several values of $\alpha$.<br /><hr />
+
+				<span class="example">Example </span><br />
+				Using the properties of the gamma function, show that the gamma PDF integrates to 1, i.e., show
+				that for $\alpha , \lambda &gt; 0$, we have
+				$$\int_0^\infty \frac{\lambda^{\alpha}x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx = 1.$$
+
+				<!-- Solution -->
+				<div class="solvedprob">
+					<ul>
+						<li>
+							<a><b>Solution</b></a><br />
+							<ul>
+								<li>
+									We can write
+									$$ 
+										\int_0^\infty \frac{\lambda^{\alpha} x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx =
+										\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx\\
+										\hspace{20pt} = \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
+										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
+										\hspace{0px} = 1.
+									$$
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /Solution -->
+
+				<hr /><br />
+
+				In the solved problems section, we calculate the mean and variance for the gamma distribution. In particular,
+				we find out that if $X ~ Gamma(\alpha,\lambda)$, then
+				$$ EX = \frac{\alpha}{\lambda}, \hspace{20pt} Var(X) = \frac{\alpha}{\lambda^2}$$
 				<!-- /Section Content -->
 
 				<!-- Bottom nav -->
