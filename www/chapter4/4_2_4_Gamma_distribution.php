@@ -93,7 +93,7 @@
 					gamma function.
 				</p>
 				<p>
-					<b>Gamma function:</b> The gamma function [<a href="bibliography.html">12</a>], shown by $ \Gamma(x)$, is an extension of the factorial
+					<b>Gamma function:</b> The gamma function [<a href="bibliography.html#wiki-gamma-distr">14</a>], shown by $ \Gamma(x)$, is an extension of the factorial
 					function to real (and complex) numbers. Specifically, if $n \in \{1,2,3,...\} $, then
 					$$ \Gamma(n) = (n-1)!$$
 					More generally, for any positive real number $\alpha$, $\Gamma(\alpha)$ is defined as
