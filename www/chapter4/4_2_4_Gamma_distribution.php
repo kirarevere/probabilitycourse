@@ -93,7 +93,7 @@
 					gamma function.
 				</p>
 				<p>
-					<b>Gamma function:</b> The gamma function [<a href="http://en.wikipedia.org/wiki/Gamma_distribution">12</a>], shown by $ \Gamma(x)$, is an extension of the factorial
+					<b>Gamma function:</b> The gamma function [<a href="bibliography.html">12</a>], shown by $ \Gamma(x)$, is an extension of the factorial
 					function to real (and complex) numbers. Specifically, if $n \in \{1,2,3,...\} $, then
 					$$ \Gamma(n) = (n-1)!$$
 					More generally, for any positive real number $\alpha$, $\Gamma(\alpha)$ is defined as
@@ -174,6 +174,7 @@
 
 				<b>Gamma Distribution:</b><br />
 				We now define the gamma distribution by providing its PDF:
+				<br />
 	
 				<div style="padding: 15px; border: black 1px solid">
 					A continuous random variable $X$ is said to have a <i>gamma</i> distribution with parameters
@@ -187,6 +188,7 @@
 						\end{array}\right.
 					$$
 				</div>
+				<br />
 				If we let $\alpha = 1$, we obtain
 				$$
 					f_X(x) = \left\{
