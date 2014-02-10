@@ -37,7 +37,7 @@
 </head>
 <body>
 	<!-- Something meaninful -->
-	<div id="container">
+	<div id="container" 
 		<!-- Hide when printed -->
 		<span class="hide_print">
 			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
@@ -87,6 +87,7 @@
 				<br style="clear:both;" />
 				<hr />
 
+        <span style="visibility:hidden">
 				<!-- Section Content -->
 				<p>
 					The gamma distribution is another widely used distribution. Its importance is largely due to
@@ -266,6 +267,7 @@
 					<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
 				</div>
 				<!-- /footer -->
+        </span>
 		</div>
 		<!-- /wrapper div -->
 	</div>

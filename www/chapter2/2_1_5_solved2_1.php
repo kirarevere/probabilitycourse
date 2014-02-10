@@ -69,7 +69,7 @@
 			<hr /><br>
 			
 			<span class='problem'>Problem </span><br>
-			<p>A function is said to be \textbf{one-to-one} if for all $x_1\neq x_2$, we have $f(x_1)\neq f(x_2)$. Equivalently, 
+			<p>A function is said to be <strong>one-to-one</strong> if for all $x_1\neq x_2$, we have $f(x_1)\neq f(x_2)$. Equivalently, 
 			we can say a function is one-to-one if whenever $f(x_1)=f(x_2)$, then $x_1=x_2$. Let $A$ and $B$ be two finite 
 			sets, with $|A|=m$ and $|B|=n$. How many distinct one-to-one functions (mappings) can you define from set $A$ 
 			to set $B$, $f:A \rightarrow B$?</p>

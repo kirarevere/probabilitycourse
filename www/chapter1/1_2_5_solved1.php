@@ -81,7 +81,7 @@
 			<ol type="a">
     			<li>$A=(A \cap B) \cup (A-B)$</li>
     			<li>If $A$ and $B$ are finite sets, we have 
-				$$\hspace{120pt}|A \cup B |=|A|+|B|-|A \cap B| \hspace{120pt} (1.2)$$</li>
+				$$\hspace{120pt}|A \cup B |=|A|+|B|-|A \cap B|. \hspace{120pt} (1.2)$$</li>
 			</ol>
 			</p>
 			<div class="solvedprob">
@@ -116,7 +116,7 @@
     						 <li>$\{1,2\},\{3\}$</li>
     						 <li>$\{1,3\},\{2\}$</li>
     						 <li>$\{2,3\},\{1\}$</li>
-    						 <li>$\{1,2,3\}$</li>
+    						 <li>$\{1,2,3\}$.</li>
 						</ol> </p>
 						</li>
 					 </ul>
@@ -126,7 +126,7 @@
 			<hr /><br>
 			
 			<span class='problem'>Problem </span>
-			<p>Determine whether each of the following sets is countable or uncountable:
+			<p>Determine whether each of the following sets is countable or uncountable.
 			<ol type="a">
     			<li>$A=\{ x \in \mathbb{Q} | -100 \leq x \leq 100 \}$</li>
     			<li>$B=\{(x,y) | x \in \mathbb{N}, y \in \mathbb{Z} \}$</li>

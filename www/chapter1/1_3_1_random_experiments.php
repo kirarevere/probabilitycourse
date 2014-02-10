@@ -59,7 +59,7 @@
 			the context of a random experiment, the sample space is our <i>universal set</i>. Here are some 
 			examples of random experiments and their sample spaces:
 			<ul>
-    			<li>Random experiment: toss a coin; sample space: $S=\{heads, tails\}$ or as we usually write it $\{H,T\}$.</li>
+    			<li>Random experiment: toss a coin; sample space: $S=\{heads, tails\}$ or as we usually write it, $\{H,T\}$.</li>
     			<li>Random experiment: roll a die; sample space: $S=\{1, 2, 3, 4, 5, 6\}$.</li>
     			<li>Random experiment: observe the number of iPhones sold by an Apple store in 
 				Boston in $2015$; sample space: $S=\{0, 1, 2, 3, \cdots \}$.</li>
@@ -69,12 +69,12 @@
 			<p>When we repeat a random experiment several times, we call each one of them a <b>trial</b>. Thus, a trial 
 			is a particular performance of a random experiment. In the example of tossing a coin, each trial will 
 			result in either heads or tails. Note that the sample space is defined based on how you define your random 
-			experiment. For example:</p>
+			experiment. For example,</p>
 			
 			<hr /><br>
 			<p><span class='example'>Example </span><br>
 			We toss a coin three times and observe the sequence of heads/tails. The sample space here may be defined as
-			$$S = \{(H,H,H), (H,H,T), (H,T,H), (T,H,H), (H,T,T),(T,H,T),(T,T,H),(T,T,T)\}$$</p>
+			$$S = \{(H,H,H), (H,H,T), (H,T,H), (T,H,H), (H,T,T),(T,H,T),(T,T,H),(T,T,T)\}.$$</p>
 			<br><hr />
 			
 			<p>Our goal is to assign probability to certain <b>events</b>. For example, suppose that we would like 
@@ -86,9 +86,9 @@
 			$50$ percent which is the same as $\frac{1}{2}$ in the probability theory convention.</p>
 			
 			<div align="center"><p style="padding: 15px; border: black 1px solid">
-			Outcome: A result of a random experiment<br>
-			Sample Space: The set of all possible outcomes<br>
-			Event: A subset of the sample space</p>
+			Outcome: A result of a random experiment.<br>
+			Sample Space: The set of all possible outcomes.<br>
+			Event: A subset of the sample space.</p>
 			</div>
 			
 			<p><i>Union and Intersection:</i> If $A$ and $B$ are events, then $A \cup B$ and $A \cap B$ are also events. 

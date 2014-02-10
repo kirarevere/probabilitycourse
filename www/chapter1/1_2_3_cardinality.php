@@ -60,7 +60,7 @@
 			number of elements in $A$. For example, if $A=\{2,4,6,8,10\}$, then $|A|=5$. Before discussing 
 			infinite sets, which is the main discussion of this section, we would like to talk about a very 
 			useful rule: the <b>inclusion-exclusion principle</b>. For two finite sets $A$ and $B$, we have
-			$$|A \cup B |=|A|+|B|-|A \cap B|$$
+			$$|A \cup B |=|A|+|B|-|A \cap B|.$$
 			To see this, note that when we add $|A|$ and $|B|$, we are counting the elements in $|A \cap B|$ twice, 
 			thus by subtracting it from $|A|+|B|$, we obtain the number of elements in $|A \cup B |$, (you can 
 			refer to Figure 1.16 in <a href="chapter1/1_2_5_solved1.php#problem2">Problem 2</a> to see this pictorially). We can extend the same idea to three or more sets.</p>			
@@ -77,17 +77,17 @@
 			<p>Generally, for $n$ finite sets $A_1, A_2, A_3,\cdots, A_n$, we can write
 			<div style="padding: 15px;padding-left: 45px; border: black 1px solid">
 			$$\biggl|\bigcup_{i=1}^n A_i\biggr|=\sum_{i=1}^n\left|A_i\right|-\sum_{i < j}\left|A_i\cap A_j\right|$$
-			$$\>\>\>\>\>\>\>+\sum_{i < j < k}\left|A_i\cap A_j\cap A_k\right|-\ \cdots\ + \left(-1\right)^{n+1} \left|A_1\cap\cdots\cap A_n\right|$$
+			$$\>\>\>\>\>\>\>+\sum_{i < j < k}\left|A_i\cap A_j\cap A_k\right|-\ \cdots\ + \left(-1\right)^{n+1} \left|A_1\cap\cdots\cap A_n\right|.$$
 			</div>
 			
 			<hr /><br>
 			<span class="example">Example </span><br>
 			<p>In a party,
 			<ul>
-    			<li>There are $10$ people with white shirts and $8$ people with red shirts.</li>
-    			<li>$4$ people have black shoes and white shirts.</li>
-    			<li>$3$ people have black shoes and red shirts.</li>
-    			<li>The total number of people with white or red shirts or black shoes is $21$.</li>
+    			<li>there are $10$ people with white shirts and $8$ people with red shirts;</li>
+    			<li>$4$ people have black shoes and white shirts;</li>
+    			<li>$3$ people have black shoes and red shirts;</li>
+    			<li>the total number of people with white or red shirts or black shoes is $21$.</li>
 			</ul> 
 			How many people have black shoes?</p>
 			
@@ -102,7 +102,7 @@
 						 $$|R|=8$$
 						 $$|W \cap B|=4$$
 						 $$|R \cap B|=3$$
-						 $$|W \cup B \cup R|=21$$
+						 $$|W \cup B \cup R|=21.$$
 						 Also, it is reasonable to assume that $W$ and $R$ are disjoint, $|W \cap R|=0$. Thus by applying 
 						 the inclusion-exclusion principle we obtain
 						 <table align="center">			
@@ -116,12 +116,12 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=10+8+|B|-0-4-3+0$</td>
+                            <td>$=10+8+|B|-0-4-3+0$.</td>
                           </tr>
                           </table><br>
 						 
 						 Thus
-						 $$|B|=10$$						 
+						 $$|B|=10.$$						 
 						 </p>
 							<p>Note that another way to solve this problem is using a Venn diagram as shown in Figure 1.11.</p>
 						<figure>
@@ -143,10 +143,10 @@
 			while the other is called <b>uncountable</b>. Sets such as $\mathbb{N}$ and $\mathbb{Z}$ are called countable, 
 			but "bigger" sets such as $\mathbb{R}$ are called uncountable. The difference between the two types is 
 			that you can list the elements of a countable set $A$, i.e., you can write $A=\{a_1, a_2,\cdots\}$, 
-			but you cannot list the elements in an uncountable set. For example, you can write:
+			but you cannot list the elements in an uncountable set. For example, you can write
 			<ul>
     			<li>$\mathbb{N}=\{1,2,3,\cdots\}$</li>
-    			<li>$\mathbb{Z}=\{0,1,-1,2,-2,3,-3,\cdots\}$</li>
+    			<li>$\mathbb{Z}=\{0,1,-1,2,-2,3,-3,\cdots\}$.</li>
 			</ul></p>
 			
 			<p>The fact that you can list the elements of a countably infinite set means that the set can be put in one-to-one 
@@ -157,8 +157,8 @@
 			<span class='definition'>Definition </span><br>
 			<p>Set $A$ is called countable if one of the following is true
 			<ol type="a">
-    			<li>if it is a finite set, $\mid A \mid < \infty$</li>
-    			<li>or it can be put in one-to-one correspondence with natural numbers $\mathbb{N}$, in which 
+    			<li>if it is a finite set, $\mid A \mid < \infty$; or</li>
+    			<li>it can be put in one-to-one correspondence with natural numbers $\mathbb{N}$, in which 
 				case the set is said to be countably infinite.</li>
 			</ul>
 			A set is called uncountable if it is not countable.</p>
@@ -170,7 +170,7 @@
 			
 			<div style="padding: 15px; border: black 1px solid">
 			<ul>
-    			<li>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}$ and any of their subsets are countable.</li>
+    			<li>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}$, and any of their subsets are countable.</li>
     			<li>Any set containing an interval on the real line such as $[a,b], (a,b], [a,b),$ or $(a,b)$, 
 				where $a < b$ is uncountable.</li>
 			</ul> 
@@ -186,7 +186,7 @@
  			Any superset of an uncountable set is uncountable.</p>
 			
 			<i>Proof</i><br>
-			<p>The intuition behind this theorem is the following. If a set is countable, then any "smaller" set 
+			<p>The intuition behind this theorem is the following: If a set is countable, then any "smaller" set 
 			should also be countable, so a subset of a countable set should be countable as well. To provide 
 			a proof, we can argue in the following way.</p>
 			
@@ -206,7 +206,7 @@
 			
 			<i>Proof</i><br>
 			<p>It suffices to create a list of elements in  $\bigcup_{i} A_i$. Since each $A_i$ is countable we can 
-			list its elements: $A_i=\{a_{i1},a_{i2},\cdots\}$. Thus, we have:
+			list its elements: $A_i=\{a_{i1},a_{i2},\cdots\}$. Thus, we have
 			<ul>
     			<li>$A_1=\{a_{11},a_{12},\cdots\}$</li>
     			<li>$A_2=\{a_{21},a_{22},\cdots\}$</li>
@@ -234,7 +234,7 @@
 			<p>The proof of this theorem is very similar to the previous theorem. Since $A$ and $B$ are 
 			countable, we can write
 			$$A = \{a_1, a_2, a_3, \cdots \}$$
-			$$B = \{b_1, b_2, b_3, \cdots \}$$
+			$$B = \{b_1, b_2, b_3, \cdots \}.$$
 			Now, we create a list containing all elements in $A \times B = \{(a_i,b_j) | i,j=1,2,3,\cdots \}$. 
 			The idea is exactly the same as before. Figure 1.13 shows one possible ordering.</p>
 			
@@ -245,11 +245,11 @@
 			<br><hr /><br>
 			
 			<p>The above arguments can be repeated for any set $C$ in the form of
-			$$C=\bigcup_i \bigcup_j \{ a_{ij} \}$$
+			$$C=\bigcup_i \bigcup_j \{ a_{ij} \},$$
 			where indices $i$ and $j$ belong to some countable sets. Thus, any set in this form is countable. 
 			For example, a consequence of this is that the set of rational numbers $\mathbb{Q}$ is countable. 
 			This is because we can write
-			$$\mathbb{Q}=\bigcup_{i \in \mathbb{Z}} \bigcup_{j \in \mathbb{N}} \{ \frac{i}{j} \}$$</p>
+			$$\mathbb{Q}=\bigcup_{i \in \mathbb{Z}} \bigcup_{j \in \mathbb{N}} \{ \frac{i}{j} \}.$$</p>
 
 			<p>The above theorems confirm that sets such as $\mathbb{N}, \mathbb{Z}, \mathbb{Q}$ and their 
 			subsets are countable. However, as we mentioned, intervals in $\mathbb{R}$ are uncountable. Thus, 

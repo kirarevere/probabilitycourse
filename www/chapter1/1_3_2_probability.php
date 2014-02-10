@@ -76,7 +76,7 @@
 			space is equal to one, i.e., $100$ percent. The reason for this is that the sample space $S$ 
 			contains all possible outcomes of our random experiment. Thus, the outcome of each trial always 
 			belongs to $S$, i.e., the event $S$ always occurs and $P(S)=1$. In the example of rolling a die, 
-			$S=\{1,2,3,4,5,6\}$ and since the outcome is always among the numbers $1$ through $6$, $P(S)=1$.</p>
+			$S=\{1,2,3,4,5,6\}$, and since the outcome is always among the numbers $1$ through $6$, $P(S)=1$.</p>
 			
 			<p>The third axiom is probably the most interesting one. The basic idea is that if some events are disjoint 
 			(i.e., there is no overlap between them), then the probability of their union must be the summations 
@@ -88,7 +88,7 @@
 			<hr /><br>
 			<span class='example'>Example </span><br>
 			<p>In a presidential election, there are four candidates. Call them A, B, C, and D. Based on our polling 
-			analysis we estimate that A has a $20$ percent chance of winning the election, while B has a $40$ percent 
+			analysis, we estimate that A has a $20$ percent chance of winning the election, while B has a $40$ percent 
 			chance of winning. What is the probability that A <b>or</b> B win the election?</p>
 			
 			<div class="solvedprob">

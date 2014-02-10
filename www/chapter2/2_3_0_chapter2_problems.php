@@ -100,7 +100,7 @@
 			
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
-			<p>A wireless sensor grids consists of $200$ sensor nodes that are located at points $(i,j)$ in the plane 
+			<p>A wireless sensor grids consists of $21 \times 11=231$ sensor nodes that are located at points $(i,j)$ in the plane 
 			such that $i \in \{0,1,\cdots,20\}$ and $j \in \{0,1,2,\cdots,10\}$ as shown in 
 			Figure 2.1. The sensor node located at point $(0,0)$ needs to send a message to a node located at 
 			$(20,10)$. The messages are sent to the destination by going from each sensor to a neighboring 

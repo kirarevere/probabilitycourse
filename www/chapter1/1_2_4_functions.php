@@ -52,8 +52,8 @@
 			co-domain with the property that each input is mapped to exactly one output. For a function $f$, 
 			if $x$ is an element in the domain, then the function value (the output of the function) is 
 			shown by $f(x)$. If $A$ is the domain and $B$ is the co-domain for the function $f$, we use 
-			the following notation.
-			$$f:A \rightarrow B$$</p>			
+			the following notation:
+			$$f:A \rightarrow B.$$</p>			
 			<hr /><br>
 			
 			<span class='example'>Example </span><br>
@@ -72,7 +72,7 @@
 			We define the <b>range</b> of a function as the set containing all the possible values of $f(x)$. 
 			Thus, the range of a function is always a subset of its co-domain. For the above function $f(x)=x^2$, 
 			the range of $f$ is given by
-			$$\textrm{Range}(f)=\mathbb{R}^{+}=\{x \in \mathbb{R} | x \geq 0 \}$$</p>
+			$$\textrm{Range}(f)=\mathbb{R}^{+}=\{x \in \mathbb{R} | x \geq 0 \}.$$</p>
 			
 			Figure 1.14 pictorially shows a function, its domain, co-domain, and range. The figure shows that an 
 			element $x$ in the domain is mapped to $f(x)$ in the range.

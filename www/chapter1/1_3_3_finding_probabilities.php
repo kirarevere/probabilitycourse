@@ -69,7 +69,7 @@
 					 	 <li>
 						 <p>Let's first use the specific information that we have about the random experiment. The 
 						 problem states that the die is fair, which means that all six possible outcomes are equally likely, i.e.,
-						 $$P(\{1\})=P(\{2\})=\cdots=P(\{6\})$$
+						 $$P(\{1\})=P(\{2\})=\cdots=P(\{6\}).$$
 						 Now we can use the axioms of probability. In particular, since the events $\{1\}, \{2\}, \cdots, 
 						 \{6\}$ are disjoint we can write
 						 <table align="center">			
@@ -87,13 +87,13 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=6P(\{1\})$</td>
+                            <td>$=6P(\{1\})$.</td>
                           </tr>
                           </table><br>
 						 Thus,
-						 $$P(\{1\})=P(\{2\})=\cdots=P(\{6\})=\frac{1}{6}$$
+						 $$P(\{1\})=P(\{2\})=\cdots=P(\{6\})=\frac{1}{6}.$$
 						 Again since $\{1\}$ and $\{5\}$ are disjoint, we have
-						 $$P(E)=P(\{1,5\})=P(\{1\})+P(\{5\})=\frac{2}{6}=\frac{1}{3}$$</p>
+						 $$P(E)=P(\{1,5\})=P(\{1\})+P(\{5\})=\frac{2}{6}=\frac{1}{3}.$$</p>
 						 </li>
 					 </ul>
 					 </li>
@@ -148,7 +148,7 @@
                               </tr>
                               </table><br></li>
     						 <li>Since $\emptyset=S^c$, we can use part (a) to see that $P(\emptyset)=1-P(S)=0$. Note 
-							 that this makes sense as by definition, an event happens if the outcome of the random 
+							 that this makes sense as by definition: an event happens if the outcome of the random 
 							 experiment belongs to that event. Since the empty set does not have any element, the 
 							 outcome of the experiment never belongs to the empty set.</li><br>
     						 <li>From part (a),  $P(A)=1-P(A^c)$ and since $P(A^c) \geq 0$ (the first axiom), 
@@ -173,7 +173,7 @@
   									 <figcaption>Fig.1.17 - $P(A)=P(A \cap B)+P(A-B)$.</figcaption>
 							 </figure>
 							 Note that since $A-B=A \cap B^c$, we have shown
-							 $$P(A)=P(A \cap B)+P(A \cap B^c)$$
+							 $$P(A)=P(A \cap B)+P(A \cap B^c).$$
 							 Note also that the two sets $B$ and $B^c$ form a partition of the sample space (since they are disjoint 
 							 and their union is the whole sample space). This is a simple form of law of total probability that we 
 							 will discuss shortly and is a very useful rule in finding probability of some events.</li><br>
@@ -192,7 +192,7 @@
 							  <tr>
                                 <td></td>
                                 <td>$=P(A)+P(B)-P(A \cap B) \hspace{20pt}$</td>
-								<td>$\textrm{(by part d.)}$</td>
+								<td>$\textrm{(by part (d))}$</td>
                               </tr>
                               </table>
 							 </li><br>
@@ -203,7 +203,7 @@
                               <tr>
                                 <td>$P(B)$</td>
                                 <td>$ =P(A \cap B)+P(B-A) \hspace{40pt}$</td>
-								<td>$\textrm{(by part d.)}$</td>
+								<td>$\textrm{(by part (d))}$</td>
                               </tr>
                               <tr>
                                 <td></td>
@@ -237,7 +237,7 @@
     			<li>The probability that it will rain today or tomorrow.</li>
     			<li>The probability that it will rain today and tomorrow.</li>
     			<li>The probability that it will rain today but not tomorrow.</li>
-    			<li>The probability that it either will rain today or tomorrow but not both.</li>
+    			<li>The probability that it either will rain today or tomorrow, but not both.</li>
 			</ol></p>
 			
 			<div class="solvedprob">
@@ -246,13 +246,13 @@
 				 	 <ul>
 					 	 <li>
 						 <p>An important step in solving problems like this is to correctly convert them to probability language. 
-						 This is especially useful when the problems become complex. For this problem let's define $A$ as the 
-						 event that it will rain today and $B$ as the event that it will rain tomorrow. Then let's summarize 
+						 This is especially useful when the problems become complex. For this problem, let's define $A$ as the 
+						 event that it will rain today, and $B$ as the event that it will rain tomorrow. Then, let's summarize 
 						 the available information:
 						 <ol type="1">
-    					 	 <li>$P(A)=.6$</li>
-    						 <li>$P(B)=.5$</li>
-    						 <li>$P(A^c \cap B^c)=.3$</li>
+    					 	 <li>$P(A)=0.6$</li>
+    						 <li>$P(B)=0.5$</li>
+    						 <li>$P(A^c \cap B^c)=0.3$</li>
 						 </ol></p>
 						 Now that we have summarized the information, we should be able to use them alongside probability 
 						 rules to find the requested probabilities:<br><br>
@@ -277,7 +277,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=.7$</td>
+                                <td>$=0.7$</td>
 								<td></td>
                               </tr>
                               </table><br>
@@ -292,12 +292,12 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=.6+.5-.7$</td>
+                                <td>$=0.6+0.5-0.7$</td>
 								<td></td>
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=.4$</td>
+                                <td>$=0.4$</td>
 								<td></td>
                               </tr>
                               </table><br>
@@ -316,12 +316,12 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=.6-.4$</td>
+                                <td>$=0.6-0.4$</td>
 								<td></td>
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=.2$</td>
+                                <td>$=0.2$</td>
 								<td></td>
                               </tr>
                               </table><br>
@@ -336,17 +336,17 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=.5-.4$</td>
+                                <td>$=0.5-0.4$</td>
 								<td></td>
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=.1$</td>
+                                <td>$=0.1$</td>
 								<td></td>
                               </tr>
                               </table><br>
 							 Thus,
-							 $$P(A-B)+P(B-A)=.2+.1=.3 \hspace{40pt}$$
+							 $$P(A-B)+P(B-A)=0.2+0.1=0.3 \hspace{40pt}$$
 							 </li>
 						 </ol> 
 						 </li>
@@ -357,7 +357,7 @@
 			<hr /><br>
 			
 			<p>In this problem it was stated that there is a $50$ percent chance that it will rain tomorrow. You might have 
-			heard this information from news on the TV. A more interesting question is how the number $50$ is obtained? 
+			heard this information from news on the TV. A more interesting question is how the number $50$ is obtained. 
 			This is an example of a real life problem in which tools from probability and statistics are used. As you 
 			read more chapters from the book, you will learn many of these tools that are frequently used in practice.</p>
 			
@@ -382,7 +382,7 @@
             </tr>
             <tr>
               <td></td>
-              <td>$+\sum_{i < j < k}P(A_i\cap A_j\cap A_k)-\ \cdots\ +(-1)^{n-1}\, P\biggl(\bigcap_{i=1}^n A_i\biggr)$</td>
+              <td>$+\sum_{i < j < k}P(A_i\cap A_j\cap A_k)-\ \cdots\ +(-1)^{n-1}\, P\biggl(\bigcap_{i=1}^n A_i\biggr)$.</td>
             </tr>
             </table><br></p>
 			<hr />

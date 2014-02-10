@@ -60,7 +60,7 @@
 			<p>Similarly we can define the union of three or more sets. In particular, if $A_1, A_2, A_3,\cdots, A_n$ are $n$ 
 			sets, their union $A_1 \cup A_2 \cup A_3 \cdots \cup A_n$ is a set containing all elements that are 
 			in at least one of the sets. We can write this union more compactly by
-   			$$\bigcup_{i=1}^{n} A_i$$
+   			$$\bigcup_{i=1}^{n} A_i.$$
 			For example, if $A_1=\{a,b,c\}, A_2=\{c,h\}, A_3=\{a,d\}$  then $\bigcup_{i} A_i=A_1 \cup A_2 
 			\cup A_3=\{a,b,c,h,d\}$. We can similarly define the union of infinitely many sets 
 			$A_1 \cup A_2 \cup A_3 \cup\cdots$.</p>
@@ -183,9 +183,9 @@
 			<p>A <b>Cartesian product</b> of two sets $A$ and $B$, written as $A\times B$, is the set containing <b>ordered</b> 
 			pairs from $A$ and $B$. That is, if $C=A \times B$, then each element of $C$ is of the form $(x,y)$, where 
 			$x \in A$ and $y \in B$:
-			$$A \times B = \{(x,y) | x \in A \textrm{ and } y \in B \}$$
-			For example if $A=\{1,2,3\}$ and $B=\{H,T\}$ then
-			$$A \times B=\{(1,H),(1,T),(2,H),(2,T),(3,H),(3,T)\}$$
+			$$A \times B = \{(x,y) | x \in A \textrm{ and } y \in B \}.$$
+			For example, if $A=\{1,2,3\}$ and $B=\{H,T\}$, then
+			$$A \times B=\{(1,H),(1,T),(2,H),(2,T),(3,H),(3,T)\}.$$
 			Note that here the pairs are ordered, so for example, $(1,H)\neq (H,1)$. Thus $A \times B$ is <b>not</b> the 
 			same as $B \times A$.</p>
 
@@ -195,7 +195,7 @@
 			|B|=N$, and $|A \times B|=MN$. In the above example, $|A|=3, |B|=2$, thus $|A \times B|=3 \times 2 = 6$. 
 			We can similarly define the Cartesian product of $n$ sets $A_1, A_2, \cdots, A_n$,
 			$$A_1 \times A_2 \times A_3 \times \cdots \times A_n = \{(x_1, x_2, \cdots, x_n) | x_1 \in A_1 \textrm{ and } 
-			x_2 \in A_2 \textrm{ and }\cdots x_n \in A_n \}$$
+			x_2 \in A_2 \textrm{ and }\cdots x_n \in A_n \}.$$
 			The multiplication principle states that for finite sets $A_1, A_2, \cdots, A_n$,  if $|A_1|=M_1, |A_2|=M_2, 
 			\cdots, |A_n|=M_n$, then $\mid A_1 \times A_2 \times A_3 \times \cdots \times A_n \mid=M_1 \times M_2 
 			\times M_3 \times \cdots \times M_n$.</p>
@@ -209,7 +209,7 @@
             </tr>
             <tr>
               <td></td>
-              <td>$= \{(x,y) | x \in \mathbb{R}, y \in \mathbb{R} \}$</td>
+              <td>$= \{(x,y) | x \in \mathbb{R}, y \in \mathbb{R} \}$.</td>
             </tr>
             </table><br>
 
