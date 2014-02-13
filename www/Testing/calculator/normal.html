@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<script type="text/x-mathjax-config">
+  			MathJax.Hub.Config({
+    		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+  			});
+	</script>	
+	<script type="text/javascript"
+  			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
+	<script type="text/javascript" src="http://probabilitycourse.com/javascript/menu_js_code.js"></script>
+	<script type="text/javascript" src="http://probabilitycourse.com/javascript/calc.js"></script>	
+	<script language="javascript" type="text/javascript" src="http://probabilitycourse.com/javascript/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="http://probabilitycourse.com/javascript/jquery.flot.js"></script>
+	<script type="text/javascript" src="http://probabilitycourse.com/javascript/plot.js"></script>
+	<script type="text/javascript" src="http://probabilitycourse.com/javascript/flot_navigate.js"></script>	
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
+	<script>$(function() {$( document ).tooltip();});</script>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+
+	<title>Intro to Probability</title>
+
+</head><body>
+	<div id="container">
+		<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		
+		<div id="wrapper">
+			<div id="content">
+			<div class="thinblock">
+				<div class="left"><a>&larr; </a><a href="http://probabilitycourse.com/calculator/calculator.html">back</a></div>
+    			<div class="clear"></div>
+    		</div>
+			<hr />
+			
+			<h2>Calculator: Normal (Gaussian) Distribution</h2>
+			<form>
+			<table style="padding: 0px 40px">
+				<tr><td align="right">$\mu$ = </td><td><input name="m" value = "0" type="text">
+				<input type="button" class="link_button" title="Expected value of the distribution." value="?"></td></tr>
+				<tr><td align="right">$\sigma$ = </td><td><input name="s" value = "1" type="text">
+				<input type="button" class="link_button" title="Standard deviation of the distribution (square root of variance)." value="?"></td></tr>
+				<tr><td align="right">x = </td><td><input name="x" value = "0" type="text"></td></tr>
+				<tr><td></td><td><input type="button" onclick="calcNormal(this.form)" value="Calculate"></td></tr>
+				<tr><td align="right">CDF at x = </td><td><input name="cdf" type="text">
+				<input type="button" class="link_button" title="Cumulative distribution function. Given by P[X<=x]" value="?"></td></tr>
+				<tr><td align="right">PDF at x = </td><td><input name="pdf" type="text">
+				<input type="button" class="link_button" title="Probability density function." value="?"></td></tr>
+				<tr><td align="right">Sample = </td><td><input name="sam" type="text">
+				<input type="button" class="link_button" title="A random value sampled from this distribution." value="?"></td></tr>
+				<tr><td></td><td><input type="button" onclick="plotNormalCDF(this.form)" value="Plot CDF">
+				<input type="button" onclick="plotNormalPDF(this.form)" value="Plot PDF"></td></tr>
+			</table>	
+			
+			<div class="demo-container">
+				<div id="placeholder" class="demo-placeholder"></div>
+			</div>
+			</form>
+			
+		</div>
+		<div id="menu">
+			 <script type="text/javascript" src="http://probabilitycourse.com/javascript/menu_html_code.js"></script>
+		</div>
+
+		<div id="footer">
+			<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
+		</div>
+	</div>
+</body>
+</html>

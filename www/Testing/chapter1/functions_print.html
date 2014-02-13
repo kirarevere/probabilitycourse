@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<script type="text/x-mathjax-config">
+  			MathJax.Hub.Config({
+    		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+  			});
+	</script>	
+	<script type="text/javascript"
+  			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/print.css" media="print" />
+
+	<title>Intro to Probability</title>
+
+</head><body>
+	<div id="printcontainer">
+		 	<br>
+		 	<input type="button" onClick="window.print()" value="Print This Page"/>
+
+			<div class="print">
+			<h2>1.2.4 Functions</h2>
+			
+			<p>We often need the concept of functions in probability. A function $f$ is a rule that takes an input 
+			from a specific set, called the <b>domain</b>, and produces an  output from another set, called 
+			<b>co-domain</b>. Thus, a function <i>maps</i> elements from the domain set to elements in the 
+			co-domain with the property that each input is mapped to exactly one output. For a function $f$, 
+			if $x$ is an element in the domain, then the function value (the output of the function) is 
+			shown by $f(x)$. If $A$ is the domain and $B$ is the co-domain for the function $f$, we use 
+			the following notation.
+			$$f:A \rightarrow B$$</p>			
+			<hr /><br>
+			
+			<b>Example 6</b><br>
+			<ul>
+    			<li>Consider the function $f:\mathbb{R} \rightarrow \mathbb{R}$, defined as $f(x)=x^2$. This 
+				function takes any real number $x$ and outputs $x^2$. For example, $f(2)=4$.</li>
+    			<li>Consider the function $g:\{H,T\} \rightarrow \{0,1\}$, defined as $g(H)=0$ and $g(T)=1$. 
+				This function can only take two possible inputs $H$ or $T$, where $H$ is mapped to $0$ and $T$ is mapped to $1$.</li>
+			</ul>
+			<hr /><br>
+			
+			<p>The output of a function $f: A \rightarrow B$ always belongs to the co-domain $B$. However, not all 
+			values in the co-domain are always covered by the function. In the above example, 
+			$f:\mathbb{R} \rightarrow \mathbb{R}$, the function value is always a positive number $f(x)=x^2 \geq 0$. 
+			We define the <b>range</b> of a function as the set containing all the possible values of $f(x)$. 
+			Thus, the range of a function is always a subset of its co-domain. For the above function $f(x)=x^2$, 
+			the range of $f$ is given by
+			$$\textrm{Range}(f)=\mathbb{R}^{+}=\{x \in \mathbb{R} | x \geq 0 \}$$</p>
+			
+			Figure 1.14 pictorially shows a function, its domain, co-domain, and range. The figure shows that an 
+			element $x$ in the domain is mapped to $f(x)$ in the range.
+			<figure>
+  					<img src="http://probabilitycourse.com/images/chapter1/function_b.png" width="350" height="217" alt="Function" title="Function" border="0" />
+  					<figcaption>Fig.1.14 - Function $f: A \rightarrow B$, the range is always a subset of the co-domain.</figcaption>
+			</figure>
+			<br>		
+			</div>
+			
+	</div>
+</body>
+</html>
