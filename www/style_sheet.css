@@ -91,3 +91,5 @@
         label {display: inline-block; width: 5em; }
 
 #printButton { cursor: pointer; }
+.mobile { display: none; }
+.no_mobile { display: block; }

@@ -23,6 +23,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
 	<title>Intro to Probability</title>
 
@@ -43,7 +44,6 @@
 						
 			<div class="left"><h2>1.2.5 Review of Set Theory: Solved Problems</h2></div>
     		<div class="right hide_print">
-			<a href="videos/chapter1/video1_2.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
 			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>
 			

@@ -7,27 +7,44 @@
 	<meta name='section'	content='3.3.0' />
 	<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({
+				"HTML-CSS": { linebreaks: { automatic: true }, },
     		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
   			});
 	</script>	
 	<script type="text/javascript"
   			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById('printButton').onclick = function(e) {
+				print();
+				window.history.go(-1);
+				return false;
+			};
+		};
+	</script>
 	
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
 	<script type="text/javascript" src="http://probabilitycourse.com/javascript/menu_js_code.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
+	<script type="text/javascript">
+	</script>
 	<div id="container">
-		<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		<span class="hide_print">
+			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter3/3_2_5_solved3_2.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_1_0_continuous_var.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -35,8 +52,8 @@
 			<hr />
 						
 			<div class="left"><h2>3.3 End of Chapter Problems</h2></div>
-    		<div class="right">
-			<a href="http://probabilitycourse.com/chapter3/chapter3_problems_print.html"><img src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+    		<div class="right hide_print">
+			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
 			<span class='problem'>Problem </span><br>
@@ -240,10 +257,11 @@
 			<hr /><br />
 			 <span class='problem'>Problem </span><br>
 			 <p>Let $X$ be a discrete random variable with the following PMF
+					<span class="no_mobile">
               \begin{equation}
                \nonumber P_X(k) = \left\{
               \begin{array}{l l}
-                 \frac{1}{21} & \quad \text{for  } k \in \{-10,-9, \cdots,-1,0,1, \cdots, 9,10 \}\\
+                 \frac{1}{21} & \quad \text{for  } k \in \{-10,-9, \cdots, -1, 0, 1, \cdots, 9, 10 \}\\
                   & \\
                  0   & \quad \text{ otherwise}
               \end{array} \right.
@@ -257,6 +275,26 @@
                  5  & \quad \text{ otherwise}
               \end{array} \right.
               \end{equation}
+					</span>
+					<span class="mobile">
+               \begin{equation}
+               \nonumber P_X(k) = \left\{
+              \begin{array}{l l}
+                 \frac{1}{21} \hspace{20pt} \text{for  } k \in \{-10,-9, \cdots, -1, 0, 1, \\
+									\hspace{80pt} \cdots, 9, 10 \}\\
+                 0  \hspace{30pt} \text{ otherwise}
+              \end{array} \right.
+              \end{equation}
+			 The random variable $Y=g(X)$ is defined as
+              \begin{equation}
+               \nonumber Y=g(X)= \left\{
+              \begin{array}{l l}
+                 0 & \quad \text{if  } X \leq 0\\
+                 X & \quad \text{if  } 0 < X \leq 5\\
+                 5  & \quad \text{ otherwise}
+              \end{array} \right.
+              \end{equation}
+					</span>
   			  Find the PMF of $Y$.</p>
 			  
 			<hr /><br />
@@ -345,17 +383,17 @@
 			</ol></p> 
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter3/3_2_5_solved3_2.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_1_0_continuous_var.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu" class="hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer" class="hide_print">
 			<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
 		</div>
 	</div>

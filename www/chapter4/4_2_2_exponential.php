@@ -18,17 +18,20 @@
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
 	<script type="text/javascript" src="http://probabilitycourse.com/javascript/menu_js_code.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
-		<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		<span class="hide_print">
+			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_1_uniform.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_2_3_normal.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -36,9 +39,9 @@
 			<hr />
 						
 			<div class="left"><h2>4.2.2 Exponential Distribution</h2></div>
-    		<div class="right">
+    		<div class="right hide_print">
 			<a href="http://probabilitycourse.com/videos/chapter4/video4_8.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="http://probabilitycourse.com/chapter4/exponential_print.html"><img src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
 			<p>The exponential distribution is one of the widely used continuous distributions. It is often used to 
@@ -221,17 +224,17 @@
             </table><br>
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_1_uniform.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_2_3_normal.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu" class="hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer" class="hide_print">
 			<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
 		</div>
 	</div>

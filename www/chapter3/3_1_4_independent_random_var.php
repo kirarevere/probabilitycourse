@@ -18,17 +18,20 @@
 	<script type="text/javascript" src="javascript/menu_js_code.js"></script>
 	<script type="text/javascript" src="javascript/solved_prob.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
+	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
 </head><body>
 	<div id="container">
-		<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		<span class="hide_print">
+			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
+		</span>
 		
 		<div id="wrapper">
 			<div id="content">
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter3/3_1_3_pmf.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_5_special_discrete_distr.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
@@ -36,9 +39,9 @@
 			<hr />
 						
 			<div class="left"><h2>3.1.4 Independent Random Variables</h2></div>
-    		<div class="right">
+    		<div class="right hide_print">
 			<a href="http://probabilitycourse.com/videos/chapter3/video3_2.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<a href="http://probabilitycourse.com/chapter3/independent_random_var_print.html"><img src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></a></div>
+			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
 			<p>In real life, we usually need to deal with more than one random variable. For example, if you study 
@@ -126,17 +129,17 @@
 			</div><br>
 
 			<hr />
-			<div class="thinblock">
+			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter3/3_1_3_pmf.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_5_special_discrete_distr.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
-		<div id="menu">
+		<div id="menu" class="hide_print">
 			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
 		</div>
 
-		<div id="footer">
+		<div id="footer" class="hide_print">
 			<script type="text/javascript" src="javascript/footer_html_code.js"></script>
 		</div>
 	</div>

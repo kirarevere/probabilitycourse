@@ -74,20 +74,23 @@
 							border="0" 
 							style="vertical-align: middle;"/></a>
 		No Video -->
-					<a href="javascript:window.print()">
-						<img src="http://probabilitycourse.com/images/print.png" 
+					<img src="http://probabilitycourse.com/images/print.png" 
+							id="printButton"
 							width="40" 
 							height="40" 
 							alt="Printer Friendly" 
 							title="Printer Friendly" 
 							style="vertical-align: middle;"/>
-					</a>
 				</div>
 				<!-- /Video and Print buttons -->
 				<br style="clear:both;" />
 				<hr />
+<<<<<<< HEAD
 
         <span style="visibility:hidden">
+=======
+				<span style="display:none;">
+>>>>>>> c6671ae62f2c55f3a036fa47c23867a8997673a5
 				<!-- Section Content -->
 				<p>
 					The gamma distribution is another widely used distribution. Its importance is largely due to
@@ -267,7 +270,11 @@
 					<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
 				</div>
 				<!-- /footer -->
+<<<<<<< HEAD
         </span>
+=======
+		</span>
+>>>>>>> c6671ae62f2c55f3a036fa47c23867a8997673a5
 		</div>
 		<!-- /wrapper div -->
 	</div>
