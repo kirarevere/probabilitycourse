@@ -1,7 +1,13 @@
 $(window).load(function(){
+/*
 	$('#printButton').click(function(e) {
 		print();
+		window.close();
 		return false;
+	});
+*/
+	$('#menuButton').click(function(ev) {
+		$('#hiddenMenu').toggle();
 	});
 	$('#menu li').click(function(ev) {
 		$(this).find('>ul').slideToggle().end().siblings().find('ul').slideUp();

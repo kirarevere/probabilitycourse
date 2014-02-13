@@ -1,5 +1,7 @@
 
-var htmlText = '<ul>';
+var htmlText = '<div id="menuButton">Open Menu</div>';
+htmlText += '<span id="hiddenMenu">';
+htmlText += '<ul>';
 htmlText += '	<li><a>1 Basic Concepts</a>';
 htmlText += '	<ul>';
 htmlText += '		<li><a>1.1 Introduction</a>';
@@ -153,5 +155,6 @@ htmlText += '	</li>';
 htmlText += '	<li><a href="bibliography.html">Bibliography</a>';
 htmlText += '	</li>';
 htmlText += '</ul>';
+htmlText += '</span>';
 
 document.write(htmlText);
