@@ -2,11 +2,11 @@
 	/* CONFIGURE */
 	error_reporting(E_PARSE);
 	$data = null;
-	$DATA_DIR = $_SERVER['DOCUMENT_ROOT'] . "/Testing/probabilitycourse.com/www/Control/DATA";
-	$chapterOneDir = $_SERVER['DOCUMENT_ROOT'] . "/Testing/probabilitycourse.com/www/chapter1/";
-	$chapterTwoDir = $_SERVER['DOCUMENT_ROOT'] . "/Testing/probabilitycourse.com/www/chapter2/";
-	$chapterThreeDir = $_SERVER['DOCUMENT_ROOT'] . "/Testing/probabilitycourse.com/www/chapter3/";
-	$chapterFourDir = $_SERVER['DOCUMENT_ROOT'] . "/Testing/probabilitycourse.com/www/chapter4/";
+	$DATA_DIR = $_SERVER['DOCUMENT_ROOT'] . "/Control/DATA";
+	$chapterOneDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter1/";
+	$chapterTwoDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter2/";
+	$chapterThreeDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter3/";
+	$chapterFourDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter4/";
 	$exCount; $thCount; $lmCount;
 
 	$currentChapter; $currentSection; $currentSubsection;
