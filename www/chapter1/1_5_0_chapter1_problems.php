@@ -56,9 +56,9 @@
 			<p>Suppose that the universal set $S$ is defined as $S=\{1,2,\cdots,10\}$ and $A=\{1,2,3\}$, 
 			$B=\{X \in S : 2 \leq X \leq 7\}$, and $C= \{7,8,9,10\}$.
 			<ol type="a">
-                <li>Find $A \cup B$</li>
-                <li>Find $\left(A \cup C\right)-B$</li>
-                <li>Find $\bar{A} \cup \left(B-C\right)$</li>
+                <li>Find $A \cup B$.</li>
+                <li>Find $\left(A \cup C\right)-B$.</li>
+                <li>Find $\bar{A} \cup \left(B-C\right)$.</li>
                 <li>Do $A,B,$ and $C$ form a partition of $S$?</li>
             </ol></p> 
 			<hr /><br />
@@ -96,7 +96,7 @@
 			<p>Let $A=\{1,2,\cdots,100\}$. For any $i \in \mathbb{N}$, Define $A_i$ as the set of numbers 
 			in $A$ that are divisible by $i$. For example:<br>
 			$$A_2=\{2,4,6,\cdots,100\}$$
-  			$$A_3=\{3,6,9, \cdots, 99\}$$
+  			$$A_3=\{3,6,9, \cdots, 99\}.$$
 			<ol type="a">
                 <li>Find $|A_2|$,$|A_3|$,$|A_4|$,$|A_5|$.</li>
                 <li>Find $|A_2 \cup A_3 \cup A_5|$.</li>
@@ -105,10 +105,10 @@
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Suppose that $A_1$, $A_2$, $A_3$ form a partition of the universal set $S$. Let $B$ be an 
-			arbitrary set. Assume that we know:
+			arbitrary set. Assume that we know
 			$$|B \cap A_1|=10$$
 			$$|B \cap A_2|=20$$
-			$$|B \cap A_3|=15$$
+			$$|B \cap A_3|=15.$$
   			Find $|B|$.</p>
 			
 			<hr /><br />
@@ -117,7 +117,7 @@
 			<ol type="a">
                 <li>$A=\{1,2,\cdots,10^{10}\}$</li>
                 <li>$B=\{a+b\sqrt{2}|\quad a,b \in \mathbb{Q}\}$</li>
-                <li>$C=\{(X,Y) \in \mathbb{R}^2 |\quad x^2+y^2 \leq 1\}$</li>
+                <li>$C=\{(X,Y) \in \mathbb{R}^2 |\quad x^2+y^2 \leq 1\}$.</li>
             </ol></p>
 			
 			<hr /><br />
@@ -137,11 +137,11 @@
 			<p>In this problem our goal is to show that sets that are not in the form of intervals 
 			may also be uncountable. In particular, consider the set $A$ defined as the set of 
 			all subsets of $\mathbb{N}$:
-			$$A=\{B: B \subset \mathbb{N}\}$$
+			$$A=\{B: B \subset \mathbb{N}\}.$$
 			We usually denote this set by $A=2^\mathbb{N}$.
 			<ol type="a">
                 <li>Show that $2^\mathbb{N}$ is in one-to-one correspondence with the set of all (infinite) binary sequences:
-				$$C=\{b_1,b_2,b_3,\cdots|\quad b_i \in \{0,1\}\}$$</li>
+				$$C=\{b_1,b_2,b_3,\cdots|\quad b_i \in \{0,1\}\}.$$</li>
 				<li>Show that $C$ is in one-to-one correspondence with $[0,1]$.</li>
             </ol>
 			From (a) and (b) we conclude that the set $2^\mathbb{N}$ is uncountable.</p>
@@ -161,18 +161,18 @@
             </tr>
             <tr>
               <td></td>
-              <td>$= \{(H,H,H),(H,H,T),\cdots,(T,T,T)\}$</td>
+              <td>$= \{(H,H,H),(H,H,T),\cdots,(T,T,T)\}$.</td>
             </tr>
             </table><br>
 			Consider the following function
-			$$f: \{H,T\}^3 \longrightarrow \mathbb{N}$$
+			$$f: \{H,T\}^3 \longrightarrow \mathbb{N}.$$
 			Defined as
-			$$f(x)=\text{the number of H's in x}$$
+			$$f(x)=\text{the number of H's in x}.$$
 			For example,
-			$$f(HTH)=2$$
+			$$f(HTH)=2.$$
 			<ol type="a">
-                <li>Determine the domain and co-domain for $f$</li>
-                <li>Find range of $f$:Range($f$)</li>
+                <li>Determine the domain and co-domain for $f$.</li>
+                <li>Find range of $f$:Range($f$).</li>
                 <li>If we know $f(x)=2$, what can we say about $x$?</li>
             </ol></p>
 			
@@ -180,7 +180,7 @@
 			<span class='problem'>Problem </span><br>
 			<p>Two teams $A$ and $B$ play a soccer match, and we are interested in the winner. 
 			The sample space can be defined as
-			$$S=\{a,b,d\}$$
+			$$S=\{a,b,d\},$$
 			where $a$ shows the outcome that $A$ wins, $b$ shows the outcome that $B$ wins, and $d$ 
 			shows the outcome that they draw. Suppose that we know that (1) the probability that $A$ 
 			wins is $P(a)=P(\{a\})=0.5$ (2) the probability of a draw is $P(d)=P(\{d\})=0.25$.
@@ -204,7 +204,7 @@
 			
 			<hr /><br />
 			<span class='problem'>Problem </span>*<br>
-			<p>I roll a fair dice twice and obtain two numbers. $X_1=$ result of the first roll, 
+			<p>I roll a fair dice twice and obtain two numbers: $X_1=$ result of the first roll, 
 			$X_2=$ result of the second roll.
 			<ol type="a">
                 <li>Find the probability that $X_2=4$.</li>
@@ -217,7 +217,7 @@
 			<p>Consider a random experiment with a sample space.
 			$$S=\{1,2,3,\cdots\}$$
  			Suppose that we know:
-			$$P(k)=P(\{k\})=\frac{c}{3^k} \quad \textrm{for} \quad k=1,2,\cdots$$
+			$$P(k)=P(\{k\})=\frac{c}{3^k} \quad \textrm{for} \quad k=1,2,\cdots,$$
 			where $c$ is a constant number.
 			<ol type="a">
                 <li>Find $c$.</li>
@@ -263,19 +263,19 @@
 				$$P\left(\bigcup_{i=1}^{\infty}A_i\right)=\lim_{n\rightarrow \infty}P(A_i)$$</li><br>
 				<li>Using part(a), show that if $A_1,A_2,\cdots$ is a decreasing sequence of events, i.e.,
 				$$A_1 \supset A_2 \supset A_3 \supset \cdots$$
-				then
-				$$P\left(\bigcap_{i=1}^{\infty}A_i\right)=\lim_{n\rightarrow \infty}P(A_i)$$</li>
+				Then
+				$$P\left(\bigcap_{i=1}^{\infty}A_i\right)=\lim_{n\rightarrow \infty}P(A_i).$$</li>
             </ol> </p>
 			
 			<hr /><br />
 			<span class='problem'>Problem </span>** (continuity of probability)<br>
-			<p>For any sequence of events $A_1,A_2,A_3,\cdots$. Prove
+			<p>For any sequence of events $A_1,A_2,A_3,\cdots$, prove
 			$$P\left(\bigcup_{i=1}^{\infty}A_i \right)=\lim_{n\rightarrow\infty}P\left(\bigcup_{i=1}^{n}A_i \right)$$
-			$$P\left(\bigcap_{i=1}^{\infty}A_i \right)=\lim_{n\rightarrow\infty}P\left(\bigcap_{i=1}^{n}A_i \right)$$</p>
+			$$P\left(\bigcap_{i=1}^{\infty}A_i \right)=\lim_{n\rightarrow\infty}P\left(\bigcap_{i=1}^{n}A_i \right).$$</p>
 			
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
-			<p>Suppose that of all the customers at a coffee shop:
+			<p>Suppose that, of all the customers at a coffee shop,
 			<ul>
                 <li>$70\%$ purchase a cup of coffee.</li>
                 <li>$40\%$ purchase a piece of cake.</li>
@@ -286,7 +286,7 @@
 			
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
-			<p>Let $A,B$, and $C$ be three events with probabilities given:<br>
+			<p>Let $A,B$, and $C$ be three events with probabilities given below:<br>
 			<img src="images/chapter1/3.png" width="250" height="210" alt="23" title="23" border="0" /><br>
 			<ol type="a">
                 <li>Find $P(A|B)$</li>
@@ -324,9 +324,9 @@
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Consider a communication system. At any given time, the communication channel is in 
-			good condition with probability $0.8$ and is in bad condition with probability $0.2$. 
+			good condition with probability $0.8$, and is in bad condition with probability $0.2$. 
 			An error occurs in a transmission with probability $0.1$ if the channel is in good 
-			condition and with probability $0.3$ if the channel is in bad condition. Let $G$ be 
+			condition, and with probability $0.3$ if the channel is in bad condition. Let $G$ be 
 			the event that the channel is in good condition and $E$ be the event that there is 
 			an error in transmission.
 			<ol type="a">
@@ -370,8 +370,8 @@
 			
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
-			<p>You choose a point $(X,Y)$ uniformly at random in the unit square.
-			$$S=\{(x,y) \in \mathbb{R}^2: 0 \leq x \leq 1, 0 \leq y \leq 1\}$$
+			<p>You choose a point $(X,Y)$ uniformly at random in the unit square
+			$$S=\{(x,y) \in \mathbb{R}^2: 0 \leq x \leq 1, 0 \leq y \leq 1\}.$$
 			Let $A$ be the event $\{(x,y) \in S:|x-y| \leq \frac{1}{2}\}$ and $B$ be the event 
 			$\{(x,y) \in S: y\geq x\}$.
 			<ol type="a">
@@ -410,7 +410,7 @@
 			<hr /><br />
 			<span class='problem'>Problem </span>* <a href="http://en.wikipedia.org/wiki/Monty_Hall_problem">(The Monty Hall Problem)</a><br>
 			<p>You are in a game show, and the host gives you the choice of three doors. Behind one door is a car and 
-			behind the others are goats. You pick a door, say door $1$. The host who knows what is behind the doors 
+			behind the others are goats. You pick a door, say Door $1$. The host who knows what is behind the doors 
 			opens a different door and reveals a goat (the host can always open such a door because there is only 
 			one door behind which is a car). The host then asks you: "Do you want to switch?" The question is, 
 			is it to your advantage to switch your choice?</p>

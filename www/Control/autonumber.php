@@ -116,7 +116,7 @@
 //		}
 		$files = glob($phpDir . '*.php');
 		if(count($files)==0) {
-			echo "No files found in $phpDir.<br/>";
+		//	echo "No files found in $phpDir.<br/>";
 		}
 		$dom = new domDocument;	
 		foreach($files as $file)	{

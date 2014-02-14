@@ -1,5 +1,5 @@
 
-var htmlText = '<div id="menuButton">Open Menu</div>';
+var htmlText = '<div id="menuButton" style="display:none;">Open Menu</div>';
 htmlText += '<span id="hiddenMenu">';
 htmlText += '<ul>';
 htmlText += '	<li><a>1 Basic Concepts</a>';
