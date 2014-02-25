@@ -152,7 +152,7 @@ htmlText += '		</ul>';
 htmlText += '		</li>';
 htmlText += '	</ul>';
 htmlText += '	</li>';
-htmlText += '	<li><a href="bibliography.html">Bibliography</a>';
+htmlText += '	<li><a href="http://bibliography.html">Bibliography</a>';
 htmlText += '	</li>';
 htmlText += '</ul>';
 htmlText += '</span>';
