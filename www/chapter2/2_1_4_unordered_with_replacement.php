@@ -60,7 +60,7 @@
             </ul></p>
 			
 			<p>How can we get the number $6$ without actually listing all the possibilities? One way to think 
-			about this is to note that any of the pairs in the above list can represented by the number of $1$'s, 
+			about this is to note that any of the pairs in the above list can be represented by the number of $1$'s, 
 			$2$'s and $3$'s it contains. That is, if $x_1$ is the number of ones, $x_2$ is the number of twos, 
 			and $x_3$ is the number of threes, we can equivalently represent each pair by a vector $(x_1,x_2,x_3)$, 
 			i.e.,
@@ -141,7 +141,7 @@
 			</div>
 			<hr /><br>
 			
-			<p>Let us know summarize the formulas for the four categories of sampling. Assuming that we have a set 
+			<p>Let's summarize the formulas for the four categories of sampling. Assuming that we have a set 
 			with $n$ elements, and we want to draw $k$ samples from the set, then the total number of ways we 
 			can do this is given by the following table.</p>
 			

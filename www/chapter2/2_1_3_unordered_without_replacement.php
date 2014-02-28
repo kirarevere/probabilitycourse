@@ -211,7 +211,7 @@
 			<hr /><br>
 			
 			<p>Let us now provide another interpretation of ${n \choose k}$. Suppose that we have a group of $n$ people 
-			and we would like to divide them two groups $A$ and $B$ such that group $A$ consists of $n$ people and 
+			and we would like to divide them two groups $A$ and $B$ such that group $A$ consists of $k$ people and 
 			group $B$ consists of $n-k$ people. To do this, we just simply need to choose $k$ people and put them 
 			in group $A$, and whoever is left will be in group $B$. Thus, the total number of ways to do this is 
 			${n \choose k}$.</p>
@@ -437,7 +437,7 @@
 			$$S=\{s_1,s_2, ... ,s_r\}$$
 			Also suppose that $P(s_i)=p_i$ for $i=1,2,...,r$. Then for $n=n_1+n_2+...+n_r$ independent trials of 
 			this experiment, the probability that each $s_i$ appears $n_i$ times is given by
-			$${n \choose n_1,n_2,...,n_r}=\frac{n!}{n_1! n_2! ... n_r!} p_1^{n_1} p_2^{n_2} ... p_r^{n_r}$$</p>
+			$${n \choose n_1,n_2,...,n_r} p_1^{n_1} p_2^{n_2} ... p_r^{n_r} =\frac{n!}{n_1! n_2! ... n_r!} p_1^{n_1} p_2^{n_2} ... p_r^{n_r}$$</p>
 			
 			<hr />
 			<div class="thinblock hide_print">

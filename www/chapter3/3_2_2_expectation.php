@@ -140,7 +140,7 @@
 				 	 <ul>
 					 	 <li>
 						 For the geometric distribution, the range is $R_X=\{1,2,3,... \}$ and the PMF is given by						 
-						 $$P_X(k) = q^{k-1}p,  \hspace{20pt} \text{  for  } k=0,1,2,...$$
+						 $$P_X(k) = q^{k-1}p,  \hspace{20pt} \text{  for  } k=1,2,...$$
 						 where, $0 < p < 1$ and $q=p-1$. Thus, we can write
 						 <table align="center">			
                           <tr>

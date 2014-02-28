@@ -236,7 +236,7 @@
 			 <span class='problem'>Problem </span><br>
 			 <p>Let $X$ be a discrete random variable with the following PMF
               \begin{equation}
-               \nonumber P_X(x) = \left\{
+               \nonumber P_X(k) = \left\{
               \begin{array}{l l}
                  0.5 & \quad \text{for  } k=1\\
                  0.3 & \quad \text{for  } k=2\\
