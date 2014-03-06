@@ -137,7 +137,7 @@
 			
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
-			<p>There are 15 people in a party, including Hannah and Sarah. We divide the 10 people in 3 groups, 
+			<p>There are 15 people in a party, including Hannah and Sarah. We divide the 15 people into 3 groups, 
 			where each group has 5 people. What is the probability that Hannah and Sarah are in the same group?</p>
 			
 			<hr /><br />

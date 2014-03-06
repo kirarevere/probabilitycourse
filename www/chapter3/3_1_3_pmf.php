@@ -53,14 +53,14 @@
 			are interested in knowing the probabilities of $X=x_k$. Note that here, the event $A=\{X=x_k\}$ 
 			is defined as the set of outcomes $s$ in the sample space $S$ for which the corresponding value 
 			of $X$ is equal to $x_k$. In particular,
-			$$A=\{s \in S | X(s)=x_k\}$$
+			$$A=\{s \in S | X(s)=x_k\}.$$
 			The probabilities of events $\{X=x_k\}$ are formally shown by <b>probability mass function (pmf)</b> of $X$.</p>
 			
 			<div style="padding: 15px; border: black 1px solid">
 			<span class='definition'>Definition </span><br>
 			Let $X$ be a discrete random variable with range $R_X=\{x_1,x_2,x_3, ...\}$ (finite or countably infinite). 
 			The function
-			$$P_X(x_k)=\textrm{P}(X=x_k)  \textrm{ for } k=1,2,3,...$$
+			$$P_X(x_k)=\textrm{P}(X=x_k),  \textrm{ for } k=1,2,3,...,$$
 			is called the <i>probability mass function (PMF)</i> of $X$.		
 			</div><br>
 
@@ -83,14 +83,14 @@
 						 Here our sample space is given by
 						 $$S=\{HH,HT,TH,TT\}$$
 						 The number of heads will be $0$, $1$ or $2$. Thus
-						 $$R_X=\{0,1,2\}$$
+						 $$R_X=\{0,1,2\}.$$
 						 Since this is a finite (and thus a countable) set, the random variable $X$ is a discrete random 
 						 variable. Next, we need to find PMF of $X$. The PMF is defined as
-						 $$P_X(k)=P(X=k) \textrm{ for } k=0,1,2$$
+						 $$P_X(k)=P(X=k) \textrm{ for } k=0,1,2.$$
 						 We have
-						 $$P_X(0)=P(X=0)=P(TT)=\frac{1}{4}$$
-						 $$P_X(1) =P(X=1)=P(\{HT,TH\})=\frac{1}{4}+\frac{1}{4}=\frac{1}{2}$$
-						 $$P_X(2)=P(X=2)=P(HH)=\frac{1}{4}$$
+						 $$P_X(0)=P(X=0)=P(TT)=\frac{1}{4},$$
+						 $$P_X(1) =P(X=1)=P(\{HT,TH\})=\frac{1}{4}+\frac{1}{4}=\frac{1}{2},$$
+						 $$P_X(2)=P(X=2)=P(HH)=\frac{1}{4}.$$
 						 </li>
 					 </ul>
 					 </li>
@@ -113,7 +113,7 @@
 			<p>To better visualize the PMF we can plot it. Figure 3.1 shows the PMF of the above 
 			random variable $X$. As we see, the random variable can take three possible values $0,1$ and $2$. 
 			The figure also clearly indicates that the event $X=1$ is twice as likely as the other two possible 
-			values. The Figure can be interpreted in the following way. If we repeat the random experiment 
+			values. The Figure can be interpreted in the following way: If we repeat the random experiment 
 			(tossing a coin twice) a large number of times, then about half of the times we observe $X=1$, 
 			about a quarter of times we observe $X=0$, and about a quarter of times we observe $X=2$.</p>
 			
@@ -148,7 +148,7 @@
 						 $$.  \hspace{50pt} .  \hspace{50pt} . \hspace{50pt} .$$
 						 $$.  \hspace{50pt} .  \hspace{50pt} . \hspace{50pt} .$$
 						 $$.  \hspace{50pt} .  \hspace{50pt} . \hspace{50pt} .$$
-						 $$P_Y(k) =P(Y=k)=P(TT...TH)=(1-p)^{k-1} p$$
+						 $$P_Y(k) =P(Y=k)=P(TT...TH)=(1-p)^{k-1} p.$$
 						 Thus, we can write the PMF of $Y$ in the following way
 						 \begin{equation}
                            \nonumber P_Y(y) = \left\{
@@ -167,8 +167,8 @@
 			<p>Consider a discrete random variable $X$ with Range$(X)=R_X$. Note that by definition the PMF 
 			is a probability measure, so it satisfies all properties of a probability measure. In particular, we have
 			<ul>
-                <li>$0\leq P_X(x) \leq 1$ for all $x$</li>
-                <li>$\sum_{x \in R_X} P_X(x)=1$</li>
+                <li>$0\leq P_X(x) \leq 1$ for all $x$, and</li>
+                <li>$\sum_{x \in R_X} P_X(x)=1$.</li>
             </ul>
 			Also note that for any set $A \subset R_X$, we can find the probability that $X \in A$ using the PMF
 			$$P(X \in A)=\sum_{x \in A} P_X(x)$$</p>
@@ -176,9 +176,9 @@
 			<div style="padding: 15px; border: black 1px solid">
 			Properties of PMF:
 			<ul>
-                <li>$0\leq P_X(x) \leq 1$ for all $x$.</li>
-                <li>$\sum_{x \in R_X} P_X(x)=1$.</li>
-                <li>For any set $A \subset R_X, P(X \in A)=\sum_{x \in A} P_X(x)$.</li>
+                <li>$0\leq P_X(x) \leq 1$ for all $x$;</li>
+                <li>$\sum_{x \in R_X} P_X(x)=1$;</li>
+                <li>for any set $A \subset R_X, P(X \in A)=\sum_{x \in A} P_X(x)$.</li>
             </ul> 
 			</div><br>
 			
@@ -238,7 +238,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{7}{16}$</td>
+                                <td>$=\frac{7}{16}$.</td>
                               </tr>
                               </table><br>
 							  </li>

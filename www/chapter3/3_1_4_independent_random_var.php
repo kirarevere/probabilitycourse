@@ -61,21 +61,21 @@
 			<div style="padding: 15px; border: black 1px solid">
 			<span class='definition'>Definition </span><br>
 			Consider two discrete random variables $X$ and $Y$. We say that $X$ and $Y$ are independent if
-			$$P\bigg(X=x,Y=y\bigg)=P(X=x) P(Y=y) \hspace{20pt} \textrm{ for all } x,y$$
+			$$P\bigg(X=x,Y=y\bigg)=P(X=x) P(Y=y), \hspace{20pt} \textrm{ for all } x,y.$$
 			In general, if two random variables are independent, then  you can write
-			$$P\bigg(X \in A,Y \in B\bigg)=P(X \in A) P(Y \in B) \hspace{20pt} \textrm{ for all sets } A \textrm{ and } B$$
+			$$P\bigg(X \in A,Y \in B\bigg)=P(X \in A) P(Y \in B), \hspace{20pt} \textrm{ for all sets } A \textrm{ and } B.$$
 			</div><br>
 			
 			<p>Intuitively, two random variables $X$ and $Y$ are independent if knowing the value of one of them 
 			does not change the probabilities for the other one. In other words, if $X$ and $Y$ are independent, 
 			we can write
-			$$P(Y=y|X=x)=P(Y=y) \textrm{ for all } x,y$$
+			$$P(Y=y|X=x)=P(Y=y), \textrm{ for all } x,y.$$
 			Similar to independent events, it is sometimes easy to argue that two random variables are independent 
 			simply because they do not have any physical interactions with each other. Here is a simple example: 
 			I toss a coin $2N$ times. Let $X$ be the number of heads that I observe in the first $N$ coin tosses 
 			and let $Y$ be the number of heads that I observe in the second $N$ coin tosses. Since $X$ and $Y$ are 
 			the result of independent coin tosses, the two random variables $X$ and $Y$ are independent. On the 
-			other hand, in other scenarios it might be more complicated to show whether two random variables are 
+			other hand, in other scenarios, it might be more complicated to show whether two random variables are 
 			independent.</p>
 			
 			<hr /><br>
@@ -108,7 +108,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\frac{3}{16}$</td>
+                            <td>$=\frac{3}{16}$.</td>
                           </tr>
                           </table><br>
 						 </li>
@@ -125,7 +125,7 @@
 			Consider $n$ discrete random variables $X_1, X_2, X_3, ...,X_n$. We say that $X_1, X_2, X_3, ...,X_n$ are 
 			independent if
 			$$P\bigg(X_1=x_1, X_2=x_2, ... ,X_n=x_n\bigg)$$
-			$$=P(X_1=x_1) P(X_2=x_2) ... P(X_n=x_n) \hspace{20pt} \textrm{ for all } x_1, x_2,..., x_n$$
+			$$=P(X_1=x_1) P(X_2=x_2) ... P(X_n=x_n), \hspace{20pt} \textrm{ for all } x_1, x_2,..., x_n.$$
 			</div><br>
 
 			<hr />

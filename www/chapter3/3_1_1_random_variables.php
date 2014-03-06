@@ -57,7 +57,7 @@
 			<hr /><br>
 			<span class='example'>Example </span><br>
 			<p>I toss a coin five times. This is a random experiment and the sample space can be written as
-			$$S=\{TTTTT,TTTTH,... , HHHHH\}$$
+			$$S=\{TTTTT,TTTTH,... , HHHHH\}.$$
 			Note that here the sample space $S$ has $2^5=32$ elements. Suppose that in this experiment, we are interested 
 			in the number of heads. We can define a random variable $X$ whose value is the number of observed heads. 
 			The value of $X$ will be one of $0, 1,2,3,4$ or $5$ depending on the outcome of the random experiment.</p>

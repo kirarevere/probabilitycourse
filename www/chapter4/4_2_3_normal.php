@@ -55,9 +55,7 @@
 			variables.</p>
 			
 			<p>We first define the <b>standard normal random variable</b>. We will then see that we can obtain other normal 
-			random variables by <i>scaling</i> and <i>shifting</i> a standard normal random variable. This is similar 
-			to <a href="chapter4/4_2_2_exponential.php#lemma5">Lemma 4.1</a> which stated that we 
-			can obtain any exponential random variable by scaling an $Exponential(1)$ random variable.</p>
+			random variables by <i>scaling</i> and <i>shifting</i> a standard normal random variable. </p>
 			
 			<div style="padding: 15px; border: black 1px solid">
 			A continuous random variable $Z$ is said to be a <i>standard normal (standard Gaussian)</i> random variable, 

@@ -128,6 +128,26 @@
 
 			<span class='problem'>Problem </span><br />
 			<p>
+				Let $X \sim Exponential (\lambda)$, and $Y=a X$, where $a$ is a positive real number.  Show that 
+				$$Y \sim Exponential(\frac{\lambda}{a}).$$
+			</p>
+			<hr /><br />
+			
+			
+			<span class='problem'>Problem </span><br />
+			<p>
+				 Let $X \sim Exponential (\lambda)$. Show that
+				<ol type="a">
+					<li>$EX^n=\frac{n}{\lambda} EX^{n-1}$, for $n=1,2,3,\cdots$.</li>
+					<li>$EX^n=\frac{n!}{\lambda^{\large{n}}}$.</li>
+				</ol>
+			</p>
+			<hr /><br />
+			
+			
+			
+			<span class='problem'>Problem </span><br />
+			<p>
 				Let $X \sim N(3,9)$.
 				<ol type="a">
 					<li>Find $P(X &gt; 0)$.</li>
@@ -136,6 +156,12 @@
 				</ol>
 			</p>
 			<hr /><br />
+			
+			
+			
+			
+			
+			
 
 			<span class='problem'>Problem </span><br />
 			<p>

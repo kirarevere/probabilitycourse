@@ -82,81 +82,54 @@
 			$$F_X(x) = \int_{0}^{x} \lambda e^{-\lambda t}dt=1-e^{-\lambda x}.$$
 			So we can express the CDF as
 			$$F_X(x) = \big(1-e^{-\lambda x}\big)u(x).$$
-			Before going further, let us state a lemma that will make our calculations a little bit easier.</p>
 			
-			<span class='lemma'>Lemma </span><br>
-			<a name="lemma5"></a>
-			<p>If $Y \sim Exponential (1)$ and $X=\frac{Y}{\lambda}$, then $X \sim Exponential(\lambda)$.</p>
 			
-			<i>Proof</i><br>
-			<p>Since $Y \sim Exponential (1)$, we have $F_Y(y) = \big(1-e^{-y}\big)u(y)$. To show $X\sim Exponential(\lambda)$, 
-			it suffices to show that
-			$$F_X(x) = \big(1-e^{-\lambda x}\big)u(x).$$
-			We have
+			<p>Let $X \sim Exponential (\lambda)$. We can find its expected value as follows, using integration by parts:
 			<table align="center">			
             <tr>
-              <td>$F_X(x)$</td>
-              <td>$=P(X \leq x)$</td>
+              <td>$EX$</td>
+              <td>$= \int_{0}^{\infty} x \lambda  e^{- \lambda x}dx$</td>
             </tr>
+			<tr>
+              <td></td>
+              <td>$= \frac{1}{\lambda} \int_{0}^{\infty} y e^{- y}dy$</td>
+			  <td>$\textrm{choosing $y=\lambda x$}$</td>
+            </tr>
+			<tr>
             <tr>
               <td></td>
-              <td>$=P\left(\frac{Y}{\lambda} \leq x\right)$</td>
+              <td>$= \frac{1}{\lambda} \bigg[-e^{-y}-ye^{-y} \bigg]_{0}^{\infty}$</td>
             </tr>
 			<tr>
               <td></td>
-              <td>$= P(Y \leq \lambda x)$</td>
-            </tr>
-			<tr>
-              <td></td>
-              <td>$=\big(1-e^{-\lambda x}\big)u(\lambda x)$</td>
-            </tr>
-			<tr>
-              <td></td>
-              <td>$=\big(1-e^{-\lambda x}\big)u(x).$</td>
+              <td>$=\frac{1}{\lambda}.$</td>
             </tr>
             </table><br></p>
 			
-			<p>This lemma states that we can obtain any exponential random variable by simply scaling an $Exponential(1)$ random 
-			variable. This lemma makes things a little easier since we can work with the $Exponential (1)$ distribution, 
-			which has a simpler form, and then convert the results to apply to the general $Exponential (\lambda)$ distribution. 
-			We will use this approach to find the mean and variance of a random variable with the exponential distribution.</p>
-			
-			<p>Let $Y \sim Exponential (1)$. We can find its expected value as follows, using integration by parts:
+			<p>Now let's find Var$(X)$. We have
 			<table align="center">			
             <tr>
-              <td>$EY$</td>
-              <td>$= \int_{0}^{\infty} y e^{- y}dy$</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>$= \bigg[-e^{-y}-ye^{-y} \bigg]_{0}^{\infty}$</td>
+              <td>$EX^2$</td>
+              <td>$= \int_{0}^{\infty} x^2 \lambda e^{- \lambda x}dx$</td>
             </tr>
 			<tr>
               <td></td>
-              <td>$=1.$</td>
+              <td>$= \frac{1}{\lambda^2} \int_{0}^{\infty} y^2 e^{- y}dy$</td>
             </tr>
-            </table><br></p>
-			
-			<p>Now let's find Var$(Y)$. We have
-			<table align="center">			
-            <tr>
-              <td>$EY^2$</td>
-              <td>$= \int_{0}^{\infty} y^2 e^{- y}dy$</td>
-            </tr>
+			<tr>
             <tr>
               <td></td>
-              <td>$= \bigg[-2e^{-y}-2ye^{-y}-y^2e^{-y} \bigg]_{0}^{\infty}$</td>
+              <td>$= \frac{1}{\lambda^2} \bigg[-2e^{-y}-2ye^{-y}-y^2e^{-y} \bigg]_{0}^{\infty}$</td>
             </tr>
 			<tr>
               <td></td>
-              <td>$=2.$</td>
+              <td>$=\frac{2}{\lambda^2}.$</td>
             </tr>
             </table><br></p>
 			
 			<p>Thus, we obtain
-			$$\textrm{Var} (Y)=EY^2-(EY)^2=2-1=1.$$
-			Now, if $X=\frac{Y}{\lambda}$, then we have $EX=\frac{EY}{\lambda}$ and Var$(X)=\frac{\textrm{Var}(Y)}{\lambda^2}$, 
-			so we have the following:</p>
+			$$\textrm{Var} (X)=EX^2-(EX)^2=\frac{2}{\lambda^2}-\frac{1}{\lambda^2}=\frac{1}{\lambda^2}.$$
+			
 			
 			<div align="center" style="padding: 15px; border: black 1px solid">
 			If $X \sim Exponential(\lambda)$, then $EX=\frac{1}{\lambda}$ and Var$(X)=\frac{1}{\lambda^2}$.

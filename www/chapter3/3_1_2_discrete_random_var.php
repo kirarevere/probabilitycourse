@@ -52,8 +52,8 @@
 			
 			<p>Remember that a set $A$ is countable if either
 			<ul>
-                <li>$A$ is a finite set such as $\{1,2,3,4\}$,</li>
-                <li>or it can be put in one-to-one correspondence with natural numbers (in this case the set is said to be countably infinite)</li>
+                <li>$A$ is a finite set such as $\{1,2,3,4\}$, or</li>
+                <li>it can be put in one-to-one correspondence with natural numbers (in this case the set is said to be countably infinite)</li>
             </ul>
 			In particular, as we discussed in Chapter 1, sets such as $\mathbb{N}, \mathbb{Z}, \mathbb{Q}$ and their 
 			subsets are countable, while sets such as nonempty intervals $[a,b]$ in $\mathbb{R}$ are uncountable. 
