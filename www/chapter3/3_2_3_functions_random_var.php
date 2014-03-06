@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Functions of Random Variables | PMF | CDF | Expected Value | Law of the Unconscious Statistician</title>
+	<meta name="description" content="Examples of functions of random variables" />
 
 </head><body>
 	<div id="container">

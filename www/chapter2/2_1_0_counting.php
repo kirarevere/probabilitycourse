@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Counting | Combinatorics | Multiplication Principle | Sampling</title>
+	<meta name="description" content="Finding probability in a finite space is a counting problem" />
 
 </head><body>
 	<div id="container">

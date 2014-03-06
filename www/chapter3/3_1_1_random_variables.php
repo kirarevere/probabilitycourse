@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Random Variables | Analysis | Random Experiments</title>
+	<meta name="description" content="We focus on numerical aspects of an experiment for our analysis" />
 
 </head><body>
 	<div id="container">

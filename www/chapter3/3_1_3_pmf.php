@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Probability Mass Function | PMF</title>
+	<meta name="description" content="Definition of a probability mass function with examples" />
 
 </head><body>
 	<div id="container">

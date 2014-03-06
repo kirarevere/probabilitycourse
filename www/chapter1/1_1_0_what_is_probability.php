@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>What is Probability | Randomness | Uncertainty | Belief</title>
+	<meta name="description" content="Randomness is everywhere. Probability theory helps us understand its effects" />
 
 </head><body>
 	<div id="container">

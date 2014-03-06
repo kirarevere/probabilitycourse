@@ -29,9 +29,9 @@
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
-	<title>Intro to Probability</title>
+	<title>Finding Probabilities</title>
+	<meta name="description" content="Using the axioms of probability and what we know about an event" />
 
 </head><body>
 	<div id="container">

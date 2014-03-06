@@ -23,7 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Unordered Sampling with Replacement | Samples | Counting Methods</title>
+	<meta name="description" content="Sampling where the order does not matter and replacement is allowed" />
 
 </head><body>
 	<div id="container">

@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Probability Density Function | PDF | Distributions</title>
+	<meta name="description" content="Definitions and examples of the Probability Density Function" />
 
 </head><body>
 	<div id="container">

@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Ordered Sampling With Replacement | Samples | Experiments</title>
+	<meta name="description" content="Possible ways to draw samples from a set where repetition is allowed" />
 
 </head><body>
 	<div id="container">

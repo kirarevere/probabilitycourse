@@ -23,8 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
-
+	<title>Ordered Sampling Without Replacement | Permutation | Factorial | Birthday Paradox</title>
+	<meta name="description" content="Drawing samples from a set without replacement" />
 </head><body>
 	<div id="container">
 		<span class="hide_print">

@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Continuous Random Variables</title>
+	<meta name="description" content="Definition and examples of continuous random variables" />
 
 </head><body>
 	<div id="container">

@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Special Distributions | Bernoulli Distribution | Geometric Distribution | Binomial Distribution | Pascal Distribution | Poisson Distribution</title>
+	<meta name="description" content="Definitions and examples for different special distributions" />
 
 </head><body>
 	<div id="container">
