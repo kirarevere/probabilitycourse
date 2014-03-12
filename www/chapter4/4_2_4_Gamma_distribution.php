@@ -106,7 +106,7 @@
 				<br />
 					Figure [x] shows the gamma function for positive real values.
 					<div style="width:400px;">
-					<img style="width:300px;margin: 0 auto;"src="../images/chapter4/gamma-function-color.png" />
+					<img style="display:block;width:300px;margin: 0 auto;"src="../images/chapter4/gamma-function-color.png" />
 					</div>
 				</p>
 				<p>
