@@ -229,11 +229,11 @@
 									We can write
 									$$ 
 										\begin{align*}
-										\int_0^\infty \frac{\lambda^{\alpha} x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx =
-										\\ \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx\\
-										\\ \hspace{20pt} = \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
-										\\ \hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
-										\\ \hspace{0px} = 1.
+										\int_0^\infty \frac{\lambda^{\alpha} x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx &=
+										\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx\\
+										\\ \hspace{20pt} &= \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
+										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
+										\\ \hspace{0px} &= 1.
 										\end{align*}
 									$$
 									<div style="width:100%;text-align:center;">
