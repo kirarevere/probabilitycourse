@@ -113,8 +113,12 @@
 				</p>
 				<p>
 					Note that for $\alpha=1$, we can write
-					$$ \Gamma(1) = \int_0^\infty e^{-x} dx $$
-					$$ = 1 $$
+					$$ 
+					\begin{align*}
+					\Gamma(1) &#38;= \int_0^\infty e^{-x} dx 
+					\\ &#38;= 1 
+					\end{align*}
+					$$
 					Using the change of variable $x = \lambda y$, we can show the following equation that is often useful when working with
 					the gamma distribution:
 					$$ \Gamma(\alpha) = \lambda^{\alpha} \int_0^\infty y^{\alpha-1} e^{-\lambda y} dy \hspace{20pt} \textrm{for } \alpha,\lambda &gt; 0.$$
