@@ -85,7 +85,10 @@
 				<!-- /Video and Print buttons -->
 				<br style="clear:both;" />
 				<hr />
+<!--
 				<span style="display:none;">
+-->
+				<span>
 				<!-- Section Content -->
 				<p>
 					The gamma distribution is another widely used distribution. Its importance is largely due to
