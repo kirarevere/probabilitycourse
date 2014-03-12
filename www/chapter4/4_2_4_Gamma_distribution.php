@@ -174,10 +174,14 @@
 									</li>
 									<li>
 										Using Property 2 with $\alpha = 7$ and $\lambda = 5$, we obtain
-										$$ I = \int_0^\infty x^{6} e^{-5x} dx $$
-										$$ = \frac{\Gamma(7)}{5^7} $$
-										$$ = \frac{6!}{5^7} \hspace{20pt} \textrm{(using Property 4)} $$
-										$$ \approx 0.0092 $$
+										$$ 
+											\begin{align*}
+											I &#38;= \int_0^\infty x^{6} e^{-5x} dx 
+										\\ &#38;= \frac{\Gamma(7)}{5^7} 
+										\\ &#38;= \frac{6!}{5^7} \hspace{20pt} \textrm{(using Property 4)} 
+										\\ &#38;\approx 0.0092 
+										\end{align*}
+										$$
 									</li>
 								</ol>
 							</ul>
