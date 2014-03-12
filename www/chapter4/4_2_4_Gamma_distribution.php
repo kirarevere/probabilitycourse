@@ -284,11 +284,7 @@
 					<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
 				</div>
 				<!-- /footer -->
-<<<<<<< HEAD
         </span>
-=======
-		</span>
->>>>>>> c6671ae62f2c55f3a036fa47c23867a8997673a5
 		</div>
 		<!-- /wrapper div -->
 	</div>
