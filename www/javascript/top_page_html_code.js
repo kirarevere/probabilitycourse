@@ -12,12 +12,12 @@ document.write('<gcse:search></gcse:search></span>');
 }
 
 function writeHeader() {
-var header = '<div id="header">';
+var header = '<div id="header" itemscope itemtype="http://schema.org/book">';
 var google = '<span style="width:400px; float:right;">';
 
 
-var htmlText = '<h1>Introduction to Probability</h1>';
-htmlText += '<p class="description">Hossein Pishro-Nik</p>';
+var htmlText = '<h1 itemprop="name">Introduction to Probability</h1>';
+htmlText += '<p class="description" itemprop="author">Hossein Pishro-Nik</p>';
 htmlText += '</div>';
 htmlText += '<div id="navigation">';
 htmlText += '<ul>';
