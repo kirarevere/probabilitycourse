@@ -212,7 +212,7 @@
 				independent $Exponential(\lambda)$ random variables, then you will get a $Gamma(n,\lambda)$
 				random variable. We will prove this later on using the moment generating function. The gamma
 				distribution is also related to the normal distribution as will be discussed later. Figure 4.10 
-				shows the PDS of the gamma distribution for several values of $\alpha$.<br /><hr />
+				shows the PDF of the gamma distribution for several values of $\alpha$.<br /><hr />
 
 				<span class="example">Example </span><br />
 				Using the properties of the gamma function, show that the gamma PDF integrates to 1, i.e., show
@@ -228,11 +228,13 @@
 								<li>
 									We can write
 									$$ 
+										\begin{align*}
 										\int_0^\infty \frac{\lambda^{\alpha} x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx =
-										\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx\\
-										\hspace{20pt} = \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
-										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
-										\hspace{0px} = 1.
+										\\ \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx\\
+										\\ \hspace{20pt} = \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
+										\\ \hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
+										\\ \hspace{0px} = 1.
+										\end{align*}
 									$$
 									<div style="width:100%;text-align:center;">
 										<img style="margin: 0 auto;width:500px; height: auto; display: block;" src="../images/chapter4/gamma-color.png" />
