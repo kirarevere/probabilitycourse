@@ -105,6 +105,7 @@
 					$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} {\rm d}x, \hspace{20pt} \textrm{for }\alpha&gt;0 $$
 				<br />
 					Figure [x] shows the gamma function for positive real values.
+					<img src="../images/chapter4/gamma-color.png" />
 				</p>
 				<p>
 					Note that for $\alpha=1$, we can write
