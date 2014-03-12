@@ -109,6 +109,7 @@
 					<img style="display:block;width:300px;margin: 0 auto;"src="../images/chapter4/gamma-function-color.png" />
 					Figure 4.9: The Gamma function for some real values of $\alpha$.
 					</div>
+					<br />
 				</p>
 				<p>
 					Note that for $\alpha=1$, we can write
@@ -232,8 +233,9 @@
 										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
 										\hspace{0px} = 1.
 									$$
-									<div style="width:100%;">
+									<div style="width:100%;text-align:center;">
 										<img style="margin: 0 auto;width:500px; height: auto; display: block;" src="../images/chapter4/gamma-color.png" />
+										Figure 4.10: PDF of the gamma distribution for some values of $\alpha$ and $\lambda$.
 									</div>
 								</li>
 							</ul>
