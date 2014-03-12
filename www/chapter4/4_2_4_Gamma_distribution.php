@@ -37,7 +37,7 @@
 </head>
 <body>
 	<!-- Something meaninful -->
-	<div id="container" 
+	<div id="container"> 
 		<!-- Hide when printed -->
 		<span class="hide_print">
 			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
@@ -225,6 +225,7 @@
 										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
 										\hspace{0px} = 1.
 									$$
+									<img src="../images/chapter4/gamma-color.png" />
 								</li>
 							</ul>
 						</li>
