@@ -211,7 +211,7 @@
 				Thus, we conclude $Gamma(1,\lambda) = Exponential(\lambda)$. More generally, if you sum $n$
 				independent $Exponential(\lambda)$ random variables, then you will get a $Gamma(n,\lambda)$
 				random variable. We will prove this later on using the moment generating function. The gamma
-				distribution is also related to the normal distribution as will be discussed later. Figure [x]
+				distribution is also related to the normal distribution as will be discussed later. Figure 4.10 
 				shows the PDS of the gamma distribution for several values of $\alpha$.<br /><hr />
 
 				<span class="example">Example </span><br />
