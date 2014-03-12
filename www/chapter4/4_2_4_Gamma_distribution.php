@@ -131,14 +131,14 @@
 					</h3>
 					For and positive real number $\alpha$:
 					<ol type="1">
-						<li> $\Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} dx$.</li>
-						<li> 
+						<li style="height:75px"> $\Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} dx$.</li>
+						<li style="height:75px"> 
 							$\int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx = \frac{\Gamma(\alpha)}{\lambda^{\alpha}}, 
 							\hspace{20pt} \textrm{for } \lambda &gt; 0.$
 						</li>
-						<li> $\Gamma(\alpha + 1) = \alpha \Gamma(\alpha).$ </li>
-						<li> $\Gamma(n) = (n - 1)!, \textrm{ for } n = 1,2,3,\cdots .$</li>
-						<li> $\Gamma(\frac{1}{2}) = \sqrt{\pi}$</li>
+						<li style="height:75px"> $\Gamma(\alpha + 1) = \alpha \Gamma(\alpha).$ </li>
+						<li style="height:75px"> $\Gamma(n) = (n - 1)!, \textrm{ for } n = 1,2,3,\cdots .$</li>
+						<li style="height:75px"> $\Gamma(\frac{1}{2}) = \sqrt{\pi}$</li>
 					</ol>
 				</div>
 				<!-- /Properties of gamma function -->
