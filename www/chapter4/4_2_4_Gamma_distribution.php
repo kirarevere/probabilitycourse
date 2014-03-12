@@ -104,9 +104,10 @@
 					More generally, for any positive real number $\alpha$, $\Gamma(\alpha)$ is defined as
 					$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} {\rm d}x, \hspace{20pt} \textrm{for }\alpha&gt;0 $$
 				<br />
-					Figure [x] shows the gamma function for positive real values.
+					Figure 4.9 shows the gamma function for positive real values.
 					<div style="width:100%;">
 					<img style="display:block;width:300px;margin: 0 auto;"src="../images/chapter4/gamma-function-color.png" />
+					Figure 4.9: The Gamma function for some real values of $\alpha$.
 					</div>
 				</p>
 				<p>
