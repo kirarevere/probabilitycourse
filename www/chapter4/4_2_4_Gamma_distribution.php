@@ -162,11 +162,13 @@
 								<ol type="1">
 									<li> 
 										To find $\Gamma(\frac{7}{2}),$ we can write
-										$$ \Gamma(\frac{7}{2}) = \frac{5}{2} \cdot \Gamma(\frac{5}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
-										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \Gamma(\frac{3}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
-										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \Gamma(\frac{1}{2}) \textrm{(using Property 3)}$$
-										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \sqrt{\pi} \hspace{20pt} \textrm{(using Property 5)}$$
-										$$ = \frac{15}{8} \sqrt{\pi}.$$
+										$$ \begin{align*}
+										$$ \Gamma(\frac{7}{2}) &#38;= \frac{5}{2} \cdot \Gamma(\frac{5}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
+										$$ &#38;= \frac{5}{2} \cdot \frac{3}{2} \cdot \Gamma(\frac{3}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
+										$$ &#38;= \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \Gamma(\frac{1}{2}) \textrm{(using Property 3)}$$
+										$$ &#38;= \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \sqrt{\pi} \hspace{20pt} \textrm{(using Property 5)}$$
+										$$ &#38;= \frac{15}{8} \sqrt{\pi}.$$
+										$$ \end{align*}
 									</li>
 									<li>
 										Using Property 2 with $\alpha = 7$ and $\lambda = 5$, we obtain
@@ -229,11 +231,11 @@
 									We can write
 									$$ 
 										\begin{align*}
-										\int_0^\infty \frac{\lambda^{\alpha} x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx &=
+										\int_0^\infty \frac{\lambda^{\alpha} x^{\alpha - 1} e^{-\lambda x}}{\Gamma(\alpha)} dx &#38;=
 										\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} dx\\
-										\\ \hspace{20pt} &= \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
+										\\ \hspace{20pt} &#38;= \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
 										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
-										\\ \hspace{0px} &= 1.
+										\\ \hspace{0px} &#38;= 1.
 										\end{align*}
 									$$
 									<div style="width:100%;text-align:center;">
