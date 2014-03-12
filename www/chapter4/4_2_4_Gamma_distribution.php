@@ -228,7 +228,7 @@
 										\hspace{20pt} \textrm{(using Property 2 of the gamma function)}\\
 										\hspace{0px} = 1.
 									$$
-									<img src="../images/chapter4/gamma-color.png" />
+									<img style="width:400px; height: auto" src="../images/chapter4/gamma-color.png" />
 								</li>
 							</ul>
 						</li>
