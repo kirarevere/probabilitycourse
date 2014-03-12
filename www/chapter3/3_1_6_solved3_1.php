@@ -61,7 +61,7 @@
                 <li>Find $R_X$, the range of the random variable $X$.</li>
                 <li>Find $P(X\leq 0.5)$.</li>
                 <li>Find $P( 0.25 < X < 0.75)$.</li>
-                <li>Find $P(X=0.2 | X < 0.6)$</li>
+                <li>Find $P(X=0.2 | X < 0.6)$.</li>
             </ol> </p>
 			<div class="solvedprob">
 				 <ul>
@@ -71,7 +71,7 @@
 						 <ol type="a">
 						 	 <li>The range of $X$ can be found from the PMF. The range of $X$ consists of possible 
 							 values for $X$. Here we have
-							 $$R_X=\{0.2, 0.4, 0.5, 0.8, 1\}$$
+							 $$R_X=\{0.2, 0.4, 0.5, 0.8, 1\}.$$
 							 </li>
 							 <li>The event $X\leq 0.5$ can happen only if $X$ is $0.2, 0.4,$ or $0.5$. Thus,
 							 <table align="center">			
@@ -183,7 +183,7 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=\frac{1}{6} \cdot \frac{1}{6}=\frac{1}{36}$</td>
+                                <td>$=\frac{1}{6} \cdot \frac{1}{6}=\frac{1}{36}$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -200,7 +200,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\frac{1}{2}$</td>
+                                <td>$=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\frac{1}{2}$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -237,10 +237,10 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=3 \cdot \frac{1}{36}=\frac{1}{12}$</td>
+                                <td>$=3 \cdot \frac{1}{36}=\frac{1}{12}$.</td>
                               </tr>
                               </table><br>
-							  And we can continue similarly:
+							  We can continue similarly:
 							  <table align="center">			
                               <tr>
                                 <td>$P_Z(5)$</td>
@@ -272,7 +272,7 @@
                               </tr>
                               <tr>
                                 <td>$P_Z(12)$</td>
-                                <td>$=\frac{1}{36}$</td>
+                                <td>$=\frac{1}{36}$.</td>
                               </tr>
                               </table><br>
 							  It is always a good idea to check our answers by verifying that $\sum_{z \in R_Z} P_Z(z)=1$. 
@@ -288,7 +288,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=1$</td>
+                                <td>$=1$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -314,7 +314,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{1}{5}$</td>
+                                <td>$=\frac{1}{5}$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -357,7 +357,7 @@
 			<span class='problem'>Problem </span><br>
 			<p>You take a exam that contains $20$ multiple-choice questions. Each question has $4$ possible options. 
 			You know the answer to $10$ questions, but you have no idea about the other $10$ questions so you 
-			choose answers randomly. Your score $X$ in the exam is the total number of correct answers. 
+			choose answers randomly. Your score $X$ on the exam is the total number of correct answers. 
 			Find PMF of $X$. What is $P(X>15)$?</p>
 			<div class="solvedprob">
 				 <ul>
@@ -392,7 +392,7 @@
                           </tr>
                           <tr>
                             <td></td>
-                            <td>$=P(Y=1)={10 \choose 1}\left(\frac{1}{4}\right)^1\left(\frac{3}{4}\right)^{10-1}=10\frac{1}{4}\left(\frac{3}{4}\right)^{9}$</td>
+                            <td>$=P(Y=1)={10 \choose 1}\left(\frac{1}{4}\right)^1\left(\frac{3}{4}\right)^{10-1}=10\frac{1}{4}\left(\frac{3}{4}\right)^{9}$.</td>
                           </tr>
                           </table><br>
 						  So, you get the idea. In general for $k \in R_X=\{10,11,12,...,20\}$,
@@ -403,7 +403,7 @@
                           </tr>
                           <tr>
                             <td></td>
-                            <td>$=P(Y=k-10)={10 \choose k-10}\left(\frac{1}{4}\right)^{k-10}\left(\frac{3}{4}\right)^{20-k}$</td>
+                            <td>$=P(Y=k-10)={10 \choose k-10}\left(\frac{1}{4}\right)^{k-10}\left(\frac{3}{4}\right)^{20-k}$.</td>
                           </tr>
                           </table><br>
 						  To summarize,
@@ -547,7 +547,7 @@
 						  <tr>
                             <td></td>
                             <td>$=\frac{e^{-(\alpha+\beta)}}{k!}(\alpha+\beta)^k$</td>
-							<td>$\textrm{(by the binomial theorem)}$</td>
+							<td>$\textrm{(by the binomial theorem)}$.</td>
                           </tr>
                           </table><br>
 						  Thus, we conclude that $Z \sim Poisson(\alpha+\beta)$.
@@ -581,7 +581,7 @@
 				 	 <li><a><b>Solution</b></a>
 				 	 <ul>
 					 	 <li>
-						 Here the random variable $Y$ is a function of the random variable $X$. This means that 
+						 Here, the random variable $Y$ is a function of the random variable $X$. This means that 
 						 we perform the random experiment and obtain $X=x$, and then the value of $Y$ is 
 						 determined as $Y=(x+1)^2$. Since $X$ is a random variable, $Y$ is also a random 
 						 variable.
@@ -594,7 +594,7 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=\{0,1,4,9\}$</td>
+                                <td>$=\{0,1,4,9\}$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -635,7 +635,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=P(X=2)= \frac{1}{4}$</td>
+                                <td>$=P(X=2)= \frac{1}{4}$.</td>
                               </tr>
                               </table><br>
 							   Again, it is always a good idea to check that $\sum_{y \in R_Y} P_Y(y)=1$. We have

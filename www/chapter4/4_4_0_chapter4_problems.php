@@ -90,8 +90,8 @@
 					\end{array} \right.
 					\end{equation}
 				<ol type="a">
-					<li>Find $E(X^{n})$.</li>
-					<li>Find variance of $X$.</li>
+					<li>Find $E(X^{n})$, for $n=1,2,3,\cdots$.</li>
+					<li>Find the variance of $X$.</li>
 				</ol>
 			</p>
 			<hr /><br />
@@ -113,7 +113,7 @@
 				\begin{equation}
 					\nonumber f_X(x) = \left\{
 					\begin{array}{l l}
-						\frac{1}{32}x^{4} & \quad 0 &lt; x \leq 2 \\	
+						\frac{5}{32}x^{4} & \quad 0 &lt; x \leq 2 \\	
 						0 & \quad otherwise
 					\end{array} \right.
 					\end{equation}
@@ -139,7 +139,7 @@
 				 Let $X \sim Exponential (\lambda)$. Show that
 				<ol type="a">
 					<li>$EX^n=\frac{n}{\lambda} EX^{n-1}$, for $n=1,2,3,\cdots$.</li>
-					<li>$EX^n=\frac{n!}{\lambda^{\large{n}}}$.</li>
+					<li>$EX^n=\frac{n!}{\lambda^{\large{n}}}$, for $n=1,2,3,\cdots$.</li>
 				</ol>
 			</p>
 			<hr /><br />
@@ -383,7 +383,7 @@
 					Let $Z \sim N(0,1)$. If we define $X = e^{\sigma Z+\mu}$, then we say that $X$ has a log-normal distribution with parameters
 					$\mu$ and $\sigma$, and we write $X \sim LogNormal(\mu,\sigma)$.
 					<ol type="a">
-						<li>If $X \sim LogNormal(\mu,\sigma)$, find the CDF of $X$ in terms of the $\phi$ function.</li>
+						<li>If $X \sim LogNormal(\mu,\sigma)$, find the CDF of $X$ in terms of the $\Phi$ function.</li>
 						<li>Find $EX$ and $Var(X)$.</li>
 					</ol>
 				</p>

@@ -46,7 +46,8 @@
 			
 			<span class='problem'>Problem </span><br>
 			<p>A coffee shop has $4$ different types of coffee. You can order your coffee in a small, medium, 
-			or large cup. You can also choose whether you want to add cream, sugar, or milk. In how many ways 
+			or large cup. You can also choose whether you want to add cream, sugar, or milk 
+			(any combination is possible, for example, you can choose to add all three). In how many ways 
 			can you order your coffee?</p>
 			
 			<hr /><br />

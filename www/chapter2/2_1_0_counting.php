@@ -227,10 +227,9 @@
                 </ul>
 				
 				<p>We will discuss each of these in detail and indeed will provide a formula for each. The formulas will 
-				be summarized at the end in <a href="http://probabilitycourse.com/chapter2/2_1_4_unordered_with_replacement.php#table2_1">Table 2.1</a>, 
-				but we would like to emphasize that the best approach here 
-				is to understand how to derive these formulas. You do not actually need to memorize them if you understand 
-				they way they are obtained, and the best way to learn this material is to solve a lot of problems.</p>			
+				be summarized at the end in <a href="http://probabilitycourse.com/chapter2/2_1_4_unordered_with_replacement.php#table2_1">Table 2.1</a>. 
+				Nevertheless, the best approach here is to understand how to derive these formulas. 
+				You do not actually need to memorize them if you understand the way they are obtained.</p>			
 
 			<hr />
 			<div class="thinblock hide_print">

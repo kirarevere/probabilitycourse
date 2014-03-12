@@ -47,7 +47,7 @@
 			
 			<p>If $X$ is a random variable and $Y=g(X)$, then $Y$ itself is a random variable. Thus, we can talk 
 			about its PMF, CDF, and expected value. First, note that the range of $Y$ can be written as
-			$$R_Y=\{g(x) | x \in R_X \}$$
+			$$R_Y=\{g(x) | x \in R_X \}.$$
 			If we already know the PMF of $X$, to find the PMF of $Y=g(X)$, we can write
 			<table align="center">			
             <tr>
@@ -60,7 +60,7 @@
             </tr>
 			<tr>
               <td></td>
-              <td>$=\sum_{x:g(x)=y} P_X(x)$</td>
+              <td>$=\sum_{x:g(x)=y} P_X(x)$.</td>
             </tr>
             </table><br>
 			Let's look at an example.</p>
@@ -82,7 +82,7 @@
                           </tr>
                           <tr>
                             <td></td>
-                            <td>$=\{0,2,4,6\}$</td>
+                            <td>$=\{0,2,4,6\}$.</td>
                           </tr>
                           </table><br>
 						  To find $P_Y(y)$, we need to find $P(Y=y)$ for $y=0,2,4,6$. We have<br><br>
@@ -121,10 +121,10 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=P(X=3)+P(X=-3)= \frac{1}{5}$</td>
+                            <td>$=P(X=3)+P(X=-3)= \frac{1}{5}$.</td>
                           </tr>
                           </table><br>
-						  so, to summarize
+						  So, to summarize,
 						  \begin{equation}
                              \nonumber P_Y(k) = \left\{
                             \begin{array}{l l}
@@ -180,7 +180,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\frac{\sqrt{2}+1}{5}$</td>
+                            <td>$=\frac{\sqrt{2}+1}{5}$.</td>
                           </tr>
                           </table><br>
 						 </li>
@@ -213,7 +213,7 @@
                           </tr>
                           <tr>
                             <td></td>
-                            <td>$=a EX+ b$</td>
+                            <td>$=a EX+ b$.</td>
                           </tr>
                           </table><br>
 						 </li>

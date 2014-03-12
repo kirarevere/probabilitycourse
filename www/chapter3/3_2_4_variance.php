@@ -80,7 +80,7 @@
 			
 			<div style="padding: 15px; border: black 1px solid">
 			The <b>variance</b> of a random variable $X$, with mean $EX=\mu_X$, is defined as
-			$$\textrm{Var}(X)=E\big[ (X-\mu_X)^2\big]$$
+			$$\textrm{Var}(X)=E\big[ (X-\mu_X)^2\big].$$
 			</div><br>
 			
 			<p>By definition, the variance of $X$ is the average value of $(X-\mu_X)^2$. Since $(X-\mu_X)^2 \geq 0$, 
@@ -89,13 +89,13 @@
 			spread out. On the other hand, a low variance means that the distribution is concentrated around its average.</p>
 			
 			<p>Note that if we did not square the difference between $X$ and its mean, the result would be $0$. That is
-			$$E[X-\mu_X]=EX-E[\mu_X]=\mu_X-\mu_X=0$$
+			$$E[X-\mu_X]=EX-E[\mu_X]=\mu_X-\mu_X=0.$$
 			$X$ is sometimes below its average and sometimes above its average. Thus, $X-\mu_X$ is sometimes 
 			negative and sometimes positive, but on average it is zero.</p>
 			
 			<p>To compute $Var(X)=E\big[ (X-\mu_X)^2\big]$, note that we need to find the expected value of $g(X)=(X-\mu_X)^2$, 
 			so we can use LOTUS. In particular, we can write
-			$$\textrm{Var}(X)=E\big[ (X-\mu_X)^2\big]=\sum_{x_k \in R_X} (x_k-\mu_X)^2 P_X(x_k)$$
+			$$\textrm{Var}(X)=E\big[ (X-\mu_X)^2\big]=\sum_{x_k \in R_X} (x_k-\mu_X)^2 P_X(x_k).$$
 			For example, for $X$ and $Y$ defined in Equations 3.3 and 3.4, we have
 			<table align="center">			
             <tr>
@@ -104,7 +104,7 @@
             </tr>
             <tr>
               <td>$\textrm{Var}(Y)$</td>
-              <td>$=(0-0)^2(1)=0$</td>
+              <td>$=(0-0)^2(1)=0.$</td>
             </tr>
             </table><br>
 			As we expect, $X$ has a very large variance while Var$(Y)=0$.</p>
@@ -115,7 +115,7 @@
 			
 			<div style="padding: 15px; border: black 1px solid">
 			The <b>standard deviation</b> of a random variable $X$ is defined as
-			$$\textrm{SD}(X)= \sigma_X= \sqrt {\textrm{Var}(X)}$$
+			$$\textrm{SD}(X)= \sigma_X= \sqrt {\textrm{Var}(X)}.$$
 			</div><br>
 			
 			<p>The standard deviation of $X$ has the same unit as $X$. For $X$ and $Y$ defined in Equations 3.3 and 3.4, 
@@ -127,7 +127,7 @@
             </tr>
             <tr>
               <td>$\sigma_Y$</td>
-              <td>$=\sqrt{0}=0$</td>
+              <td>$=\sqrt{0}=0$.</td>
             </tr>
             </table><br></p>
 			
@@ -146,7 +146,7 @@
             </tr>
             <tr>
               <td></td>
-              <td>$=E\big[X^2\big]-2E\big[\mu_X X\big]+E\big[\mu_X^2\big] \textrm{   by linearity of expectation}$</td>
+              <td>$=E\big[X^2\big]-2E\big[\mu_X X\big]+E\big[\mu_X^2\big] \textrm{   by linearity of expectation.}$</td>
             </tr>
             </table><br>
 			
@@ -159,13 +159,13 @@
             </tr>
             <tr>
               <td></td>
-              <td>$=E\big[X^2\big]-\mu_X^2$</td>
+              <td>$=E\big[X^2\big]-\mu_X^2$.</td>
             </tr>
             </table><br>
 			
 			Equation 3.5 is usually easier to work with compared to $\textrm{Var}(X)=E\big[ (X-\mu_X)^2\big]$. 
 			To use this equation, we can find $E[X^2]=EX^2$ using LOTUS
-			$$E X^2=\sum_{x_k \in R_X} x_k^2 P_X(x_k)$$
+			$$E X^2=\sum_{x_k \in R_X} x_k^2 P_X(x_k),$$
 			and then subtract $\mu_X^2$ to obtain the variance.</p>
 			
 			<hr /><br>
@@ -178,7 +178,7 @@
 					 	 <li>
 						 We have $R_X=\{1,2,3,4,5,6\}$ and $P_X(k)=\frac{1}{6}$ for $k=1,2,...,6$. Thus, we have
 						 $$EX=1 \cdot \frac{1}{6}+ 2 \cdot \frac{1}{6}+ 3 \cdot \frac{1}{6}+ 4 \cdot \frac{1}{6}+ 5 \cdot \frac{1}{6}+ 6 \cdot \frac{1}{6}=\frac{7}{2}$$
-						 $$EX^2=1 \cdot \frac{1}{6}+ 4\cdot \frac{1}{6}+ 9\cdot \frac{1}{6}+ 16 \cdot \frac{1}{6}+ 25\cdot \frac{1}{6}+ 36 \cdot \frac{1}{6}=\frac{91}{6}$$
+						 $$EX^2=1 \cdot \frac{1}{6}+ 4\cdot \frac{1}{6}+ 9\cdot \frac{1}{6}+ 16 \cdot \frac{1}{6}+ 25\cdot \frac{1}{6}+ 36 \cdot \frac{1}{6}=\frac{91}{6}.$$
 						 Thus
 						 $$\textrm{Var}(X)=E\big[X^2\big]-\big(EX\big)^2=\frac{91}{6}-\left(\frac{7}{2}\right)^2=\frac{91}{6}-\frac{49}{4}\approx 2.92$$
 						 $$\sigma_X= \sqrt {\textrm{Var}(X)}\approx \sqrt{2.92} \approx 1.71$$
@@ -218,11 +218,11 @@
             </tr>
 			<tr>
               <td></td>
-              <td>$=a^2 \textrm{Var}(X)$</td>
+              <td>$=a^2 \textrm{Var}(X)$.</td>
             </tr>
             </table><br></p>
 			
-			<p>From equation 3.6, we conclude that for standard deviation, $\textrm{SD}(aX+b)=|a|\textrm{SD}(X)$. We 
+			<p>From Equation 3.6, we conclude that, for standard deviation, $\textrm{SD}(aX+b)=|a|\textrm{SD}(X)$. We 
 			mentioned that variance is NOT a linear operation. But there is a very important case, in which 
 			variance behaves like a linear operation and that is when we look at sum of independent random variables.</p>
 			
@@ -245,9 +245,9 @@
 					 	 <li>
 						 We know that we can write a $Binomial(n,p)$ random variable as the sum on $n$ <b>independent</b> 
 						 $Bernoulli(p)$ random variables, i.e., $X=X_1+X_2+\cdots+X_n$. Thus, we conclude
-						 $$\textrm{Var}(X)=\textrm{Var}(X_1)+\textrm{Var}(X_2)+\cdots+\textrm{Var}(X_n)$$
+						 $$\textrm{Var}(X)=\textrm{Var}(X_1)+\textrm{Var}(X_2)+\cdots+\textrm{Var}(X_n).$$
 						 If $X_i \sim Bernoulli(p)$, then its variance is
-						 $$\textrm{Var}(X_i)=E[X_i^2]-(EX_i)^2=1^2 \cdot p+0^2 \cdot (1-p)-p^2=p(1-p)$$
+						 $$\textrm{Var}(X_i)=E[X_i^2]-(EX_i)^2=1^2 \cdot p+0^2 \cdot (1-p)-p^2=p(1-p).$$
 						 Thus,
 						 <table align="center">			
                           <tr>
@@ -256,7 +256,7 @@
                           </tr>
                           <tr>
                             <td></td>
-                            <td>$=np(1-p)$</td>
+                            <td>$=np(1-p)$.</td>
                           </tr>
                           </table><br>
 						 </li>

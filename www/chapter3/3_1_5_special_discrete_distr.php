@@ -66,7 +66,7 @@
                 0 & \quad \text{otherwise}
               \end{array} \right.
             \end{equation}
-			then, $X$ is a discrete random variable that can only take one value, i.e., $X=1$ with probability one. 
+			then, $X$ is a discrete random variable that can only take one value, i.e., $X=1$ with a probability of one. 
 			But this is not a very interesting distribution because it is not actually random. Then, you might ask 
 			what is the next simplest discrete distribution. And my answer to that is the <b>Bernoulli</b> distribution. 
 			A Bernoulli random variable is a random variable that can only take two possible values, usually $0$ and 
@@ -234,14 +234,14 @@
 					 	 <li>
 						 Since $X \sim Binomial(n,p)$, we can think of $X$ as the number of heads in $n$ independent 
 						 coin tosses, i.e., we can write
-						 $$X=X_1+X_2+...+X_n$$
+						 $$X=X_1+X_2+...+X_n,$$
 						 where the $X_i$'s are independent $Bernoulli(p)$ random variables. Similarly, since $Y \sim Binomial(m,p)$, 
 						 we can think of $Y$ as the number of heads in $m$ independent coin tosses, i.e., we can write
-						 $$Y=Y_1+Y_2+...+Y_m$$
+						 $$Y=Y_1+Y_2+...+Y_m,$$
 						 where the $Y_j$'s are independent $Bernoulli(p)$ random variables. Thus, the random variable $Z=X+Y$ will 
 						 be the total number of heads in $n+m$ independent coin tosses:
-						 $$Z=X+Y=X_1+X_2+...+X_n+Y_1+Y_2+...+Y_m$$
-						 where the $X_i$'s and $Y_j$'s are independent $Bernoulli(p)$ random variables. Thus, by Lemma 3.1 $Z$ is 
+						 $$Z=X+Y=X_1+X_2+...+X_n+Y_1+Y_2+...+Y_m,$$
+						 where the $X_i$'s and $Y_j$'s are independent $Bernoulli(p)$ random variables. Thus, by Lemma 3.1, $Z$ is 
 						 a binomial random variable with parameters $m+n$ and $p$, i.e., $Binomial(m+n,p)$. Therefore, the PMF 
 						 of $Z$ is
                           \begin{equation}
@@ -296,7 +296,7 @@
 						  <tr>
                             <td></td>
                             <td>$={m+n \choose k} p^{k}(1-p)^{m+n-k}$</td>
-							<td>$\textrm{ (by Example 2.8 (part 3))}$</td>
+							<td>$\textrm{ (by Example 2.8 (part 3)).}$</td>
                           </tr>
                           </table><br>
 						  Thus, we have proved $Z \sim Binomial(m+n,p)$ by directly finding the PMF of $Z$.
@@ -323,17 +323,17 @@
 			find the probability of the event $A=\{X=k\}$, we argue as follows. By definition, event $A$ 
 			can be written as $A=B \cap C$, where
 			<ul>
-                <li>$B$ is the event that we observe $m-1$ heads (successes) in the first $k-1$ trials.</li>
+                <li>$B$ is the event that we observe $m-1$ heads (successes) in the first $k-1$ trials, and</li>
                 <li>$C$ is the event that we observe a heads in the $k$'th trial.</li>
             </ul>
 			Note that $B$ and $C$ are independent events because they are related to different independent 
 			trials (coin tosses). Thus we can write
-			$$P(A)=P( B \cap C)=P(B)P(C)$$
+			$$P(A)=P( B \cap C)=P(B)P(C).$$
 			Now, we have $P(C)=p$. Note also that $P(B)$ is the probability that I observe observe $m-1$ heads 
 			in the $k-1$ coin tosses. This probability is given by the binomial formula, in particular
-			$$P(B)={k-1 \choose m-1} p^{m-1}(1-p)^{\big((k-1)-(m-1)\big)}={k-1 \choose m-1} p^{m-1}(1-p)^{k-m}$$
+			$$P(B)={k-1 \choose m-1} p^{m-1}(1-p)^{\big((k-1)-(m-1)\big)}={k-1 \choose m-1} p^{m-1}(1-p)^{k-m}.$$
 			Thus, we obtain
-			$$P(A)=P( B \cap C)=P(B)P(C)={k-1 \choose m-1} p^{m}(1-p)^{k-m}$$
+			$$P(A)=P( B \cap C)=P(B)P(C)={k-1 \choose m-1} p^{m}(1-p)^{k-m}.$$
 			To summarize, we have the following definition for the Pascal random variable</p>
 			
 			<div style="padding: 15px; border: black 1px solid">
@@ -370,7 +370,7 @@
 			<p>To find $P_X(x)$, note that the total number of ways to choose $k$ marbles from $b+r$ marbles is 
 			${b+r \choose k}$. The total number of ways to choose $x$ blue marbles and $k-x$ red marbles is 
 			${b \choose x} {r \choose k-x}$. Thus, we have
-			$$P_X(x)= \frac{{b \choose x} {r \choose k-x}}{{b+r \choose k}},  \hspace{20pt}  \textrm{ for } x \in R_X$$
+			$$P_X(x)= \frac{{b \choose x} {r \choose k-x}}{{b+r \choose k}},  \hspace{20pt}  \textrm{ for } x \in R_X.$$
 			The following definition summarizes the discussion above.</p>
 			
 			<div style="padding: 15px; border: black 1px solid">
@@ -497,7 +497,7 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=1-e^{-2}-\frac{2e^{-2}}{1!}-\frac{4e^{-2}}{4}-\frac{8e^{-2}}{6}$</td>
+                                <td>$=1-e^{-2}-\frac{2e^{-2}}{1}-\frac{4e^{-2}}{4}-\frac{8e^{-2}}{6}$</td>
                               </tr>
 							  <tr>
                                 <td></td>
@@ -527,7 +527,7 @@
 			<span class='theorem'>Theorem </span><br>
 			<p>Let $X \sim Binomial(n,p=\frac{\lambda}{n})$, where $\lambda>0$ is fixed. Then for any $k \in \{0,1,2,...\}$, 
 			we have
-			$$\lim_{n \rightarrow \infty} P_X(k)=\frac{e^{-\lambda} \lambda^k}{k!}$$</p>
+			$$\lim_{n \rightarrow \infty} P_X(k)=\frac{e^{-\lambda} \lambda^k}{k!}.$$</p>
 			
 			<i>Proof</i><br>
 			We have
@@ -542,7 +542,7 @@
             </tr>
 			<tr>
               <td></td>
-              <td>$= \frac{\lambda^k}{k!} . \lim_{n \rightarrow \infty} \left(\left[ \frac{n(n-1)(n-2)...(n-k+1)}{n^k}\right] \left[ \left(1-\frac{\lambda}{n}\right)^{n}\right]  \left[\left(1-\frac{\lambda}{n}\right)^{-k}\right]\right)$</td>
+              <td>$= \frac{\lambda^k}{k!} . \lim_{n \rightarrow \infty} \left(\left[ \frac{n(n-1)(n-2)...(n-k+1)}{n^k}\right] \left[ \left(1-\frac{\lambda}{n}\right)^{n}\right]  \left[\left(1-\frac{\lambda}{n}\right)^{-k}\right]\right)$.</td>
             </tr>
             </table><br>
 			Note that for a fixed $k$, we have
@@ -554,11 +554,11 @@
               <td>$\lim_{n \rightarrow \infty} \left(1-\frac{\lambda}{n}\right)^{-k}=1$</td>
             </tr>
 			<tr>
-              <td>$\lim_{n \rightarrow \infty}\left(1-\frac{\lambda}{n}\right)^{n}=e^{-\lambda}$</td>
+              <td>$\lim_{n \rightarrow \infty}\left(1-\frac{\lambda}{n}\right)^{n}=e^{-\lambda}$.</td>
             </tr>
             </table><br>
 			Thus, we conclude
-			$$\lim_{n \rightarrow \infty} P_X(k)=\frac{e^{-\lambda} \lambda^k}{k!}$$
+			$$\lim_{n \rightarrow \infty} P_X(k)=\frac{e^{-\lambda} \lambda^k}{k!}.$$
 
 			<hr />
 			<div class="thinblock hide_print">
