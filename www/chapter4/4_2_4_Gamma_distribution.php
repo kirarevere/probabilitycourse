@@ -164,6 +164,7 @@
 										To find $\Gamma(\frac{7}{2}),$ we can write
 										$$ \Gamma(\frac{7}{2}) = \frac{5}{2} \cdot \Gamma(\frac{5}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
 										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \Gamma(\frac{3}{2}) \hspace{20pt} \textrm{(using Property 3)}$$
+										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \Gamma(\frac{1}{2}) \textrm{(using Property 3)}$$
 										$$ = \frac{5}{2} \cdot \frac{3}{2} \cdot \frac{1}{2} \cdot \sqrt{\pi} \hspace{20pt} \textrm{(using Property 5)}$$
 										$$ = \frac{15}{8} \sqrt{\pi}.$$
 									</li>
