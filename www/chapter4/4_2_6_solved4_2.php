@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="http://probabilitycourse.com/javascript/solved_prob.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="print.css" media="print"
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<title>Intro to Probability</title>
 
