@@ -33,7 +33,7 @@
 		<div id="wrapper">
 			<div id="content">
 			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter4/4_2_5_solved4_2.php">previous</a></div>
+				<div class="left"><a>&larr; </a><a href="chapter4/4_2_6_solved4_2.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_3_2_delta_function.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>
@@ -233,7 +233,7 @@
 
 			<hr />
 			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter4/4_2_5_solved4_2.php">previous</a></div>
+				<div class="left"><a>&larr; </a><a href="chapter4/4_2_6_solved4_2.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_3_2_delta_function.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
