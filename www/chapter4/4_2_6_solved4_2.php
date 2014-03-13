@@ -393,7 +393,7 @@
 			</p>
 			<div class='solvedprob'>
 				<ul>
-					<li><a><b>Solution</b></a></li>
+					<li><a><b>Solution</b></a>
 					<ul>
 						<li>
 							<p>
@@ -406,7 +406,7 @@
 							$$
 							</p>
 						</li>
-					</ul>
+					</ul></li>
 				</ul>	
 			</div>
 			<!-- Problem End -->
