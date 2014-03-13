@@ -416,9 +416,10 @@
 							Similarly, we can find $EX^2$:
 							$$
 							\begin{align*}
-							EX^2	&#38;=	\int_0^{\infty} x^2 {\rm d}x																																			\\
-										&#38;=	\frac{\lambda}{\Gamma(\alpha)} \int_0^{\infty} x^2 \cdot x^{\alpha - 1} e^{-\lambda x} {\rm d}x		\\
-										&#38;=	\frac{\lambda}{\Gamma(\alpha)} \int_0^{\infty} x^{\alpha + 1} e^{-\lambda x} {\rm d}x							\\
+							EX^2	&#38;=	\int_0^{\infty} x^2 {\rm d}x																																								\\
+										&#38;=	\int_0^{\infty} x^2 \cdot \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha - 1} e^{-\lambda x} {\rm d}x		\\
+										&#38;=	\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^{\infty} x^2 \cdot x^{\alpha - 1} e^{-\lambda x} {\rm d}x		\\
+										&#38;=	\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^{\infty} x^{\alpha + 1} e^{-\lambda x} {\rm d}x							\\
 										&#38;=	\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \frac{\Gamma(\alpha + 2)}{\lambda^{\alpha + 2}}
 										&#38;\textrm{(using property 2 of the gamma function)}		\\
 										&#38;=	\frac{(\alpha + 1)\Gamma(\alpha + 1)}{\lambda^2 \Gamma(\alpha)}
