@@ -340,7 +340,6 @@
 			<hr /><br>
 			
 			<span class='problem'>Problem </span><br>
-			<p>We have a problem</p>
 			<p>Let $Z \sim N(0,1)$. Prove for all $x \geq 0$,
 			$$\frac{1}{\sqrt{2\pi}} \frac{x}{x^2+1} e^{-\frac{x^2}{2}} \leq P(Z \geq x) \leq \frac{1}{\sqrt{2\pi}} \frac{1}{x} e^{-\frac{x^2}{2}}$$</p>
 			<div class="solvedprob">
@@ -385,13 +384,12 @@
 					 </li>
 				 </ul>
 			</div>
-			ECHO!
 			<hr />
 
 			<!-- Problem Begin -->
 			<span class='problem'>Problem </span><br />
 			<p>
-			Let $X \sim \Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $\var(X)$.
+			Let $X \sim \Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $Var(X)$.
 			</p>
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_5_other_distr.php">previous</a></div>
