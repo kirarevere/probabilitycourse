@@ -179,7 +179,6 @@
 					 </li>
 				 </ul>
 			</div>
-			<hr /><br>
 			
 			<span class='problem'>Problem </span><br>
 			<p>Let $X \sim N(2,4)$ and $Y=3-2X$.
@@ -385,8 +384,68 @@
 					 </li>
 				 </ul>
 			</div>
-
 			<hr />
+
+			<!-- Problem Begin -->
+			<span class='problem'>Problem </span><br />
+			<p>
+			Let $X \sim Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $Var(X)$.
+			</p>
+			<div class='solvedprob'>
+				<ul>
+					<li><a><b>Solution</b></a>
+					<ul>
+						<li>
+							<p>
+							To find $EX$ we can write
+							$$
+							\begin{align*}
+							EX 	&#38;= \int_0^\infty x f_X(x) dx \\
+								 	&#38;= \int_0^\infty x \cdot \frac{\lambda^{\alpha}}{\Gamma{\alpha}} x^{\alpha - 1} e^{-\lambda x} {\rm d}x 		\\
+								 	&#38;= \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^{\infty} x \cdot x^{\alpha - 1} e^{-\lambda x} {\rm d}x 	\\
+								 	&#38;= \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^{\infty} x^{\alpha} e^{-\lambda x} {\rm d}x								\\
+									&#38;= \frac{\lambda^{\alpha}}{\Gamma(\alpha)} \frac{\Gamma(\alpha + 1)}{\lambda^{\alpha + 1}}
+									&#38;\textrm{(using property 2 of the gamma function)}	\\
+									&#38;= \frac{\alpha\Gamma(\alpha)}{\lambda\Gamma(\alpha)} 									
+									&#38;\textrm{(using property 3 of the gamma function)}	\\
+									&#38;= \frac{\alpha}{\lambda}.	
+							\end{align*}
+							$$
+							</p>
+							<p>
+							Similarly, we can find $EX^2$:
+							$$
+							\begin{align*}
+							EX^2	&#38;=	\int_0^{\infty} x^2 {\rm d}x																																								\\
+										&#38;=	\int_0^{\infty} x^2 \cdot \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha - 1} e^{-\lambda x} {\rm d}x		\\
+										&#38;=	\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^{\infty} x^2 \cdot x^{\alpha - 1} e^{-\lambda x} {\rm d}x		\\
+										&#38;=	\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \int_0^{\infty} x^{\alpha + 1} e^{-\lambda x} {\rm d}x							\\
+										&#38;=	\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \frac{\Gamma(\alpha + 2)}{\lambda^{\alpha + 2}}
+										&#38;\textrm{(using property 2 of the gamma function)}		\\
+										&#38;=	\frac{(\alpha + 1)\Gamma(\alpha + 1)}{\lambda^2 \Gamma(\alpha)}
+										&#38;\textrm{(using property 3 of the gamma function)}		\\
+										&#38;=	\frac{(\alpha + 1) \alpha \Gamma(\alpha)}{\lambda^2 \Gamma(\alpha)}
+										&#38;\textrm{(using property 3 of the gamma function)}		\\
+										&#38;= 	\frac{\alpha (\alpha + 1)}{\lambda^2}
+							\end{align*}
+							$$
+							</p>
+							<p>
+							So, we conclude
+							$$
+								\begin{align*}
+									Var(X) 	&#38;= 	EX^2 - (EX)^2			\\
+													&#38;=	\frac{\alpha (\alpha + 1)}{\lambda^2} - \frac{\alpha^2}{\lambda^2}	\\
+													&#38;=	\frac{\alpha}{\lambda^2}.
+								\end{align*}
+							$$
+							</p>
+						</li>
+					</ul></li>
+				</ul>	
+			</div>
+			<!-- Problem End -->
+
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_5_other_distr.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_3_1_mixed.php">next</a><a> &rarr;</a></div>
