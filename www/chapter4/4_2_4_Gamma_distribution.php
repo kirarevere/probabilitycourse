@@ -262,7 +262,7 @@
 				<hr /><br />
 
 				In the solved problems section, we calculate the mean and variance for the gamma distribution. In particular,
-				we find out that if $X ~ Gamma(\alpha,\lambda)$, then
+				we find out that if $X \textasciitilde Gamma(\alpha,\lambda)$, then
 				$$ EX = \frac{\alpha}{\lambda}, \hspace{20pt} Var(X) = \frac{\alpha}{\lambda^2}$$
 				<!-- /Section Content -->
 
