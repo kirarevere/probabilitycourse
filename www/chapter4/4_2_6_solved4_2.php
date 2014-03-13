@@ -340,6 +340,7 @@
 			<hr /><br>
 			
 			<span class='problem'>Problem </span><br>
+			<p>We have a problem</p>
 			<p>Let $Z \sim N(0,1)$. Prove for all $x \geq 0$,
 			$$\frac{1}{\sqrt{2\pi}} \frac{x}{x^2+1} e^{-\frac{x^2}{2}} \leq P(Z \geq x) \leq \frac{1}{\sqrt{2\pi}} \frac{1}{x} e^{-\frac{x^2}{2}}$$</p>
 			<div class="solvedprob">
