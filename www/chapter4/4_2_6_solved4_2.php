@@ -391,6 +391,13 @@
 			<p>
 			Let $X \sim \Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $Var(X)$.
 			</p>
+			<div class='solvedprob'>
+				<ul>
+					<li><a><b>Solution</b></a></li>
+				</ul>	
+			</div>
+			<!-- Problem End -->
+
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_5_other_distr.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_3_1_mixed.php">next</a><a> &rarr;</a></div>
