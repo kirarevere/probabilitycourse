@@ -179,7 +179,6 @@
 					 </li>
 				 </ul>
 			</div>
-			<hr /><br>
 			
 			<span class='problem'>Problem </span><br>
 			<p>Let $X \sim N(2,4)$ and $Y=3-2X$.
@@ -387,6 +386,12 @@
 			</div>
 
 			<hr />
+
+			<!-- Problem Begin -->
+			<span class='problem'>Problem </span><br />
+			<p>
+			Let $X \sim \Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $\var(X)$.
+			</p>
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_2_5_other_distr.php">previous</a></div>
     			<div class="right"><a href="chapter4/4_3_1_mixed.php">next</a><a> &rarr;</a></div>
