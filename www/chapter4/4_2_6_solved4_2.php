@@ -404,7 +404,7 @@
 								 	&#38;= \int_0^\infty x \cdot \frac{\lambda^{\alpha}}{\Gamma{\alpha}} x^{\alpha - 1} e^{-\lambda x} {\rm d}x 		\\
 								 	&#38;= \frac{\lambda^{\alpha}}{\Gamma{\alpha}} \int_0^{\infty} x \cdot x^{\alpha - 1} e^{-\lambda x} {\rm d}x 	\\
 								 	&#38;= \frac{\lambda^{\alpha}}{\Gamma{\alpha}} \int_0^{\infty} x^{\alpha} e^{-\lambda x} {\rm d}x								\\
-									&#38;= \frac{\lambda^{\alpha}{\Gamma{\alpha}} \frac{\Gamma{\alpha + 1}}{\lambda{\alpha + 1}}
+									&#38;= \frac{\lambda^{\alpha}}{\Gamma{\alpha}} \frac{\Gamma{\alpha + 1}}{\lambda{\alpha + 1}}
 							\end{align*}
 							$$
 									&#38;\textrm{(using property 2 of the gamma function)}	\\
