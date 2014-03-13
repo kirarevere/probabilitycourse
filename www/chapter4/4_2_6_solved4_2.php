@@ -430,6 +430,16 @@
 							\end{align*}
 							$$
 							</p>
+							<p>
+							So, we conclude
+							$$
+								\begin{align*}
+									Var(X) 	&#38;= 	EX^2 - (EX)^2			\\
+													&#38;=	\frac{\alpha (\alpha + 1)}{\lambda^2} - \frac{\alpha^2}{\lambda^2}	\\
+													&#38;=	\frac{\alpha}{\lambda^2}.
+								\end{align*}
+							$$
+							</p>
 						</li>
 					</ul></li>
 				</ul>	
