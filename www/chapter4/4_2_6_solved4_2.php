@@ -389,11 +389,24 @@
 			<!-- Problem Begin -->
 			<span class='problem'>Problem </span><br />
 			<p>
-			Let $X \sim \Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $Var(X)$.
+			Let $X \sim Gamma(\alpha,\lambda)$, where $\alpha, \lambda \gt 0$. Find $EX$, and $Var(X)$.
 			</p>
 			<div class='solvedprob'>
 				<ul>
 					<li><a><b>Solution</b></a></li>
+					<ul>
+						<li>
+							<p>
+							To find $EX$ we can write
+							$$
+							\begin{align*}
+							EX &#38;= \int_0^\infty x f_X(x) dx \\
+								 &#38;= \int_0^\infty x \cdot \frac{\lambda^{\alpha}}{\Gamma{\alpha}} x^{\alpha - 1} e^{-\lambda x} {\rm d}x \\
+							\end{align*}
+							$$
+							</p>
+						</li>
+					</ul>
 				</ul>	
 			</div>
 			<!-- Problem End -->
