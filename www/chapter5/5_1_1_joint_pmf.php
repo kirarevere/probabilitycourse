@@ -75,10 +75,10 @@ Let's practice these concepts by looking at an example.
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
 <div style="padding: 20px; margin: 30px 40px;">
-	<table>
+	<table style="empty-cells:show;">
 		<caption>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</caption>
 		<tr>
-
+			<td></td><td>$Y \eq 0$</td><td>$Y \eq 1$</td><td>$Y \eq 2$</td>
 		</tr>
 		<tr>
 	
