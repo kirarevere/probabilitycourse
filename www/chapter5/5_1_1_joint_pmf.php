@@ -15,7 +15,7 @@ The <b>joint probability mass function</b> of two discrete random variables $X$ 
 \nonumber P_{XY}(x,y)=P(X=x, Y=y).
 \end{align}
 </div>
-Note that as usual, the comma means ``and'', so we can write
+Note that as usual, the comma means "and," so we can write
 \begin{align}%\label{}
 \nonumber P_{XY}(x,y)&=P(X=x, Y=y) \\
 \nonumber &= P\big((X=x)\textrm{ and }(Y=y)\big).
@@ -24,6 +24,33 @@ We can define the joint range for $X$ and $Y$ as
 \begin{align}%\label{}
 \nonumber R_{XY}=\{(x,y) | P_{XY}(x,y)>0\}.
 \end{align}
+In particular, if $R_X=\{x_1,x_2,... \}$ and $R_Y=\{y_1,y_2,...\}$, then we can always write
+\begin{align}%\label{}
+\nonumber R_{XY} & \subset R_X \times R_Y \\
+\nonumber &= \{(x_i,y_j) | x_i \in R_X, y_j \in R_Y \}.
+\end{align}
+In fact, sometimes we define $R_{XY}=R_X \times R_Y$ to simplify the analysis. In this case, for some pairs $(x_i,y_j)$ in  $R_X \times R_Y$, $P_{XY}(x_i,y_j)$ might be zero. For two discrete random variables $X$ and $Y$, we have
+
+\begin{center}
+\vspace{10pt}
+\fbox{\parbox{0.50\linewidth}{
+\begin{align}%\label{}
+\nonumber \sum_{(x_i,y_j) \in R_{XY}} P_{XY}(x_i,y_j)=1
+\end{align}
+}}
+\vspace{10pt}
+\end{center}
+
+We can use the joint PMF to find $P\big( (X,Y) \in A \big)$ for any set $A \subset \mathbb{R}^2$. Specifically, we have
+\begin{center}
+\vspace{10pt}
+\fbox{\parbox{0.50\linewidth}{
+\begin{align}%\label{}
+\nonumber P\big( (X,Y) \in A \big)=\sum_{(x_i,y_j) \in (A \cap R_{XY})} P_{XY}(x_i,y_j)
+\end{align}
+}}
+\vspace{10pt}
+\end{center}
 
 <!-- end section content -->
 
