@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<!-- Page Title -->
-	<title><?php echo "$section_no $section_title" ?></title>
+	<title><?php echo $section_title ?></title>
 
 </head>
 <body>
@@ -47,7 +47,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2><?php echo $section_title ?></h2></div>
+			<div class="left"><h2><?php echo "$section_no $section_title" ?></h2></div>
     		<div class="right hide_print">
 			<a href="http://probabilitycourse.com/videos/chapter4/video4_2.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
     		<div class="clear"></div>
