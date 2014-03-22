@@ -7,6 +7,7 @@
 ?>
 
 <!-- Section content -->
+<p>
 In real life, we are often interested in several random variables that are related to each other.
 For example, suppose that we choose a random family, and we would like to study the number
 of people in the family, the household income, the ages of the family members, etc. Each of
@@ -17,6 +18,7 @@ In this chapter, we focus on two random variables, but once you understand the t
 random variables, the extension to n random variables is straight forward. We first discuss joint
 distributions of discrete random variables and then extend the results to continuous random
 variables.
+</p>
 <!-- End Section content -->
 <?php
 	include 'section_footer.php';
