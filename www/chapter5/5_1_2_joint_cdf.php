@@ -55,13 +55,56 @@ Also, note that we must have
 \nonumber &F_{XY}(x,-\infty)=0,\hspace{20pt} \textrm{ for any } x.
 \end{align}
 
-<span class="example">Example </span>
+<span class="example">Example </span><br />
 Let $X \sim Bernoulli(p)$ and $Y \sim Bernoulli(q)$ be independent, where $0&lt;p,q&lt;1$. Find the joint PMF and joint CDF for $X$ and $Y$.<br />
 
 <div class="solvedprob">
 	<ul>
 		<li><a><b>Solution</b></a>
+First note that the joint range of $X$ and $Y$ is given by
+\begin{align}%\label{}
+ \nonumber R_{XY}=\{(0,0),(0,1),(1,0),(1,1)\}.
+\end{align}
+Since $X$ and $Y$ are independent, we have
+\begin{align}%\label{}
+ \nonumber P_{XY}(i,j)=P_X(i)P_Y(j), \hspace{20pt} \textrm{for }i,j=0,1.
+\end{align}
+Thus, we conclude
+\begin{align}%\label{}
+ \nonumber &P_{XY}(0,0)=P_X(0)P_Y(0)=(1-p)(1-q),\\
+ \nonumber &P_{XY}(0,1)=P_X(0)P_Y(1)=(1-p)q,\\
+ \nonumber &P_{XY}(1,0)=P_X(1)P_Y(0)=p(1-q),\\
+ \nonumber &P_{XY}(1,1)=P_X(1)P_Y(1)=pq.
+\end{align}
+Now that we have the joint PMF, we can find the joint CDF
+\begin{align}%\label{}
+\nonumber F_{XY}(x,y)=P(X \leq x, Y \leq y).
+\end{align}
+Specifically, since $0 \leq X,Y \leq 1$, we conclude
+\begin{align}%\label{}
+\nonumber &F_{XY}(x,y)=0, \hspace{20pt} \textrm{if } x<0\\
+\nonumber &F_{XY}(x,y)=0, \hspace{20pt} \textrm{if } y<0\\
+\nonumber &F_{XY}(x,y)=1, \hspace{20pt} \textrm{if } x \geq 1 \textrm{ and } y \geq 1.
+\end{align}
+Now, for $0 \leq x <1$ and $y \geq 1$, we have
+\begin{align}%\label{}
+\nonumber F_{XY}(x,y) &=P(X \leq x, Y \leq y)\\
+\nonumber &= P(X=0, y \leq 1)\\
+\nonumber &=P(X=0)=1-p.
+\end{align}
+Similarly, for $0 \leq y <1$ and $x \geq 1$, we have
+\begin{align}%\label{}
+\nonumber F_{XY}(x,y) &=P(X \leq x, Y \leq y)\\
+\nonumber &= P(X \leq 1, y=0)\\
+\nonumber &=P(Y=0)=1-q.
+\end{align}
+Finally, for $0 \leq x <1$ and $0 \leq y < 1$, we have
+\begin{align}%\label{}
+\nonumber F_{XY}(x,y) &=P(X \leq x, Y \leq y)\\
+\nonumber &= P(X=0, y=0)\\
+\nonumber &=P(X=0)P(Y=0)=(1-p)(1-q).
 
+Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dimensional plane. Note that, in general, we actually need a three-dimensional graph to show a joint CDF of two random variables, i.e., we need three axes: $x$, $y$, and $z=F_{XY}(x,y)$. However, because the random variables of this example are simple, and can take only two values, a two-dimensional figure suffices.
 		</li>
 	</ul>
 </div>
