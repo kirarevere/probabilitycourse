@@ -76,6 +76,9 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
 <div style="padding: 20px; margin: 30px 40px;">
 	<style>
+		table {
+			border-collapse: collapse;
+		}
 		table, tr, td {
 			border: 1px solid black;
 		}
