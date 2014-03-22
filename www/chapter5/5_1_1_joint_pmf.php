@@ -101,8 +101,8 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		</tr>
 	</table>
 </div>
-Figure 5.1 shows $P_{XY}(x,y)$.
-<img src="images/chapter5/pmfXY.png" width="400px" height="auto"/>
+Figure 5.1 shows $P_{XY}(x,y)$.<br />
+<img src="images/chapter5/pmfXY.png" style="width:400px; height: auto; margin: 0 auto;"/>
 
 <!-- end section content -->
 
