@@ -3,7 +3,7 @@
 	$section_title = "Joint Distributions: Two Random Variables";
 	$section_prev = "chapter4/4_4_0_chapter4_problems.php";
 	$section_next = "chapter5/5_1_1_joint_pmf.php";
-	include 'Control/autonumber.php';
+	include '/Control/autonumber.php';
 	initChapterHeaders(5);
 	include 'section_header.php'; 
 ?>
