@@ -83,7 +83,7 @@ Now that we have the joint PMF, we can find the joint CDF
 \nonumber F_{XY}(x,y)=P(X \leq x, Y \leq y).
 \end{align}
 Specifically, since $0 \leq X,Y \leq 1$, we conclude
-\begin{align}%\label{}
+\begin{align}
 \nonumber &F_{XY}(x,y)=0, \hspace{20pt} \textrm{if } x<0\\
 \nonumber &F_{XY}(x,y)=0, \hspace{20pt} \textrm{if } y<0\\
 \nonumber &F_{XY}(x,y)=1, \hspace{20pt} \textrm{if } x \geq 1 \textrm{ and } y \geq 1.
