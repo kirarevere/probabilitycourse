@@ -7,8 +7,9 @@
 ?>
 
 <!-- Section content -->
-Remember that for a discrete random variable $X$, we define the PMF as $P_X(x)=P(X=x)$. Now, if we have two random variables $X$ and $Y$, and we would like to study them jointly, we define the \textbf{joint probability mass function} as follows:
+Remember that for a discrete random variable $X$, we define the PMF as $P_X(x)=P(X=x)$. Now, if we have two random variables $X$ and $Y$, and we would like to study them jointly, we define the <b>joint probability mass function</b> as follows:
 
+<div style="border: 1px solid black;margin: 10px 20px;">
 \begin{center}
 \vspace{10pt}
 \fbox{\parbox{0.90\linewidth}{
@@ -31,6 +32,7 @@ We can define the joint range for $X$ and $Y$ as
 \begin{align}%\label{}
 \nonumber R_{XY}=\{(x,y) | P_{XY}(x,y)>0\}.
 \end{align}
+</div>
 
 <!-- end section content -->
 
