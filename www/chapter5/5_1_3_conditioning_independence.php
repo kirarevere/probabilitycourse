@@ -184,7 +184,7 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
   By looking at the above conditional PMF, we conclude that, given $Y=1$, $X$ is uniformly distributed over the set $\{-1,0,1\}$.
 
 	</li>
-  <li>$X$ and $Y$ are \textbf{not} independent. We can see this as the conditional PMF of $X$ given $Y=1$ (calculated above) is not the same as marginal PMF of $X$, $P_{X}(x)$.
+  <li>$X$ and $Y$ are <b>not</b> independent. We can see this as the conditional PMF of $X$ given $Y=1$ (calculated above) is not the same as marginal PMF of $X$, $P_{X}(x)$.
 	</li></ol></li></ul></li></ul>
 </div>
 <!-- /Example -->
