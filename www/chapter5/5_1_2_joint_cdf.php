@@ -122,7 +122,7 @@ Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dim
 For two random variables $X$ and $Y$, and real numbers $x_1 \leq x_2$, $y_1 \leq y_2$, we have
 $$
 \begin{align}%\label{}
-\nonumber  P(x_1<X &\leq x_2, \hspace{5pt} y_1<Y \leq y_2)=\\
+\nonumber  P(x_1&lt;X &\leq x_2, \hspace{5pt} y_1&lt;Y \leq y_2)=
 \nonumber  &F_{XY}(x_2,y_2)-F_{XY}(x_1,y_2)-F_{XY}(x_2,y_1)+F_{XY}(x_1,y_1).
 \end{align}
 \end{lem}
