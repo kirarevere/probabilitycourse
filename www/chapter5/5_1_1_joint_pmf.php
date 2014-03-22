@@ -78,7 +78,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		#table51{
 			border-collapse: collapse;
 			display:block;
-			width: 500px;
+			width: 400px;
 			margin: 20px auto;
 		}
 		#table51 tr, #table51 td {
@@ -90,7 +90,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 			vertical-align: middle;
 		}
 	</style>
-	<h4>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
+	<h4 style="text-align:center">Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
 	<table id="table51">
 		<tr>
 			<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
