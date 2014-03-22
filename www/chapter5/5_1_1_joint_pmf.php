@@ -116,12 +116,15 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 		<li><a><b>Solution</b></a>
 			<ul>
 				<li>
-		\item To find $P(X=0, Y \leq 1)$, we can write
+					<ol type="a">
+						<li>
+		To find $P(X=0, Y \leq 1)$, we can write
 		\begin{align}%\label{}
 		\nonumber P(X=0, Y \leq 1) =P_{XY}(0,0)+ P_{XY}(0,1)=\frac{1}{6}+\frac{1}{4}=\frac{5}{12}.
 		\end{align}
-
-		\item Note that from the table,
+						</li>
+						<li>
+		Note that from the table,
 		\begin{align}%\label{}
 		\nonumber R_X=\{0,1\} \hsb \textrm{ and } \hsb R_Y=\{0,1,2\}.
 		\end{align}
@@ -143,6 +146,22 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 			0 &  \quad \text{otherwise}
 		\end{array} \right.
 	\end{equation}
+
+  \begin{equation}
+ \nonumber P_Y(y) = \left\{
+  \begin{array}{l l}
+     \frac{7}{24} &  \quad y=0  \\
+      &  \quad   \\
+     \frac{5}{12} &  \quad y=1  \\
+      &  \quad   \\
+     \frac{7}{24} &  \quad y=2  \\
+    &  \quad   \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+\end{equation}
+
+						</li>
+					</ol>
 				</li>
 			</ul>
 		</li>
