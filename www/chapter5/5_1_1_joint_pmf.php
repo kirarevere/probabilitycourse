@@ -74,10 +74,12 @@ Let's practice these concepts by looking at an example.
 <span class="example">Example </span>
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
-<div style="padding: 20px; margin: 10px auto;width:500px;">
 	<style>
 		#table51{
 			border-collapse: collapse;
+			display:block;
+			width: 500px;
+			margin: 20px auto;
 		}
 		#table51 tr, #table51 td {
 			border: 1px solid black;
@@ -100,7 +102,6 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 			<td>$X = 1$</td><td>$\frac{1}{8}$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{6}$</td>
 		</tr>
 	</table>
-</div>
 Figure 5.1 shows $P_{XY}(x,y)$.<br />
 <img src="images/chapter5/pmfXY.png" style="display:block; width:400px; height: auto; margin: 10px auto;"/>
 <p style="text-align: center;">Figure 5.1: Joint PMF of $X$ and $Y$ (Example 5.1).</p>
