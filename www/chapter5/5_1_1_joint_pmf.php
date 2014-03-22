@@ -68,7 +68,27 @@ Here we call $P_X(x)$ the <b>marginal PMF</b> of $X$. Similarly, we can find the
 \nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j), \hspace{20pt} \textrm{ for any } x \in R_X\\
  P_Y(y)=\sum_{x_i \in R_X} P_{XY}(x_i,y), \hspace{20pt} \textrm{ for any } y \in R_Y
 \end{align}
+</div><br />
+Let's practice these concepts by looking at an example.
+</p><hr /><br />
+<span class="example">Example </span>
+Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
+
+<div style="padding: 20px; margin: 30px 40px;">
+	<table>
+		<caption>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</caption>
+		<tr>
+
+		</tr>
+		<tr>
+	
+		</tr>
+		<tr>
+
+		</tr>
+	</table>
 </div>
+
 <!-- end section content -->
 
 <?php
