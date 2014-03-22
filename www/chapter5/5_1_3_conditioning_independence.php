@@ -110,6 +110,88 @@ So, if $X$ and $Y$ are independent, we have
 \end{align}
 As we expect, for independent random variables, the conditional PMF is equal to the marginal PMF. In other words, knowing the value of $Y$ does not provide any information about $X$.
 
+<!-- Example -->
+<hr /><span class="example">Example </span><br />
+Consider the set of points in the grid shown in Figure \ref{fig:Grid}. These are the points in set $G$ defined as
+\begin{align}%\label{}
+\nonumber  G=\{(x,y) | x,y \in \mathbb{Z}, |x|+|y|\leq 2\}.
+\end{align}
+Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, each point has a probability of $\frac{1}{13}$ of being chosen.
+
+<ol type="a">
+	<li>Find the joint and marginal PMFs of $X$ and $Y$.</li>
+ 	<li>Find the conditional PMF of $X$ given $Y=1$.</li>
+  <li>Are $X$ and $Y$ independent?</li
+</ol>
+
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+		<ul><li>
+			<ol type="a">
+  <li>Here, note that
+  \begin{align}%\label{}
+  \nonumber  R_{XY}=G=\{(x,y) | x,y \in \mathbb{Z}, |x|+|y|\leq 2\}.
+  \end{align}
+  Thus, the joint PMF is given by
+  \begin{equation}
+ \nonumber P_{XY}(x,y) = \left\{
+  \begin{array}{l l}
+    \frac{1}{13}  &  \quad (x,y) \in G  \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+  \end{equation}
+
+  To find the marginal PMF of $X$, $P_X(i)$, we use Equation \ref{Eq:marginals}. Thus,
+  \begin{align}%\label{}
+  \nonumber  &P_X(-2)=P_{XY}(-2,0)=\frac{1}{13},\\
+  \nonumber  &P_X(-1)=P_{XY}(-1,-1)+P_{XY}(-1,0)+P_{XY}(-1,1)=\frac{3}{13},\\
+  \nonumber  &P_X(0)=P_{XY}(0,-2)+P_{XY}(0,-1)+P_{XY}(0,0)\\
+  \nonumber  & \hspace{40pt} +P_{XY}(0,1)+P_{XY}(0,2)=\frac{5}{13},\\
+  \nonumber  &P_X(1)=P_{XY}(1,-1)+P_{XY}(1,0)+P_{XY}(1,-1)=\frac{3}{13},\\
+  \nonumber  &P_X(2)=P_{XY}(2,0)=\frac{1}{13}.
+  \end{align}
+
+  Similarly, we can find
+
+  \begin{equation}
+   \nonumber P_Y(j) = \left\{
+  \begin{array}{l l}
+     \vspace{5pt}
+     \frac{1}{13} & \quad \text{for  } j=2,-2\\
+     \vspace{5pt}
+     \frac{3}{13} & \quad \text{for  } j=-1,1\\
+     \vspace{5pt}
+     \frac{5}{13} & \quad \text{for  } j=0\\
+     \vspace{5pt}
+       0   & \quad \text{ otherwise}
+  \end{array} \right.
+  \end{equation}
+
+  We can write this in a more compact form as
+  \begin{align}%\label{}
+  \nonumber  P_{X}(k)=P_{Y}(k)=\frac{5-2|k|}{13}, \hspace{10pt} \textrm{ for }k=-2,-1,0,1,2.
+  \end{align}
+	</li>
+  <li> For $i=-1,0,1$, we can write
+  \begin{align}%\label{}
+  \nonumber  P_{X|Y}(i|1)&=\frac{P_{XY}(i,1)}{P_Y(1)}\\
+  \nonumber  &=\frac{\frac{1}{13}}{\frac{3}{13}}=\frac{1}{3}, \hspace{10pt} \textrm{ for }i=-1,0,1.
+  \end{align}
+  Thus, we conclude
+  \begin{equation}
+  \nonumber P_{X|Y}(i|1) = \left\{
+  \begin{array}{l l}
+    \frac{1}{3}  &  \quad \textrm{ for }i=-1,0,1  \\
+     0 &  \quad \text{otherwise}
+  \end{array} \right.
+  \end{equation}
+  By looking at the above conditional PMF, we conclude that, given $Y=1$, $X$ is uniformly distributed over the set $\{-1,0,1\}$.
+
+	</li>
+  <li>$X$ and $Y$ are \textbf{not} independent. We can see this as the conditional PMF of $X$ given $Y=1$ (calculated above) is not the same as marginal PMF of $X$, $P_{X}(x)$.
+	</li></ol></li></ul></li></ul>
+</div>
+<!-- /Example -->
 <!-- End Section Content -->
 
 <?php
