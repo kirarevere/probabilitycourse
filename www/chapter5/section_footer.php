@@ -1,4 +1,3 @@
-</div> <!-- end content -->
 <br style="clear: both;" />
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="<?php echo $section_prev ?>">previous</a></div>
