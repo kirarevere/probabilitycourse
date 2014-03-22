@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 	<!-- Page Title -->
-	<title><?php echo $section_title ?></title>
+	<title><?php echo $section_no $section_title ?></title>
 
 </head>
 <body>
