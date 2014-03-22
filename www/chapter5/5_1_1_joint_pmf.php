@@ -114,6 +114,34 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 <div class="solvedprob">
 	<ul>
 		<li><a><b>Solution</b></a>
+	\begin{enumerate} [(a)]
+		\item To find $P(X=0, Y \leq 1)$, we can write
+		\begin{align}%\label{}
+		\nonumber P(X=0, Y \leq 1) =P_{XY}(0,0)+ P_{XY}(0,1)=\frac{1}{6}+\frac{1}{4}=\frac{5}{12}.
+		\end{align}
+
+		\item Note that from the table,
+		\begin{align}%\label{}
+		\nonumber R_X=\{0,1\} \hsb \textrm{ and } \hsb R_Y=\{0,1,2\}.
+		\end{align}
+		Now we can use Equation \ref{Eq:marginals} to find the marginal PMFs. For example, to find $P_X(0)$, we can write
+
+		\begin{align}%\label{}
+		\nonumber P_X(0)&=P_{XY}(0,0)+P_{XY}(0,1)+P_{XY}(0,2)\\
+		\nonumber &=\frac{1}{6}+\frac{1}{4}+\frac{1}{8}\\
+		\nonumber &=\frac{13}{24}.
+		\end{align}
+		We obtain
+		\begin{equation}
+	 \nonumber P_X(x) = \left\{
+		\begin{array}{l l}
+			 \frac{13}{24} &  \quad x=0  \\
+				&  \quad   \\
+			 \frac{11}{24} &  \quad x=1  \\
+				&  \quad   \\
+			0 &  \quad \text{otherwise}
+		\end{array} \right.
+	\end{equation}
 
 		</li>
 	</ul>
