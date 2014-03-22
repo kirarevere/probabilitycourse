@@ -26,9 +26,8 @@ Remember that the PMF is by definition a probability measure, i.e., it is $P(X=x
 \nonumber  &=\frac{P(X=x_i \textrm{ and } A)}{P(A)}.
 \end{align}
 
-<span class="example">Example </span><br />
+<hr /><span class="example">Example </span><br />
 I roll a fair die. Let $X$ be the observed number. Find the conditional PMF of $X$ given that we know the observed number was less than $5$.
-\end{example}
 <div class="solvedprob">
 	<ul><li><a><b>Solution</b></a>
 		<ul><li>
@@ -48,7 +47,7 @@ Also,
 \end{align}
 		</li></ul>
 	</li></ul>
-</div>
+</div><hr /><br />
 
 <!-- End Section Content -->
 
