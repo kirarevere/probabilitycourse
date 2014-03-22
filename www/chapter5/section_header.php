@@ -4,4 +4,4 @@
 
 </head>
 <body>
-<? echo section ?>
+<? echo $section ?>
