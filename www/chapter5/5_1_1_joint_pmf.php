@@ -84,6 +84,8 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		}
 		td {
 			width: 80px;
+			text-align: center;
+			vertical-align: middle;
 		}
 	</style>
 	<h4>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
