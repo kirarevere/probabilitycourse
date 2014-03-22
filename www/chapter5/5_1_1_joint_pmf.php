@@ -78,7 +78,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		#table51{
 			border-collapse: collapse;
 			display:block;
-			width: 400px;
+			width: 330px;
 			margin: 20px auto;
 		}
 		#table51 tr, #table51 td {
