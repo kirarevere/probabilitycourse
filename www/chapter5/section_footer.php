@@ -1,6 +1,6 @@
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="<?php echo $section_prev ?>">previous</a></div>
-    			<div class="right"><a href="<?php echo $section_next ?">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="<?php echo $section_next ?>">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>
