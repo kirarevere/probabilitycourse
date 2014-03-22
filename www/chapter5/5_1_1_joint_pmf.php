@@ -114,9 +114,8 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 <div class="solvedprob">
 	<ul>
 		<li><a><b>Solution</b></a>
-			<ul>
+			<ol type="a">
 				<li>
-	\begin{enumerate} [(a)]
 		\item To find $P(X=0, Y \leq 1)$, we can write
 		\begin{align}%\label{}
 		\nonumber P(X=0, Y \leq 1) =P_{XY}(0,0)+ P_{XY}(0,1)=\frac{1}{6}+\frac{1}{4}=\frac{5}{12}.
