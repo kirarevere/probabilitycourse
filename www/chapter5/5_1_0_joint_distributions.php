@@ -4,6 +4,7 @@
 	$section_prev = "chapter4/4_4_0_chapter4_problems.php";
 	$section_next = "chapter5/5_1_1_joint_pmf.php";
 	include 'section_header.php'; 
+	initChapterHeaders(5);
 ?>
 
 <!-- Section content -->
