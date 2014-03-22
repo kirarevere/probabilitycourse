@@ -74,7 +74,7 @@ Let's practice these concepts by looking at an example.
 <span class="example">Example </span>
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
-<div style="padding: 20px; margin: 30px auto;width:500px;">
+<div style="padding: 20px; margin: 10px auto;width:500px;">
 	<style>
 		table {
 			border-collapse: collapse;
@@ -101,6 +101,8 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		</tr>
 	</table>
 </div>
+Figure 5.1 shows $P_{XY}(x,y)$.
+<img src="images/chapter5/pmfXY.png" />
 
 <!-- end section content -->
 
