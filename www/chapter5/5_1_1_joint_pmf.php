@@ -85,8 +85,8 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 	</style>
 	<h4>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
 	<table>
-		<tr style="height:30px;">
-			<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
+		<tr>
+			<td style="height: 100px;">&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
 		</tr>
 		<tr>
 			<td>$X = 0$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{4}$</td><td>$\frac{1}{8}$</td>	
