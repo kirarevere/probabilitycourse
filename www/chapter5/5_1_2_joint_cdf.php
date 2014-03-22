@@ -111,6 +111,12 @@ Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dim
 
 <img src="images/chapter5/FxyJointCDF.png" style="width:400px;height:auto;margin:10px auto;display:block;" />
 <p style="text-align:center;">Figure 5.3 Joint CDF for $X$ and $Y$ in Example 5.2</p>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 <p>Here is a useful lemma:</p>
 <span class="lemma">Lemma </span><br />
 For two random variables $X$ and $Y$, and real numbers $x_1 \leq x_2$, $y_1 \leq y_2$, we have
@@ -124,11 +130,6 @@ $$
 To see why the above formula is true, you can look at the region associated with $F_{XY}(x,y)$ (as shown in Figure \ref{fig:Joint-CDF}) for each of the pairs $(x_2,y_2), (x_1,y_2), (x_2,y_1), (x_1,y_1)$. You can see, as we subtract and add regions, the part that is left is the region $\{x_1<X \leq x_2, \hspace{5pt} y_1<Y \leq y_2\}.
 $$
 
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
 <!-- End Section Content -->
 
 <?php
