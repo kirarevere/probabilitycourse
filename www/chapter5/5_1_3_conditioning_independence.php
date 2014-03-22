@@ -98,6 +98,9 @@ Equivalently, $X$ and $Y$ are independent if
 \end{align}
 </div>
 
+<img src="images/chapter5/exampleGrid.png" style="width:400px;height:auto;display:block;margin:10px auto;" />
+<p style="text-align:center">Figure 5.4: Grid for example 5.4</p>
+
 So, if $X$ and $Y$ are independent, we have
 \begin{align}%\label{}
 \nonumber  P_{X|Y}(x_i|y_j)&=P(X=x_i|Y=y_j)\\
@@ -107,8 +110,6 @@ So, if $X$ and $Y$ are independent, we have
 \end{align}
 As we expect, for independent random variables, the conditional PMF is equal to the marginal PMF. In other words, knowing the value of $Y$ does not provide any information about $X$.
 
-<img src="images/chapter5/exampleGrid.png" style="width:400px;height:auto;display:block;margin:10px auto;" />
-<p style="text-align:center">Figure 5.4: Grid for example 5.4</p>
 <!-- End Section Content -->
 
 <?php
