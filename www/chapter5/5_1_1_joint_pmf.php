@@ -107,6 +107,9 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 <p style="text-align: center;">Figure 5.1: Joint PMF of $X$ and $Y$ (Example 5.1).</p>
 <ol type='a'>
 	<li>Find $P(X=0,Y\leq1)$.</li>
+	<li>Find the marginal PMFs of $X$ and $Y$.</li>
+	<li>Find $P(Y=1|X=0)$.</li>
+	<li>Are $X$ and $Y$ independent?</li>
 </ol>
 
 <!-- end section content -->
