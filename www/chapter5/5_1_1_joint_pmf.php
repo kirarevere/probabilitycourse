@@ -44,6 +44,33 @@ We can use the joint PMF to find $P\big( (X,Y) \in A \big)$ for any set $A \subs
 \end{align}
 </div>
 
+Note that the event $X=x$ can be written as $\{(x_i,y_j): x_i=x, \hs y_j \in R_Y \}$. Also, the event $Y=y$ can be written as $\{(x_i,y_j): x_i\in R_X, \hs y_j=y\}$. Thus, we can write
+\begin{align}%\label{}
+\nonumber P_{XY}(x,y)&=P(X=x, Y=y) \\
+\nonumber &=P\big((X=x)\cap(Y=y)\big).
+\end{align}
+
+<h2>Marginal PMFs</h2>
+ The joint PMF contains all the information regarding the distributions of $X$ and $Y$. This means that, for example, can we obtain PMF of $X$ from its joint PMF with $Y$. Indeed, we can write
+\begin{align}%\label{}
+\nonumber P_X(x) &= P(X=x)\\
+\nonumber &=\sum_{y_j \in R_Y} P(X=x, Y=y_j) &\textrm{law of total probablity}\\
+\nonumber &=\sum_{y_j \in R_Y} P_{XY}(x,y_j).
+\end{align}
+Here we call $P_X(x)$ the \textbf{marginal PMF} of $X$. Similarly, we can find the marginal PMF of $Y$ as
+\begin{align}%\label{}
+\nonumber P_Y(Y)=\sum_{x_i \in R_X} P_{XY}(x_i,y).
+\end{align}
+
+<div style="padding: 20px; border: 2px solid black; margin: 30px 40px;">
+\begin{center}
+Marginal PMFs of $X$ and $Y$:
+\end{center}
+\begin{align}\label{Eq:marginals}
+\nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j), \hspace{20pt} \textrm{ for any } x \in R_X\\
+ P_Y(y)=\sum_{x_i \in R_X} P_{XY}(x_i,y), \hspace{20pt} \textrm{ for any } y \in R_Y
+\end{align}
+</div>
 <!-- end section content -->
 
 <?php
