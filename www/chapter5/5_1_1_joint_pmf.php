@@ -9,20 +9,11 @@
 <!-- Section content -->
 Remember that for a discrete random variable $X$, we define the PMF as $P_X(x)=P(X=x)$. Now, if we have two random variables $X$ and $Y$, and we would like to study them jointly, we define the <b>joint probability mass function</b> as follows:
 
-<div style="border: 1px solid black;margin: 10px 20px;">
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
-The \textbf{joint probability mass function} of two discrete random variables $X$ and $Y$ is defined as
+<div style="border: 2px solid black;margin: 30px 40px;">
+<b>joint probability mass function</b> of two discrete random variables $X$ and $Y$ is defined as
 \begin{align}%\label{}
 \nonumber P_{XY}(x,y)=P(X=x, Y=y).
 \end{align}
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
 Note that as usual, the comma means ``and'', so we can write
 \begin{align}%\label{}
 \nonumber P_{XY}(x,y)&=P(X=x, Y=y) \\
