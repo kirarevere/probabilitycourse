@@ -76,21 +76,14 @@ Similarly, we can define the conditional probability of $Y$ given $X$:
 \end{align}
 
 
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
+<div style="padding: 25px; border: 2px solid black; margin: 30px 40px;">
 For discrete random variables $X$ and event $A$, the <b>conditional PMFs</b> of $X$ given $Y$ and vice versa are defined as
 \begin{align}%\label{}
 \nonumber  P_{X|Y}(x_i|y_j)&=\frac{P_{XY}(x_i,y_j)}{P_Y(y_j)},\\
 \nonumber  P_{Y|X}(y_j|x_i)&=\frac{P_{XY}(x_i,y_j)}{P_X(x_i)}
 \end{align}
 for any $x_i \in R_X$ and $y_j \in R_Y$.
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+</div>
 
 
 <!-- End Section Content -->
