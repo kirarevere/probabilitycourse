@@ -61,6 +61,8 @@ Let $X \sim Bernoulli(p)$ and $Y \sim Bernoulli(q)$ be independent, where $0&lt;
 <div class="solvedprob">
 	<ul>
 		<li><a><b>Solution</b></a>
+			<ul>
+				<li>
 First note that the joint range of $X$ and $Y$ is given by
 \begin{align}%\label{}
  \nonumber R_{XY}=\{(0,0),(0,1),(1,0),(1,1)\}.
@@ -105,6 +107,8 @@ Finally, for $0 \leq x <1$ and $0 \leq y < 1$, we have
 \nonumber &=P(X=0)P(Y=0)=(1-p)(1-q).
 
 Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dimensional plane. Note that, in general, we actually need a three-dimensional graph to show a joint CDF of two random variables, i.e., we need three axes: $x$, $y$, and $z=F_{XY}(x,y)$. However, because the random variables of this example are simple, and can take only two values, a two-dimensional figure suffices.
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
