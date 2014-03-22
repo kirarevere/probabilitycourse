@@ -76,20 +76,20 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
 <div style="padding: 20px; margin: 10px auto;width:500px;">
 	<style>
-		table {
+		#table51{
 			border-collapse: collapse;
 		}
-		table, tr, td {
+		#table51 tr, #table51 td {
 			border: 1px solid black;
 		}
-		td {
+		#table51 tr td {
 			width: 80px;
 			text-align: center;
 			vertical-align: middle;
 		}
 	</style>
 	<h4>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
-	<table>
+	<table id="table51">
 		<tr>
 			<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
 		</tr>
