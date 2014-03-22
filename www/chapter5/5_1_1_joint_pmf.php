@@ -82,9 +82,13 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		table, tr, td {
 			border: 1px solid black;
 		}
+		td {
+			height: 25px;
+			width: 25px;
+		}
 	</style>
+	<h4>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
 	<table>
-		<caption>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</caption>
 		<tr>
 			<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
 		</tr>
