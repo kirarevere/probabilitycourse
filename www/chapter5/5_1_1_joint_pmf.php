@@ -114,7 +114,7 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 <div class="solvedprob">
 	<ul>
 		<li><a><b>Solution</b></a>
-			<ol type="a">
+			<ul>
 				<li>
 		\item To find $P(X=0, Y \leq 1)$, we can write
 		\begin{align}%\label{}
