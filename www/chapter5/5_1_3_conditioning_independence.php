@@ -85,6 +85,29 @@ For discrete random variables $X$ and event $A$, the <b>conditional PMFs</b> of 
 for any $x_i \in R_X$ and $y_j \in R_Y$.
 </div>
 
+<h2>Independent Random Variables:</h2>
+We have defined independent random variables previously. Now that we have seen joint PMFs and CDFs, we can restate the independence definition.
+<div style="padding 25px; margin: 30px 40px; border: 2px solid black;">
+Two discrete random variables $X$ and $Y$ are independent if
+\begin{align}%\label{}
+\nonumber  P_{XY}(x,y)=P_X(x) P_Y(y), \hspace{10pt} \textrm{ for all }x,y.
+\end{align}
+Equivalently, $X$ and $Y$ are independent if
+\begin{align}%\label{}
+\nonumber  F_{XY}(x,y)=F_X(x) F_Y(y), \hspace{10pt}  \textrm{ for all }x,y.
+\end{align}
+</div>
+
+So, if $X$ and $Y$ are independent, we have
+\begin{align}%\label{}
+\nonumber  P_{X|Y}(x_i|y_j)&=P(X=x_i|Y=y_j)\\
+\nonumber  &=\frac{P_{XY}(x_i,y_j)}{P_Y(y_j)}\\
+\nonumber  &=\frac{P_X(x_i) P_Y(y_j)}{P_Y(y_j)}\\
+\nonumber  &=P_X(x_i).
+\end{align}
+As we expect, for independent random variables, the conditional PMF is equal to the marginal PMF. In other words, knowing the value of $Y$ does not provide any information about $X$.
+
+
 
 <!-- End Section Content -->
 
