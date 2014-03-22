@@ -49,6 +49,18 @@ Also,
 	</li></ul>
 </div><hr /><br />
 
+<div style="padding: 25px; border: 2px solid black; margin: 30px 40px;">
+For a discrete random variable $X$ and event $A$, the <b>conditional PMF</b> of $X$ given $A$ is defined as
+\begin{align}%\label{}
+\nonumber  P_{X|A}(x_i)&=P(X=x_i|A) \\
+\nonumber  &=\frac{P(X=x_i \textrm{ and } A)}{P(A)},  \hspace{10pt} \textrm{for any $x_i \in R_X$}.
+\end{align}
+Similarly, we define the <b>conditional CDF</b> of $X$ given $A$ as
+\begin{align}%\label{}
+\nonumber  F_{X|A}(x)&=P(X \leq x|A).
+\end{align}
+</div>
+
 <!-- End Section Content -->
 
 <?php
