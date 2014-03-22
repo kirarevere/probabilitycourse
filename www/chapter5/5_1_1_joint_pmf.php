@@ -102,7 +102,11 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 	</table>
 </div>
 Figure 5.1 shows $P_{XY}(x,y)$.<br />
-<img src="images/chapter5/pmfXY.png" style="display:block; width:400px; height: auto; margin: 0 auto;"/>
+<img src="images/chapter5/pmfXY.png" style="display:block; width:400px; height: auto; margin: 10px auto;"/>
+<p style="text-align: center;">Figure 5.1: Joint PMF of $X$ and $Y$ (Example 5.1).</p>
+<ol type='a'>
+	<li>Find $P(X=0,Y\leq1)$.</li>
+</ol>
 
 <!-- end section content -->
 
