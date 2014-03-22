@@ -4,8 +4,8 @@
 	$section_prev = "5_1_0_joint_distributions.php";
 	$section_next = " ";	
 	include "Control/autonumber.php";
-	include "section_header.php"
 	loadHeaders(56);	
+	include "section_header.php"
 ?>
 
 <!-- Section content -->
