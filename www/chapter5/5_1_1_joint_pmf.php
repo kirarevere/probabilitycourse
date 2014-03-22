@@ -75,7 +75,12 @@ Let's practice these concepts by looking at an example.
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
 <div style="padding: 20px; margin: 30px 40px;">
-	<table style="empty-cells:show;border:1px solid black">
+	<style>
+		table, tr, td {
+			border: 1px solid black;
+		}
+	</style>
+	<table>
 		<caption>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</caption>
 		<tr>
 			<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
