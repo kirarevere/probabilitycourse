@@ -68,38 +68,38 @@ Here we call $P_X(x)$ the <b>marginal PMF</b> of $X$. Similarly, we can find the
 \nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j), \hspace{20pt} \textrm{ for any } x \in R_X\\
  P_Y(y)=\sum_{x_i \in R_X} P_{XY}(x_i,y), \hspace{20pt} \textrm{ for any } y \in R_Y
 \end{align}
-</div><br />
+</div>
 Let's practice these concepts by looking at an example.
 </p><hr /><br />
 <span class="example">Example </span>
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
-<div style="padding: 20px; margin: 30px 40px;">
-	<style>
-		table {
-			border-collapse: collapse;
-		}
-		table, tr, td {
-			border: 1px solid black;
-		}
-		td {
-			width: 80px;
-			text-align: center;
-			vertical-align: middle;
-		}
-	</style>
-	<h4>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</h4>
-	<table>
-		<tr>
-			<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
-		</tr>
-		<tr style="height:80px;">
-			<td>$X = 0$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{4}$</td><td>$\frac{1}{8}$</td>	
-		</tr>
-		<tr style="height:80px;">
-			<td>$X = 1$</td><td>$\frac{1}{8}$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{6}$</td>
-		</tr>
-	</table>
+<!-- Table 5.1 styling -->
+<style>
+	table {
+		border-collapse: collapse;
+	}
+	table, tr, td {
+		border: 1px solid black;
+	}
+	td {
+		width: 80px;
+		text-align: center;
+		vertical-align: middle;
+	}
+</style>
+<p>Table 5.1 Joint PMF of $X$ and $Y$ in Example 5.1</p>
+<table>
+	<tr>
+		<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td><td>$Y = 2$</td>
+	</tr>
+	<tr style="height:80px;">
+		<td>$X = 0$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{4}$</td><td>$\frac{1}{8}$</td>	
+	</tr>
+	<tr style="height:80px;">
+		<td>$X = 1$</td><td>$\frac{1}{8}$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{6}$</td>
+	</tr>
+</table>
 </div>
 
 <!-- end section content -->
