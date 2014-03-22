@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<base href="/" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 	<!-- Lets autonumber track countable elements for this section -->
