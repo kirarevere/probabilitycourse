@@ -79,7 +79,7 @@ Thus, we conclude
  \nonumber &P_{XY}(1,1)=P_X(1)P_Y(1)=pq.
 \end{align}
 Now that we have the joint PMF, we can find the joint CDF
-\begin{align}%\label{}
+\begin{align}
 \nonumber F_{XY}(x,y)=P(X \leq x, Y \leq y).
 \end{align}
 Specifically, since $0 \leq X,Y \leq 1$, we conclude
@@ -101,10 +101,11 @@ Similarly, for $0 \leq y <1$ and $x \geq 1$, we have
 \nonumber &=P(Y=0)=1-q.
 \end{align}
 Finally, for $0 \leq x <1$ and $0 \leq y < 1$, we have
-\begin{align}%\label{}
+\begin{align}
 \nonumber F_{XY}(x,y) &=P(X \leq x, Y \leq y)\\
 \nonumber &= P(X=0, y=0)\\
 \nonumber &=P(X=0)P(Y=0)=(1-p)(1-q).
+\end{align}
 
 Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dimensional plane. Note that, in general, we actually need a three-dimensional graph to show a joint CDF of two random variables, i.e., we need three axes: $x$, $y$, and $z=F_{XY}(x,y)$. However, because the random variables of this example are simple, and can take only two values, a two-dimensional figure suffices.
 				</li>
