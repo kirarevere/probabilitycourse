@@ -121,7 +121,7 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
 <ol type="a">
 	<li>Find the joint and marginal PMFs of $X$ and $Y$.</li>
  	<li>Find the conditional PMF of $X$ given $Y=1$.</li>
-  <li>Are $X$ and $Y$ independent?</li
+  <li>Are $X$ and $Y$ independent?</li>
 </ol>
 
 <div class="solvedprob">
@@ -141,7 +141,7 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
   \end{array} \right.
   \end{equation}
 
-  To find the marginal PMF of $X$, $P_X(i)$, we use Equation \ref{Eq:marginals}. Thus,
+  To find the marginal PMF of $X$, $P_X(i)$, we use Equation 5.1. Thus,
   \begin{align}%\label{}
   \nonumber  &P_X(-2)=P_{XY}(-2,0)=\frac{1}{13},\\
   \nonumber  &P_X(-1)=P_{XY}(-1,-1)+P_{XY}(-1,0)+P_{XY}(-1,1)=\frac{3}{13},\\
@@ -156,13 +156,9 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
   \begin{equation}
    \nonumber P_Y(j) = \left\{
   \begin{array}{l l}
-     \vspace{5pt}
      \frac{1}{13} & \quad \text{for  } j=2,-2\\
-     \vspace{5pt}
      \frac{3}{13} & \quad \text{for  } j=-1,1\\
-     \vspace{5pt}
      \frac{5}{13} & \quad \text{for  } j=0\\
-     \vspace{5pt}
        0   & \quad \text{ otherwise}
   \end{array} \right.
   \end{equation}
