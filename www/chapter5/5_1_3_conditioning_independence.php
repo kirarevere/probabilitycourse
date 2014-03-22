@@ -59,7 +59,39 @@ Similarly, we define the <b>conditional CDF</b> of $X$ given $A$ as
 \begin{align}%\label{}
 \nonumber  F_{X|A}(x)&=P(X \leq x|A).
 \end{align}
-</div>
+</div><hr />
+
+<b>Conditional PMF of $X$ Given $Y$:</b>
+
+In some problems, we have observed the value of a random variable $Y$, and we need to update the PMF of another random variable $X$ whose value has not yet been observed. In these problems, we use the <b>conditional PMF</b> of $X$ given $Y$. The conditional PMF of $X$ given $Y$ is defined as
+\begin{align}%\label{}
+\nonumber  P_{X|Y}(x_i|y_j)&=P(X=x_i|Y=y_j) \\
+\nonumber  &=\frac{P(X=x_i,Y=y_j)}{P(Y=y_j)}\\
+\nonumber  &=\frac{P_{XY}(x_i,y_j)}{P_Y(y_j)}.
+\end{align}
+Similarly, we can define the conditional probability of $Y$ given $X$:
+\begin{align}%\label{}
+\nonumber  P_{Y|X}(y_j|x_i)&=P(Y=y_j|X=x_i) \\
+\nonumber  &=\frac{P_{XY}(x_i,y_j)}{P_X(x_i)}.
+\end{align}
+
+
+\begin{center}
+\vspace{10pt}
+\fbox{\parbox{0.90\linewidth}{
+%\centering
+\vspace{10pt}
+For discrete random variables $X$ and event $A$, the <b>conditional PMFs</b> of $X$ given $Y$ and vice versa are defined as
+\begin{align}%\label{}
+\nonumber  P_{X|Y}(x_i|y_j)&=\frac{P_{XY}(x_i,y_j)}{P_Y(y_j)},\\
+\nonumber  P_{Y|X}(y_j|x_i)&=\frac{P_{XY}(x_i,y_j)}{P_X(x_i)}
+\end{align}
+for any $x_i \in R_X$ and $y_j \in R_Y$.
+\vspace{10pt}
+}}
+\vspace{10pt}
+\end{center}
+
 
 <!-- End Section Content -->
 
