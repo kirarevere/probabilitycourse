@@ -111,6 +111,13 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 	<li>Find $P(Y=1|X=0)$.</li>
 	<li>Are $X$ and $Y$ independent?</li>
 </ol>
+<div class="solved_prob">
+	<ul>
+		<li><a><b>Solution</b></a>
+
+		</li>
+	</ul>
+</div>
 
 <!-- end section content -->
 
