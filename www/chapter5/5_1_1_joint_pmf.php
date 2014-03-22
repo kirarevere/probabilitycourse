@@ -102,7 +102,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 	</table>
 </div>
 Figure 5.1 shows $P_{XY}(x,y)$.
-<img src="images/chapter5/pmfXY.png" width="200px" height="auto"/>
+<img src="images/chapter5/pmfXY.png" width="600px" height="auto"/>
 
 <!-- end section content -->
 
