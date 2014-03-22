@@ -114,6 +114,8 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 <div class="solvedprob">
 	<ul>
 		<li><a><b>Solution</b></a>
+			<ul>
+				<li>
 	\begin{enumerate} [(a)]
 		\item To find $P(X=0, Y \leq 1)$, we can write
 		\begin{align}%\label{}
@@ -142,7 +144,8 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
 			0 &  \quad \text{otherwise}
 		\end{array} \right.
 	\end{equation}
-
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
