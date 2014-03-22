@@ -13,5 +13,5 @@
 <!-- End Section Content -->
 
 <?php
-	include "sectionFooter.php";	
+	include "section_footer.php";	
 ?>
