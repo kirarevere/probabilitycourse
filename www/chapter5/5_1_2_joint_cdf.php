@@ -26,7 +26,7 @@ As usual, comma means "and," so we can write
 \end{align}
 Figure 5.2 shows the region associated with $F_{XY}(x,y)$ in the two-dimensional plane. Note that the above definition of joint CDF is a general definition and is applicable to discrete, continuous, and mixed random variables. Since, the joint CDF refers to the probability of an event, we must have $0 \leq F_{XY}(x,y) \leq 1$.
 
-<img src="../images/chapter5/cdfXY.png">
+<img src="/images/chapter5/cdfXY.png">
 
 </p>
 <!-- End Section Content -->
