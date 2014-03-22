@@ -50,6 +50,7 @@
 			<div class="left"><h2><?php echo "$section_no $section_title" ?></h2></div>
     		<div class="right hide_print">
 			<a href="http://probabilitycourse.com/videos/chapter4/video4_2.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
+				</div><!-- end right -->
     		<div class="clear"></div>
 
 
