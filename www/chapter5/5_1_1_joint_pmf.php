@@ -44,7 +44,7 @@ We can use the joint PMF to find $P\big( (X,Y) \in A \big)$ for any set $A \subs
 \end{align}
 </div>
 
-Note that the event $X=x$ can be written as $\{(x_i,y_j): x_i=x, \hs y_j \in R_Y \}$. Also, the event $Y=y$ can be written as $\{(x_i,y_j): x_i\in R_X, \hs y_j=y\}$. Thus, we can write
+Note that the event $X=x$ can be written as $\{(x_i,y_j): x_i=x, y_j \in R_Y \}$. Also, the event $Y=y$ can be written as $\{(x_i,y_j): x_i\in R_X, y_j=y\}$. Thus, we can write
 \begin{align}%\label{}
 \nonumber P_{XY}(x,y)&=P(X=x, Y=y) \\
 \nonumber &=P\big((X=x)\cap(Y=y)\big).
@@ -63,9 +63,7 @@ Here we call $P_X(x)$ the \textbf{marginal PMF} of $X$. Similarly, we can find t
 \end{align}
 
 <div style="padding: 20px; border: 2px solid black; margin: 30px 40px;">
-\begin{center}
-Marginal PMFs of $X$ and $Y$:
-\end{center}
+<span style="text-align: center;">Marginal PMFs of $X$ and $Y$:</span>
 \begin{align}\label{Eq:marginals}
 \nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j), \hspace{20pt} \textrm{ for any } x \in R_X\\
  P_Y(y)=\sum_{x_i \in R_X} P_{XY}(x_i,y), \hspace{20pt} \textrm{ for any } y \in R_Y
