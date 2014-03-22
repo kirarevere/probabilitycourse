@@ -87,7 +87,7 @@ for any $x_i \in R_X$ and $y_j \in R_Y$.
 
 <h2>Independent Random Variables:</h2>
 We have defined independent random variables previously. Now that we have seen joint PMFs and CDFs, we can restate the independence definition.
-<div style="padding 25px; margin: 30px 40px; border: 2px solid black;">
+<div style="padding:25px; margin: 30px 40px; border: 2px solid black;">
 Two discrete random variables $X$ and $Y$ are independent if
 \begin{align}%\label{}
 \nonumber  P_{XY}(x,y)=P_X(x) P_Y(y), \hspace{10pt} \textrm{ for all }x,y.
@@ -107,8 +107,8 @@ So, if $X$ and $Y$ are independent, we have
 \end{align}
 As we expect, for independent random variables, the conditional PMF is equal to the marginal PMF. In other words, knowing the value of $Y$ does not provide any information about $X$.
 
-
-
+<img src="images/chapter5/exampleGrid.png" style="width:400px;height:auto;display:block;margin:10px auto;" />
+<p style="text-align:center">Figure 5.4: Grid for example 5.4</p>
 <!-- End Section Content -->
 
 <?php
