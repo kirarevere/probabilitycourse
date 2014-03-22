@@ -109,7 +109,7 @@ Finally, for $0 \leq x <1$ and $0 \leq y < 1$, we have
 
 Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dimensional plane. Note that, in general, we actually need a three-dimensional graph to show a joint CDF of two random variables, i.e., we need three axes: $x$, $y$, and $z=F_{XY}(x,y)$. However, because the random variables of this example are simple, and can take only two values, a two-dimensional figure suffices.
 
-<img src="images/chapter5/FxyJointCDF.png" style="width:400px;height:auto;margin:10px auto;" />
+<img src="images/chapter5/FxyJointCDF.png" style="width:400px;height:auto;margin:10px auto;display:block;" />
 Figure 5.3 Joint CDF for $X$ and $Y$ in Example 5.2
 				</li>
 			</ul>
