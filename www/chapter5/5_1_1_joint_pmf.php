@@ -159,6 +159,24 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br />
     0 &  \quad \text{otherwise}
   \end{array} \right.
 \end{equation}
+				</li>
+				<li>
+ Find $P(Y=1 | X=0)$:
+  Using the formula for conditional probability, we have
+   \begin{align}%\label{}
+       \nonumber P(Y=1 | X=0)&=\frac{P(X=0, Y=1)}{P(X=0)}\\
+       \nonumber &=\frac{P_{XY}(0,1)}{P_X(0)}\\
+       \nonumber &=\frac{\frac{1}{4}}{\frac{13}{24}}=\frac{6}{13}.
+     \end{align}
+				</li>
+				<li>
+  Are $X$ and $Y$ independent? $X$ and $Y$ are not independent, because as we just found out
+
+  \begin{align}%\label{}
+       \nonumber P(Y=1|X=0)=\frac{6}{13} \neq P(Y=1)=\frac{5}{12}.
+  \end{align}
+
+  <b>Caution</b>: If we want to show that $X$ and $Y$ are independent, we need to check that $P(X=x_i,Y=y_j)=P(X=x_i)P(Y=y_j)$, for all $x_i \in R_X$ and all $y_j \in R_Y$. Thus, even if in the above calculation we had found $P(Y=1 | X=0)= P(Y=1)$, we would not yet have been able to conclude that $X$ and $Y$ are independent. For that, we would need to check the independence condition for all  $x_i \in R_X$ and all $y_j \in R_Y$.
 
 						</li>
 					</ol>
