@@ -124,9 +124,8 @@ For two random variables $X$ and $Y$, and real numbers $x_1 \leq x_2$, $y_1 \leq
 \nonumber  P(x_1&lt;X &\leq x_2, \hspace{5pt} y_1&lt;Y \leq y_2)= \\
 \nonumber  &F_{XY}(x_2,y_2)-F_{XY}(x_1,y_2)-F_{XY}(x_2,y_1)+F_{XY}(x_1,y_1).
 \end{align}
-\end{lem}
 
-To see why the above formula is true, you can look at the region associated with $F_{XY}(x,y)$ (as shown in Figure 5.2) for each of the pairs $(x_2,y_2), (x_1,y_2), (x_2,y_1), (x_1,y_1)$. You can see, as we subtract and add regions, the part that is left is the region $\{x_1<X \leq x_2, \hspace{5pt} y_1<Y \leq y_2\}.
+To see why the above formula is true, you can look at the region associated with $F_{XY}(x,y)$ (as shown in Figure 5.2) for each of the pairs $(x_2,y_2), (x_1,y_2), (x_2,y_1), (x_1,y_1)$. You can see, as we subtract and add regions, the part that is left is the region $\{x_1<X \leq x_2, \hspace{5pt} y_1<Y \leq y_2\}$.
 
 <!-- End Section Content -->
 
