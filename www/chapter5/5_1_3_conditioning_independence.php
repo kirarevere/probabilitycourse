@@ -188,6 +188,90 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
 	</li></ol></li></ul></li></ul>
 </div>
 <!-- /Example -->
+
+<h2>Conditional Expectation:</h2>
+Given that we know event $A$ has occurred, we can compute the conditional expectation of a random variable $X$, $E[X|A]$. Conditional expectation is similar to ordinary e
+xpectation. The only difference is that we replace the PMF by the conditional PMF. Specifically, we have
+\begin{align}%\label{}
+\nonumber E[X|A]=\sum_{x_i \in R_{X}} x_i P_{X|A}(x_i).
+\end{align}
+Similarly, given that we have observed the value of random variable $Y$, we can compute the conditional expectation of $X$. Specifically, the conditional expectation of $
+X$ given that $Y=y$ is
+\begin{align}%\label{}
+\nonumber E[X|Y=y]=\sum_{x_i \in R_{X}} x_i P_{X|Y}(x_i|y).
+\end{align}
+
+<div style="padding: 25px; margin 30px 40px; border: 2px solid black;">
+<p style="text-align: center">Conditional Expectation of $X$:</p>
+\begin{align}%\label{}
+\nonumber &E[X|A]=\sum_{x_i \in R_{X}} x_i P_{X|A}(x_i)\\
+\nonumber &E[X|Y=y_j]=\sum_{x_i \in R_{X}} x_i P_{X|Y}(x_i|y_j)
+\end{align}
+</div>
+
+<!-- Example -->
+<span class="example">Example </span>
+Let $X$ and $Y$ be the same as in Example 5.4.
+<ol type="a">
+	<li>Find $E[X|Y=1|$.</li>
+	<li>Find $E[X| -1&lt;Y&lt;2]$.</li>
+	<li>Find $E\big[|X| \big{|} -1&lt;Y&lt;2\big]$.</li>
+</ol>
+
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+		<ul><li>
+			<ol type="a">
+				<li>
+	To find $E[X|Y=1]$, we have
+  \begin{align}%\label{}
+  \nonumber E[X|Y=1]=\sum_{x_i \in R_{X}} x_i P_{X|Y}(x_i|1).
+  \end{align}
+  We found in Example 5.4 that given $Y=1$, $X$ is uniformly distributed over the set $\{-1,0,1\}$. Thus, we conclude that
+  \begin{align}%\label{}
+  \nonumber E[X|Y=1]=\frac{1}{3}(-1+0+1)=0.
+  \end{align}
+	</li><li>
+
+  To find $E[X| -1<Y<2]$, let $A$ be the event that $-1<Y<2$, i.e., $Y \in \{0,1\}$. To find $E[X|A]$, we need to find the conditional PMF, $P_{X|A}(k)$, for $k=-2,1,0,1,2$. First, note that
+      \begin{align}%\label{}
+          \nonumber P(A)=P_Y(0)+P_Y(1)= \frac{5}{13}+\frac{3}{13}=\frac{8}{13}.
+      \end{align}
+      Thus, for $k=-2,1,0,1,2$, we have
+      \begin{align}%\label{}
+       \nonumber  &P_{X|A}(k)=\frac{13}{8}P(X=k,A).
+      \end{align}
+      So, we can write
+     \begin{align}%\label{}
+       \nonumber  &P_{X|A}(-2)=\frac{13}{8}P(X=-2,A)\\
+       \nonumber  &=\frac{13}{8}P_{XY}(-2,0)=\frac{1}{8},\\
+       \nonumber  &P_{X|A}(-1)=\frac{13}{8}P(X=-1,A)\\
+       \nonumber  &=\frac{13}{8}\big[P_{XY}(-1,0)+P_{XY}(-1,1)\big]=\frac{2}{8}=\frac{1}{4},\\
+       \nonumber  &P_{X|A}(\hspace{4pt}0\hspace{3pt})=\frac{13}{8}P(X=0,A)\\
+       \nonumber  &=\frac{13}{8}\big[P_{XY}(0,0)+P_{XY}(0,1)\big]=\frac{2}{8}=\frac{1}{4},\\
+       \nonumber  &P_{X|A}(\hspace{4pt}1\hspace{3pt})=\frac{13}{8}P(X=1,A)\\
+       \nonumber  &=\frac{13}{8}\big[P_{XY}(1,0)+P_{XY}(1,1)\big]=\frac{2}{8}=\frac{1}{4},\\
+       \nonumber  &P_{X|A}(\hspace{4pt}2\hspace{3pt})=\frac{13}{8}P(X=2,A)\\
+       \nonumber  &=\frac{13}{8}P_{XY}(2,0)=\frac{1}{8}.
+     \end{align}
+     Thus, we have
+     \begin{align}%\label{}
+      \nonumber E[X|A]&=\sum_{x_i \in R_{X}} x_i P_{X|A}(x)\\
+      \nonumber &=(-2)\frac{1}{8}+(-1)\frac{1}{4}+0 \frac{1}{4}+1 . \frac{1}{4}+2 . \frac{1}{8}=0.
+     \end{align}
+			</li><li>
+
+     To find $E\big[|X| \big{|} -1<Y<2\big]$, we use the conditional PMF and LOTUS. We have
+     \begin{align}%\label{}
+      \nonumber E[|X| \big{|} A]&=\sum_{x_i \in R_{X}} |x_i| P_{X|A}(x)\\
+      \nonumber &=|-2|\cdot \frac{1}{8}+|-1| \cdot \frac{1}{4}+ 0 \cdot \frac{1}{4}+1 \cdot \frac{1}{4}+2 \cdot \frac{1}{8}=1.
+     \end{align}
+		</li></ol>
+		</li></ul>
+		</li></ul></div>
+
+<!-- /Example -->
+
 <!-- End Section Content -->
 
 <?php
