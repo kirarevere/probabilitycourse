@@ -330,7 +330,7 @@ In this equation, $E[X|T]=1+EX$, because the tosses are independent, so if the f
 \nonumber  EX =\frac{1}{p}.
 \end{align}
 	</li></ul>
-	</li></ul></div><hr /><br />
+	</li></ul></div><br />
 
 <!-- /Example -->
 
@@ -362,6 +362,42 @@ Thus, using the law of total probability, we have
 		</li></ul>
 		</li></ul>
 </div></hr /><br />
+<!-- /Example -->
+
+<h2>Functions of two random variables</h2>
+Analysis of a function of two random variables is pretty much the same as for a function of a single random variable. Suppose that you have two discrete random variables $X$ and $Y$, and suppose that $Z=g(X,Y)$, where $g: \mathbb{R}^2 \mapsto \mathbb{R}$. Then, if we are interested in the PMF of $Z$, we can write
+\begin{align}%\label{}
+\nonumber P_{Z}(z) &=P(g(X,Y)=z)  \\
+\nonumber &=\sum_{(x_i,y_j) \in A_z} P_{XY}(x_i,y_j), \hspace{10pt} \textrm{ where } A_z=\{(x_i,y_j) \in R_{XY}:g(x_i,y_j)=z\}.
+\nonumber
+\end{align}
+
+Note that if we are only interested in $E[g(X,Y)]$, we can directly use LOTUS, without finding $P_Z(z)$:
+
+<div style="padding: 25px; margin: 30px 40px; border: 2px solid black;">
+<p style="text-align:center;">Law of the unconscious statistician (LOTUS) for two discrete random variables:</p>
+\begin{align}\label{eq:LOTUS-2D}
+  E[g(X,Y)]=\sum_{(x_i,y_j) \in R_{XY}} g(x_i,y_j)P_{XY}(x_i,y_j)
+\end{align}
+</div>
+
+<!-- Example -->
+<hr /><span class="example">Example </span><br />
+<b>Linearity of Expectation:</b> For two discrete random variables $X$ and $Y$, show that $E[X+Y]=EX+EY$.
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+		<ul><li>
+Let $g(X,Y)=X+Y$. Using LOTUS, we have
+\begin{align}\label{eq:LOTUS-2D}
+  \nonumber E[X+Y]&=\sum_{(x_i,y_j) \in R_{XY}} (x_i+y_j)P_{XY}(x_i,y_j)\\
+  \nonumber &=\sum_{(x_i,y_j) \in R_{XY}} x_iP_{XY}(x_i,y_j)+\sum_{(x_i,y_j) \in R_{XY}} y_jP_{XY}(x_i,y_j)\\
+  \nonumber &=\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} x_iP_{XY}(x_i,y_j)+\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} y_jP_{XY}(x_i,y_j)\\
+  \nonumber &=\sum_{x_i \in R_{X}} x_i \sum_{y_j\in R_{Y}} P_{XY}(x_i,y_j)+ \sum_{y_j\in R_{Y}} y_j \sum_{x_i \in R_{X}} P_{XY}(x_i,y_j)\\
+  \nonumber &=\sum_{x_i \in R_{X}} x_i  P_{X}(x_i)+ \sum_{y_j\in R_{Y}} y_j P_{Y}(y_j)  &\textrm{marginal PMF (Equation \ref{Eq:marginals})}\\
+  \nonumber &=EX+EY.
+\end{align}
+		</li></ul>
+		</li></ul></div><hr /><br />
 <!-- /Example -->
 
 <!-- End Section Content -->
