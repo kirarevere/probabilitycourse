@@ -233,7 +233,7 @@ Let $X$ and $Y$ be the same as in Example 5.4.
   \end{align}
 	</li><li>
 
-  To find $E[X| -1<Y<2]$, let $A$ be the event that $-1<Y<2$, i.e., $Y \in \{0,1\}$. To find $E[X|A]$, we need to find the conditional PMF, $P_{X|A}(k)$, for $k=-2,1,0,1,2$. First, note that
+  To find $E[X| -1&lt;Y&lt;2]$, let $A$ be the event that $-1&lt;Y&lt;2$, i.e., $Y \in \{0,1\}$. To find $E[X|A]$, we need to find the conditional PMF, $P_{X|A}(k)$, for $k=-2,1,0,1,2$. First, note that
       \begin{align}%\label{}
           \nonumber P(A)=P_Y(0)+P_Y(1)= \frac{5}{13}+\frac{3}{13}=\frac{8}{13}.
       \end{align}
