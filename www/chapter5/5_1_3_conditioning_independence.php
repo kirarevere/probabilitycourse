@@ -388,12 +388,12 @@ Note that if we are only interested in $E[g(X,Y)]$, we can directly use LOTUS, w
 	<ul><li><a><b>Solution</b></a>
 		<ul><li>
 Let $g(X,Y)=X+Y$. Using LOTUS, we have
-\begin{align}\label{eq:LOTUS-2D}
-  \nonumber E[X+Y]&=\sum_{(x_i,y_j) \in R_{XY}} (x_i+y_j)P_{XY}(x_i,y_j)\\
-  \nonumber &=\sum_{(x_i,y_j) \in R_{XY}} x_iP_{XY}(x_i,y_j)+\sum_{(x_i,y_j) \in R_{XY}} y_jP_{XY}(x_i,y_j)\\
-  \nonumber &=\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} x_iP_{XY}(x_i,y_j)+\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} y_jP_{XY}(x_i,y_j)\\
-  \nonumber &=\sum_{x_i \in R_{X}} x_i \sum_{y_j\in R_{Y}} P_{XY}(x_i,y_j)+ \sum_{y_j\in R_{Y}} y_j \sum_{x_i \in R_{X}} P_{XY}(x_i,y_j)\\
-  \nonumber &=\sum_{x_i \in R_{X}} x_i  P_{X}(x_i)+ \sum_{y_j\in R_{Y}} y_j P_{Y}(y_j)  &\textrm{marginal PMF (Equation \ref{Eq:marginals})}\\
+\begin{align}
+  \nonumber E[X+Y]&=\sum_{(x_i,y_j) \in R_{XY}} (x_i+y_j)P_{XY}(x_i,y_j) \\
+  \nonumber &=\sum_{(x_i,y_j) \in R_{XY}} x_iP_{XY}(x_i,y_j)+\sum_{(x_i,y_j) \in R_{XY}} y_jP_{XY}(x_i,y_j) \\
+  \nonumber &=\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} x_iP_{XY}(x_i,y_j)+\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} y_jP_{XY}(x_i,y_j) \\
+  \nonumber &=\sum_{x_i \in R_{X}} x_i \sum_{y_j\in R_{Y}} P_{XY}(x_i,y_j)+ \sum_{y_j\in R_{Y}} y_j \sum_{x_i \in R_{X}} P_{XY}(x_i,y_j) \\
+  \nonumber &=\sum_{x_i \in R_{X}} x_i  P_{X}(x_i)+ \sum_{y_j\in R_{Y}} y_j P_{Y}(y_j)  &\textrm{marginal PMF (Equation \ref{Eq:marginals})} \\
   \nonumber &=EX+EY.
 \end{align}
 		</li></ul>
