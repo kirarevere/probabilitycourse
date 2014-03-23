@@ -215,7 +215,7 @@ Let $X$ and $Y$ be the same as in Example 5.4.
 <ol type="a">
 	<li>Find $E[X|Y=1|$.</li>
 	<li>Find $E[X| -1&lt;Y&lt;2]$.</li>
-	<li>Find $E\big[|X| \big{|} -1&lt;Y&lt;2\big]$.</li>
+	<li>Find $E[|X| | -1&lt;Y&lt;2]$.</li>
 </ol>
 
 <div class="solvedprob">
@@ -261,7 +261,7 @@ Let $X$ and $Y$ be the same as in Example 5.4.
      \end{align}
 			</li><li>
 
-     To find $E\big[|X| \big{|} -1<Y<2\big]$, we use the conditional PMF and LOTUS. We have
+     To find $E\big[|X| \big{|} -1&lt;Y&lt;2\big]$, we use the conditional PMF and LOTUS. We have
      \begin{align}%\label{}
       \nonumber E[|X| \big{|} A]&=\sum_{x_i \in R_{X}} |x_i| P_{X|A}(x)\\
       \nonumber &=|-2|\cdot \frac{1}{8}+|-1| \cdot \frac{1}{4}+ 0 \cdot \frac{1}{4}+1 \cdot \frac{1}{4}+2 \cdot \frac{1}{8}=1.
