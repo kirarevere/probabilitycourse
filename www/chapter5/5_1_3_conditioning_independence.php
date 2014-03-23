@@ -314,7 +314,7 @@ Law of Total Expectation:
 </div>
 
 <!-- Example -->
-<hr /><span class="example">Example </span>
+<hr /><span class="example">Example </span><br />
 Let $X \sim Geometric(p)$. Find $EX$ by conditioning on the result of the first "coin toss."
 <div class="solvedprob">
 	<ul><li><a><b>Solution</b></a>
@@ -332,10 +332,36 @@ In this equation, $E[X|T]=1+EX$, because the tosses are independent, so if the f
 	</li></ul>
 	</li></ul></div><hr /><br />
 
-\begin{example}\label{ex:customer-drink}
-Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Assume that each customer purchases a drink with probability $p$, independently from other customers and independently from the value of $N$. Let $X$ be the number of customers who purchase drinks. Find $EX$.
-\end{example}
+<!-- /Example -->
 
+<!-- Example -->
+<hr /><span class="example">Example </span><br />
+Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Assume that each customer purchases a drink with probability $p$, independently from other customers and independently from the value of $N$. Let $X$ be the number of customers who purchase drinks. Find $EX$.
+
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+		<ul><li>
+	By the above information, we conclude that given $N=n$, then $X$ is a sum of $n$ independent $Bernoulli(p)$ random variables. Thus, given $N=n$, $X$ has a binomial distribution with parameters $n$ and $p$. We write
+\begin{align}%\label{}
+\nonumber X|N=n \hspace{4pt} \sim \hspace{4pt}  Binomial(n,p).
+\end{align}
+That is,
+\begin{align}%\label{}
+\nonumber P_{X|N}(k|n)={n \choose k} p^k(1-p)^{n-k}.
+\end{align}
+Thus, we conclude
+\begin{align}%\label{}
+\nonumber E[X|N=n]=np.
+\end{align}
+Thus, using the law of total probability, we have
+\begin{align}
+\nonumber E[X]&=\sum_{n=0}^{\infty} E[X|N=n]P_N(n)\\
+\nonumber &=\sum_{n=0}^{\infty} npP_N(n)\\
+\nonumber &=p\sum_{n=0}^{\infty} nP_N(n)=pE[N]=p\lambda.
+\end{align}
+		</li></ul>
+		</li></ul>
+</div></hr /><br />
 <!-- /Example -->
 
 <!-- End Section Content -->
