@@ -243,15 +243,15 @@ Let $X$ and $Y$ be the same as in Example 5.4.
       \end{align}
       So, we can write
      \begin{align}%\label{}
-       \nonumber  &P_{X|A}(-2)=\frac{13}{8}P(X=-2,A)\\
+       \nonumber  P_{X|A}(-2)&=\frac{13}{8}P(X=-2,A)\\
        \nonumber  &=\frac{13}{8}P_{XY}(-2,0)=\frac{1}{8},\\
-       \nonumber  &P_{X|A}(-1)=\frac{13}{8}P(X=-1,A)\\
+       \nonumber  P_{X|A}(-1)&=\frac{13}{8}P(X=-1,A)\\
        \nonumber  &=\frac{13}{8}\big[P_{XY}(-1,0)+P_{XY}(-1,1)\big]=\frac{2}{8}=\frac{1}{4},\\
-       \nonumber  &P_{X|A}(\hspace{4pt}0\hspace{3pt})=\frac{13}{8}P(X=0,A)\\
+       \nonumber  P_{X|A}(\hspace{4pt}0\hspace{3pt})&=\frac{13}{8}P(X=0,A)\\
        \nonumber  &=\frac{13}{8}\big[P_{XY}(0,0)+P_{XY}(0,1)\big]=\frac{2}{8}=\frac{1}{4},\\
-       \nonumber  &P_{X|A}(\hspace{4pt}1\hspace{3pt})=\frac{13}{8}P(X=1,A)\\
+       \nonumber  P_{X|A}(\hspace{4pt}1\hspace{3pt})&=\frac{13}{8}P(X=1,A)\\
        \nonumber  &=\frac{13}{8}\big[P_{XY}(1,0)+P_{XY}(1,1)\big]=\frac{2}{8}=\frac{1}{4},\\
-       \nonumber  &P_{X|A}(\hspace{4pt}2\hspace{3pt})=\frac{13}{8}P(X=2,A)\\
+       \nonumber  P_{X|A}(\hspace{4pt}2\hspace{3pt})&=\frac{13}{8}P(X=2,A)\\
        \nonumber  &=\frac{13}{8}P_{XY}(2,0)=\frac{1}{8}.
      \end{align}
      Thus, we have
