@@ -279,7 +279,7 @@ Remember the law of total probability: If $B_1, B_2, B_3,...$ is a partition of 
 \begin{align}\label{}
     \nonumber P(A)=\sum_{i} P(A \cap B_i)=\sum_{i} P(A | B_i) P(B_i).
 \end{align}
-If $Y$ is a discrete random variable with range $R_Y=\{y_1,y_2,...\}$, then the events $\{Y=y_1\}$, \hs $\{Y=y_2\}$, \hs $\{Y=y_3\}$, $\cdots$ form a partition of the sample space. Thus, we can use law of total probability. In fact we have already used law of total probability to find the marginal PMFs:
+If $Y$ is a discrete random variable with range $R_Y=\{y_1,y_2,...\}$, then the events $\{Y=y_1\}$,  $\{Y=y_2\}$, $\{Y=y_3\}$, $\cdots$ form a partition of the sample space. Thus, we can use law of total probability. In fact we have already used law of total probability to find the marginal PMFs:
 \begin{align}
 \nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j)=\sum_{y_j \in R_Y} P_{X|Y}(x|y_j)P_Y(y_j).
 \end{align}
@@ -312,6 +312,31 @@ Law of Total Expectation:
 	</li>
 </ol>
 </div>
+
+<!-- Example -->
+<hr /><span class="example">Example </span>
+Let $X \sim Geometric(p)$. Find $EX$ by conditioning on the result of the first "coin toss."
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+		<ul><li>
+Remember that the random experiment behind $Geometric(p)$ is that we have a coin with $P(H)=p$.  We toss the coin repeatedly until we observe the first heads. $X$ is the total number of coin tosses. Now, there are two possible outcomes for the first coin toss: $H$ or $T$. Thus, we can use the law of total expectation (Equation 5.3):
+\begin{align}%\label{}
+\nonumber  EX &=E[X|H]P(H)+E[X|T]P(T)\\
+\nonumber   &=pE[X|H]+(1-p)E[X|T]\\
+\nonumber   &=p \cdot 1+(1-p)(EX+1).
+\end{align}
+In this equation, $E[X|T]=1+EX$, because the tosses are independent, so if the first toss is tails, it is like starting over on the second toss. Solving for $EX$, we obtain
+\begin{align}%\label{}
+\nonumber  EX =\frac{1}{p}.
+\end{align}
+	</li></ul>
+	</li></ul></div><hr /><br />
+
+\begin{example}\label{ex:customer-drink}
+Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Assume that each customer purchases a drink with probability $p$, independently from other customers and independently from the value of $N$. Let $X$ be the number of customers who purchase drinks. Find $EX$.
+\end{example}
+
+<!-- /Example -->
 
 <!-- End Section Content -->
 
