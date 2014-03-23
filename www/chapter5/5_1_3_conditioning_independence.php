@@ -207,10 +207,10 @@ X$ given that $Y=y$ is
 \nonumber &E[X|A]=\sum_{x_i \in R_{X}} x_i P_{X|A}(x_i)\\
 \nonumber &E[X|Y=y_j]=\sum_{x_i \in R_{X}} x_i P_{X|Y}(x_i|y_j)
 \end{align}
-</div>
+</div><br />
 
 <!-- Example -->
-<span class="example">Example </span>
+<hr /><span class="example">Example </span>
 Let $X$ and $Y$ be the same as in Example 5.4.
 <ol type="a">
 	<li>Find $E[X|Y=1|$.</li>
@@ -268,9 +268,50 @@ Let $X$ and $Y$ be the same as in Example 5.4.
      \end{align}
 		</li></ol>
 		</li></ul>
-		</li></ul></div>
+		</li></ul></div><hr /><br />
 
 <!-- /Example -->
+
+Conditional expectation has some interesting properties that are used commonly in practice. Thus, we will revisit conditional expectation in Section 5.1.5, where we discuss properties of conditional expectation, conditional variance, and their applications.
+
+<h2>Law of Total Probability:</h2>
+Remember the law of total probability: If $B_1, B_2, B_3,...$ is a partition of the sample space $S$, then for any event $A$ we have
+\begin{align}\label{}
+    \nonumber P(A)=\sum_{i} P(A \cap B_i)=\sum_{i} P(A | B_i) P(B_i).
+\end{align}
+If $Y$ is a discrete random variable with range $R_Y=\{y_1,y_2,...\}$, then the events $\{Y=y_1\}$, \hs $\{Y=y_2\}$, \hs $\{Y=y_3\}$, $\cdots$ form a partition of the sample space. Thus, we can use law of total probability. In fact we have already used law of total probability to find the marginal PMFs:
+\begin{align}
+\nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j)=\sum_{y_j \in R_Y} P_{X|Y}(x|y_j)P_Y(y_j).
+\end{align}
+We can write this more generally as
+\begin{align}
+\nonumber P(X \in A)=\sum_{y_j \in R_Y} P(X \in A|Y=y_j)P_Y(y_j), \hspace{10pt} \textrm{for any set $A$}.
+\end{align}
+We can write a similar formula for expectation as well. Indeed, if $B_1, B_2, B_3,...$ is a partition of the sample space $S$, then
+\begin{align}\label{}
+    \nonumber EX=\sum_{i} E[X|B_i]P(B_i).
+\end{align}
+To see this, just write the definition of $E[X|B_i]$ and apply the law of total probability. The above equation is sometimes called the law of total expectation [<a href="bibliography.html">2</a>].
+
+<div style="padding: 25px; margin: 30px 40px; border: 2px solid black;">
+Law of Total Probability:
+\begin{align}
+\nonumber &P(X \in A)=\sum_{y_j \in R_Y} P(X \in A|Y=y_j)P_Y(y_j), \hspace{10pt} \textrm{for any set $A$}.
+\end{align}
+Law of Total Expectation:
+<ol>
+  <li>If $B_1, B_2, B_3,...$ is a partition of the sample space $S$,
+  \begin{align}\label{eq:LOTPE-EV}
+     EX=\sum_{i} E[X|B_i]P(B_i).
+  \end{align}
+	</li><li>
+  For a random variable $X$ and a discrete random variable $Y$,
+  \begin{align}\label{eq:LOTPE-RV}
+     EX=\sum_{y_j \in R_Y} E[X|Y=y_j]P_Y(y_j).
+   \end{align}
+	</li>
+</ol>
+</div>
 
 <!-- End Section Content -->
 
