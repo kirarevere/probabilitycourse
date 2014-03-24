@@ -415,7 +415,7 @@ Let $X,Y \sim Geometric(p)$ be independent, and let $Z=\frac{X}{Y}$.
    \end{align}
 		</li>
 		<li>
-    \item Find $EZ$: We can use LOTUS to find $EZ$. Let us first remember the following useful identities:
+    Find $EZ$: We can use LOTUS to find $EZ$. Let us first remember the following useful identities:
     \begin{align}%\label{}
       \nonumber \sum_{k=1}^{\infty} kx^{k-1}= \frac{1}{(1-x)^2}, \hspace{40pt} \textrm{ for }|x|<1,
    \end{align}
