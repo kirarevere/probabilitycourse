@@ -468,6 +468,16 @@ To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ indepen
 \nonumber  &=\sum_{i=1}^{N} \textrm{Var}(X_i) &(\textrm{since }X_i\textrm{'s are independent of }N)\\
 \nonumber   &=N Var(X).
 \end{align}
+
+Thus, we have
+\begin{align}\label{al2}
+  E(\textrm{Var}(Y|N))=EN \var(X).
+\end{align}
+Combining Equations \ref{al1} and \ref{al2}, we obtain
+\begin{align}
+\nonumber  \textrm{Var}(Y)= EN \var(X)+(EX)^2 \var(N).
+\end{align}
+
 </li></ul>
 </li></ul></div><br />
 
