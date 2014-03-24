@@ -182,7 +182,8 @@ Let $X$ and $Y$ be two discrete random variables, with range
   \begin{align}%\label{}
   \nonumber P_{XY}=(i,j)=\frac{1}{6 \cdot 2^{\min(i,j)}}, \hspace{10pt} \textrm{ for }(i,j) \in R_{XY}.
   \end{align}
-<img src="images/chapter5/solved1.png" style="width:330px;height:auto;margin:10px auto;" />
+<img src="images/chapter5/solved1.png" style="width:400px;height:auto;margin:10px auto;" />
+<p style="text-align:center;">Figure 5.5: Figure shows $R_{XY}$ for $X$ and $Y$ in problem 4</p>
 
 <ol>
     <li>Pictorially show $R_{XY}$ in the $x-y$ plane.</li>
