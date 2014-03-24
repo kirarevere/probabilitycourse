@@ -85,7 +85,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 	</tr>
 
 	<tr style="height: 80px;">
-		<td>$X = 1$</td><td>$\frac{2}{5}$</td><td>0</td>
+		<td>$X = 1$</td><td>$\frac{2}{5}$</td><td>$0$</td>
 	</td>
 </table>
 
