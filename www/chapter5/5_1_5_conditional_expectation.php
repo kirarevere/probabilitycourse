@@ -221,6 +221,33 @@ Thinking of this as a function of the random variable $X$, it can be rewritten a
 </div>
 <!-- /Example -->
 
+<h2>Iterated Expectations:</h2>
+Let us look again at the law of total probability for expectation. Assuming $g(Y)=E[X|Y]$, we have
+\begin{align}
+\nonumber E[X]&=\sum_{y_j \in R_Y} E[X|Y=y_j]P_Y(y_j)\\
+\nonumber &=\sum_{y_j \in R_Y} g(y_j)P_Y(y_j)\\
+\nonumber &=E[g(Y)] \hspace{30pt} \textrm{by LOTUS (Equation \ref{eq:LOTUS})}\\
+\nonumber &=E[E[X|Y]].
+\end{align}
+Thus, we conclude
+\begin{align} \label{eq:iteratedE}
+   E[X]=E[E[X|Y]].
+\end{align}
+This equation might look a little confusing at first, but it is just another way of writing the law of total expectation (Equation \ref{eq:LOTPE-RV}). To better understand it, let's solve Example \ref{ex:customer-drink} using this terminology. In that example, we want to find $EX$. We can write
+\begin{align}
+\nonumber E[X]&=E[E[X|N]]\\
+\nonumber &=E[Np] \hspace{30pt} \big{(}\textrm{since }X|N \sim Binomial(N,p)\big{)}\\
+\nonumber &=pE[N]=p\lambda.
+\end{align}
+
+Equation \ref{eq:iteratedE} is called the \textit{law of iterated expectations}. Since it is basically the same as Equation \ref{eq:LOTPE-RV}, it is also called the law of total expectation \cite{wiki-LOTE}.
+
+<div style="padding: 25px; margin: 30px 40px; border: 2px solid black;">
+\begin{align}
+\nonumber  \textrm{Law of Iterated Expectations: } E[X]=E[E[X|Y]]
+\end{align}
+</div>
+
 
 <!-- /Section Content -->
 
