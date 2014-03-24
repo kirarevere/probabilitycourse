@@ -172,6 +172,33 @@ To find the CDF of $Z$, we can write
 
 </li></ul>
 </li></ul></div><hr /><br />
+
+<span class="problem">Problem </span><br />
+Let $X$ and $Y$ be two discrete random variables, with range
+  \begin{align}%\label{}
+  \nonumber R_{XY}=\{(i,j) \in \mathbb{Z}^2|i,j \geq 0, |i-j|\leq 1\},
+  \end{align}
+  and joint PMF given by
+  \begin{align}%\label{}
+  \nonumber P_{XY}=(i,j)=\frac{1}{6 \cdot 2^{\min(i,j)}}, \hspace{10pt} \textrm{ for }(i,j) \in R_{XY}.
+  \end{align}
+<img src="images/chapter5/solved1.png" style="width:330px;height:auto;margin:10px auto;" />
+
+<ol>
+    <li>Pictorially show $R_{XY}$ in the $x-y$ plane.</li>
+    <li>Find the marginal PMFs $P_X(i)$, $P_Y(j)$.</li>
+    <li>Find $P(X=Y|X<2)$.</li>
+    <li>Find $P(1 \leq X^2+Y^2 \leq 5)$.</li>
+    <li>Find $P(X=Y)$.</li>
+    <li>Find $E[X|Y=2]$.</li>
+    <li>Find Var$(X|Y=2)$.</li>
+</ol>
+
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+
+</li></ul>
+</li></ul></div><hr /><br />
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
