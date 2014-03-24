@@ -419,9 +419,12 @@ There are several ways that we can look at the law of total variance to get some
 \begin{align}\label{eq:condReducesVariance}
   \textrm{Var}(X) \geq E(\textrm{Var}(X|Y)).
 \end{align}
+<p>
 This states that when we condition on $Y$, the variance of $X$ reduces on average. To describe this intuitively, we can say that variance of a random variable is a measure of our uncertainty about that random variable. For example, if Var$(X)=0$, we do not have any uncertainty about $X$. Now, the above inequality simply states that if we obtain some extra information, i.e., we know the value of $Y$, our uncertainty about the value of the random variable $X$  reduces on average. So, the above inequality makes sense. Now, how do we explain the whole law of total variance?
-
+</p>
+<p>
 To describe the law of total variance intuitively, it is often useful to look at a population divided into several groups. In particular, suppose that we have this random experiment: We pick a person in the world at random and look at his/her height. Let's call the resulting value $X$. Define another random variable $Y$ whose value depends on the country of the chosen person, where $Y=1,2,3,...,n$, and $n$ is the number of countries in the world. Then, let's look at the two terms in the law of total variance.
+</p>
 \begin{align}
 \nonumber  \textrm{Var}(X)=E(\textrm{Var}(X|Y))+\textrm{Var}(E[X|Y]).
 \end{align}
@@ -458,17 +461,15 @@ To find Var$(Y)$, we use the law of total variance:
 \nonumber  &=E(\textrm{Var}(Y|N))+\textrm{Var}(NEX) &(\textrm{as above})\\
  &=E(\textrm{Var}(Y|N))+(EX)^2\textrm{Var}(N).
 \end{align}
-To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ independent random variables. As we discussed before, for $n$ independent random variables, the variance of the sum is equal to sum of the variances. This fact is officially proved in Section \ref{sec:moreRV} and also in Chapter \ref{chapt:multipleRV}, but we have occasionally used it as it simplifies the analysis. Thus, we can write
+To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ independent random variables. As we discussed before, for $n$ independent random variables, the variance of the sum is equal to sum of the variances. This fact is officially proved in Section 5.3 and also in Chapter 6, but we have occasionally used it as it simplifies the analysis. Thus, we can write
 
 \begin{align}
 \nonumber  \textrm{Var}(Y|N)&=\sum_{i=1}^{N} \textrm{Var}(X_i|N)\\
 \nonumber  &=\sum_{i=1}^{N} \textrm{Var}(X_i) &(\textrm{since }X_i\textrm{'s are independent of }N)\\
-\nonumber   &=N \var(X).
+\nonumber   &=N Var(X).
 \end{align}
 </li></ul>
 </li></ul></div><br />
-
-
 
 <!-- /Section Content -->
 
