@@ -76,19 +76,15 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 	}
 </style>
 <table id="table5_2">
-	$X \neq Y$
 	<tr style="height: 50px;">
-		$X \neq Y$
-		<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td>	
+		<td>&nbsp;</td><td>$X \neq Y$ $Y = 0$</td><td>$Y = 1$</td>	
 	</tr>
 		
 	<tr style="height:80px;">
-		$X \neq Y$
 		<td>$X = 0$</td><td>$\frac{1}{5}$</td><td>$\frac{2}{5}$</td>
 	</tr>
 
 	<tr style="height: 80px;">
-		$X \neq Y$
 		<td>$X = 1$</td><td>$\frac{2}{5}$</td><td>$0$</td>
 	</td>
 </table>
