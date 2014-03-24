@@ -233,10 +233,10 @@ Thus, we conclude
 \begin{align} \label{eq:iteratedE}
    E[X]=E[E[X|Y]].
 \end{align}
-This equation might look a little confusing at first, but it is just another way of writing the law of total expectation (Equation \ref{eq:LOTPE-RV}). To better understand it, let's solve Example \ref{ex:customer-drink} using this terminology. In that example, we want to find $EX$. We can write
+This equation might look a little confusing at first, but it is just another way of writing the law of total expectation (Equation 5.7). To better understand it, let's solve Example \ref{ex:customer-drink} using this terminology. In that example, we want to find $EX$. We can write
 \begin{align}
-\nonumber E[X]&=E[E[X|N]]\\
-\nonumber &=E[Np] \hspace{30pt} \big{(}\textrm{since }X|N \sim Binomial(N,p)\big{)}\\
+\nonumber E[X]&=E[E[X|N]] \\
+\nonumber &=E[Np] \hspace{30pt} \big{(}\textrm{since }X|N \sim Binomial(N,p)\big{)} \\
 \nonumber &=pE[N]=p\lambda.
 \end{align}
 
