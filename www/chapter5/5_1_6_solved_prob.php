@@ -118,6 +118,32 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.3.
 
 </li></ul>
 </li></ul></div><hr /><br />
+
+<span class="problem">Problem </span><br />
+I have a bag containing $40$ blue marbles and $60$ red marbles. I choose $10$ marbles (without replacement) at random. Let $X$ be the number of blue marbles and $y$ be the number of red marbles. Find the joint PMF of $X$ and $Y$.
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+This is, in fact, a hypergeometric distribution. First, note that we must have $X+Y=10$, so
+  \begin{align}%\label{}
+  \nonumber R_{XY}&=\{(i,j) | i+j=10, i,j \in \mathbb{Z}, i,j \geq 0\}\\
+  \nonumber &=\{(0,10),(1,9),(2,8),...,(10,0)\}.
+  \end{align}
+
+  Then, we can write
+  %\begin{align}%\label{}
+%  \nonumber P_{XY}(i,j)&=\frac{{40 \choose i} {60 \choose j}{100 \choose 10}}
+%   \end{align}
+
+   \begin{equation}
+  \nonumber P_{XY}(i,j)= \left\{
+  \begin{array}{l l}
+     \frac{{40 \choose i} {60 \choose j}}{{100 \choose 10}} &  \quad  i+j=10, i,j \in \mathbb{Z}, i,j \geq 0  \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+ \end{equation}
+
+</li></ul>
+</li></ul></div><hr /><br />
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
