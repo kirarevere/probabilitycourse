@@ -66,6 +66,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 		border-collapse: collapse;
 		width: 330px;
 		margin: 10px auto;
+		font-size: 16pt;
 	}
 
 	#table5_2 td { 
@@ -77,7 +78,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 </style>
 <table id="table5_2">
 	<tr style="height: 50px;">
-		<td>&nbsp;</td><td>TEST $Y = 0$</td><td>$Y = 1$</td>	
+		<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td>	
 	</tr>
 		
 	<tr style="height:80px;">
