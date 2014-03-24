@@ -197,7 +197,7 @@ Let $X$ and $Y$ be two discrete random variables, with range
 
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
-<ol>
+<ol type="a"> 
     <li>First, by symmetry we note that $X$ and $Y$ have the same PDF. Next, we can write
     \begin{align}\label{}
       \nonumber &P_X(0)=P_{XY}(0,0)+P_{XY}(0,1)=\frac{1}{6}+\frac{1}{6}=\frac{1}{3};\\
@@ -279,6 +279,80 @@ Let $X$ and $Y$ be two discrete random variables, with range
       \nonumber &=\frac{11}{16}.
     \end{align}
 </li>
+</ol>
+</li></ul>
+</li></ul></div><hr /><br />
+
+<span class="problem">Problem </span><br />
+ Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Assume that each customer purchases a drink with probability $p$, independently from other customers, and independently from the value of $N$. Let $X$ be the number of customers who purchase drinks. Let $Y$ be the number of customers that do not purchase drinks; so $X+Y=N$.
+<ol type="a">
+        <li>Find the marginal PMFs of $X$ and $Y$.</li>
+        <li>Find joint PMF of $X$ and $Y$.</li>
+        <li>Are $X$ and $Y$ independent?</li>
+        <li>Find $E[X^2Y^2]$.</li>
+</ol>
+
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+<ol type="a">
+     <li>First note that $R_X=R_Y=\{0,1,2,...\}$.  Also, given $N=n$, $X$ is a sum of $n$ independent $Bernoulli(p)$ random variables. Thus, given $N=n$, $X$ has a binomial distribution with parameters $n$ and $p$, so
+      \begin{align}\label{}
+      \nonumber &X|N=n \hspace{10pt} \sim \hspace{10pt} Binomial(n,p),\\
+      \nonumber &Y|N=n \hspace{10pt} \sim \hspace{10pt} Binomial(n,q=1-p).
+      \end{align}
+
+       We have
+      \begin{align}\label{}
+      \nonumber P_X(k)&=\sum_{n=0}^{\infty} P(X=k|N=n)P_N(n) & (\textrm{law of total probability})\\
+      \nonumber &=\sum_{n=k}^{\infty} {n \choose k} p^k q^{n-k} e^{-\lambda} \frac{\lambda^n}{n!}\\
+      \nonumber &=\sum_{n=k}^{\infty} \frac{p^k q^{n-k} e^{-\lambda} \lambda^n}{k! (n-k)!} \\
+      \nonumber &=\frac{e^{-\lambda} (\lambda p)^k}{k!}  \sum_{n=k}^{\infty} \frac{(\lambda q)^{n-k}}{(n-k)!} \\
+      \nonumber &=\frac{e^{-\lambda} (\lambda p)^k}{k!} e^{\lambda q} & (\textrm{Taylor series for } e^x)\\
+      \nonumber &=\frac{e^{-\lambda p} (\lambda p)^k}{k!}, \hspace{40pt} \textrm{ for }k=0,1,2,...
+      \end{align}
+      Thus, we conclude that
+      \begin{align}\label{}
+      \nonumber &X \hspace{10pt} \sim \hspace{10pt} Poisson(\lambda p),\\
+      \nonumber &Y \hspace{10pt} \sim \hspace{10pt} Poisson(\lambda q).
+      \end{align}
+		</li>
+		<li>
+      To find joint PMF of $X$ and $Y$, we can also use the law of total probability:
+      \begin{align}\label{}
+      \nonumber P_{XY}(i,j)&=\sum_{n=0}^{\infty} P(X=i, Y=j|N=n)P_N(n) & (\textrm{law of total probability}).
+      \end{align}
+      But note that $P(X=i, Y=j|N=n)=0$ if $N \neq i+j$, thus
+      \begin{align}\label{}
+      \nonumber P_{XY}(i,j)&=P(X=i, Y=j|N=i+j)P_N(i+j)\\
+      \nonumber &=P(X=i|N=i+j)P_N(i+j)\\
+      \nonumber &={i+j \choose i} p^i q^j e^{-\lambda} \frac{\lambda^{i+j}}{(i+j)!}\\
+      \nonumber &=\frac{e^{-\lambda} (\lambda p)^i (\lambda q)^j}{i! j!}\\
+      \nonumber &=\frac{e^{-\lambda p} (\lambda p)^i}{i!}. \frac{e^{-\lambda q} (\lambda q)^j}{j!}\\
+      \nonumber &=P_X(i)P_Y(j).
+      \end{align}
+		</li>
+		<li>
+     $X$ and $Y$ are independent, since as we saw above
+      \begin{align}\label{}
+      \nonumber P_{XY}(i,j)=P_X(i)P_Y(j).
+      \end{align}
+		</li>
+		<li>
+      Since $X$ and $Y$ are independent, we have
+        \begin{align}\label{}
+      \nonumber E[X^2Y^2]=E[X^2]E[Y^2].
+      \end{align}
+       Also, note that for a Poisson random variable $W$ with parameter $\lambda$,
+       \begin{align}\label{}
+      \nonumber E[W^2]=\textrm{Var}(W)+(EW)^2=\lambda+\lambda^2.
+      \end{align}
+      Thus,
+       \begin{align}\label{}
+      \nonumber E[X^2Y^2]&=E[X^2]E[Y^2]\\
+      \nonumber &=(\lambda p+ \lambda^2 p^2)(\lambda q+ \lambda^2 q^2)\\
+      \nonumber &=\lambda^2 pq(\lambda^2 pq+ \lambda+1).
+      \end{align}
+		</li>
 </ol>
 </li></ul>
 </li></ul></div><hr /><br />
