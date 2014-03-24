@@ -197,7 +197,89 @@ Let $X$ and $Y$ be two discrete random variables, with range
 
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
+<ol>
+    <li>First, by symmetry we note that $X$ and $Y$ have the same PDF. Next, we can write
+    \begin{align}\label{}
+      \nonumber &P_X(0)=P_{XY}(0,0)+P_{XY}(0,1)=\frac{1}{6}+\frac{1}{6}=\frac{1}{3};\\
+      \nonumber &P_X(1)=P_{XY}(1,0)+P_{XY}(1,1)+P_{XY}(1,2)=\frac{1}{6}\left(1+\frac{1}{2}+\frac{1}{2}\right)=\frac{1}{3};\\
+      \nonumber &P_X(2)=P_{XY}(2,1)+P_{XY}(2,2)+P_{XY}(2,3)=\frac{1}{6}\left(\frac{1}{2}+\frac{1}{4}+\frac{1}{4}\right)=\frac{1}{6};\\
+      \nonumber &P_X(3)=P_{XY}(3,2)+P_{XY}(3,3)+P_{XY}(3,4)=\frac{1}{6}\left(\frac{1}{4}+\frac{1}{8}+\frac{1}{8}\right)=\frac{1}{12}.
+    \end{align}
+    In general, we obtain
+    \begin{equation}
+   \nonumber P_X(k) = P_Y(k)=\left\{
+    \begin{array}{l l}
+    \frac{1}{3}  &  \quad k=0  \\
+         &  \quad \\
+    \frac{1}{3 \cdot 2^{k-1}}  &  \quad k=1,2,3,...   \\
+     &  \quad \\
+    0 &  \quad \text{otherwise}
+   \end{array} \right.
+  \end{equation}
+		</li>
 
+    <li>Find $P(X=Y|X&lt;2)$: We have
+    \begin{align}\label{}
+      \nonumber P(X=Y|X&lt;2)&=\frac{P(X=Y,X&lt;2)}{P(X&lt;2)}\\
+      \nonumber &=\frac{P_{XY}(0,0)+P_{XY}(1,1)}{P_X(0)+P_X(1)}\\
+      \nonumber &=\frac{\frac{1}{6}+\frac{1}{12}}{\frac{1}{3}+\frac{1}{3}}\\
+      \nonumber &=\frac{3}{8}.
+    \end{align}
+		</li>
+
+    <li>Find $P(1 \leq X^2+Y^2 \leq 5)$: We have
+    \begin{align}\label{}
+      \nonumber P(1 \leq X^2+Y^2 \leq 5)&=P_{XY}(0,1)+P_{XY}(1,0)+P_{XY}(1,1)+P_{XY}(1,2)+P_{XY}(2,1)\\
+      \nonumber &=\frac{1}{6}+\frac{1}{6}+\frac{1}{12}+\frac{1}{12}+\frac{1}{12}\\
+      \nonumber &=\frac{7}{12}.
+    \end{align}
+		</li>
+
+    <li>By symmetry, we can argue that $P(X=Y)=\frac{1}{3}$. The reason is that $R_{XY}$ consists of three lines with points with the same probabilities. We can also find $P(X=Y)$ by
+    \begin{align}\label{}
+      \nonumber P(X=Y)&=\sum_{i=0}^{\infty} P_{XY}(i,i)\\
+      \nonumber &=\sum_{i=0}^{\infty} \frac{1}{6. 2^i}\\
+      \nonumber &=\frac{1}{3}.
+    \end{align}
+		</li>
+
+    <li>To find $E[X|Y=2]$, we first need the conditional PMF of $X$ given $Y=2$. We have
+    \begin{align}\label{}
+      \nonumber P_{X|Y}(k|2) &=\frac{P_{XY}(k,2)}{P(Y=2)}\\
+      \nonumber &=6P_{XY}(k,2),
+    \end{align}
+    so we obtain
+    \begin{equation}
+   \nonumber P_{X|Y}(k|2)=\left\{
+    \begin{array}{l l}
+    \frac{1}{2}  &  \quad k=1  \\
+         &  \quad \\
+    \frac{1}{4}  &  \quad k=2,3   \\
+     &  \quad \\
+    0 &  \quad \text{otherwise}
+   \end{array} \right.
+  \end{equation}
+  Thus,
+   \begin{align}\label{}
+      \nonumber E[X|Y=2]&=1 \cdot \frac{1}{2}+2 \cdot \frac{1}{4}+3 \cdot \frac{1}{4}\\
+      \nonumber &=\frac{7}{4}.
+    \end{align}
+		</li>
+		<li>
+		Find Var$(X|Y=2)$: we have
+
+    \begin{align}\label{}
+      \nonumber E[X^2|Y=2]&=1 \cdot \frac{1}{2}+4 \cdot \frac{1}{4}+9 \cdot \frac{1}{4}\\
+      \nonumber &=\frac{15}{4}.
+    \end{align}
+    Thus,
+     \begin{align}\label{}
+      \nonumber \textrm{Var}(X)&=E[X^2|Y=2]-E[X|Y=2]\\
+      \nonumber &=\frac{15}{4}-\frac{49}{16}\\
+      \nonumber &=\frac{11}{16}.
+    \end{align}
+</li>
+</ol>
 </li></ul>
 </li></ul></div><hr /><br />
 <!-- /Section Content -->
