@@ -237,7 +237,7 @@ This equation might look a little confusing at first, but it is just another way
 
 \begin{align}
 \nonumber E[X]&=E[E[X|N]] \\
-\nonumber &=E[Np] \hspace{30pt} \textrm{since }X|N \sim Binomial(N,p) \\
+\nonumber &=E[Np] \hspace{30pt} (\textrm{since }X|N \sim Binomial(N,p)) \\
 \nonumber &=pE[N]=p\lambda.
 \end{align}
 
