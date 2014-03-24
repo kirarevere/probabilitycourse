@@ -383,6 +383,59 @@ We solve this problem using a similar approach as in Example 5.6. Let $\mu=EX$. 
 
 </li></ul>
 </li></ul></div><hr /><br />
+
+
+<span class="problem">Problem </span><br />
+Let $X,Y \sim Geometric(p)$ be independent, and let $Z=\frac{X}{Y}$.
+<ol type="a">
+    <li>Find the range of $Z$.</li>
+    <li>Find the PMF of $Z$.</li>
+    <li>Find $EZ$.</li>
+</ol>
+
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+<ol type="a">
+    <li>The range of $Z$ is given by
+    \begin{align}%\label{}
+      \nonumber R_Z=\left\{\frac{m}{n}|m,n \in \mathbb{N}\right\},
+   \end{align}
+   which is the set of all positive rational numbers.
+		</li>
+
+
+    <li>To find PMF of $Z$, let $m,n \in \mathbb{N}$ such that $(m,n)=1$, where $(m,n)$ is the largest divisor of $m$ and $n$. Then
+    \begin{align}%\label{}
+      \nonumber P_Z\left(\frac{m}{n}\right) &= \sum_{k=1}^{\infty} P(X=mk, Y=nk)\\
+      \nonumber &= \sum_{k=1}^{\infty} P(X=mk)P(Y=nk) & (\textrm{since }X \textrm{ and } Y \textrm{are independent})\\
+      \nonumber &= \sum_{k=1}^{\infty} pq^{mk-1}pq^{nk-1} \hspace{40pt} \textrm{where }q=1-p\\
+      \nonumber &= p^2q^{-2}\sum_{k=1}^{\infty} q^{(m+n)k}\\
+      \nonumber &= \frac{p^2q^{m+n-2}}{1-q^{m+n}}\\
+      \nonumber &=\frac{p^2(1-p)^{m+n-2}}{1-(1-p)^{m+n}}.
+   \end{align}
+		</li>
+		<li>
+    \item Find $EZ$: We can use LOTUS to find $EZ$. Let us first remember the following useful identities:
+    \begin{align}%\label{}
+      \nonumber \sum_{k=1}^{\infty} kx^{k-1}= \frac{1}{(1-x)^2}, \hspace{40pt} \textrm{ for }|x|<1,
+   \end{align}
+   \begin{align}%\label{}
+      \nonumber -\ln (1-x)=\sum_{k=1}^{\infty} \frac{x^{k}}{k}, \hspace{40pt} \textrm{ for }|x|&lt;1.
+   \end{align}
+   The first one is obtained by taking derivative of the geometric sum formula, and the second one is a Taylor series. Now, let&#39;s apply LOTUS.
+   \begin{align}%\label{}
+      \nonumber E\bigg[\frac{X}{Y}\bigg]&= \sum_{n=1}^{\infty}\sum_{m=1}^{\infty} \frac{m}{n}P(X=m, Y=n)\\
+      \nonumber &= \sum_{n=1}^{\infty}\sum_{m=1}^{\infty} \frac{m}{n}p^2q^{m-1}q^{n-1}\\
+      \nonumber &= \sum_{n=1}^{\infty} \frac{1}{n} p^2q^{n-1}\sum_{m=1}^{\infty} mq^{m-1}\\
+      \nonumber &= \sum_{n=1}^{\infty} \frac{1}{n} p^2q^{n-1}\frac{1}{(1-q)^2}\\
+      \nonumber &= \sum_{n=1}^{\infty} \frac{1}{n} q^{n-1}\\
+      \nonumber &=\frac{1}{q}\sum_{n=1}^{\infty} \frac{ q^{n}}{n}\\
+      \nonumber &=\frac{1}{1-p}\ln \frac{1}{p}.
+   \end{align}
+		</li>
+		</ol>
+</li></ul>
+</li></ul></div><hr /><br />
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
