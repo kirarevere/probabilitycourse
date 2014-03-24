@@ -140,6 +140,38 @@ This is, in fact, a hypergeometric distribution. First, note that we must have $
 
 </li></ul>
 </li></ul></div><hr /><br />
+
+<span class="problem">Problem </span><br />
+Let $X$ and $Y$ be two independent discrete random variables with the same CDFs $F_{X}$ and $F_Y$ . Define
+  \begin{align}%\label{}
+  \nonumber Z=\max (X,Y),  \\
+  \nonumber W=\min(X,Y).
+  \end{align}
+  Find the CDFs of $Z$ and $W$.
+
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+To find the CDF of $Z$, we can write
+  \begin{align}%\label{}
+  \nonumber F_Z(z)&=P(Z \leq z) \\
+  \nonumber &=P(\max(X,Y) \leq z)\\
+  \nonumber &=P\bigg((X \leq z) \textrm{ and } (Y \leq z)\bigg)\\
+  \nonumber &=P(X \leq z) P(Y \leq z) &(\textrm{ since }X \textrm{ and }Y \textrm{ are independent})\\
+  \nonumber &=F_X(z)F_Y(z).
+  \end{align}
+  To find the CDF of $W$, we can write
+  \begin{align}%\label{}
+  \nonumber F_W(w)&=P(W \leq w) \\
+  \nonumber &=P(\min(X,Y) \leq w)\\
+  \nonumber &=1-P(\min(X,Y) > w)\\
+  \nonumber &=1-P\bigg((X > w) \textrm{ and } (Y > w)\bigg)\\
+  \nonumber &=1-P(X > w) P(Y > w) &(\textrm{ since }X \textrm{ and }Y \textrm{ are independent})\\
+  \nonumber &=1-(1-F_X(w))(1-F_Y(w))\\
+  \nonumber &=F_X(w)+F_Y(w)-F_X(w)F_Y(w).
+  \end{align}
+
+</li></ul>
+</li></ul></div><hr /><br />
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
