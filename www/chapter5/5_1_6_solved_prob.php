@@ -19,7 +19,16 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.3.
 </ol>
 
 <style>
+	#table5_3 {
+		font-size: 12pt;
+		border-collapse: collapse;
+		width: 400px;
+		margin: 10px auto;
+	}
 
+	#table5_3 td {
+		border: 2px solid black;
+	}
 </style>
 <table id="table5_3">
 	<tr>
