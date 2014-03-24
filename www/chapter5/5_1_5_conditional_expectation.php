@@ -217,6 +217,8 @@ Thinking of this as a function of the random variable $X$, it can be rewritten a
   E[g(X)h(Y)|X]=g(X)E[h(Y)|X]
 \end{align}
 </div>
+</li></ul></li></ul>
+</div>
 <!-- /Example -->
 
 
