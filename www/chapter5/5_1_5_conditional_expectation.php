@@ -306,7 +306,7 @@ Similar to the conditional expectation, we can define the conditional variance o
 Note that Var$(X|Y=y)$ is a function of $y$. Similar to our discussion on $E[X|Y=y]$ and $E[X|Y]$, we define Var$(X|Y)$ as a function of the random variable $Y$. That is, Var$(X|Y)$ is a random variable whose value equals Var$(X|Y=y)$ whenever $Y=y$. Let us look at an example.
 
 <!-- Example -->
-<hr /><span class="example">Example </span>
+<hr /><span class="example">Example </span><br />
 Let $X$, $Y$, and $Z=E[X|Y]$ be as in Example 5.11. Let also $V=$Var$(X|Y)$.
 <ol type="a">
   <li>Find the PMF of $V$.</li>
@@ -316,6 +316,7 @@ Let $X$, $Y$, and $Z=E[X|Y]$ be as in Example 5.11. Let also $V=$Var$(X|Y)$.
 
 <div class="solvedprob">
 	<ul><li><a><b>Solution</b></a>
+	<ul></li>
 In Example 5.11, we found out that $X,Y \sim Bernoulli(\frac{2}{5})$. We also obtained
 \begin{align}%\label{}
   \nonumber &X|Y=0 \hspace{5pt} \sim  \hspace{5pt} Bernoulli \left(\frac{2}{3}\right), \\
@@ -427,7 +428,7 @@ To describe the law of total variance intuitively, it is often useful to look at
 Note that $\textrm{Var}(X|Y=i)$, is the variance of $X$ in country $i$. Thus, $E(\textrm{Var}(X|Y))$ is the average of variances in each country. On the other hand, $E[X|Y=i]$ is the average height in country $i$. Thus, $\textrm{Var}(E[X|Y])$ is the variance between countries. So, we can interpret the law of total variance in the following way. Variance of $X$ can be decomposed into two parts: the first is the average of variances in each individual country, while the second is the variance between height averages in each country.
 
 <!-- Example -->
-<span class="example">Example </span>
+<br /><hr /><span class="example">Example </span>
 Let $N$ be the number of customers that visit a certain store in a given day. Suppose that we know $E[N]$ and Var$(N)$. Let $X_i$ be the amount that the $i$'th customer spends on average. We assume $X_i$'s are independent of each other and also independent of $N$. We further assume they have the same mean and variance
 \begin{align}%\label{}
 \nonumber  &EX_i=EX, \\
