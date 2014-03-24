@@ -76,15 +76,15 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 	}
 </style>
 <table id="table5_2">
-	<tr>
+	<tr style="height: 50px;">
 		<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td>	
 	</tr>
 		
-	<tr>
+	<tr style="height:80px;">
 		<td>$X = 0$</td><td>$\frac{1}{5}$</td><td>$\frac{2}{5}$</td>
 	</tr>
 
-	<tr>
+	<tr style="height: 80px;">
 		<td>$X = 1$</td><td>$\frac{2}{5}$</td><td>0</td>
 	</td>
 </table>
