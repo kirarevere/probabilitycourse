@@ -395,9 +395,53 @@ Let $g(X,Y)=X+Y$. Using LOTUS, we have
   \nonumber &=\sum_{x_i \in R_{X}} x_i \sum_{y_j\in R_{Y}} P_{XY}(x_i,y_j)+ \sum_{y_j\in R_{Y}} y_j \sum_{x_i \in R_{X}} P_{XY}(x_i,y_j) \\
   \nonumber &=\sum_{x_i \in R_{X}} x_i  P_{X}(x_i)+ \sum_{y_j\in R_{Y}} y_j P_{Y}(y_j)  &\textrm{marginal PMF (Equation \ref{Eq:marginals})} \\
   \nonumber &=EX+EY.
+A
 \end{align}
 		</li></ul>
 		</li></ul></div><hr /><br />
+<!-- /Example -->
+
+<!-- Example -->
+<hr /><span class="example">Example </span><br />
+Let $X$ and $Y$ be two independent $Geometric(p)$ random variables. Also let $Z=X-Y$. Find the PMF of $Z$.
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+		<ul><li>
+First note that since $R_X=R_Y=\mathbb{N}=\{1,2,3,...\}$, we have $R_Z=\mathbb{Z}=\{...,-3,-2,-1,0,1,2,3,...\}$. Since $X,Y \sim Geometric(p)$, we have
+\begin{align}%\label{}
+\nonumber P_X(k)=P_Y(k)=pq^{k-1}, \hspace{5pt} \textrm{ for }k=1,2,3,...,
+\end{align}
+where $q=1-p$. We can write for any $k \in \mathbb{Z}$
+\begin{align}%\label{}
+\nonumber P_Z(k)&=P(Z=k)  \\
+\nonumber &=P(X-Y=k) \\
+\nonumber &=P(X=Y+k)\\
+\nonumber &=\sum_{j=1}^{\infty}P(X=Y+k|Y=j)P(Y=j) &\textrm{(law of total probability)}\\
+\nonumber &=\sum_{j=1}^{\infty}P(X=j+k|Y=j)P(Y=j) \\
+\nonumber &=\sum_{j=1}^{\infty}P(X=j+k)P(Y=j)  &(\textrm{since }X,Y \textrm{are independent})\\
+\nonumber &=\sum_{j=1}^{\infty}P_X(j+k)P_Y(j).
+\end{align}
+Now, consider two cases: $k \geq 0$ and $k<0$.
+If $k \geq 0$, then
+\begin{align}%\label{}
+\nonumber P_Z(k)&=\sum_{j=1}^{\infty}P_X(j+k)P_Y(j)\\
+\nonumber &=\sum_{j=1}^{\infty}pq^{j+k-1} pq^{j-1}\\
+\nonumber &= p^2 q^k\sum_{j=1}^{\infty}q^{2(j-1)}\\
+\nonumber &= p^2 q^k \frac{1}{1-q^2} & \big(\textrm{geometric sum (Equation \ref{geometric-inf} )} \big)\\
+\nonumber &=\frac{p(1-p)^k}{2-p}.
+\end{align}
+For $k&lt;0$, we have
+\begin{align}%\label{}
+\nonumber P_Z(k)&=\sum_{j=1}^{\infty}P_X(j+k)P_Y(j)\\
+\nonumber &=\sum_{j=-k+1}^{\infty}pq^{j+k-1} pq^{j-1}  & (\textrm{since }P_X(j+k)=0 \textrm{ for } j&lt;-k+1)\\
+\nonumber &= p^2 \sum_{j=-k+1}^{\infty}q^{k+2(j-1)}\\
+\nonumber &= p^2  \big[q^{-k}+q^{-k+2}+q^{-k+4}+...\big]\\
+\nonumber &= p^2q^{-k}\big[1+q^{2}+q^{4}+...\big] \\
+\nonumber &=\frac{p}{(1-p)^k(2-p)} & \big(\textrm{geometric sum (Equation \ref{geometric-inf} )} \big).
+\end{align}
+	</li></ul>
+	</li></ul></div><hr /><br />
+
 <!-- /Example -->
 
 <!-- End Section Content -->
