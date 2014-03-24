@@ -63,7 +63,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 <style>
 	#table 5_2 {
 		border: 1px solid black;
-		collapse-border: collapse;
+		border-collapse: collapse;
 		width: 330px;
 		margin: 10px auto;
 	}
