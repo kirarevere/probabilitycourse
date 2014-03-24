@@ -61,7 +61,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
   <li>Find Var$(Z)$.</li>
 </ol>
 <style>
-	#table 5_2 {
+	#table5_2 {
 		border: 1px solid black;
 		border-collapse: collapse;
 		width: 330px;
