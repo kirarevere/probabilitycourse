@@ -294,6 +294,181 @@ If $X$ and $Y$ are independent random variables, then
   <li>$E[g(X)h(Y)]=E[g(X)] E[h(Y)]$.</li>
 </ol>
 </div>
+
+<h2>Conditional Variance:</h2>
+
+Similar to the conditional expectation, we can define the conditional variance of $X$, Var$(X|Y=y)$, which is the variance of $X$ in the conditional space where we know $Y=y$. If we let $\mu_{X|Y}(y)=E[X|Y=y]$, then
+\begin{align}%\label{}
+\nonumber  \textrm{Var}(X|Y=y) &=E\big[(X-\mu_{X|Y}(y))^2|Y=y \big] \\
+\nonumber  &=\sum_{x_i \in R_X} \big(x_i-\mu_{X|Y}(y)\big)^2 P_{X|Y}(x_i)\\
+\nonumber  &=E\big[X^2|Y=y\big]-\mu_{X|Y}(y)^2.
+\end{align}
+Note that Var$(X|Y=y)$ is a function of $y$. Similar to our discussion on $E[X|Y=y]$ and $E[X|Y]$, we define Var$(X|Y)$ as a function of the random variable $Y$. That is, Var$(X|Y)$ is a random variable whose value equals Var$(X|Y=y)$ whenever $Y=y$. Let us look at an example.
+
+<!-- Example -->
+<hr /><span class="example">Example </span>
+Let $X$, $Y$, and $Z=E[X|Y]$ be as in Example 5.11. Let also $V=$Var$(X|Y)$.
+<ol type="a">
+  <li>Find the PMF of $V$.</li>
+  <li>Find $EV$.</li>
+  <li>Check that Var$(X)=E(V)+$Var$(Z)$.</li>
+</ol>
+
+<div class="solvedprob">
+	<ul><li><a><b>Solution</b></a>
+In Example 5.11, we found out that $X,Y \sim Bernoulli(\frac{2}{5})$. We also obtained
+\begin{align}%\label{}
+  \nonumber &X|Y=0 \hspace{5pt} \sim  \hspace{5pt} Bernoulli \left(\frac{2}{3}\right), \\
+  \nonumber &P(X=0|Y=1)=1,\\
+  \nonumber &\textrm{Var}(Z)=\frac{8}{75}.
+\end{align}
+
+<ol type="a">
+   <li>To find the PMF of $V$, we note that $V$ is a function of $Y$. Specifically,
+  \begin{equation}
+  \nonumber V = \textrm{Var}(X|Y)= \left\{
+  \begin{array}{l l}
+    \textrm{Var}(X|Y=0)  &  \quad \textrm{if } Y=0  \\
+      &  \quad   \\
+    \textrm{Var}(X|Y=1)&  \quad \textrm{if } Y=1
+  \end{array} \right.
+  \end{equation}
+  Therefore,
+  \begin{equation}
+  \nonumber V = \textrm{Var}(X|Y)= \left\{
+  \begin{array}{l l}
+    \textrm{Var}(X|Y=0)  &  \quad \textrm{with probability } \frac{3}{5} \\
+      &  \quad   \\
+    \textrm{Var}(X|Y=1)&  \quad \textrm{with probability } \frac{2}{5}
+  \end{array} \right.
+  \end{equation}
+  Now, since $X|Y=0 \hspace{5pt} \sim  \hspace{5pt} Bernoulli \left(\frac{2}{3}\right)$, we have
+  \begin{align}%\label{}
+  \nonumber \textrm{Var}(X|Y=0)=\frac{2}{3} \cdot \frac{1}{3}=\frac{2}{9},
+  \end{align}
+  and since given $Y=1$, $X=1$, we have
+  \begin{align}%\label{}
+  \nonumber \textrm{Var}(X|Y=1)=0.
+  \end{align}
+  Thus,
+  \begin{equation}
+  \nonumber V = \textrm{Var}(X|Y)= \left\{
+  \begin{array}{l l}
+    \frac{2}{9}  &  \quad \textrm{with probability } \frac{3}{5}  \\
+      &  \quad   \\
+    0 &  \quad \textrm{with probability } \frac{2}{5}
+  \end{array} \right.
+  \end{equation}
+  So we can write
+  \begin{equation}
+  \nonumber P_V(v) = \left\{
+  \begin{array}{l l}
+    \frac{3}{5}  &  \quad \textrm{if } v=\frac{2}{9}  \\
+      &  \quad   \\
+    \frac{2}{5} &  \quad \textrm{if } v=0\\
+    &  \quad   \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+  \end{equation}
+	</li>
+   <li> To find $EV$, we write
+   \begin{align}%\label{}
+    \nonumber EV=\frac{2}{9} \cdot \frac{3}{5}+0 \cdot \frac{2}{5}=\frac{2}{15}.
+   \end{align}
+		</li>
+   <li>To check that Var$(X)=E(V)+$Var$(Z)$, we just note that
+
+   \begin{align}%\label{}
+    \nonumber &\textrm{Var}(X)=\frac{2}{5} \cdot \frac{3}{5}=\frac{6}{25}\\
+    \nonumber &EV=\frac{2}{15}\\
+    \nonumber &\textrm{Var}(Z)=\frac{8}{75}.
+   \end{align}
+		</li></ol>
+		</li><ul>
+		</li></ul></div><hr /><br />
+
+In the above example, we checked that Var$(X)=E(V)+$Var$(Z)$, which says
+\begin{align}%\label{}
+    \nonumber \textrm{Var}(X)=E(\textrm{Var}(X|Y))+\textrm{Var}(E[X|Y]).
+\end{align}
+It turns out this is true in general and it is called <i>the law of total variance</i>, or <i>variance decomposition formula</i> [<a href="bibliography.html">3</a>]. Let us first prove the law of total variance, and then we explain it intuitively. Note that if $V=$Var$(X|Y)$, and $Z=E[X|Y]$, then
+\begin{align}%\label{}
+    \nonumber V&=E[X^2|Y]-(E[X|Y])^2\\
+    \nonumber &=E[X^2|Y]-Z^2.
+\end{align}
+Thus,
+\begin{align}\label{eq:1of2}
+    \nonumber EV&=E[E[X^2|Y]]-E[Z^2]\\
+     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation \ref{eq:iteratedE})}\big).
+\end{align}
+Next, we have
+\begin{align}\label{eq:2of2}
+    \nonumber \textrm{Var}(Z)&=E[Z^2]-(EZ)^2\\
+     &=E[Z^2]-(EX)^2 &(\textrm{law of iterated expectations}).
+\end{align}
+Combining Equations \ref{eq:1of2} and  \ref{eq:2of2}, we obtain  the law of total variance.
+
+<div style="padding: 25px;margin: 30px 40px; border: 2px solid black;">
+<p style="text-align:center;">Law of Total Variance:</p>
+\begin{align}\label{eq:LOTV}
+  \textrm{Var}(X)=E[\textrm{Var}(X|Y)]+\textrm{Var}(E[X|Y])
+\end{align}
+</div><br />
+There are several ways that we can look at the law of total variance to get some intuition. Let us first note that all the terms in Equation 5.10 are positive (since variance is always positive). Thus, we conclude
+\begin{align}\label{eq:condReducesVariance}
+  \textrm{Var}(X) \geq E(\textrm{Var}(X|Y)).
+\end{align}
+This states that when we condition on $Y$, the variance of $X$ reduces on average. To describe this intuitively, we can say that variance of a random variable is a measure of our uncertainty about that random variable. For example, if Var$(X)=0$, we do not have any uncertainty about $X$. Now, the above inequality simply states that if we obtain some extra information, i.e., we know the value of $Y$, our uncertainty about the value of the random variable $X$  reduces on average. So, the above inequality makes sense. Now, how do we explain the whole law of total variance?
+
+To describe the law of total variance intuitively, it is often useful to look at a population divided into several groups. In particular, suppose that we have this random experiment: We pick a person in the world at random and look at his/her height. Let's call the resulting value $X$. Define another random variable $Y$ whose value depends on the country of the chosen person, where $Y=1,2,3,...,n$, and $n$ is the number of countries in the world. Then, let's look at the two terms in the law of total variance.
+\begin{align}
+\nonumber  \textrm{Var}(X)=E(\textrm{Var}(X|Y))+\textrm{Var}(E[X|Y]).
+\end{align}
+Note that $\textrm{Var}(X|Y=i)$, is the variance of $X$ in country $i$. Thus, $E(\textrm{Var}(X|Y))$ is the average of variances in each country. On the other hand, $E[X|Y=i]$ is the average height in country $i$. Thus, $\textrm{Var}(E[X|Y])$ is the variance between countries. So, we can interpret the law of total variance in the following way. Variance of $X$ can be decomposed into two parts: the first is the average of variances in each individual country, while the second is the variance between height averages in each country.
+
+<!-- Example -->
+<span class="example">Example </span>
+Let $N$ be the number of customers that visit a certain store in a given day. Suppose that we know $E[N]$ and Var$(N)$. Let $X_i$ be the amount that the $i$'th customer spends on average. We assume $X_i$'s are independent of each other and also independent of $N$. We further assume they have the same mean and variance
+\begin{align}%\label{}
+\nonumber  &EX_i=EX, \\
+\nonumber  &\textrm{Var}(X_i)=\textrm{Var}(X).
+\end{align}
+Let $Y$ be the store's total sales, i.e.,
+\begin{align}%\label{}
+\nonumber  Y=\sum_{i=1}^{N}X_i.
+\end{align}
+Find $EY$ and Var$(Y)$.
+
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+To find $EY$, we cannot directly use the linearity of expectation because $N$ is random. But, conditioned on $N=n$, we can use linearity and find $E[Y|N=n]$; so, we use the law of iterated expectations:
+\begin{align}%\label{}
+\nonumber  EY&=E[E[Y|N]] &(\textrm{law of iterated expectations})\\
+\nonumber  &=E\left[E\bigg[\sum_{i=1}^{N}X_i|N\bigg]\right]\\
+\nonumber  &=E\left[\sum_{i=1}^{N}E[X_i|N] \right] & (\textrm{linearity of expectation})\\
+\nonumber  &=E\left[\sum_{i=1}^{N}E[X_i] \right] & (\textrm{$X_i$'s and } N \textrm{ are indpendent})\\
+\nonumber  &=E[NE[X]] & (\textrm{since $EX_i=EX$s}) \\
+\nonumber  &=E[X]E[N] & (\textrm{since $EX$ is not random}).
+\end{align}
+
+To find Var$(Y)$, we use the law of total variance:
+\begin{align}\label{al1}
+\nonumber  \textrm{Var}(Y)&=E(\textrm{Var}(Y|N))+\textrm{Var}(E[Y|N])\\
+\nonumber  &=E(\textrm{Var}(Y|N))+\textrm{Var}(NEX) &(\textrm{as above})\\
+ &=E(\textrm{Var}(Y|N))+(EX)^2\textrm{Var}(N).
+\end{align}
+To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ independent random variables. As we discussed before, for $n$ independent random variables, the variance of the sum is equal to sum of the variances. This fact is officially proved in Section \ref{sec:moreRV} and also in Chapter \ref{chapt:multipleRV}, but we have occasionally used it as it simplifies the analysis. Thus, we can write
+
+\begin{align}
+\nonumber  \textrm{Var}(Y|N)&=\sum_{i=1}^{N} \textrm{Var}(X_i|N)\\
+\nonumber  &=\sum_{i=1}^{N} \textrm{Var}(X_i) &(\textrm{since }X_i\textrm{'s are independent of }N)\\
+\nonumber   &=N \var(X).
+\end{align}
+</li></ul>
+</li></ul></div><br />
+
+
+
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
