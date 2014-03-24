@@ -28,28 +28,30 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.3.
 
 	#table5_3 td {
 		border: 2px solid black;
+		text-align: center;
+		vertical-align: middle;
 	}
 </style>
 <table id="table5_3">
-	<tr>
+	<tr style="height:50px;">
 		<td>&nbsp;</td>
 		<td>$Y = 2$</td>
 		<td>$Y = 4$</td>
 		<td>$Y = 5$</td>
 	</tr>
-	<tr>
+	<tr style="height:80px;">
 		<td>$X = 1$</td>
 		<td>$\frac{1}{12}$</td>
 		<td>$\frac{1}{24}$</td>
 		<td>$\frac{1}{24}$</td>
 	</tr>
-	<tr>
+	<tr style="height:80px;">
 		<td>$X = 2$</td>
 		<td>$\frac{1}{6}$</td>
 		<td>$\frac{1}{12}$</td>
 		<td>$\frac{1}{8}$</td>
 	</tr>
-	<tr>
+	<tr style="height:80px;">
 		<td>$X = 3$</td>
 		<td>$\frac{1}{4}$</td>
 		<td>$\frac{1}{8}$</td>
