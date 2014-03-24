@@ -76,6 +76,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
 	}
 </style>
 <table id="table5_2">
+	$X \neq Y$
 	<tr style="height: 50px;">
 		<td>&nbsp;</td><td>$Y = 0$</td><td>$Y = 1$</td>	
 	</tr>
