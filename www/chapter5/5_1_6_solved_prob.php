@@ -130,9 +130,9 @@ This is, in fact, a hypergeometric distribution. First, note that we must have $
   \end{align}
 
   Then, we can write
-  %\begin{align}%\label{}
-%  \nonumber P_{XY}(i,j)&=\frac{{40 \choose i} {60 \choose j}{100 \choose 10}}
-%   \end{align}
+  \begin{align}\label{}
+  \nonumber P_{XY}(i,j)&=\frac{{40 \choose i} {60 \choose j}{100 \choose 10}}
+  \end{align}
 
    \begin{equation}
   \nonumber P_{XY}(i,j)= \left\{
