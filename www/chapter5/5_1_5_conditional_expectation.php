@@ -400,14 +400,14 @@ It turns out this is true in general and it is called <i>the law of total varian
 Thus,
 \begin{align}\label{eq:1of2}
     \nonumber EV&=E[E[X^2|Y]]-E[Z^2]\\
-     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation \ref{eq:iteratedE})}\big).
+     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation 5.7)}\big).
 \end{align}
 Next, we have
 \begin{align}\label{eq:2of2}
     \nonumber \textrm{Var}(Z)&=E[Z^2]-(EZ)^2\\
      &=E[Z^2]-(EX)^2 &(\textrm{law of iterated expectations}).
 \end{align}
-Combining Equations \ref{eq:1of2} and  \ref{eq:2of2}, we obtain  the law of total variance.
+Combining Equations 5.8 and  5.9, we obtain  the law of total variance.
 
 <div style="padding: 25px;margin: 30px 40px; border: 2px solid black;">
 <p style="text-align:center;">Law of Total Variance:</p>
