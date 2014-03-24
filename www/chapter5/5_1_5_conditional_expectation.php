@@ -12,7 +12,7 @@
 In Section 5.1.3, we briefly discussed conditional expectation. Here, we will discuss the properties of conditional expectation in more detail as they are quite
  useful in practice. We will also discuss conditional variance. An important concept here is that we interpret the conditional expectation as a random variable.
 
-<h2>large{Conditional Expectation as a Function of a Random Variable:</h2>
+<h2>Conditional Expectation as a Function of a Random Variable:</h2>
 Remember that the conditional expectation of $X$ given that $Y=y$ is given by
 \begin{align}%\label{}
 \nonumber E[X|Y=y]=\sum_{x_i \in R_{X}} x_i P_{X|Y}(x_i|y).
@@ -34,9 +34,6 @@ _1, y_2, \cdots \}$, then $E[X|Y]$ is also a random variable with
   \begin{array}{l l}
     E[X|Y=y_1]  &  \quad \textrm{with probability } P(Y=y_1)  \\
     E[X|Y=y_2]  &  \quad \textrm{with probability } P(Y=y_2)  \\
-    \hsa . & \hsb \hsb . \\
-    \hsa . & \hsb \hsb . \\
-    \hsa . & \hsb \hsb .
   \end{array} \right.
 \end{equation}
 
@@ -55,7 +52,6 @@ Since $E[X|Y]$ is a random variable, we can find its PMF, CDF, variance, etc. Le
 		</li></ul></div><br />
 
 <hr /><span class="example">Example </span>
-\begin{example}\label{ex:EX|Y}
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let $Z=E[X|Y]$.
 <ol type="a">
   <li>Find the Marginal PMFs of $X$ and $Y$.</li>
@@ -65,10 +61,18 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
   <li>Find Var$(Z)$.</li>
 </ol>
 <style>
-	.table5_2 td{
+	#table 5_2 {
 		border: 1px solid black;
-		collapse-border: collapse;
+		width: 330px;
+		margin: 10px auto;
+	}
+
+	#table5_2 tr {
 		height: 80px;
+	}
+
+	#table5_2 td { 
+		collapse-border: collapse;
 		width: 80px;
 		text-align:center;
 		vertical-align: middle;
