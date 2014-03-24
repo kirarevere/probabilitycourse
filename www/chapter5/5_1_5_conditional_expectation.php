@@ -237,8 +237,8 @@ This equation might look a little confusing at first, but it is just another way
 
 \begin{align}
 \nonumber E[X]&=E[E[X|N]] \\
-\end{align}
 \nonumber &=E[Np] \hspace{30pt} \big{(}\textrm{since }X|N \sim Binomial(N,p)\big{)} \\
+\end{align}
 \nonumber &=pE[N]=p\lambda.
 
 Equation \ref{eq:iteratedE} is called the \textit{law of iterated expectations}. Since it is basically the same as Equation \ref{eq:LOTPE-RV}, it is also called the law of total expectation \cite{wiki-LOTE}.
