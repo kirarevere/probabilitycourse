@@ -241,7 +241,7 @@ This equation might look a little confusing at first, but it is just another way
 \nonumber &=pE[N]=p\lambda.
 \end{align}
 
-Equation \ref{eq:iteratedE} is called the \textit{law of iterated expectations}. Since it is basically the same as Equation \ref{eq:LOTPE-RV}, it is also called the law of total expectation \cite{wiki-LOTE}.
+Equation 5.7 is called the <i>law of iterated expectations</i>. Since it is basically the same as Equation 5.4, it is also called the law of total expectation [<a href="bibliography.html">2</a>].
 
 <div style="padding: 25px; margin: 30px 40px; border: 2px solid black;">
 \begin{align}
@@ -249,7 +249,51 @@ Equation \ref{eq:iteratedE} is called the \textit{law of iterated expectations}.
 \end{align}
 </div>
 
+<h2>Expectation for Independent Random Variables:</h2>
+Note that if two random variables $X$ and $Y$ are independent, then the conditional PMF of $X$ given $Y$ will be the same as the marginal PMF of $X$, i.e., for any $x \in R_X$, we have
+\begin{align}%\label{}
+\nonumber  P_{X|Y}(x|y)=P_X(x).
+\end{align}
+Thus, for independent random variables, we have
+\begin{align}%\label{}
+\nonumber  E[X|Y=y]&= \sum_{x \in R_{X}} x P_{X|Y}(x|y)\\
+\no &= \sum_{x \in R_{X}} x P_{X}(x)\\
+\no &=E[X].
+\end{align}
+Again, thinking of this as a random variable depending on $Y$, we obtain
+\begin{align}%\label{}
+\nonumber  E[X|Y]=E[X], \hsb \textrm{ when $X$ and $Y$ are independent.}
+\end{align}
+More generally, if $X$ and $Y$ are independent then any function of $X$, say $g(X)$, and $Y$ are independent, thus
+\begin{align}%\label{}
+\nonumber  E[g(X)|Y]=E[g(X)].
+\end{align}
+Remember that for independent random variables, $P_{XY}(x,y)=P_X(x)P_Y(y)$. From this, we can show that $E[XY]=EX EY$.
 
+<span class="lemma">Lemma </span>
+If $X$ and $Y$ are independent, then $E[XY]=EX EY$.
+\end{lem}
+\begin{proof}
+Using LOTUS, we have
+\begin{align}%\label{}
+\nonumber  E[XY] &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_{XY}(x,y)\\
+\nonumber   &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_X(x)P_Y(y)\\
+\nonumber   &=\bigg(\sum_{x \in R_x}  x P_X(x) \bigg) \bigg(\sum_{y \in R_y} yP_Y(y)\bigg)\\
+\nonumber   &=EX EY.
+\end{align}
+\end{proof}
+Note that the converse is <b>not</b> true. That is, if the only thing that we know about $X$ and $Y$ is that $E[XY]=EX EY$, then $X$ and $Y$ may or may not be independent. Using essentially the same proof as above, we can show if $X$ and $Y$ are independent, then $E[g(X)h(Y)]=E[g(X)]E[h(Y)]$ for any functions $g:\mathbb{R} \mapsto \mathbb{R}$ and $h:\mathbb{R} \mapsto \mathbb{R}$.
+
+
+<div style="padding: 25px;margin: 30px 40px; border: 2px solid black;">
+If $X$ and $Y$ are independent random variables, then
+<ol>
+  <li>$E[X|Y]=EX$;</li>
+  <li>$E[g(X)|Y]=E[g(X)]$;</li>
+  <li>$E[XY]=EX EY$;</li>
+  <li>$E[g(X)h(Y)]=E[g(X)] E[h(Y)]$.</li>
+</ol>
+</div>
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
