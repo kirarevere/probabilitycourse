@@ -356,6 +356,33 @@ Let $X$ and $Y$ be two discrete random variables, with range
 </ol>
 </li></ul>
 </li></ul></div><hr /><br />
+
+<span class="problem">Problem </span><br />
+I have a coin with $P(H)=p$.  I toss the coin repeatedly until I observe two consecutive heads. Let $X$ be the total number of coin tosses. Find $EX$.
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
+We solve this problem using a similar approach as in Example 5.6. Let $\mu=EX$. We first condition on the result of the first coin toss. Specifically,
+  \begin{align}
+     \nonumber \mu=EX&=E[X|H]P(H)+E[X|T]P(T)\\
+     \nonumber  &=E[X|H]p+(1+\mu)(1-p).
+  \end{align}
+  In this equation, $E[X|T]=1+EX$, because the tosses are independent, so if the first toss is tails, it is like starting over on the second toss. Thus,
+  \begin{align}\label{alhh}
+      p\mu=pE[X|H]+(1-p).
+  \end{align}
+  We still need to find $E[X|H]$ so we condition on the second coin toss
+   \begin{align}
+     \nonumber  E[X|H]&=E[X|HH]P+E[X|HT](1-p)\\
+     \nonumber  &=2p+(2+\mu)(1-p)\\
+     \nonumber  &=2+(1-p)\mu.
+  \end{align}
+  Here, $E[X|HT]=2+EX$ because, if the first two tosses are $HT$, we have wasted two coin tosses and we start over at the third toss. By letting $E[X|H]=2+(1-p)\mu$ in Equation \ref{alhh}, we obtain
+  \begin{align}
+     \nonumber \mu=EX=\frac{1+p}{p^2}.
+  \end{align}
+
+</li></ul>
+</li></ul></div><hr /><br />
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
