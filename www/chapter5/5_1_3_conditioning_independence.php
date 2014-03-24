@@ -427,7 +427,7 @@ If $k \geq 0$, then
 \nonumber P_Z(k)&=\sum_{j=1}^{\infty}P_X(j+k)P_Y(j)\\
 \nonumber &=\sum_{j=1}^{\infty}pq^{j+k-1} pq^{j-1}\\
 \nonumber &= p^2 q^k\sum_{j=1}^{\infty}q^{2(j-1)}\\
-\nonumber &= p^2 q^k \frac{1}{1-q^2} & \big(\textrm{geometric sum (Equation \ref{geometric-inf} )} \big)\\
+\nonumber &= p^2 q^k \frac{1}{1-q^2} & \big(\textrm{geometric sum (Equation 1.4 )} \big)\\
 \nonumber &=\frac{p(1-p)^k}{2-p}.
 \end{align}
 For $k&lt;0$, we have
@@ -437,12 +437,24 @@ For $k&lt;0$, we have
 \nonumber &= p^2 \sum_{j=-k+1}^{\infty}q^{k+2(j-1)}\\
 \nonumber &= p^2  \big[q^{-k}+q^{-k+2}+q^{-k+4}+...\big]\\
 \nonumber &= p^2q^{-k}\big[1+q^{2}+q^{4}+...\big] \\
-\nonumber &=\frac{p}{(1-p)^k(2-p)} & \big(\textrm{geometric sum (Equation \ref{geometric-inf} )} \big).
+\nonumber &=\frac{p}{(1-p)^k(2-p)} & \big(\textrm{geometric sum (Equation 1.4 )} \big).
 \end{align}
 	</li></ul>
 	</li></ul></div><hr /><br />
 
 <!-- /Example -->
+
+To summarize, we conclude
+
+\begin{equation}
+ \nonumber P_Z(k) = \left\{
+  \begin{array}{l l}
+    \frac{p(1-p)^{|k|}}{2-p}  &  \quad  k \in \mathbb{Z}\\
+
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+\end{equation}
+
 
 <!-- End Section Content -->
 
