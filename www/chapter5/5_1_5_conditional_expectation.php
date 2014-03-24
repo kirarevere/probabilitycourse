@@ -270,10 +270,8 @@ More generally, if $X$ and $Y$ are independent then any function of $X$, say $g(
 \end{align}
 Remember that for independent random variables, $P_{XY}(x,y)=P_X(x)P_Y(y)$. From this, we can show that $E[XY]=EX EY$.
 
-<span class="lemma">Lemma </span>
+<br /><hr /><span class="lemma">Lemma </span><br />
 If $X$ and $Y$ are independent, then $E[XY]=EX EY$.
-\end{lem}
-\begin{proof}
 Using LOTUS, we have
 \begin{align}%\label{}
 \nonumber  E[XY] &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_{XY}(x,y)\\
@@ -281,7 +279,6 @@ Using LOTUS, we have
 \nonumber   &=\bigg(\sum_{x \in R_x}  x P_X(x) \bigg) \bigg(\sum_{y \in R_y} yP_Y(y)\bigg)\\
 \nonumber   &=EX EY.
 \end{align}
-\end{proof}
 Note that the converse is <b>not</b> true. That is, if the only thing that we know about $X$ and $Y$ is that $E[XY]=EX EY$, then $X$ and $Y$ may or may not be independent. Using essentially the same proof as above, we can show if $X$ and $Y$ are independent, then $E[g(X)h(Y)]=E[g(X)]E[h(Y)]$ for any functions $g:\mathbb{R} \mapsto \mathbb{R}$ and $h:\mathbb{R} \mapsto \mathbb{R}$.
 
 
@@ -431,7 +428,7 @@ To describe the law of total variance intuitively, it is often useful to look at
 Note that $\textrm{Var}(X|Y=i)$, is the variance of $X$ in country $i$. Thus, $E(\textrm{Var}(X|Y))$ is the average of variances in each country. On the other hand, $E[X|Y=i]$ is the average height in country $i$. Thus, $\textrm{Var}(E[X|Y])$ is the variance between countries. So, we can interpret the law of total variance in the following way. Variance of $X$ can be decomposed into two parts: the first is the average of variances in each individual country, while the second is the variance between height averages in each country.
 
 <!-- Example -->
-<br /><hr /><span class="example">Example </span>
+<br /><hr /><span class="example">Example </span><br />
 Let $N$ be the number of customers that visit a certain store in a given day. Suppose that we know $E[N]$ and Var$(N)$. Let $X_i$ be the amount that the $i$'th customer spends on average. We assume $X_i$'s are independent of each other and also independent of $N$. We further assume they have the same mean and variance
 \begin{align}%\label{}
 \nonumber  &EX_i=EX, \\
@@ -471,11 +468,11 @@ To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ indepen
 
 Thus, we have
 \begin{align}\label{al2}
-  E(\textrm{Var}(Y|N))=EN \var(X).
+  E(\textrm{Var}(Y|N))=EN Var(X).
 \end{align}
-Combining Equations \ref{al1} and \ref{al2}, we obtain
+Combining Equations 5.12 and 5.13, we obtain
 \begin{align}
-\nonumber  \textrm{Var}(Y)= EN \var(X)+(EX)^2 \var(N).
+\nonumber  \textrm{Var}(Y)= EN Var(X)+(EX)^2 Var(N).
 \end{align}
 
 </li></ul>
