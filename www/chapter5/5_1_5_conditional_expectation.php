@@ -257,12 +257,12 @@ Note that if two random variables $X$ and $Y$ are independent, then the conditio
 Thus, for independent random variables, we have
 \begin{align}%\label{}
 \nonumber  E[X|Y=y]&= \sum_{x \in R_{X}} x P_{X|Y}(x|y)\\
-\no &= \sum_{x \in R_{X}} x P_{X}(x)\\
-\no &=E[X].
+ &= \sum_{x \in R_{X}} x P_{X}(x)\\
+ &=E[X].
 \end{align}
 Again, thinking of this as a random variable depending on $Y$, we obtain
 \begin{align}%\label{}
-\nonumber  E[X|Y]=E[X], \hsb \textrm{ when $X$ and $Y$ are independent.}
+\nonumber  E[X|Y]=E[X], \textrm{ when $X$ and $Y$ are independent.}
 \end{align}
 More generally, if $X$ and $Y$ are independent then any function of $X$, say $g(X)$, and $Y$ are independent, thus
 \begin{align}%\label{}
