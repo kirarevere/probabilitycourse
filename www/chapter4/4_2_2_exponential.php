@@ -45,7 +45,7 @@
     		<div class="clear"></div>
 			
 			<p>The exponential distribution is one of the widely used continuous distributions. It is often used to 
-			model the time elapsed between events. We will now mathematically define the exponential distribution 
+			model the time elapsed between events. We will now mathematically define the exponential distribution, 
 			and derive its mean and expected value. Then we will develop the intuition for the distribution and 
 			discuss several interesting properties that it has.
 			<div style="padding: 15px; border: black 1px solid">
@@ -55,7 +55,7 @@
              \nonumber f_X(x) = \left\{
               \begin{array}{l l}
                 \lambda e^{-\lambda x} & \quad  x > 0\\
-                0 & \quad \textrm{ otherwise}
+                0 & \quad \textrm{otherwise}
               \end{array} \right.
             \end{equation}
 			</div><br>
@@ -72,7 +72,7 @@
              \nonumber u(x) = \left\{
               \begin{array}{l l}
                 1 & \quad  x \geq 0\\
-                0 & \quad \textrm{ otherwise}
+                0 & \quad \textrm{otherwise}
               \end{array} \right.
             \end{equation}
 			so we can write the PDF of an $Exponential(\lambda)$ random variable as

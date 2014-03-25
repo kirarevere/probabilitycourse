@@ -55,7 +55,7 @@
 			random variables, and then replace <i>sums</i> with <i>integrals</i>, and replace <i>PMFs</i> with 
 			probability density functions (<i>PDFs</i>), and you will get the corresponding formula for continuous 
 			random variables. Of course, there is a little bit more to the story and that's why we need a chapter 
-			to discuss it. In this chapter, we also introduce mixed random variables that are mixtures of discrete 
+			to discuss it. In this chapter, we will also introduce mixed random variables that are mixtures of discrete 
 			and continuous random variables.</p>
 			
 			<p>We have in fact have already seen examples of a continuous random variables before, e.g., 

@@ -45,7 +45,7 @@
 			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
-			<p>In this section we use the Dirac delta function to analyze mixed random variables. Technically speaking, 
+			<p>In this section, we will use the Dirac delta function to analyze mixed random variables. Technically speaking, 
 			the Dirac delta function is not actually a function. It is what we may call a generalized function. 
 			Nevertheless, its definition is intuitive and it simplifies dealing with probability distributions.</p>
 			
@@ -58,7 +58,7 @@
 			<b><font size="3">Dirac Delta Function</font></b><br>
 			<p>Remember, we cannot define the PDF for a discrete random variable because its CDF has jumps. If we could 
 			somehow differentiate the CDF at jump points, we would be able to define the PDF for discrete random 
-			variables as well. This is the idea behind our effort in this section. Here we introduce the 
+			variables as well. This is the idea behind our effort in this section. Here, we will introduce the 
 			<i>Dirac delta function</i> and discuss its application to probability distributions. If you are less 
 			interested in the derivations, you may directly jump to <b>Definition 4.3</b> and continue from there. 
 			Consider the unit step function $u(x)$ defined by
@@ -121,7 +121,7 @@
 			
 			<span class='lemma'>Lemma </span><br>
 			<p>Let $g:\mathbb{R} \mapsto \mathbb{R}$ be a continuous function. We have
-			$$\int_{-\infty}^{\infty} g(x) \delta(x-x_0) dx = g(x_0)$$.</p>
+			$$\int_{-\infty}^{\infty} g(x) \delta(x-x_0) dx = g(x_0).$$</p>
 			
 			<i>Proof</i><br>
 			<p>Let $I$ be the value of the above integral. Then, we have
@@ -158,8 +158,8 @@
                   \infty  &  \quad x=0  \\
                   0 &  \quad \text{otherwise}
                 \end{array} \right.$</li>
-				<li>$\delta(x)=\frac{d}{dx} u(x)$, where $u(x)$ is the unit step function (Equation 4.8)</li>
-				<li>$\int_{-\epsilon}^{\epsilon} \delta(x) dx =1$, for any $\epsilon>0$</li>
+				<li>$\delta(x)=\frac{d}{dx} u(x)$, where $u(x)$ is the unit step function (Equation 4.8);</li>
+				<li>$\int_{-\epsilon}^{\epsilon} \delta(x) dx =1$, for any $\epsilon>0$;</li>
 				<li>For any $\epsilon>0$ and any function $g(x)$ that is continuous over $(x_0-\epsilon, x_0+\epsilon)$, we have
 				$$\int_{-\infty}^{\infty} g(x) \delta(x-x_0) dx =\int_{x_0-\epsilon}^{x_0+\epsilon} g(x) \delta(x-x_0) dx = g(x_0).$$</li>
 			</ol> 
@@ -297,7 +297,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=0.5533.$</td>
+                                <td>$=0.5533$</td>
                               </tr>
                               </table><br>
 							  Using The PDF, we can write
@@ -332,7 +332,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{1}{4} \times 0+ \frac{1}{4} \times 1 + \frac{1}{2}  \int_{0}^{\infty} xe^{-x}dx \hspace{30pt} (\textrm{using property 4 in Definition 4.3})$</td>
+                                <td>$=\frac{1}{4} \times 0+ \frac{1}{4} \times 1 + \frac{1}{2}  \int_{0}^{\infty} xe^{-x}dx \hspace{30pt} (\textrm{using Property 4 in Definition 4.3})$</td>
                               </tr>
 							  <tr>
                                 <td></td>
@@ -352,7 +352,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{1}{4} \times 0+ \frac{1}{4} \times 1 + \frac{1}{2}  \int_{0}^{\infty} x^2e^{-x}dx \hspace{30pt} (\textrm{using property 4 in Definition 4.3})$</td>
+                                <td>$=\frac{1}{4} \times 0+ \frac{1}{4} \times 1 + \frac{1}{2}  \int_{0}^{\infty} x^2e^{-x}dx \hspace{30pt} (\textrm{using Property 4 in Definition 4.3})$</td>
                               </tr>
 							  <tr>
                                 <td></td>

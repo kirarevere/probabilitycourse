@@ -58,7 +58,7 @@
 			of the interval $(x,x+\Delta]$ divided by the length of the interval as the length of the interval goes 
 			to $0$. Remember that
 			$$P(x < X \leq x+\Delta)=F_X(x+\Delta)-F_X(x).$$
-			So we conclude that
+			So, we conclude that
 			<table align="center">			
             <tr>
               <td>$f_X(x)$</td>
@@ -69,7 +69,7 @@
               <td>$=\frac{dF_X(x)}{dx}=F'_X(x), \hspace{20pt} \textrm{if }F_X(x) \textrm{ is differentiable at }x.$</td>
             </tr>
             </table><br>
-			Thus, we have the following definition for the PDF of continuous random variables.</p>
+			Thus, we have the following definition for the PDF of continuous random variables:</p>
 			
 			<div style="padding: 15px; border: black 1px solid">
 			<span class='definition'>Definition </span><br>
@@ -127,7 +127,7 @@
             </ol> 
 			</div><br>
 			
-			<p>In the last item above the set $A$ must satisfy some mild conditions which are almost always satisfied 
+			<p>In the last item above, the set $A$ must satisfy some mild conditions which are almost always satisfied 
 			in practice. An example of set $A$ could be a union of some disjoint intervals. For example, if 
 			you want to find $P(X \in [0,1] \cup [3,4])$, you can write
 			$$P(X \in [0,1] \cup [3,4]) = \int_{0}^{1} f_X(u)du+\int_{3}^{4} f_X(u)du.$$
@@ -171,7 +171,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$= c.$</td>
+                                <td>$= c$.</td>
                               </tr>
                               </table><br>
 							  Thus, we must have $c=1$.
@@ -216,7 +216,7 @@
 			<hr /><br>
 			
 			<b><font size="3">Range</font></b><br>
-			<p>The range of a random variable $X$, is the set of possible values of the random variable. If $X$ is a 
+			<p>The range of a random variable $X$ is the set of possible values of the random variable. If $X$ is a 
 			continuous random variable, we can define the range of $X$ as the set of real numbers $x$ for which 
 			the PDF is larger than zero, i.e,
 			$$R_X=\{x | f_X(x)>0\}.$$

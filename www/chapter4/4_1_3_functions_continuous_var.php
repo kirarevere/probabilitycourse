@@ -230,7 +230,7 @@
 			transformations. Let's start with the case where $g$ is a function satisfying the following properties:
 			<ul>
                 <li>$g(x)$ is differentiable;</li>
-                <li>$g(x)$ is a strictly increasing function, that is, if $x_1 < x_2$ then $g(x_1) < g(x_2)$.</li>
+                <li>$g(x)$ is a strictly increasing function, that is, if $x_1 < x_2$, then $g(x_1) < g(x_2)$.</li>
             </ul>
 			Now, let $X$ be a continuous random variable and $Y=g(X)$. We will show that you can directly find 
 			the PDF of $Y$ using the following formula.
@@ -242,7 +242,7 @@
               \end{array} \right.
             \end{equation}
 			Note that since $g$ is strictly increasing, its inverse function $g^{-1}$ is well defined. That is, 
-			for each $y \in R_Y$ there exists a unique $x_1$ such that $g(x_1)=y$. We can write $x_1=g^{-1}(y)$.
+			for each $y \in R_Y$, there exists a unique $x_1$ such that $g(x_1)=y$. We can write $x_1=g^{-1}(y)$.
 			<table align="center">			
             <tr>
               <td>$F_Y(y)$</td>
@@ -284,7 +284,7 @@
 			  <td>$\textrm{since } \frac{dx}{dy}=\frac{1}{\frac{dy}{dx}}.$</td>
             </tr>
             </table><br>
-			We can repeat the same argument for the case where $g$ is strictly decreasing. In that case $g'(x_1)$ will 
+			We can repeat the same argument for the case where $g$ is strictly decreasing. In that case, $g'(x_1)$ will 
 			be negative, so we need to use $|g'(x_1)|$. Thus, we can state the following theorem for a strictly 
 			monotonic function. (A function $g: \mathbb{R}\rightarrow \mathbb{R}$ is called strictly monotonic if it 
 			is strictly increasing or strictly decreasing.)</p>

@@ -158,7 +158,7 @@
 			
 			<p>As we have seen before, expectation is a linear operation, thus we always have
 			<ul>
-                <li>$E[aX+b]=aEX+b$, for all $a,b \in \mathbb{R}$</li>
+                <li>$E[aX+b]=aEX+b$, for all $a,b \in \mathbb{R}$, and</li>
                 <li>$E[X_1+X_2+...+X_n]=EX_1+EX_2+...+EX_n$, for any set of random variables $X_1, X_2,...,X_n$.</li>
             </ul></p>
 			

@@ -232,7 +232,7 @@
 				 	 <ul>
 					 	 <li>
 						 <p>First, note that
-						 $$\textrm{Var}(Y)=\textrm{Var}\left(\frac{2}{X}+3\right)=4\textrm{Var}\left(\frac{1}{X}\right) \hspace{15pt} \textrm{Using Equation 4.4}$$
+						 $$\textrm{Var}(Y)=\textrm{Var}\left(\frac{2}{X}+3\right)=4\textrm{Var}\left(\frac{1}{X}\right), \hspace{15pt} \textrm{using Equation 4.4}$$
 						 Thus, it suffices to find Var$(\frac{1}{X})=E[\frac{1}{X^2}]-(E[\frac{1}{X}])^2$. Using LOTUS, we have
 						 $$E\left[\frac{1}{X}\right]=\int_{0}^{1}  x\left(2x+\frac{3}{2}\right) dx =\frac{17}{12}$$
 						 $$E\left[\frac{1}{X^2}\right]=\int_{0}^{1} \left(2x+\frac{3}{2}\right) dx =\frac{5}{2}.$$
@@ -296,7 +296,7 @@
 						 Equation 4.6. We note that since $R_X=[-\frac{\pi}{2},\pi]$, $R_Y=[-1,1]$. By looking at 
 						 the plot of $g(x)=\sin(x)$ over $[-\frac{\pi}{2},\pi]$, we notice that for $y \in (0,1)$ 
 						 there are two solutions to $y=g(x)$, while for $y \in (-1,0)$, there is only one solution. 
-						 In particular, if $y \in (0,1)$ we have two solutions, $x_1=\arcsin(y)$, and  $x_2=\pi-\arcsin(y)$. 
+						 In particular, if $y \in (0,1)$, we have two solutions: $x_1=\arcsin(y)$, and  $x_2=\pi-\arcsin(y)$. 
 						 If $y \in (-1,0)$ we have one solution, $x_1=\arcsin(y)$. Thus, for $y \in(-1,0)$, we have
 						 <table align="center">			
                           <tr>

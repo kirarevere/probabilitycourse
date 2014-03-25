@@ -348,7 +348,7 @@
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X$ be a random variable with mean $EX=\mu$. Define the function $f(\alpha)$ as
-			$$f(\alpha)=E[(X-\alpha)^2.]$$
+			$$f(\alpha)=E[(X-\alpha)^2].$$
 			Find the value of $\alpha$ that minimizes $f$.</p>
 			
 			<hr /><br />

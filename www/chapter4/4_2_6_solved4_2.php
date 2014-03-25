@@ -68,11 +68,11 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=e^{-\lambda t}$</td>
+                            <td>$=e^{-\lambda t}$.</td>
                           </tr>
                           </table><br>
 						  Thus, the CDF of $X$ for $x>0$ is given by
-						  $$F_X(x)=1-P(X>x)=1-e^{-\lambda x}$$
+						  $$F_X(x)=1-P(X>x)=1-e^{-\lambda x},$$
 						  which is the CDF of $Exponential(\lambda)$. Note that by the same argument, the time between 
 						  the first and second customer has also $Exponential(\lambda)$ distribution. In general, 
 						  the time between the $k$'th and $k+1$'th customer is $Exponential(\lambda)$.</p>
@@ -104,7 +104,7 @@
                           </tr>
                           </table><br>
 						  Then for any $y \in (0,\infty)$, we can write
-						  $$P(Y \leq y) =1-(1-p)^{\lfloor y\rfloor}$$
+						  $$P(Y \leq y) =1-(1-p)^{\lfloor y\rfloor},$$
 						  where $\lfloor y\rfloor$ is the largest integer less than or equal to $y$. 
 						  Now, since $X=Y \Delta$, we have
 						  <table align="center">			
@@ -133,12 +133,12 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=1-e^{-\lambda x}$</td>
+                            <td>$=1-e^{-\lambda x}$.</td>
                           </tr>
                           </table><br>
 						  The last equality holds because 
 						  $\frac{x}{\Delta}-1 \leq \lfloor \frac{x}{\Delta} \rfloor \leq \frac{x}{\Delta}$, and we know
-						  $$\lim_{\Delta \rightarrow 0^{+}} (1-\lambda \Delta)^{\frac{1}{\Delta}}=e^{-\lambda}$$</p>
+						  $$\lim_{\Delta \rightarrow 0^{+}} (1-\lambda \Delta)^{\frac{1}{\Delta}}=e^{-\lambda}.$$</p>
 						 </li>
 					 </ul>
 					 </li>
@@ -170,7 +170,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=P(U \leq 1-e^{-x})=1-e^{-x}$</td>
+                            <td>$=P(U \leq 1-e^{-x})=1-e^{-x}$,</td>
                           </tr>
                           </table><br>
 						  which is the CDF of an $Exponential(1)$ random variable.</p>
@@ -363,22 +363,22 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\frac{1}{\sqrt{2\pi}} \frac{1}{x} e^{-\frac{x^2}{2}}$</td>
+                            <td>$=\frac{1}{\sqrt{2\pi}} \frac{1}{x} e^{-\frac{x^2}{2}}$.</td>
                           </tr>
                           </table><br>
 						  To show the lower bound, let $Q(x)=P(Z \geq x)$, and
 						  $$h(x)=Q(x)-\frac{1}{\sqrt{2\pi}} \frac{x}{x^2+1} e^{-\frac{x^2}{2}} \hspace{10pt} \textrm{ for all }x \geq 0$$
 						  It suffices to show that
-						  $$h(x)\geq 0 \hspace{10pt} \textrm{ for all }x \geq 0$$
+						  $$h(x)\geq 0 \hspace{10pt} \textrm{ for all }x \geq 0.$$
 						  To see this, note that the function $h$ has the following properties
 						  <ol type="1">
-                              <li>$h(0)=\frac{1}{2}$</li>
-                              <li>$\lim \limits_{x \rightarrow \infty} h(x)=0$</li>
-                              <li>$h'(x)=-\frac{2}{\sqrt{2\pi}}\left( \frac{e^{-\frac{x^2}{2}}}{(x^2+1)}\right) < 0$  for all $x \geq 0$</li>
+                              <li>$h(0)=\frac{1}{2}$;</li>
+                              <li>$\lim \limits_{x \rightarrow \infty} h(x)=0$;</li>
+                              <li>$h'(x)=-\frac{2}{\sqrt{2\pi}}\left( \frac{e^{-\frac{x^2}{2}}}{(x^2+1)}\right) < 0$,  for all $x \geq 0$</li>
                           </ol>
 						  Therefore, $h(x)$ is a strictly decreasing function that starts at $h(0)=\frac{1}{2}$ and 
 						  decreases as $x$ increases. It approaches $0$ as $x$ goes to infinity. We conclude that 
-						  $h(x) \geq 0$ for all $x \geq 0$.</p>
+						  $h(x) \geq 0$, for all $x \geq 0$.</p>
 						 </li>
 					 </ul>
 					 </li>
@@ -426,7 +426,7 @@
 										&#38;\textrm{(using property 3 of the gamma function)}		\\
 										&#38;=	\frac{(\alpha + 1) \alpha \Gamma(\alpha)}{\lambda^2 \Gamma(\alpha)}
 										&#38;\textrm{(using property 3 of the gamma function)}		\\
-										&#38;= 	\frac{\alpha (\alpha + 1)}{\lambda^2}
+										&#38;= 	\frac{\alpha (\alpha + 1)}{\lambda^2}.
 							\end{align*}
 							$$
 							</p>

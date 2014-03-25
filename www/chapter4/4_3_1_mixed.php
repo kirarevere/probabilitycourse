@@ -45,10 +45,10 @@
 			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
 			
-			<p>Here we discuss <i>mixed</i> random variables. These are random variables that are neither discrete nor 
+			<p>Here, we will discuss <i>mixed</i> random variables. These are random variables that are neither discrete nor 
 			continuous, but are mixture of both. In particular, a mixed random variable has a continuous and a discrete 
-			part. Thus, we can use our tools from previous chapters to analyze them. In this section we provide some 
-			examples on how we can do this. Then in section 4.3.2, we revisit the concept of mixed random variables 
+			part. Thus, we can use our tools from previous chapters to analyze them. In this section, we will provide some 
+			examples on how we can do this. Then in section 4.3.2, we will revisit the concept of mixed random variables 
 			using the <i>delta "function"</i>.</p>
 			
 			<hr /><br>

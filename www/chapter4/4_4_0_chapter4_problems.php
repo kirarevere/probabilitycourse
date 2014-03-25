@@ -138,7 +138,7 @@
 			<p>
 				 Let $X \sim Exponential (\lambda)$. Show that
 				<ol type="a">
-					<li>$EX^n=\frac{n}{\lambda} EX^{n-1}$, for $n=1,2,3,\cdots$.</li>
+					<li>$EX^n=\frac{n}{\lambda} EX^{n-1}$, for $n=1,2,3,\cdots$;</li>
 					<li>$EX^n=\frac{n!}{\lambda^{\large{n}}}$, for $n=1,2,3,\cdots$.</li>
 				</ol>
 			</p>
@@ -178,7 +178,7 @@
 				Let $X$ be a continuous random variable with PDF
 				\begin{equation}
 					\nonumber f_X(x) = 
-					\frac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}}, \hspace{20pt} \textrm{for all }x \in \mathbb{R}.
+					\frac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}} \hspace{20pt} \textrm{for all }x \in \mathbb{R}.
 					\end{equation}
 				and let $Y = \sqrt{|X|}$. Find $f_Y(y)$.
 			<hr /><br />
@@ -200,7 +200,7 @@
 			<p>
 				The <b>median</b> of a continuous random variable $X$ can be defined as the unique real number <i>m</i> that satisfies
 				\begin{equation}
-					P(X \geq m) = P(X &lt; m) = \frac{1}{2}
+					P(X \geq m) = P(X &lt; m) = \frac{1}{2}.
 				\end{equation}
 				Find the median of the following random variables
 				<ol type="a">
@@ -320,7 +320,7 @@
 				<p>
 					Let $X \sim Laplace(0,b)$, i.e.,
 					\begin{equation}
-						\nonumber f_X(x) = \frac{1}{2b} \exp \left( -\frac{|x|}{b} \right)
+						\nonumber f_X(x) = \frac{1}{2b} \exp \left( -\frac{|x|}{b} \right),
 					\end{equation}
 					where $b &gt; 0$. Define $Y = |X|$. Show that $Y \sim Exponential \left( \frac{1}{b} \right)$.
 				</p>
@@ -330,7 +330,7 @@
 				<p>
 					A continuous random variable is said to have the <b>standard Cauchy</b> distribution if its PDF is given by
 					\begin{equation}
-						\nonumber f_X(x) = \frac{1}{\pi(1 + x^2)}
+						\nonumber f_X(x) = \frac{1}{\pi(1 + x^2)}.
 					\end{equation}
 					If $X$ has a standard Cauchy distribution, show that $EX$ is not well-defined. Also, show $EX^2 = \infty$.
 				</p>
@@ -345,7 +345,7 @@
   					\nonumber  =
     					\left\{\begin{array}{l l}
       				\frac{x}{\sigma^2} e^{-x^2/2\sigma^2} & \quad \textrm{if}\: x \geq 0\\
-      				0  & \quad \textrm{if} x &lt; 0
+      				0  & \quad \textrm{if } x &lt; 0
   					\end{array}\right.
 						\end{equation}
 					where $\sigma &gt; 0$.

@@ -297,7 +297,8 @@
 			
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
-			<p>A real number $X$ is selected uniformly at random in the interval $[0,10]$.
+			<p>A <b>real</b> number $X$ is selected uniformly at random in the continuous interval $[0,10]$. 
+			(For example, $X$ could be $3.87$.)
 			<ol type="a">
                 <li>Find $P\left(2 \leq X \leq 5\right)$.</li>
                 <li>Find $P\left(X \leq 2| X \leq 5\right)$.</li>
@@ -416,6 +417,8 @@
 			is it to your advantage to switch your choice?</p>
 			<img src="images/chapter1/7.png" width="300" height="60" alt="Monte Hall" title="Monte Hall" border="0" /><br><br>
 			
+			<hr /><br />
+			
 			<span class='problem'>Problem </span><br>
 			<p>I toss a fair die twice, and obtain two numbers $X$ and $Y$. Let $A$ be the event that $X=2$, $B$ be 
 			the event that $X+Y=7$, and $C$ be the event that $Y=3$.
@@ -426,16 +429,22 @@
                 <li>Are $A$, $B$, and $C$ are independent?</li>
             </ol></p>
 			
+			<hr /><br />
+			
 			<span class='problem'>Problem </span>*<br>
 			<p>You and I play the following game: I toss a coin repeatedly. The coin is unfair and $P(H)=p$. The 
 			game ends the first time that two consecutive heads (HH) or two consecutive tails (TT) are observed. 
 			I win if (HH) is observed and you win if (TT) is observed. Given that I won the game find the probability 
 			that the first coin toss resulted in head?</p>
 			
+			<hr /><br />
+			
 			<span class='problem'>Problem </span>*<br>
 			<p>A box contains two coins: a regular coin and one fake two headed coin (P(H)=1). I choose a coin at 
 			random and toss it $n$ times. If the first $n$ coin tosses result in heads, what is the probability 
 			that the $(n+1)^{th}$ coin toss will also result in head?</p>
+			
+			<hr /><br />
 			
 			<span class='problem'>Problem </span>*<br>
 			<p>A family has $n$ children, $n \geq 2$. We ask the father: "Do you have at least one daughter?" He 
@@ -443,12 +452,15 @@
 			In other words, what is the probability that all of their children are girls, given that at least one of 
 			them is a girl?</p>
 			
+			<hr /><br />
+			
 			<span class='problem'>Problem </span>*<br>
 			<p>A family has $n$ children, $n\geq 2$. We ask from the father, "Do you have at least one daughter named Lilia?" 
 			He replies, "Yes!"  What is the probability that all of their children are girls? In other words, we want 
 			to find the probability that all $n$ children are girls, given that the family has at least one daughter named 
 			Lilia. Here you can assume that if a child is a girl, her name will be Lilia with probability $\alpha \ll 1$ 
 			independently from other children's names. If the child is a boy, his name will not be Lilia.</p>
+			<hr /><br />
 			
 			<span class='problem'>Problem </span>*<br>
 			<p>A family has $n$ children. We pick one of them at random and find out that she is a girl. What 
