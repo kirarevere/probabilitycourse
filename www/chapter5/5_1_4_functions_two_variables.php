@@ -22,7 +22,7 @@ Note that if we are only interested in $E[g(X,Y)]$, we can directly use LOTUS, w
 <div style="padding: 25px; margin: 30px 40px; border: 2px solid black;">
 <p style="text-align:center;">Law of the unconscious statistician (LOTUS) for two discrete random variables:</p>
 \begin{align}\label{eq:LOTUS-2D}
-  E[g(X,Y)]=\sum_{(x_i,y_j) \in R_{XY}} g(x_i,y_j)P_{XY}(x_i,y_j)
+  E[g(X,Y)]=\sum_{(x_i,y_j) \in R_{XY}} g(x_i,y_j)P_{XY}(x_i,y_j) \hspace{20pt} (5.5)
 \end{align}
 </div>
 
@@ -38,12 +38,12 @@ Let $g(X,Y)=X+Y$. Using LOTUS, we have
   \nonumber &=\sum_{(x_i,y_j) \in R_{XY}} x_iP_{XY}(x_i,y_j)+\sum_{(x_i,y_j) \in R_{XY}} y_jP_{XY}(x_i,y_j) \\
   \nonumber &=\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} x_iP_{XY}(x_i,y_j)+\sum_{x_i \in R_{X}} \sum_{y_j\in R_{Y}} y_jP_{XY}(x_i,y_j) \\
   \nonumber &=\sum_{x_i \in R_{X}} x_i \sum_{y_j\in R_{Y}} P_{XY}(x_i,y_j)+ \sum_{y_j\in R_{Y}} y_j \sum_{x_i \in R_{X}} P_{XY}(x_i,y_j) \\
-  \nonumber &=\sum_{x_i \in R_{X}} x_i  P_{X}(x_i)+ \sum_{y_j\in R_{Y}} y_j P_{Y}(y_j)  &\textrm{marginal PMF (Equation \ref{Eq:marginals})} \\
+  \nonumber &=\sum_{x_i \in R_{X}} x_i  P_{X}(x_i)+ \sum_{y_j\in R_{Y}} y_j P_{Y}(y_j)  \textrm{marginal PMF (Equation 5.1)} \\
   \nonumber &=EX+EY.
 A
 \end{align}
 		</li></ul>
-		</li></ul></div><hr /><br />
+		</li></ul></div><br />
 <!-- /Example -->
 
 <!-- Example -->
