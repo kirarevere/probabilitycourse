@@ -108,14 +108,12 @@ able $X$ and an event $A$, we have the following:
 
 <!-- Example -->
 <span class="example">Example </span><br />
-\begin{example}
 Let $X \sim Exponential(1)$.
 <ol type="a">
   <li> Find the conditional PDF and CDF of $X$ given $X&gt;1$.</li>
   <li> Find $E[X|X&gt;1]$.</li>
   <li> Find Var$(X|X&gt;1)$.</li>
 </ol>
-\end{example}
 
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
