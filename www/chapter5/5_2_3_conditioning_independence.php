@@ -309,9 +309,7 @@ For two jointly continuous random variables $X$ and $Y$, we have:
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
-\begin{example}
 Let $X$ and $Y$ be as in Example 5.21. Find $E[X|Y=1]$ and Var$(X|Y=1)$.
-\end{example}
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 \begin{align}
@@ -370,7 +368,6 @@ then $X$ and $Y$ are independent.
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
-\begin{example}
 Determine whether $X$ and $Y$ are independent:
 <ol type="a">
 <li>
@@ -390,7 +387,6 @@ Determine whether $X$ and $Y$ are independent:
   \end{array} \right.$
 </li>
 </ol>
-\end{example}
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ol type="a">
 <li>
@@ -441,7 +437,6 @@ Determine whether $X$ and $Y$ are independent:
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
-\begin{example}\label{ex:unit-disc}
 Consider the unit disc
 \begin{align}%\label{}
 \nonumber  D=\{(x,y)|x^2+y^2 \leq 1\}.
@@ -461,7 +456,6 @@ Suppose that we choose a point $(X,Y)$ uniformly at random in $D$. That is, the 
   <li> Find the conditional PDF of $X$ given $Y=y$, where $-1 \leq y \leq 1$.</li>
   <li> Are $X$ and $Y$ independent?</li>
 </ol>
-\end{example}
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 <ol type="a">
@@ -554,9 +548,7 @@ We now discuss the law of total probability for continuous random variables. Thi
 Let's look at some examples.
 <!-- Example -->
 <hr /><span class="example"><br />
-\begin{example}
 Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Find $P(X^3+Y&lt;1)$.
-\end{example}
 <div class="solvedprob"><li><ul><a><b>Solution</b></a>
 <ul><li>
 Using the law of total probability (Equation 5.16), we can write
@@ -573,7 +565,6 @@ Using the law of total probability (Equation 5.16), we can write
 
 <!-- Example -->
 <span class="example">Example </span><br />
-\begin{example}
 Suppose $X \sim Uniform(1,2)$ and given $X=x$, $Y$ is an exponential random variable with parameter $\lambda=x$, so we can write
 \begin{align}%\label{}
 \nonumber  Y|X=x \hspace{10pt} \sim \hspace{10pt} Exponential(x).
@@ -586,7 +577,6 @@ We sometimes write this as
   <li> Find $EY$.</li>
   <li> Find $\var(Y)$.</li>
 </ol>
-\end{example}
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 <ol type="a">
