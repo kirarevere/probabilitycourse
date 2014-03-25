@@ -2,7 +2,7 @@
 	$section_no			= "5.2.1";
 	$section_title	= "Joint Probability Density Function (PDF)";
 	$section_prev		= "chapter5/5_2_0_continuous_vars.php";
-	$section_next		= "chapter5/5_2_2_.php";
+	$section_next		= "chapter5/5_2_2_joint_cdf.php";
 	include "../Control/autonumber.php";
 	loadHeaders(66);
 	include "section_header.php";
