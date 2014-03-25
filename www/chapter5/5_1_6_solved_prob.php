@@ -1,7 +1,7 @@
 <?php
 	$section_no			= "5.1.6";
 	$section_title	=	"Solved Problems";
-	$section_next		= "#";
+	$section_next		= "chapter5/5_2_0_continuous_vars.php";
 	$section_prev		= "chapter5/5_1_5_conditional_expectation.php";
 	include	'../Control/autonumber.php';
 	loadHeaders(64);

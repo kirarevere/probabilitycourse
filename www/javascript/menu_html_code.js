@@ -149,7 +149,7 @@ htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_5_conditi
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_6_solved_prob.php">5.1.6 Solved Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
-htmlText += '		<li><a>Section 2</a>';
+htmlText += '		<li><a>5.2 Two Continuous Random Variables</a>';
 htmlText += '		<ul>';
 htmlText += '			<li><a href="#">Subsection 1</a></li>';
 htmlText += '			<li><a href="#">Subsection 2</a></li>';
