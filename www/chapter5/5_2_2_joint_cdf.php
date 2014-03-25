@@ -110,8 +110,8 @@ In Example 5.15, we found
 \end{equation}
 First, note that since $R_{XY}=\{(x,y)|0 \leq x,y \leq 1\}$, we find that
 \begin{align}\label{}
-  \nonumber &F_{XY}(x,y)=0,   \hsb  \textrm{ for }x&lt;0 \textrm{ or } y&lt;0,\\
-  \nonumber &F_{XY}(x,y)=1,   \hsb \textrm{ for }x \geq 1 \textrm{ and } y \geq 0.
+  \nonumber &F_{XY}(x,y)=0,    \textrm{ for }x&lt;0 \textrm{ or } y&lt;0,\\
+  \nonumber &F_{XY}(x,y)=1,    \textrm{ for }x \geq 1 \textrm{ and } y \geq 0.
  \end{align}
 To find the joint CDF for $x>0$ and $y>0$, we need to integrate the joint PDF:
 \begin{align}\label{}
@@ -136,6 +136,8 @@ To find the joint CDF for $x>0$ and $y>0$, we need to integrate the joint PDF:
   \nonumber F_{XY}(x,y) &=F_{XY}(1,y)\\
     \nonumber &=\frac{1}{2}y+\frac{1}{2}y^3.
  \end{align}
+</li></ul>
+</li></ul></div><br />
 
 <!-- /Example -->
 
