@@ -344,7 +344,7 @@ That is, knowing the value of $Y$ does not change the PDF of $X$. Since $f_{X|Y}
 \end{align}
 
 <div class="cbox">
-  \item Two continuous random variables $X$ and $Y$ are independent if
+  Two continuous random variables $X$ and $Y$ are independent if
 \begin{align}%\label{}
 \nonumber  f_{XY}(x,y)=f_X(x) f_Y(y), \hspace{10pt} \textrm{ for all }x,y.
 \end{align}
@@ -352,7 +352,7 @@ Equivalently, $X$ and $Y$ are independent if
 \begin{align}%\label{}
 \nonumber  F_{XY}(x,y)=F_X(x) F_Y(y), \hspace{10pt}  \textrm{ for all }x,y.
 \end{align}
-  \item If $X$ and $Y$ are independent, we have
+  If $X$ and $Y$ are independent, we have
 \begin{align}%\label{}
 \nonumber  &E[XY]=EX EY, \\
 \nonumber  &E[g(X)h(Y)]=E[g(X)]E[h(Y)].
@@ -546,7 +546,7 @@ We now discuss the law of total probability for continuous random variables. Thi
 
 Let's look at some examples.
 <!-- Example -->
-<hr /><span class="example"><br />
+<hr /><span class="example">Example </span><br />
 Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Find $P(X^3+Y&lt;1)$.
 <div class="solvedprob"><li><ul><a><b>Solution</b></a>
 <ul><li>
