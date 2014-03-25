@@ -140,7 +140,7 @@ htmlText += '	<li><a>5 Joint Distributions</a>';
 htmlText += '	<ul>';
 htmlText += '		<li><a>5.1 Two Discrete Random Variables</a>';
 htmlText += '		<ul>';
-htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_0_joint_distributions.php">5.1.0 Joint Distributions</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_0_joint_distributions.php">5.1.0 Two Random Variables</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_1_joint_pmf.php">5.1.1 Joint Probability Mass Function (PMF)</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_2_joint_cdf.php">5.1.2 Joint Cumulative Distribution Function (CDF)</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_1_3_conditioning_independence.php">5.1.3 Conditioning and Independence</a></li>';
