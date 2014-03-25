@@ -11,6 +11,7 @@
 <!-- Section Content -->
 <p>
 Here, we define jointly continuous random variables. Basically, two random variables are jointly continuous if they have a joint probability density function as defined bellow.
+</p>
 <div style="padding: 25px;margin:30px 40px; border: 2px solid black;">
 \begin{define}
 Two random variables $X$ and $Y$ are <b>jointly continuous</b> if there exists a nonnegative function $f_{XY}:\mathbb{R}^2 \rightarrow \mathbb{R}$, such that, for any set $A\in \mathbb{R}^2$, we have
@@ -171,9 +172,73 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
     \nonumber R_{XY}=\{(x,y)\in \mathbb{R}^2| 0 \leq y \leq x \leq 1 \}.
   \end{align}
   Figure 5.6 shows $R_{XY}$ in the $x-y$ plane.<br />
-	<img src="images/chapter5/continuous56.png" style="display:block; width:400px;height:auto;margin:20px auto;" />
+	<img src="images/chapter5/continuous56.png" style="display:block; width:500px;height:auto;margin:20px auto;" />
+	<p style="text-align:center;">Figure 5.6: Figure shows $R_{XY}$ as well as integration region for finding $P(Y\leq \frac{X}{2})$.</p>
+	</li>
+	<li>
+  To find the constant $c$, we can write
+  \begin{align}%\label{}
+  \nonumber  1&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{XY}(x,y)dxdy\\
+  \nonumber  &=\int_{0}^{1} \int_{0}^{x}  cx^2y  \hspace{5pt} dydx\\
+  \nonumber  &=\int_{0}^{1} \frac{c}{2} x^4 dx\\
+  \nonumber  &=\frac{c}{10}.
+  \end{align}
+  Thus, $c=10$.
+</li>
+<li>
+   To find the marginal PDFs, first note that $R_X=R_Y=[0,1]$. For $0 \leq x \leq 1$, we can write
+  \begin{align}%\label{}
+  \nonumber  f_X(x)&=\int_{-\infty}^{\infty} f_{XY}(x,y)dy\\
+  \nonumber  &=\int_{0}^{x}10x^2ydy\\
+  \nonumber  &=5x^4.
+  \end{align}
+  Thus,
+  \begin{equation}
+  \nonumber f_X(x) = \left\{
+  \begin{array}{l l}
+    5x^4  &  \quad  0 \leq x \leq 1\\
+      &  \quad   \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+  \end{equation}
+  For $0 \leq y \leq 1$, we can write
+  \begin{align}%\label{}
+  \nonumber  f_Y(y)&=\int_{-\infty}^{\infty} f_{XY}(x,y)dx\\
+  \nonumber  &=\int_{y}^{1}10x^2ydx\\
+  \nonumber  &=\frac{10}{3}y(1-y^3).
+  \end{align}
+  Thus,
+  \begin{equation}
+  \nonumber f_Y(y) = \left\{
+  \begin{array}{l l}
+    \frac{10}{3}y(1-y^3)  &  \quad  0 \leq y \leq 1\\
+      &  \quad   \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+  \end{equation}
+</li>
+<li>
+  To find $P(Y\leq \frac{X}{2})$, we need to integrate $f_{XY}(x,y)$ over region $A$ shown in Figure 5.6. In particular, we have
+  \begin{align}%\label{}
+  \nonumber  P\left(Y\leq \frac{X}{2}\right)&=\int_{-\infty}^{\infty} \int_{0}^{\frac{x}{2}} f_{XY}(x,y)dydx\\
+  \nonumber  &=\int_{0}^{1} \int_{0}^{\frac{x}{2}}  10x^2y  \hspace{5pt} dydx\\
+  \nonumber  &=\int_{0}^{1} \frac{5}{4} x^4 dx\\
+  \nonumber  &=\frac{1}{4}.
+  \end{align}
+</li>
+
+  <li> To find $P(Y\leq \frac{X}{4}|Y\leq \frac{X}{2})$, we have
+  \begin{align}%\label{}
+  \nonumber  P\left(Y\leq \frac{X}{4}\bigg{|}Y\leq \frac{X}{2}\right)&=\frac{P\left(Y\leq \frac{X}{4},Y\leq \frac{X}{2}\right)}{P\left(Y\leq \frac{X}{2}\right)}\\
+  \nonumber  &=4P\left(Y\leq \frac{X}{4}\right)\\
+  \nonumber  &=4\int_{0}^{1} \int_{0}^{\frac{x}{4}}  10x^2y  \hspace{5pt} dydx\\
+  \nonumber  &=4\int_{0}^{1} \frac{5}{16} x^4 dx\\
+  \nonumber  &=\frac{1}{4}.
+  \end{align}
+</li>
+</li></ul>
+</li></ul></div><hr /><br />
 
 
-</p>
 <!-- /Section Content -->
 <?php include 'section_footer.php'; ?>
