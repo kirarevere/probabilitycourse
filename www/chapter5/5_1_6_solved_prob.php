@@ -4,7 +4,7 @@
 	$section_next		= "#";
 	$section_prev		= "#";
 	include	'../Control/autonumber.php';
-	loadHeaders(61);
+	loadHeaders(62);
 	include 'section_header.php';
 ?>
 
