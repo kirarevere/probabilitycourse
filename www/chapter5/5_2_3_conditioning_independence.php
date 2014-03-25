@@ -2,7 +2,7 @@
 	$section_no			= "5.2.3";
 	$section_title	= "Conditioning and Independence";
 	$section_prev		= "5_2_2_joint_cdf.php";
-	$section_next		= "5_2_4_";
+	$section_next		= "5_2_4_functions.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(68);
 	include						"section_header.php";
