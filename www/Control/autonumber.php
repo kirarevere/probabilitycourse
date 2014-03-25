@@ -7,6 +7,7 @@
 	$chapterTwoDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter2/";
 	$chapterThreeDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter3/";
 	$chapterFourDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter4/";
+	$chapterFiveDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter5/";
 	$exCount; $thCount; $lmCount;
 
 	$currentChapter; $currentSection; $currentSubsection;
@@ -142,7 +143,7 @@
 
 	function startup()	{
 		global $data;
-		global $chapterOneDir, $chapterTwoDir, $chapterThreeDir, $chapterFourDir;
+		global $chapterOneDir, $chapterTwoDir, $chapterThreeDir, $chapterFourDir, $chapterFiveDir;
 		global $DATA_DIR;
 		global $exCount, $thCount, $lmCount;
 		$exCount = 0; $thCount = 0; $lmCount = 0;	
@@ -151,6 +152,7 @@
 		initElemCount($chapterTwoDir,"a",$dataFile);
 		initElemCount($chapterThreeDir,"a",$dataFile);
 		initElemCount($chapterFourDir,"a",$dataFile);
+		initElemCount($chapterFiveDir,"a",$dataFile);
 		// create DATA
 		$data = file($DATA_DIR);
 	}
