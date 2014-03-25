@@ -38,7 +38,7 @@
 			<div id="content">
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_3_3_solved4_3.php">previous</a></div>
-    			<div class="right"><a href="">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="chapter5/5_1_0_joint_distributions.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>
 			<hr />
@@ -404,7 +404,7 @@
 
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter4/4_3_3_solved4_3.php">previous</a></div>
-    			<div class="right"><a href="">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="chapter5/5_1_0_joint_distributions.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>

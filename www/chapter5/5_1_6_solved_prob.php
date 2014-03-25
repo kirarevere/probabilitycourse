@@ -1,10 +1,10 @@
 <?php
 	$section_no			= "5.1.6";
 	$section_title	=	"Solved Problems";
-	$section_next		= "chapter5/5_1_5_conditional_expectation.php";
-	$section_prev		= "#";
+	$section_next		= "#";
+	$section_prev		= "chapter5/5_1_5_conditional_expectation.php";
 	include	'../Control/autonumber.php';
-	loadHeaders(63);
+	loadHeaders(64);
 	include 'section_header.php';
 ?>
 
