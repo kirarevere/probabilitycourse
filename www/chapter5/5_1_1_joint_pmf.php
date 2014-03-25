@@ -73,7 +73,7 @@ Here we call $P_X(x)$ the <b>marginal PMF</b> of $X$. Similarly, we can find the
 </div><br />
 Let's practice these concepts by looking at an example.
 </p><hr /><br />
-<span class="example">Example </span>
+<span class="example">Example </span><br />
 Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 
 	<style>
@@ -103,8 +103,8 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.1.
 		<tr style="height:80px;">
 			<td>$X = 1$</td><td>$\frac{1}{8}$</td><td>$\frac{1}{6}$</td><td>$\frac{1}{6}$</td>
 		</tr>
-	</table>
-Figure 5.1 shows $P_{XY}(x,y)$.<br />
+	</table> <br />
+Figure 5.1 shows $P_{XY}(x,y)$.<br /><br />
 <img src="images/chapter5/pmfXY.png" style="display:block; width:400px; height: auto; margin: 10px auto;"/>
 <p style="text-align: center;">Figure 5.1: Joint PMF of $X$ and $Y$ (Example 5.1).</p>
 <ol type='a'>
