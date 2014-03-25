@@ -93,3 +93,16 @@
 #printButton { cursor: pointer; }
 .mobile { display: none; }
 .no_mobile { display: block; }
+
+
+/* Content Boxes */
+.cbox {
+	padding: 25px;
+	margin: 30px 40px;
+	border: 2px solid black;
+}
+
+/* Centered Text */
+.centered {
+	text-align: center;
+}

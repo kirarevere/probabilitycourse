@@ -2,7 +2,7 @@
 	$section_no			= "5.2.2";
 	$section_title	= "Joint Cumulative Distribution Function (CDF)";
 	$section_prev		= "chapter5/5_2_1_joint_pdf.php";
-	$section_next		= "chapter5/5_2_3_";
+	$section_next		= "chapter5/5_2_3_conditioning_independence.php";
 	include "../Control/autonumber.php";
 	loadHeaders(67);
 	include "section_header.php";
