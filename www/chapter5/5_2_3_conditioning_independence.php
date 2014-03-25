@@ -574,7 +574,7 @@ We sometimes write this as
 \end{align}
 <ol type="a">
   <li> Find $EY$.</li>
-  <li> Find $\var(Y)$.</li>
+  <li> Find Var(Y)$.</li>
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
