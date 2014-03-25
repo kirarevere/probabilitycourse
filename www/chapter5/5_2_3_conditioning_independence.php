@@ -548,7 +548,7 @@ Let's look at some examples.
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
 Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Find $P(X^3+Y&lt;1)$.
-<div class="solvedprob"><li><ul><a><b>Solution</b></a>
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 Using the law of total probability (Equation 5.16), we can write
 \begin{align}%\label{}
