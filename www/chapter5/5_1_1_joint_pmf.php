@@ -67,7 +67,7 @@ Here we call $P_X(x)$ the <b>marginal PMF</b> of $X$. Similarly, we can find the
 <div style="padding: 20px; border: 2px solid black; margin: 30px 40px;">
 <p style="text-align: center;">Marginal PMFs of $X$ and $Y$:</p>
 \begin{align}\label{Eq:marginals}
-\nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j), \hspace{20pt} \textrm{ for any } x \in R_X\\ \hspace{40pt}.  
+\nonumber P_X(x)=\sum_{y_j \in R_Y} P_{XY}(x,y_j), \hspace{20pt} \textrm{ for any } x \in R_X \hspace{40pt} \\  
  P_Y(y)=\sum_{x_i \in R_X} P_{XY}(x_i,y), \hspace{20pt} \textrm{ for any } y \in R_Y \hspace{40pt} (5.1) 
 \end{align}
 </div><br />
