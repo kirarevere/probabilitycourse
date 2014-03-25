@@ -33,7 +33,7 @@ In particular, if $R_X=\{x_1,x_2,... \}$ and $R_Y=\{y_1,y_2,...\}$, then we can 
 \end{align}
 In fact, sometimes we define $R_{XY}=R_X \times R_Y$ to simplify the analysis. In this case, for some pairs $(x_i,y_j)$ in  $R_X \times R_Y$, $P_{XY}(x_i,y_j)$ might be zero. For two discrete random variables $X$ and $Y$, we have
 
-<div style="padding: 20px; margin: 30px 40px; border: 2px solid black;">
+<div style="padding: 20px; margin: 30px auto;width:400px; border: 2px solid black;">
 \begin{align}%\label{}
 \nonumber \sum_{(x_i,y_j) \in R_{XY}} P_{XY}(x_i,y_j)=1
 \end{align}
