@@ -122,6 +122,8 @@
 		$dom = new domDocument;	
 		foreach($files as $file)	{
 			$filename = substr($file,strlen($phpDir));
+			if(strcmp($filename,"section_header.php") == 0 || strcmp($filename,"section_footer.php") == 0)
+				continue;
 			$fileInfo = sscanf($filename,"%d_%d_%d_%s");
 			list($ch,$sec,$subsec,$name) = $fileInfo;
 //			echo "$ch.$sec.$subsec $name\n";
