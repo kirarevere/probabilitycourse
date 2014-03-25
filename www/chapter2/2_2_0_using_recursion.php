@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Recursion</title>
+	<meta name="description" content="Some problems are solved with recursive methods" />
 
 </head><body>
 	<div id="container">

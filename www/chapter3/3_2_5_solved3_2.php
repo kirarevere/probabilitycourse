@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>More Discrete Random Variable Solved Problems</title>
+	<meta name="description" content="Examples and solutions" />
 
 </head><body>
 	<div id="container">
@@ -94,7 +95,7 @@
 			<ol type="a">
                 <li>Find $EX$.</li>
                 <li>Find Var$(X)$.</li>
-                <li>If $Y=(X-2)^2$, Find $EY$.</li>
+                <li>If $Y=(X-2)^2$, find $EY$.</li>
             </ol></p> 
 			<div class="solvedprob">
 				 <ul>
@@ -124,7 +125,7 @@
 							 $$\textrm{Var}(X)= (3.4)-(1.6)^2=0.84$$
 							 </li>
 							 <li>Again, using LOTUS, we have
-							 $$E(X-2)^2 =  (0-2)^2 (0.1)+ (1-2)^2(0.4)+(2-2)^2(0.3)+(3-2)^2(0.2)=1$$
+							 $$E(X-2)^2 =  (0-2)^2 (0.1)+ (1-2)^2(0.4)+(2-2)^2(0.3)+(3-2)^2(0.2)=1.$$
 							 </li>
 						 </ol> 
 						 </li>
@@ -222,7 +223,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\frac{p}{1+p}$</td>
+                            <td>$=\frac{p}{1+p}$.</td>
                           </tr>
                           </table><br>
 						 </li>
@@ -254,7 +255,7 @@
 						  behind the hypergeometric distribution. You have a bag that contains $b$ blue marbles and $r$ 
 						  red marbles. You choose $k \leq b+r$ marbles at random (without replacement) and let $X$ be the 
 						  number of blue marbles in your sample. In particular, let's define the indicator random variables 
-						  $X_i$ as follows.
+						  $X_i$ as follows:
 						  \begin{equation}
                             \nonumber X_i = \left\{
                             \begin{array}{l l}
@@ -267,9 +268,9 @@
 							Thus,
 							$$EX=EX_1+EX_2+\cdots+EX_k$$
 							To find $P(X_i=1)$, we note that for any particular $X_i$ all marbles are equally likely to 
-							be chosen. This is because of symmetry: no marble is more likely to be chosen as the $i$'th 
+							be chosen. This is because of symmetry: no marble is more likely to be chosen as the $i$th 
 							marble as any other marbles. Therefore,
-							$$P(X_i=1)=\frac{b}{b+r} \textrm{ for all }i \in \{1,2,\cdots,k\}$$ 
+							$$P(X_i=1)=\frac{b}{b+r} \textrm{ for all }i \in \{1,2,\cdots,k\}.$$ 
 							We conclude
 							<table align="center">			
                             <tr>
@@ -278,11 +279,11 @@
                             </tr>
                             <tr>
                               <td></td>
-                              <td>$=\frac{b}{b+r}$</td>
+                              <td>$=\frac{b}{b+r}$.</td>
                             </tr>
                             </table><br>
 							Thus, we have
-							$$EX=\frac{kb}{b+r}$$
+							$$EX=\frac{kb}{b+r}.$$
 						 </li>
 					 </ul>
 					 </li>
@@ -306,12 +307,12 @@
 						 chair. We can do this
 						 <ol>
                             <li>by choosing $k$ people first (in ${n \choose k}$ ways), and then choosing one of them 
-							to be the chair ($k$ ways) or</li>
+							to be the chair ($k$ ways), or</li>
                             <li>by choosing the chair first ($n$ possibilities and then choosing $k-1$ students 
-							from the remaining $n-1$ students (in ${n-1 \choose k-1}$ ways.</li>
+							from the remaining $n-1$ students (in ${n-1 \choose k-1}$ ways)).</li>
                          </ol>
 						 Thus, we conclude
-						 $$k {n \choose k}=n {n-1 \choose k-1}$$
+						 $$k {n \choose k}=n {n-1 \choose k-1}.$$
 						 Now, let's find $EX$ for $X \sim Binomial(n,p)$.
 						 <table align="center">			
                           <tr>
@@ -336,7 +337,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=np$</td>
+                            <td>$=np$.</td>
                           </tr>
                           </table><br>
 						  Note that the last line is true because the $\sum_{l=0}^{n-1} {n-1 \choose l} p^l q^{(n-1)-l}$ 
@@ -351,7 +352,7 @@
 
 			<span class='problem'>Problem </span><br>
 			Let $X$ be a discrete random variable with $R_X \subset \{0,1,2,...\}$. Prove
-			$$EX=\sum_{k=0}^{\infty} P(X>k)$$
+			$$EX=\sum_{k=0}^{\infty} P(X>k).$$
 			<div class="solvedprob">
 				 <ul>
 				 	 <li><a><b>Solution</b></a>
@@ -384,7 +385,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=EX$</td>
+                            <td>$=EX$.</td>
                           </tr>
                           </table><br>
 						 </li>
@@ -427,7 +428,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\lambda^2$</td>
+                            <td>$=\lambda^2$.</td>
                           </tr>
                           </table><br>
 						  So, we have $\lambda^2=E[X(X-1)]=EX^2-EX=EX^2-\lambda$. Thus, $EX^2=\lambda^2+\lambda$ 
@@ -443,7 +444,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\lambda$</td>
+                            <td>$=\lambda$.</td>
                           </tr>
                           </table><br>
 						 </li>
@@ -468,7 +469,7 @@
 						 <a style="color: #337810; background: none; padding: 0px; border: none; margin: 0px;" href="http://probabilitycourse.com/chapter3/variance.html#eq37">Equation 3.7</a>, 
 						 we can write
 						 $$\textrm{Var} (2X-Y)=\textrm{Var}(2X)+\textrm{Var(-Y)}=4\textrm{Var}(X)+\textrm{Var(Y)}=6$$
-						 $$\textrm{Var} (X+2Y)=\textrm{Var}(X)+\textrm{Var(2Y)}=\textrm{Var}(X)+4\textrm{Var(Y)}=9$$
+						 $$\textrm{Var} (X+2Y)=\textrm{Var}(X)+\textrm{Var(2Y)}=\textrm{Var}(X)+4\textrm{Var(Y)}=9.$$
 						 By solving for  Var$(X)$ and Var$(Y)$, we obtain  Var$(X)=1$ and Var$(Y)=2$.
 						 </li>
 					 </ul>

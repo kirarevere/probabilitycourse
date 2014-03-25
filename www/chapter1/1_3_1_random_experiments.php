@@ -30,7 +30,8 @@
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
-	<title>Intro to Probability</title>
+	<title>Random Experiments | Sample Space | Trials | Events</title>
+	<meta name="description" content="The outcome of a random experiment is uncertain. We describe the set of all possible outcomes with probability" />
 
 </head><body>
 	<div id="container">

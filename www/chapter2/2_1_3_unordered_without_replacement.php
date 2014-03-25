@@ -23,7 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Unordered Sampling Without Replacement | Combinations | Binomial Distribution | Bernoulli</title>
+	<meta name="description" content="Draw samples where ordering does not matter and replacement is not allowed" />
 
 </head><body>
 	<div id="container">

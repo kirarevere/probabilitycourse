@@ -23,7 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Using Recursion with Conditioning | Gambler's Ruin | Random Walk</title>
+	<meta name="description" content="Sometimes conditioning can be used to generate recursive relations" />
 
 </head><body>
 	<div id="container">

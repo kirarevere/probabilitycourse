@@ -32,7 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
-	<title>Intro to Probability</title>
+	<title>Discrete Random Variable Problems</title>
 
 </head><body>
 	<script type="text/javascript">
@@ -154,14 +154,14 @@
 			<span class='problem'>Problem </span><br>
 			<p>Suppose you take a pass-fail test repeatedly until you pass the test for the first time. On your 
 			first try, you have $50$ percent chance of passing the test:
-			$$P(S_1)=1-P(F_1)=\frac{1}{2}$$
-			where, $S_k$ is the event that you are successful in your $k^{th}$ try, and $F_k$ is the event that you 
-			fail the test in your $k^{th}$ try. Also, assume that as you take the test more often, your chance of 
-			failing the test goes down, in particular:
-			$$P(F_k)=\alpha P(F_{k-1})  \textrm{ for } k=2,3,4,\cdots$$
-			where $0 < \alpha < 1$. Let $X$ be the total number of tests you take, so $Range(X)= \{ 1, 2, 3, \cdots\}$.
+			$$P(S_1)=1-P(F_1)=\frac{1}{2},$$
+			where $S_k$ is the event that you are successful in your $k^{th}$ try, and $F_k$ is the event that you 
+			fail the test in your $k^{th}$ try. Assume that as you take the test more often, your chance of 
+			failing the test goes down. In particular,
+			$$P(F_k)=\frac{1}{2} \cdot P(F_{k-1}), \hspace{20pt}  \textrm{ for } k=2,3,4,\cdots$$
+			However, the result of different exams are independent. Let $X$ be the total number of tests you take, so $Range(X)= \{ 1, 2, 3, \cdots\}$.
 			<ol type="a">
-                <li>Find $P(X=1), P(X=2), P(X=3)$. Assume $\alpha=\frac{1}{2}$.</li>
+                <li>Find $P(X=1), P(X=2), P(X=3)$.</li>
                 <li>Find a general formula for $P(X=k)$ for $k=1,2, \cdots$.</li>
                 <li>Find the probability that you take the test more than $2$ times.</li>
                 <li>Given that you take the test more than once, find the probability that you take the test exactly twice.</li>
@@ -171,7 +171,7 @@
 			<span class='problem'>Problem </span><br>
 			<p>In this problem, we would like to show that the geometric random variable is <b>memoryless</b>. Let 
 			$X \sim Geometric(p)$. Show that
-			$$P(X > m+l | X > m)=P(X > l), \textrm{ for } m,l \in \{1,2,3, \cdots \}$$
+			$$P(X > m+l | X > m)=P(X > l), \textrm{ for } m,l \in \{1,2,3, \cdots \}.$$
 			We can interpret this in the following way: Remember that a geometric random variable can be obtained 
 			by tossing a coin repeatedly until observing the first heads. If we toss the coin several times, 
 			and do not observe a heads, from now on it is like we start all over again. In other words, the 
@@ -348,7 +348,7 @@
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Let $X$ be a random variable with mean $EX=\mu$. Define the function $f(\alpha)$ as
-			$$f(\alpha)=E[(X-\alpha)^2]$$
+			$$f(\alpha)=E[(X-\alpha)^2].$$
 			Find the value of $\alpha$ that minimizes $f$.</p>
 			
 			<hr /><br />

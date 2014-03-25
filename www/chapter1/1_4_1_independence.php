@@ -31,7 +31,8 @@
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
-	<title>Intro to Probability</title>
+	<title>Independence | Conditional Independence</title>
+	<meta name="description" content="If one event tells us nothing about the other, they are independent" />
 
 </head><body>
 	<div id="container">

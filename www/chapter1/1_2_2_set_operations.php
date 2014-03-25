@@ -22,9 +22,9 @@
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
-	<title>Intro to Probability</title>
+	<title>Set Operations | Union | Intersection | Complement | Difference | Mutually Exclusive | Partitions | De Morgan's Law | Distributive Law | Cartesian Product</title>
+	<meta name="description" content="Here are some useful rules and definitions for working with sets" />
 
 </head><body>
 	<div id="container">

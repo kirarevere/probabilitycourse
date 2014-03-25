@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Expectation | Mean | Average</title>
+	<meta name="description" content="Definitions and examples of Expectation for different distributions" />
 
 </head><body>
 	<div id="container">
@@ -84,7 +85,7 @@
             </tr>
             <tr>
               <td></td>
-              <td>$=EX$</td>
+              <td>$=EX.$</td>
             </tr>
             </table><br>
 			Thus, the intuition behind $EX$ is that if you repeat the random experiment independently $N$ times 
@@ -118,7 +119,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=p$</td>
+                            <td>$=p$.</td>
                           </tr>
                           </table><br>
 						 </li>
@@ -153,16 +154,16 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=p\sum_{k=1}^{\infty} k q^{k-1}$</td>
+                            <td>$=p\sum_{k=1}^{\infty} k q^{k-1}$.</td>
                           </tr>
                           </table><br>
 						  Now, we already know the geometric sum formula
-						  $$\sum_{k=0}^{\infty} x^k= \frac{1}{1-x}, \hspace{20pt} \textrm{ for } |x| < 1$$
+						  $$\sum_{k=0}^{\infty} x^k= \frac{1}{1-x}, \hspace{20pt} \textrm{ for } |x| < 1.$$
 						  But we need to find a sum $\sum_{k=1}^{\infty} k q^{k-1}$. Luckily, we can convert the geometric 
 						  sum to the form we want by taking derivative with respect to $x$, i.e.,
-						  $$\frac{d}{dx} \sum_{k=0}^{\infty} x^k=  \frac{d}{dx} \frac{1}{1-x}, \hspace{20pt} \textrm{ for } |x| < 1$$
+						  $$\frac{d}{dx} \sum_{k=0}^{\infty} x^k=  \frac{d}{dx} \frac{1}{1-x}, \hspace{20pt} \textrm{ for } |x| < 1.$$
 						  Thus, we have
-						  $$\sum_{k=0}^{\infty} k x^{k-1}= \frac{1}{(1-x)^2}, \hspace{20pt} \textrm{ for } |x| < 1$$
+						  $$\sum_{k=0}^{\infty} k x^{k-1}= \frac{1}{(1-x)^2}, \hspace{20pt} \textrm{ for } |x| < 1.$$
 						  To finish finding the expectation, we can write
 						  <table align="center">			
                           <tr>
@@ -179,7 +180,7 @@
                           </tr>
                           <tr>
                             <td></td>
-                            <td>$=\frac{1}{p}$</td>
+                            <td>$=\frac{1}{p}$.</td>
                           </tr>
                           </table><br>
 						  So, for $X \sim Geometric(p)$, $EX=\frac{1}{p}$. Note that this makes sense intuitively. 
@@ -241,7 +242,7 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=\lambda$</td>
+                            <td>$=\lambda$.</td>
 							<td></td>
                           </tr>
                           </table><br>
@@ -307,12 +308,12 @@
                           </tr>
 						  <tr>
                             <td></td>
-                            <td>$=np$</td>
+                            <td>$=np$.</td>
 							<td></td>
                           </tr>
                           </table><br>
-						  We will provide the direct calculation of $EX=\sum_{x_k \in R_X} x_k P_X(x_k)$ in the solved 
-						  problem section and as you will see it needs a lot more algebra than above. The bottom line 
+						  We will provide the direct calculation of $EX=\sum_{x_k \in R_X} x_k P_X(x_k)$ in the Solved 
+						  Problems section and as you will see it needs a lot more algebra than above. The bottom line 
 						  is that linearity of expectation can sometimes make our calculations much easier. Let's look 
 						  at another example.
 						 </li>
@@ -334,7 +335,7 @@
 						 $m$, then the random variable $X$ defined by $X=X_1+X_2+\cdots+X_m$ has $Pascal(m,p)$. To see 
 						 this, you can look at 
 						 <a style="color: #337810; background: none; padding: 0px; border: none; margin: 0px;" href="http://probabilitycourse.com/chapter3/solved3_1.html#prob5">Problem 5 in Section 3.1.6</a> 
-						 and discussion there. Now, since we already know $EX=\frac{1}{p}$, we conclude
+						 and the discussion there. Now, since we already know $EX=\frac{1}{p}$, we conclude
 						 <table align="center">			
                           <tr>
                             <td>$EX$</td>

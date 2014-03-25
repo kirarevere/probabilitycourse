@@ -80,7 +80,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=p F_d(x)+(1-p)F_c(x)$</td>
+                                <td>$=p F_d(x)+(1-p)F_c(x)$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -92,7 +92,7 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <td>$=p f_d(x)+(1-p)f_c(x)$</td>
+                                <td>$=p f_d(x)+(1-p)f_c(x)$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -108,7 +108,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=pEX_d+(1-p)EX_c$</td>
+                                <td>$=pEX_d+(1-p)EX_c$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -124,7 +124,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=pEX^2_d+(1-p)EX^2_c$</td>
+                                <td>$=pEX^2_d+(1-p)EX^2_c$.</td>
                               </tr>
                               </table><br>
 							  Thus,
@@ -147,7 +147,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=p\textrm{Var}(X_d)+(1-p)\textrm{Var}(X_c)+p(1-p)\big(EX_d-EX_c\big)^2$</td>
+                                <td>$=p\textrm{Var}(X_d)+(1-p)\textrm{Var}(X_c)+p(1-p)\big(EX_d-EX_c\big)^2$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -184,13 +184,13 @@
 						 	 <li>What kind of random variable is X: discrete, continuous, or mixed? We note that the CDF has a 
 							 discontinuity at $x=0$, and it is continuous at other points. Since $F_X(x)$ is not flat in 
 							 other locations, we conclude $X$ is a mixed random variable. Indeed, we can write
-							 $$F_X(x)=\frac{1}{2} u(x)+ \frac{1}{2} F_Y(x)$$
+							 $$F_X(x)=\frac{1}{2} u(x)+ \frac{1}{2} F_Y(x),$$
 							 where $Y$ is a $Uniform(0,1)$ random variable. If we use the interpretation of Problem 1, we can 
 							 say the following. We toss a fair coin. If it lands heads then $X=0$, otherwise $X$ is obtained 
 							 according the a $Uniform(0,1)$ distribution.
 							 </li>
 							 <li>Find the PDF of X, $f_X (x)$: By differentiating the CDF, we obtain
-							 $$f_X(x)=\frac{1}{2} \delta(x)+ \frac{1}{2} f_Y(x)$$
+							 $$f_X(x)=\frac{1}{2} \delta(x)+ \frac{1}{2} f_Y(x),$$
 							 where $f_Y(x)$ is the PDF of $Uniform(0,1)$, i.e.,
 							 \begin{equation}
                               \nonumber f_Y(x) = \left\{
@@ -220,7 +220,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{1}{2}e$</td>
+                                <td>$=\frac{1}{2}e$.</td>
                               </tr>
                               </table><br>
 							  Here is another way to think about this part: similar to part (c) of Problem 1, we can write
@@ -235,7 +235,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{1}{2}e$</td>
+                                <td>$=\frac{1}{2}e$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -255,7 +255,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\frac{0.5}{0.75}=\frac{2}{3}$</td>
+                                <td>$=\frac{0.5}{0.75}=\frac{2}{3}$.</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -291,9 +291,9 @@
 						 $$F_Y(y)=1 \quad \textrm{for} \quad y \geq 1$$
 						We also note that 
 						$$P(Y=0)=P(X < 0)=\frac{1}{2}$$
-						 $$P(Y=1)=P(X > 1)=\frac{1}{4}$$
-						Also for $0 < y < 1$. 
-						$$F_Y(y)=P(Y \leq y)= P(X \leq y)=F_X(y)=\frac{y+2}{4}$$
+						 $$P(Y=1)=P(X > 1)=\frac{1}{4}.$$
+						Also for $0 < y < 1$, 
+						$$F_Y(y)=P(Y \leq y)= P(X \leq y)=F_X(y)=\frac{y+2}{4}.$$
 
 						Thus, the CDF of $Y$ is given by	
 						\begin{equation}
@@ -305,7 +305,7 @@
             					\end{array} \right.
            					 \end{equation}
 					 	In particular, we note that there are two jumps in the CDF, one at $y=0$ and another at $y=1$. We can find the generalized PDF of $Y$ by differentiating $F_Y(y)$:
-						 $$f_Y(y)=\frac{1}{2} \delta(y)+\frac{1}{4} \delta(y-1)+\frac{1}{4} (u(y)-u(y-1))$$</p>
+						 $$f_Y(y)=\frac{1}{2} \delta(y)+\frac{1}{4} \delta(y-1)+\frac{1}{4} (u(y)-u(y-1)).$$</p>
 						 </li>
 					 </ul>
 					 </li>

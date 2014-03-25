@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Expected Value and Variance</title>
+	<meta name="description" content="Definitions and examples for expected values of continuous distributions" />
 
 </head><body>
 	<div id="container">
@@ -157,7 +158,7 @@
 			
 			<p>As we have seen before, expectation is a linear operation, thus we always have
 			<ul>
-                <li>$E[aX+b]=aEX+b$, for all $a,b \in \mathbb{R}$</li>
+                <li>$E[aX+b]=aEX+b$, for all $a,b \in \mathbb{R}$, and</li>
                 <li>$E[X_1+X_2+...+X_n]=EX_1+EX_2+...+EX_n$, for any set of random variables $X_1, X_2,...,X_n$.</li>
             </ul></p>
 			

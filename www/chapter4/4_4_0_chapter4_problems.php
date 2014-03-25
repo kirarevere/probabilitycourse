@@ -90,8 +90,8 @@
 					\end{array} \right.
 					\end{equation}
 				<ol type="a">
-					<li>Find $E(X^{n})$.</li>
-					<li>Find variance of $X$.</li>
+					<li>Find $E(X^{n})$, for $n=1,2,3,\cdots$.</li>
+					<li>Find the variance of $X$.</li>
 				</ol>
 			</p>
 			<hr /><br />
@@ -113,7 +113,7 @@
 				\begin{equation}
 					\nonumber f_X(x) = \left\{
 					\begin{array}{l l}
-						\frac{1}{32}x^{4} & \quad 0 &lt; x \leq 2 \\	
+						\frac{5}{32}x^{4} & \quad 0 &lt; x \leq 2 \\	
 						0 & \quad otherwise
 					\end{array} \right.
 					\end{equation}
@@ -138,8 +138,8 @@
 			<p>
 				 Let $X \sim Exponential (\lambda)$. Show that
 				<ol type="a">
-					<li>$EX^n=\frac{n}{\lambda} EX^{n-1}$, for $n=1,2,3,\cdots$.</li>
-					<li>$EX^n=\frac{n!}{\lambda^{\large{n}}}$.</li>
+					<li>$EX^n=\frac{n}{\lambda} EX^{n-1}$, for $n=1,2,3,\cdots$;</li>
+					<li>$EX^n=\frac{n!}{\lambda^{\large{n}}}$, for $n=1,2,3,\cdots$.</li>
 				</ol>
 			</p>
 			<hr /><br />
@@ -178,7 +178,7 @@
 				Let $X$ be a continuous random variable with PDF
 				\begin{equation}
 					\nonumber f_X(x) = 
-					\frac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}}, \hspace{20pt} \textrm{for all }x \in \mathbb{R}.
+					\frac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}} \hspace{20pt} \textrm{for all }x \in \mathbb{R}.
 					\end{equation}
 				and let $Y = \sqrt{|X|}$. Find $f_Y(y)$.
 			<hr /><br />
@@ -200,7 +200,7 @@
 			<p>
 				The <b>median</b> of a continuous random variable $X$ can be defined as the unique real number <i>m</i> that satisfies
 				\begin{equation}
-					P(X \geq m) = P(X &lt; m) = \frac{1}{2}
+					P(X \geq m) = P(X &lt; m) = \frac{1}{2}.
 				\end{equation}
 				Find the median of the following random variables
 				<ol type="a">
@@ -320,7 +320,7 @@
 				<p>
 					Let $X \sim Laplace(0,b)$, i.e.,
 					\begin{equation}
-						\nonumber f_X(x) = \frac{1}{2b} \exp \left( -\frac{|x|}{b} \right)
+						\nonumber f_X(x) = \frac{1}{2b} \exp \left( -\frac{|x|}{b} \right),
 					\end{equation}
 					where $b &gt; 0$. Define $Y = |X|$. Show that $Y \sim Exponential \left( \frac{1}{b} \right)$.
 				</p>
@@ -330,7 +330,7 @@
 				<p>
 					A continuous random variable is said to have the <b>standard Cauchy</b> distribution if its PDF is given by
 					\begin{equation}
-						\nonumber f_X(x) = \frac{1}{\pi(1 + x^2)}
+						\nonumber f_X(x) = \frac{1}{\pi(1 + x^2)}.
 					\end{equation}
 					If $X$ has a standard Cauchy distribution, show that $EX$ is not well-defined. Also, show $EX^2 = \infty$.
 				</p>
@@ -345,7 +345,7 @@
   					\nonumber  =
     					\left\{\begin{array}{l l}
       				\frac{x}{\sigma^2} e^{-x^2/2\sigma^2} & \quad \textrm{if}\: x \geq 0\\
-      				0  & \quad \textrm{if} x &lt; 0
+      				0  & \quad \textrm{if } x &lt; 0
   					\end{array}\right.
 						\end{equation}
 					where $\sigma &gt; 0$.
@@ -383,7 +383,7 @@
 					Let $Z \sim N(0,1)$. If we define $X = e^{\sigma Z+\mu}$, then we say that $X$ has a log-normal distribution with parameters
 					$\mu$ and $\sigma$, and we write $X \sim LogNormal(\mu,\sigma)$.
 					<ol type="a">
-						<li>If $X \sim LogNormal(\mu,\sigma)$, find the CDF of $X$ in terms of the $\phi$ function.</li>
+						<li>If $X \sim LogNormal(\mu,\sigma)$, find the CDF of $X$ in terms of the $\Phi$ function.</li>
 						<li>Find $EX$ and $Var(X)$.</li>
 					</ol>
 				</p>

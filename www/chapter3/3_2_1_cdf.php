@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Cumulative Distribution Function</title>
+	<meta name="description" content="Definition and examples of the Cumulative Distribution Function" />
 
 </head><body>
 	<div id="container">
@@ -52,7 +53,7 @@
 			<div style="padding: 15px; border: black 1px solid">
 			<span class='definition'>Definition </span><br>
 			The cumulative distribution function (CDF) of random variable $X$ is defined as
-			$$F_X(x) = P(X \leq x),  \textrm{ for all }x \in \mathbb{R}$$
+			$$F_X(x) = P(X \leq x),  \textrm{ for all }x \in \mathbb{R}.$$
 			</div><br>
 			
 			<p>Note that the subscript $X$ indicates that this the CDF of the random variable $X$. Also, note that the CDF 
@@ -70,15 +71,15 @@
 						 its PMF is given by
 						 $$P_X(0)=P(X=0)=\frac{1}{4}$$
 						 $$P_X(1) =P(X=1)=\frac{1}{2}$$
-						 $$P_X(2)=P(X=2)=\frac{1}{4}$$
+						 $$P_X(2)=P(X=2)=\frac{1}{4}.$$
 						 To find the CDF, we argue as follows. First, note that if $x < 0$, then
-						 $$F_X(x)=P(X \leq x)=0, \textrm{ for } x < 0$$
+						 $$F_X(x)=P(X \leq x)=0, \textrm{ for } x < 0.$$
 						 Next, if $x\geq 2$,
-						 $$F_X(x)=P(X \leq x)=1, \textrm{ for } x\geq 2$$
+						 $$F_X(x)=P(X \leq x)=1, \textrm{ for } x\geq 2.$$
 						 Next, if $0 \leq x < 1$,
-						 $$F_X(x)=P(X \leq x)=P(X=0)=\frac{1}{4}, \textrm{ for } 0 \leq x < 1$$
+						 $$F_X(x)=P(X \leq x)=P(X=0)=\frac{1}{4}, \textrm{ for } 0 \leq x < 1.$$
 						 Finally, if $1 \leq x < 2$,
-						 $$F_X(x)=P(X \leq x)=P(X=0)+P(X=1)=\frac{1}{4}+\frac{1}{2}=\frac{3}{4}, \textrm{ for } 1 \leq x < 2$$
+						 $$F_X(x)=P(X \leq x)=P(X=0)+P(X=1)=\frac{1}{4}+\frac{1}{2}=\frac{3}{4}, \textrm{ for } 1 \leq x < 2.$$
 						 Thus, to summarize, we have
 						 \begin{equation}
                            \nonumber F_X(x) = \left\{
@@ -114,13 +115,13 @@
 			$F_X(x)$, for such a random variable. We see that the CDF is in the form of a staircase. In particular, 
 			note that the CDF starts at $0$; i.e.,$F_X(-\infty)=0$. Then, it jumps at each point in the range. 
 			In particular, the CDF stays flat between $x_k$ and $x_{k+1}$, so we can write
-			$$F_X(x)=F_X(x_k), \textrm{ for }x_k \leq x < x_{k+1}$$</p>
+			$$F_X(x)=F_X(x_k), \textrm{ for }x_k \leq x < x_{k+1}.$$</p>
 
 			<p>The CDF jumps at each $x_k$. In particular, we can write
 			$$F_X(x_k)-F_X(x_k-\epsilon)=P_X(x_k), \textrm{ For $\epsilon>0$ small enough.}$$
 			Thus, the CDF is always a non-decreasing function, i.e., if $y \geq x$ then $F_Y(y)\geq F_X(x)$. 
 			Finally, the CDF approaches $1$ as $x$ becomes large. We can write
-			$$\lim_{x \rightarrow \infty} F_X(x)=1$$</p>
+			$$\lim_{x \rightarrow \infty} F_X(x)=1.$$</p>
 			
 			<figure>
   					<img src="http://probabilitycourse.com/images/chapter3/CDF-Discrete_b.png" width="500" height="255" alt="Figure" title="Figure" border="0" />
@@ -130,7 +131,7 @@
 			<p>Note that the CDF completely describes the distribution of a discrete random variable. In particular, 
 			we can find the PMF values by looking at the values of the jumps in the CDF function. Also, if we have 
 			the PMF, we can find the CDF from it. In particular, if $R_X=\{x_1,x_2,x_3,...\}$, we can write
-			$$F_X(x)=\sum_{x_k \leq x} P_X(x_k)$$
+			$$F_X(x)=\sum_{x_k \leq x} P_X(x_k).$$
 			Now, let us prove a useful formula.</p>
 			
 			<div style="padding: 15px; border: black 1px solid">
@@ -139,14 +140,14 @@
 			</div><br>
 			
 			<p>To see this, note that for $a \leq b$. we have
-			$$P(X \leq b)=P(x \leq a) + P(a < X \leq b)$$
+			$$P(X \leq b)=P(x \leq a) + P(a < X \leq b).$$
 			Thus,
-			$$F_X(b)=F_X(a) + P(a < X \leq b)$$
+			$$F_X(b)=F_X(a) + P(a < X \leq b).$$
 			Again, pay attention to the use of "$ < $" and "$\leq$" as in the case of discrete random variables they 
 			could make a difference. We will see later that Equation 3.1 is true for all types of random variables 
 			(discrete, continuous, and mixed). Note that the CDF gives us $P(X \leq x)$. To find $P(X < x)$, for a 
 			discrete random variable, we can simply write
-			$$P(X < x)=P(X \leq x)-P(X=x)=F_X(x)-P_X(x)$$</p>
+			$$P(X < x)=P(X \leq x)-P(X=x)=F_X(x)-P_X(x).$$</p>
 			
 			<hr /><br>
 			<span class='example'>Example </span><br>
@@ -169,21 +170,21 @@
 							 <table align="center">			
                               <tr>
                                 <td>$\textrm{For } x < 1,$</td>
-                                <td>$F_X(x)=0$</td>
+                                <td>$F_X(x)=0$.</td>
                               </tr>
                               <tr>
                                 <td>$\textrm{For } 1\leq x < 2,$</td>
-                                <td>$F_X(x)=P_X(1)=\frac{1}{2}$</td>
+                                <td>$F_X(x)=P_X(1)=\frac{1}{2}$.</td>
                               </tr>
 							  <tr>
                                 <td>$\textrm{For } 2\leq x \leq 3,$</td>
-                                <td>$F_X(x)=P_X(1)+P_X(2)=\frac{1}{2}+ \frac{1}{4}=\frac{3}{4}$</td>
+                                <td>$F_X(x)=P_X(1)+P_X(2)=\frac{1}{2}+ \frac{1}{4}=\frac{3}{4}$.</td>
                               </tr>
                               </table><br>
 							  In general we have
 							  $$\textrm{For }  0 < k \leq x < k+1,$$
 							  $$F_X(x) =P_X(1)+P_X(2)+...+P_X(k)$$
-							  $$=\frac{1}{2}+ \frac{1}{4}+...+\frac{1}{2^k}=\frac{2^k-1}{2^k}$$
+							  $$=\frac{1}{2}+ \frac{1}{4}+...+\frac{1}{2^k}=\frac{2^k-1}{2^k}.$$
 							  Figure 3.5 shows the CDF of $X$.
 							  <figure>
                       					<img src="http://probabilitycourse.com/images/chapter3/CDF-geometric_b.png" width="500" height="400" alt="Figure" title="Figure" border="0" />
@@ -191,13 +192,13 @@
                     		  </figure>
 							 </li><br>
 							 <li>To find $P(2 < X \leq 5)$, we can write
-							 $$P(2 < X \leq 5)=F_X(5)-F_X(2)=\frac{31}{32}-\frac{3}{4}=\frac{7}{32}$$
+							 $$P(2 < X \leq 5)=F_X(5)-F_X(2)=\frac{31}{32}-\frac{3}{4}=\frac{7}{32}.$$
 							 Or equivalently, we can write
-							 $$P(2 < X \leq 5)=P_X(3)+P_X(4)+P_X(5)=\frac{1}{8}+\frac{1}{16}+\frac{1}{32}=\frac{7}{32}$$
+							 $$P(2 < X \leq 5)=P_X(3)+P_X(4)+P_X(5)=\frac{1}{8}+\frac{1}{16}+\frac{1}{32}=\frac{7}{32},$$
 							 which gives the same answer.
 							 </li><br>
 							 <li>To find $P(X > 4)$, we can write
-							 $$P(X > 4)=1-P(X \leq 4)=1-F_X(4)=1-\frac{15}{16}=\frac{1}{16}$$
+							 $$P(X > 4)=1-P(X \leq 4)=1-F_X(4)=1-\frac{15}{16}=\frac{1}{16}.$$
 							 </li>						 
 						 </ol> 
 						 </li>

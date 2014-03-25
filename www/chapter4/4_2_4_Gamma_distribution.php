@@ -92,7 +92,7 @@
 				<!-- Section Content -->
 				<p>
 					The gamma distribution is another widely used distribution. Its importance is largely due to
-					its relation to exponential and normal distributions. Here, we provide an introduction to the
+					its relation to exponential and normal distributions. Here, we will provide an introduction to the
 					gamma distribution. In Chapters <a href="#">6</a> and <a href="#">11</a>, we will discuss more properties of the gamma
 					random variables. Before introducing the gamma random variable, we need to introduce the
 					gamma function.
@@ -102,7 +102,7 @@
 					function to real (and complex) numbers. Specifically, if $n \in \{1,2,3,...\} $, then
 					$$ \Gamma(n) = (n-1)!$$
 					More generally, for any positive real number $\alpha$, $\Gamma(\alpha)$ is defined as
-					$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} {\rm d}x, \hspace{20pt} \textrm{for }\alpha&gt;0 $$
+					$$ \Gamma(\alpha) = \int_0^\infty x^{\alpha - 1} e^{-x} {\rm d}x, \hspace{20pt} \textrm{for }\alpha&gt;0. $$
 				<br />
 					Figure 4.9 shows the gamma function for positive real values.
 					<div style="width:100%;text-align:center;">
@@ -116,7 +116,7 @@
 					$$ 
 					\begin{align*}
 					\Gamma(1) &#38;= \int_0^\infty e^{-x} dx 
-					\\ &#38;= 1 
+					\\ &#38;= 1. 
 					\end{align*}
 					$$
 					Using the change of variable $x = \lambda y$, we can show the following equation that is often useful when working with
@@ -142,7 +142,7 @@
 						</li>
 						<li style="height:55px"> $\Gamma(\alpha + 1) = \alpha \Gamma(\alpha).$ </li>
 						<li style="height:55px"> $\Gamma(n) = (n - 1)!, \textrm{ for } n = 1,2,3,\cdots .$</li>
-						<li style="height:55px"> $\Gamma(\frac{1}{2}) = \sqrt{\pi}$</li>
+						<li style="height:55px"> $\Gamma(\frac{1}{2}) = \sqrt{\pi}$.</li>
 					</ol>
 				</div>
 				<!-- /Properties of gamma function -->
@@ -263,7 +263,7 @@
 
 				In the solved problems section, we calculate the mean and variance for the gamma distribution. In particular,
 				we find out that if $X \sim Gamma(\alpha,\lambda)$, then
-				$$ EX = \frac{\alpha}{\lambda}, \hspace{20pt} Var(X) = \frac{\alpha}{\lambda^2}$$
+				$$ EX = \frac{\alpha}{\lambda}, \hspace{20pt} Var(X) = \frac{\alpha}{\lambda^2}.$$
 				<!-- /Section Content -->
 
 				<!-- Bottom nav -->

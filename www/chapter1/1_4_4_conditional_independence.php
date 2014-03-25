@@ -36,9 +36,9 @@
 	
 	<link rel="stylesheet" type="text/css" href="style_sheet.css" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-	<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:700px), only screen and (max-width: 700px)" />
 
-	<title>Intro to Probability</title>
+	<title>Conditional Independence</title>
+	<meta name="description" content="Definition for conditional independence" />
 
 </head><body>
 	<div id="container">

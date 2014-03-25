@@ -82,8 +82,8 @@
 			to see this is to note that $g(u)$ decays faster than the function $\exp\left\{-u\right\}$ and since 
 			$|\int_{0}^{\infty} \exp\left\{-u\right\} du| < \infty$, we conclude that $|\int_{0}^{\infty} g(u) du| < \infty$. Now, 
 			let $Z$ be a standard normal random variable. Then, we have
-			$$EZ^{2k+1} = \frac{1}{\sqrt{2 \pi}}  \int_{-\infty}^{\infty} u^{2k+1}\exp\left\{-\frac{u^2}{2}\right\} du=0.$$
-			For all $k \in \{0,1,2,..,\}$.  Thus, we have shown that for a standard normal random variable $Z$, we have
+			$$EZ^{2k+1} = \frac{1}{\sqrt{2 \pi}}  \int_{-\infty}^{\infty} u^{2k+1}\exp\left\{-\frac{u^2}{2}\right\} du=0,$$
+			for all $k \in \{0,1,2,..,\}$.  Thus, we have shown that for a standard normal random variable $Z$, we have
 			$$EZ=EZ^3=EZ^5=....=0.$$
 			In particular, the standard normal distribution has zero mean. This is not surprising as we can see 
 			from Figure 4.6 that the PDF is symmetric around the origin, so we expect that $EZ=0$. Next, let&#39;s find $EZ^2$.
@@ -108,7 +108,7 @@
 			The last equality holds because we are integrating the standard normal PDF from $-\infty$ to $\infty$. Thus, 
 			we conclude that for a standard normal random variable $Z$, we have
 			$$\textrm{Var}(Z)=1.$$
-			So far we have shown the following.</p>
+			So far we have shown the following:</p>
 			
 			<div align="center" style="padding: 15px; border: black 1px solid">
 			If $Z \sim Normal(0,1)$, then $EZ=0$ and Var$(Z)=1$.
@@ -139,7 +139,7 @@
 			<ol type="1">
                 <li>$\lim \limits_{x\rightarrow \infty} \Phi(x)=1, \hspace{5pt} \lim \limits_{x\rightarrow -\infty} \Phi(x)=0$;</li>
                 <li>$\Phi(0)=\frac{1}{2}$;</li>
-                <li>$\Phi(-x)=1-\Phi(x)$ for all $x \in \mathbb{R}$.</li>
+                <li>$\Phi(-x)=1-\Phi(x)$, for all $x \in \mathbb{R}$.</li>
             </ol>
 			
 			Also, since the $\Phi$ function does not have a closed form, it is sometimes useful to use upper or lower 
@@ -157,7 +157,7 @@
 			<b><font size="3">Normal random variables</font></b><br>
 			<p>Now that we have seen the standard normal random variable, we can obtain any normal random variable 
 			by shifting and scaling a standard normal random variable. In particular, define
-			$$X=\sigma Z+\mu, \hspace{20pt} \textrm{where }\sigma > 0$$
+			$$X=\sigma Z+\mu, \hspace{20pt} \textrm{where }\sigma > 0.$$
 			Then
 			$$EX=\sigma EZ+\mu=\mu$$
 			$$\textrm{Var}(X)=\sigma^2  \textrm{Var}(Z)=\sigma^2.$$
@@ -256,7 +256,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$=\Phi(2.5)\approx 0.99$.</td>
+                                <td>$=\Phi(2.5)\approx 0.99$</td>
                               </tr>
                               </table><br>
 							 </li>
@@ -280,7 +280,7 @@
                               </tr>
 							  <tr>
                                 <td></td>
-                                <td>$\approx 0.68$.</td>
+                                <td>$\approx 0.68$</td>
                               </tr>
                               </table><br>
                   			</li>
@@ -304,7 +304,7 @@
                             </tr>
 							<tr>
                               <td></td>
-                              <td>$\approx \frac{0.1587}{0.5} \approx 0.32$.</td>
+                              <td>$\approx \frac{0.1587}{0.5} \approx 0.32$</td>
                             </tr>
                             </table><br>
                 			</li>

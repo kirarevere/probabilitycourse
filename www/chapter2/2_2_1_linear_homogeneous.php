@@ -23,7 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Solving Linear Homogeneous Recurrence Equations | Constant Coefficient | Characteristic Equation</title>
+	<meta name="description" content="Process for solving recurrence equations" />
 
 </head><body>
 	<div id="container">

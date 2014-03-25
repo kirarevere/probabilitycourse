@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-	<title>Intro to Probability</title>
+	<title>Independent Random Variables</title>
+	<meta name="description" content="Definition of independent random variables with examples" />
 
 </head><body>
 	<div id="container">
