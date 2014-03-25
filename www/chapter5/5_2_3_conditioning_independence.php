@@ -315,8 +315,8 @@ Let $X$ and $Y$ be as in Example 5.21. Find $E[X|Y=1]$ and Var$(X|Y=1)$.
 \begin{align}
    \nonumber E[X|Y=1]&=\int_{-\infty}^{\infty} xf_{X|Y}(x|1) dx\\
    \nonumber &=\int_{0}^{1} x\frac{3x^2+3y^2+2xy}{3y^2+y+1}\big{|}_{y=1} \hspace{5pt} dx\\
-   \nonumber &=\int_{0}^{1} x\frac{3x^2+3+2x}{3+1+1} \hspace{5pt} dx    \hspace{30pt}  (y=1)\\
 \end{align}
+   \nonumber &=\int_{0}^{1} x\frac{3x^2+3+2x}{3+1+1} \hspace{5pt} dx    \hspace{30pt}  (y=1)\\
    \nonumber &=\frac{1}{5} \int_{0}^{1} 3x^3+2x^2+3x \hspace{5pt} dx \\
    \nonumber &=\frac{7}{12},
 \begin{align}
