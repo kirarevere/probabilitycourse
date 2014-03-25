@@ -228,7 +228,6 @@ For two jointly continuous random variables $X$ and $Y$, we can define the follo
 
 <!-- Example -->
 <hr /><span class="example">Example </span>
-\begin{example}\label{EX:cond-pdf}
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 \begin{equation}
  \nonumber f_{XY}(x,y) = \left\{
@@ -243,7 +242,6 @@ For $0 \leq y \leq 2$, find
   <li>the conditional PDF of $X$ given $Y=y$;</li>
   <li> $P(X&lt;\frac{1}{2}|Y=y)$.</li>
 </ol>
-\end{example}
 
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
