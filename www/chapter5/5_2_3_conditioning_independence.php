@@ -651,4 +651,4 @@ We sometimes write this as
 <!-- /Section Content -->
 
 
-<?php include 'section_footer.php';>
+<?php include 'section_footer.php'; ?>
