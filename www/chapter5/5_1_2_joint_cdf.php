@@ -43,8 +43,8 @@ Here, by $F_{XY}(x,\infty)$, we mean $\lim \limits_{y \rightarrow \infty} F_{XY}
 <div style="padding:25px;margin:30px 40px; border: 2px solid black;">
 <p style="text-align:center;">Marginal CDFs of $X$ and $Y$:</p>
 \begin{align}\label{Eq:CDF-marginals}
-\nonumber F_X(x)=F_{XY}(x, \infty)=\lim_{y \rightarrow \infty} F_{XY}(x,y), \hspace{20pt} \textrm{ for any } x\\
- F_Y(y)=F_{XY}(\infty, y)=\lim_{x \rightarrow \infty} F_{XY}(x,y), \hspace{20pt} \textrm{ for any } y
+\nonumber F_X(x)&=F_{XY}(x, \infty)=\lim_{y \rightarrow \infty} F_{XY}(x,y), \hspace{20pt} \textrm{ for any } x\\
+ F_Y(y)&=F_{XY}(\infty, y)=\lim_{x \rightarrow \infty} F_{XY}(x,y), \hspace{20pt} \textrm{ for any } y \hspace{20pt} (5.2)
 \end{align}
 </div>
 
@@ -55,7 +55,7 @@ Also, note that we must have
 \nonumber &F_{XY}(x,-\infty)=0,\hspace{20pt} \textrm{ for any } x.
 \end{align}
 
-<span class="example">Example </span><br />
+<hr /><span class="example">Example </span><br />
 Let $X \sim Bernoulli(p)$ and $Y \sim Bernoulli(q)$ be independent, where $0&lt;p,q&lt;1$. Find the joint PMF and joint CDF for $X$ and $Y$.<br />
 
 <div class="solvedprob">
@@ -116,7 +116,7 @@ Figure 5.3 shows the values of $F_{XY}(x,y)$ in different regions of the two-dim
 			</ul>
 		</li>
 	</ul>
-</div>
+</div><hr /><br />
 <p>Here is a useful lemma:</p>
 <span class="lemma">Lemma </span><br />
 For two random variables $X$ and $Y$, and real numbers $x_1 \leq x_2$, $y_1 \leq y_2$, we have
