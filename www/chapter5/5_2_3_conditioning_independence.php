@@ -270,11 +270,11 @@ Thus, for  $0 \leq y \leq 2$, we have
 <li>
     We have
    \begin{align}%\label{}
-   \nonumber P\left(X<\frac{1}{2}|Y=y\right) &=\int_{0}^{\frac{1}{2}} \frac{3x^2+3y^2+2xy}{3y^2+y+1} \hspace{5pt} dx \\
+   \nonumber P\left(X&lt;\frac{1}{2}|Y=y\right) &=\int_{0}^{\frac{1}{2}} \frac{3x^2+3y^2+2xy}{3y^2+y+1} \hspace{5pt} dx \\
    \nonumber  &=\frac{1}{3y^2+y+1} \bigg[ x^3+yx^2+3y^2x \bigg]_{0}^{\frac{1}{2}}\\
    \nonumber  &=\frac{\frac{3}{2}y^2+\frac{y}{4}+\frac{1}{8}}{3y^2+y+1}.
    \end{align}
-   Note that, as we expect, $P\left(X<\frac{1}{2}|Y=y\right)$ depends on $y$.
+   Note that, as we expect, $P\left(X&lt;\frac{1}{2}|Y=y\right)$ depends on $y$.
 </li>
 </ol>
 </li></ul>
@@ -301,7 +301,7 @@ For two jointly continuous random variables $X$ and $Y$, we have:
 <li>
    Conditional variance of $X$ given $Y=y$:
   \begin{align}
-   \nonumber \var(X|Y=y)=E[X^2|Y=y]-(E[X|Y=y])^2.
+   \nonumber Var(X|Y=y)=E[X^2|Y=y]-(E[X|Y=y])^2.
   \end{align}
 </li>
 </ol>
@@ -314,7 +314,7 @@ Let $X$ and $Y$ be as in Example 5.21. Find $E[X|Y=1]$ and Var$(X|Y=1)$.
 <ul><li>
 \begin{align}
    \nonumber E[X|Y=1]&=\int_{-\infty}^{\infty} xf_{X|Y}(x|1) dx\\
-   \nonumber &=\int_{0}^{1} x\frac{3x^2+3y^2+2xy}{3y^2+y+1}\bigg{|}_{y=1} \hspace{5pt} dx\\
+   \nonumber &=\int_{0}^{1} x\frac{3x^2+3y^2+2xy}{3y^2+y+1}\big{|}_{y=1} \hspace{5pt} dx\\
    \nonumber &=\int_{0}^{1} x\frac{3x^2+3+2x}{3+1+1} \hspace{5pt} dx    \hspace{30pt}  (y=1)\\
    \nonumber &=\frac{1}{5} \int_{0}^{1} 3x^3+2x^2+3x \hspace{5pt} dx \\
    \nonumber &=\frac{7}{12},
