@@ -42,7 +42,7 @@
 			$i=0;
 		foreach(func_get_args() as $arg)	{
 			$i++;
-			if(is_null($arg)) { echo "null arg $i. cannot create entry\n"; return false; }
+			if(is_null($arg)) { echo "$chapter null arg $i. cannot create entry\n"; return false; }
 		}
 		return "$chapter,$section,$subSection,$exampleStart,$theoremStart,$lemmaStart,$defStart,$lastScanTime\n";
 	}
