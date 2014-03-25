@@ -61,7 +61,7 @@ Similarly, we define the <b>conditional CDF</b> of $X$ given $A$ as
 \end{align}
 </div><hr />
 
-<b>Conditional PMF of $X$ Given $Y$:</b>
+<h2>Conditional PMF of $X$ Given $Y$:</h2>
 
 In some problems, we have observed the value of a random variable $Y$, and we need to update the PMF of another random variable $X$ whose value has not yet been observed. In these problems, we use the <b>conditional PMF</b> of $X$ given $Y$. The conditional PMF of $X$ given $Y$ is defined as
 \begin{align}%\label{}
@@ -112,7 +112,7 @@ As we expect, for independent random variables, the conditional PMF is equal to 
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
-Consider the set of points in the grid shown in Figure \ref{fig:Grid}. These are the points in set $G$ defined as
+Consider the set of points in the grid shown in Figure 5.4. These are the points in set $G$ defined as
 \begin{align}%\label{}
 \nonumber  G=\{(x,y) | x,y \in \mathbb{Z}, |x|+|y|\leq 2\}.
 \end{align}
@@ -186,7 +186,7 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
 	</li>
   <li>$X$ and $Y$ are <b>not</b> independent. We can see this as the conditional PMF of $X$ given $Y=1$ (calculated above) is not the same as marginal PMF of $X$, $P_{X}(x)$.
 	</li></ol></li></ul></li></ul>
-</div>
+</div><hr /><br />
 <!-- /Example -->
 
 <h2>Conditional Expectation:</h2>
@@ -302,12 +302,12 @@ Law of Total Expectation:
 <ol>
   <li>If $B_1, B_2, B_3,...$ is a partition of the sample space $S$,
   \begin{align}\label{eq:LOTPE-EV}
-     EX=\sum_{i} E[X|B_i]P(B_i).
+     EX=\sum_{i} E[X|B_i]P(B_i). \hspace{30pt} &(5.3)
   \end{align}
 	</li><li>
   For a random variable $X$ and a discrete random variable $Y$,
   \begin{align}\label{eq:LOTPE-RV}
-     EX=\sum_{y_j \in R_Y} E[X|Y=y_j]P_Y(y_j).
+     EX=\sum_{y_j \in R_Y} E[X|Y=y_j]P_Y(y_j). \hspace{30pt} &(5.4)
    \end{align}
 	</li>
 </ol>
