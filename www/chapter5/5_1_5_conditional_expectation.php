@@ -1,10 +1,10 @@
 <?php
 	$section_no			= "5.1.5";
 	$section_title	= "Conditional Expectation (Revisited) and Conditional Variance";
-	$section_next		= "#";
-	$section_prev		= "#";
+	$section_next		= "chapter5/5_1_4_functions_two_variables.php";
+	$section_prev		= "chapter5/5_1_6_solved_prob.php";
 	include	'../Control/autonumber.php';
-	loadHeaders(61);
+	loadHeaders(62);
 	include	'section_header.php';
 ?>
 
