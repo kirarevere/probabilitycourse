@@ -124,7 +124,7 @@
 			$filename = substr($file,strlen($phpDir));
 			$fileInfo = sscanf($filename,"%d_%d_%d_%s");
 			list($ch,$sec,$subsec,$name) = $fileInfo;
-			echo "$ch.$sec.$subsec $name\n";
+//			echo "$ch.$sec.$subsec $name\n";
 			$dom->loadHTMLFile($file);
 			foreach($dom->getElementsByTagName('span') as $tag)	{
 				if(stripos($tag->getAttribute('class'),"example") !== false) {
