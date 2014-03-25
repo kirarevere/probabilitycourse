@@ -34,6 +34,9 @@ _1, y_2, \cdots \}$, then $E[X|Y]$ is also a random variable with
   \begin{array}{l l}
     E[X|Y=y_1]  &  \quad \textrm{with probability } P(Y=y_1)  \\
     E[X|Y=y_2]  &  \quad \textrm{with probability } P(Y=y_2)  \\
+		&. \hspace{40pt} . \\
+		&. \hspace{40pt} . \\
+		&. \hspace{40pt} .
   \end{array} \right.
 \end{equation}
 
@@ -214,11 +217,11 @@ Thinking of this as a function of the random variable $X$, it can be rewritten a
 
 <div style="padding: 25px; margin: 30px 40px; border: 2px solid black;">
 \begin{align}\label{eq:EGH|X}
-  E[g(X)h(Y)|X]=g(X)E[h(Y)|X]
+  E[g(X)h(Y)|X]=g(X)E[h(Y)|X] \hspace{30pt} (5.6)
 \end{align}
 </div>
 </li></ul></li></ul>
-</div>
+</div><hr /><br />
 <!-- /Example -->
 
 <h2>Iterated Expectations:</h2>
@@ -226,12 +229,12 @@ Let us look again at the law of total probability for expectation. Assuming $g(Y
 \begin{align}
 \nonumber E[X]&=\sum_{y_j \in R_Y} E[X|Y=y_j]P_Y(y_j)\\
 \nonumber &=\sum_{y_j \in R_Y} g(y_j)P_Y(y_j)\\
-\nonumber &=E[g(Y)] \hspace{30pt} \textrm{by LOTUS (Equation \ref{eq:LOTUS})}\\
+\nonumber &=E[g(Y)] \hspace{30pt} \textrm{by LOTUS (Equation 5.2)}\\
 \nonumber &=E[E[X|Y]].
 \end{align}
 Thus, we conclude
 \begin{align} \label{eq:iteratedE}
-   E[X]=E[E[X|Y]].
+   E[X]=E[E[X|Y]]. \hspace{40pt} (5.7)
 \end{align}
 This equation might look a little confusing at first, but it is just another way of writing the law of total expectation (Equation 5.4). To better understand it, let's solve Example 5.7 using this terminology. In that example, we want to find $EX$. We can write
 
@@ -277,7 +280,7 @@ Using LOTUS, we have
 \nonumber  E[XY] &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_{XY}(x,y)\\
 \nonumber   &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_X(x)P_Y(y)\\
 \nonumber   &=\bigg(\sum_{x \in R_x}  x P_X(x) \bigg) \bigg(\sum_{y \in R_y} yP_Y(y)\bigg)\\
-\nonumber   &=EX EY.
+\nonumber   &=EX EY. ied
 \end{align}
 Note that the converse is <b>not</b> true. That is, if the only thing that we know about $X$ and $Y$ is that $E[XY]=EX EY$, then $X$ and $Y$ may or may not be independent. Using essentially the same proof as above, we can show if $X$ and $Y$ are independent, then $E[g(X)h(Y)]=E[g(X)]E[h(Y)]$ for any functions $g:\mathbb{R} \mapsto \mathbb{R}$ and $h:\mathbb{R} \mapsto \mathbb{R}$.
 
@@ -397,24 +400,24 @@ It turns out this is true in general and it is called <i>the law of total varian
 Thus,
 \begin{align}\label{eq:1of2}
     \nonumber EV&=E[E[X^2|Y]]-E[Z^2]\\
-     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation 5.7)}\big).
+     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation 5.7)}\big). \hspace{20pt} (5.8)
 \end{align}
 Next, we have
 \begin{align}\label{eq:2of2}
     \nonumber \textrm{Var}(Z)&=E[Z^2]-(EZ)^2\\
-     &=E[Z^2]-(EX)^2 &(\textrm{law of iterated expectations}).
+     &=E[Z^2]-(EX)^2 &(\textrm{law of iterated expectations}). \hspace{20pt} (5.9)
 \end{align}
 Combining Equations 5.8 and  5.9, we obtain  the law of total variance.
 
 <div style="padding: 25px;margin: 30px 40px; border: 2px solid black;">
 <p style="text-align:center;">Law of Total Variance:</p>
 \begin{align}\label{eq:LOTV}
-  \textrm{Var}(X)=E[\textrm{Var}(X|Y)]+\textrm{Var}(E[X|Y])
+  \textrm{Var}(X)=E[\textrm{Var}(X|Y)]+\textrm{Var}(E[X|Y]) \hspace{30pt} (5.10)
 \end{align}
 </div><br />
 There are several ways that we can look at the law of total variance to get some intuition. Let us first note that all the terms in Equation 5.10 are positive (since variance is always positive). Thus, we conclude
 \begin{align}\label{eq:condReducesVariance}
-  \textrm{Var}(X) \geq E(\textrm{Var}(X|Y)).
+  \textrm{Var}(X) \geq E(\textrm{Var}(X|Y)). \hspace{30pt} (5.11)
 \end{align}
 <p>
 This states that when we condition on $Y$, the variance of $X$ reduces on average. To describe this intuitively, we can say that variance of a random variable is a measure of our uncertainty about that random variable. For example, if Var$(X)=0$, we do not have any uncertainty about $X$. Now, the above inequality simply states that if we obtain some extra information, i.e., we know the value of $Y$, our uncertainty about the value of the random variable $X$  reduces on average. So, the above inequality makes sense. Now, how do we explain the whole law of total variance?
@@ -456,7 +459,7 @@ To find Var$(Y)$, we use the law of total variance:
 \begin{align}\label{al1}
 \nonumber  \textrm{Var}(Y)&=E(\textrm{Var}(Y|N))+\textrm{Var}(E[Y|N])\\
 \nonumber  &=E(\textrm{Var}(Y|N))+\textrm{Var}(NEX) &(\textrm{as above})\\
- &=E(\textrm{Var}(Y|N))+(EX)^2\textrm{Var}(N).
+ &=E(\textrm{Var}(Y|N))+(EX)^2\textrm{Var}(N). \hspace{30pt} (5.12)
 \end{align}
 To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ independent random variables. As we discussed before, for $n$ independent random variables, the variance of the sum is equal to sum of the variances. This fact is officially proved in Section 5.3 and also in Chapter 6, but we have occasionally used it as it simplifies the analysis. Thus, we can write
 
@@ -468,7 +471,7 @@ To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ indepen
 
 Thus, we have
 \begin{align}\label{al2}
-  E(\textrm{Var}(Y|N))=EN Var(X).
+  E(\textrm{Var}(Y|N))=EN Var(X). \hspace{30pt} (5.13)
 \end{align}
 Combining Equations 5.12 and 5.13, we obtain
 \begin{align}
