@@ -302,7 +302,7 @@ Law of Total Expectation:
 <ol>
   <li>If $B_1, B_2, B_3,...$ is a partition of the sample space $S$,
   \begin{align}\label{eq:LOTPE-EV}
-     EX=\sum_{i} E[X|B_i]P(B_i). \hspace{40pt} (5.3)
+     EX=\sum_{i} E[X|B_i]P(B_i). \hspace{50pt} (5.3)
   \end{align}
 	</li><li>
   For a random variable $X$ and a discrete random variable $Y$,
