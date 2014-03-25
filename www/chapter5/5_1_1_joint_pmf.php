@@ -1,10 +1,10 @@
 <?php
 	$section_no = "5.1.1";
 	$section_title = "Joint Probability Mass Function (PMF)";
-	$section_prev = "5_1_0_joint_distributions.php";
-	$section_next = " ";	
+	$section_prev = "chapter5/5_1_0_joint_distributions.php";
+	$section_next = "chapter5/5_1_2_joint_cdf.php";	
 	include "../Control/autonumber.php";
-	loadHeaders(57);	
+	loadHeaders(58);	
 	include "section_header.php"
 ?>
 

@@ -1,10 +1,10 @@
 <?php
 	$section_no = "5.1.2";
 	$section_title = "Joint Cumulative Distributive Function (CDF)";
-	$section_prev = "chapter4/5_1_1_joint_pmf";
-	$section_next = " ";
+	$section_prev = "chapter5/5_1_1_joint_pmf.php";
+	$section_next = "chapter5/5_1_3_conditioning_independence.php";
 	include "../Control/autonumber.php";
-	loadHeaders(58);	
+	loadHeaders(59);	
 	include "section_header.php";
 ?>
 

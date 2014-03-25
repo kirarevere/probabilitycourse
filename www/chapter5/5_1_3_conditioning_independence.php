@@ -1,10 +1,10 @@
 <?php
 	$section_no = "5.1.3";
 	$section_title = "Conditioning and Independence";
-	$section_prev = " ";
-	$section_next = " ";
+	$section_prev = "chapter5/5_1_2_joint_cdf.php";
+	$section_next = "5_1_4_functions_two_variables.php";
 	include "../Control/autonumber.php";
-	loadHeaders(59);
+	loadHeaders(60);
 	include "section_header.php";	
 ?>
 

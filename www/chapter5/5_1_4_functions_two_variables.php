@@ -1,10 +1,10 @@
 <?php
 	$section_no			=	"5.1.4";
 	$section_title	= "Functions of Two Random Variables";
-	$section_next		= "#";
-	$section_prev		= "#";
+	$section_next		= "5_1_3_conditioning_independence.php";
+	$section_prev		= "5_1_5_conditional_expectation.php";
 	include '../Control/autonumber.php';
-	loadHeaders(60);
+	loadHeaders(61);
 	include 'section_header.php';
 ?>
 
