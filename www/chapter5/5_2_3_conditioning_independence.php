@@ -563,7 +563,7 @@ Using the law of total probability (Equation 5.16), we can write
 <!-- /Example -->
 
 <!-- Example -->
-<span class="example">Example </span><br />
+<hr /><span class="example">Example </span><br />
 Suppose $X \sim Uniform(1,2)$ and given $X=x$, $Y$ is an exponential random variable with parameter $\lambda=x$, so we can write
 \begin{align}%\label{}
 \nonumber  Y|X=x \hspace{10pt} \sim \hspace{10pt} Exponential(x).
@@ -586,7 +586,7 @@ We sometimes write this as
   Using the law of total expectation, we have
   \begin{align}
   \nonumber EY&=\int_{-\infty}^{\infty} E[Y|X=x] f_X(x)dx\\
-  \nonumber &=\int_{1}^{2} E[Y|X=x] \cdot 1 \hs dx\\
+  \nonumber &=\int_{1}^{2} E[Y|X=x] \cdot 1 dx\\
   \nonumber &=\int_{1}^{2}\frac{1}{x}dx\\
   \nonumber &= \ln 2.
   \end{align}
@@ -606,7 +606,7 @@ We sometimes write this as
   \nonumber \var(Y)&=E[Y^2]-(E[Y])^2\\
   \no &=E[Y^2]-(\ln 2)^2\\
   \no &=E\big[E[Y^2|X]\big]-(\ln 2)^2 & (\textrm{law of total expectation})\\
-  \no &=E\left[\frac{2}{X^2}\right]-(\ln 2)^2 & \big(\textrm{since } Y|X \hs \sim \hs Exponential(X)\big)\\
+  \no &=E\left[\frac{2}{X^2}\right]-(\ln 2)^2 & \big(\textrm{since } Y|X  \sim Exponential(X)\big)\\
   \no &=\int_{1}^{2}\frac{2}{x^2}dx-(\ln 2)^2 \\
   \no &=1-(\ln 2)^2.
   \end{align}
@@ -614,7 +614,7 @@ We sometimes write this as
   \begin{align}
   \no \textrm{Var}(Y)=E[\textrm{Var}(Y|X)]+\textrm{Var}(E[Y|X]).
   \end{align}
-  Since $Y|X \hs \sim \hs Exponential(X)$, we conclude
+  Since $Y|X  \sim  Exponential(X)$, we conclude
   \begin{align}
   \no &E[Y|X]=\frac{1}{X},\\
   \no &\var(Y|X)=\frac{1}{X^2}.
