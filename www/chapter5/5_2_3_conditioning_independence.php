@@ -344,7 +344,6 @@ That is, knowing the value of $Y$ does not change the PDF of $X$. Since $f_{X|Y}
 \end{align}
 
 <div class="cbox">
-\begin{itemize}
   \item Two continuous random variables $X$ and $Y$ are independent if
 \begin{align}%\label{}
 \nonumber  f_{XY}(x,y)=f_X(x) f_Y(y), \hspace{10pt} \textrm{ for all }x,y.
@@ -358,7 +357,6 @@ Equivalently, $X$ and $Y$ are independent if
 \nonumber  &E[XY]=EX EY, \\
 \nonumber  &E[g(X)h(Y)]=E[g(X)]E[h(Y)].
 \end{align}
-\end{itemize}
 </div><br />
 Suppose that we are given the joint PDF $f_{XY}(x,y)$ of two random variables $X$ and $Y$. If we can write
 \begin{align}%\label{}
@@ -388,6 +386,7 @@ Determine whether $X$ and $Y$ are independent:
 </li>
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul></li>
 <ol type="a">
 <li>
    We can write
