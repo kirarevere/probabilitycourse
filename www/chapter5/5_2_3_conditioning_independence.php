@@ -579,7 +579,7 @@ We sometimes write this as
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 <ol type="a">
-  <li> We use the law of total expectation (Equation \ref{eq:LOTE-cont}) to find $EY$. Remember that if $Y \sim Exponential(\lambda)$, then $EY=\frac{1}{\lambda}$. Thus we conclude
+  <li> We use the law of total expectation (Equation 5.17) to find $EY$. Remember that if $Y \sim Exponential(\lambda)$, then $EY=\frac{1}{\lambda}$. Thus we conclude
   \begin{align}
   \nonumber E[Y|X=x]=\frac{1}{x}.
   \end{align}
@@ -601,30 +601,30 @@ We sometimes write this as
   \end{align}
 </li>
 <li>
-   To find $\var(Y)$, we can write
+   To find $Var(Y)$, we can write
   \begin{align}
-  \nonumber \var(Y)&=E[Y^2]-(E[Y])^2\\
-  \no &=E[Y^2]-(\ln 2)^2\\
-  \no &=E\big[E[Y^2|X]\big]-(\ln 2)^2 & (\textrm{law of total expectation})\\
-  \no &=E\left[\frac{2}{X^2}\right]-(\ln 2)^2 & \big(\textrm{since } Y|X  \sim Exponential(X)\big)\\
-  \no &=\int_{1}^{2}\frac{2}{x^2}dx-(\ln 2)^2 \\
-  \no &=1-(\ln 2)^2.
+  \nonumber Var(Y)&=E[Y^2]-(E[Y])^2\\
+   &=E[Y^2]-(\ln 2)^2\\
+   &=E\big[E[Y^2|X]\big]-(\ln 2)^2 & (\textrm{law of total expectation})\\
+   &=E\left[\frac{2}{X^2}\right]-(\ln 2)^2 & \big(\textrm{since } Y|X  \sim Exponential(X)\big)\\
+   &=\int_{1}^{2}\frac{2}{x^2}dx-(\ln 2)^2 \\
+   &=1-(\ln 2)^2.
   \end{align}
-  Another way to find $\var(Y)$ is to apply the law of total variance:
+  Another way to find $Var(Y)$ is to apply the law of total variance:
   \begin{align}
-  \no \textrm{Var}(Y)=E[\textrm{Var}(Y|X)]+\textrm{Var}(E[Y|X]).
+   \textrm{Var}(Y)=E[\textrm{Var}(Y|X)]+\textrm{Var}(E[Y|X]).
   \end{align}
   Since $Y|X  \sim  Exponential(X)$, we conclude
   \begin{align}
-  \no &E[Y|X]=\frac{1}{X},\\
-  \no &\var(Y|X)=\frac{1}{X^2}.
+   &E[Y|X]=\frac{1}{X},\\
+   &Var(Y|X)=\frac{1}{X^2}.
   \end{align}
   Therefore
   \begin{align}
-  \no \textrm{Var}(Y)&=E\left[\frac{1}{X^2}\right]+\textrm{Var}\left(\frac{1}{X}\right)\\
-  \no &=E\left[\frac{1}{X^2}\right]+E\left[\frac{1}{X^2}\right]-\left(E\left[\frac{1}{X}\right]\right)^2\\
-  \no &=E\left[\frac{2}{X^2}\right]-(\ln 2)^2\\
-  \no &=1-(\ln 2)^2.
+   \textrm{Var}(Y)&=E\left[\frac{1}{X^2}\right]+\textrm{Var}\left(\frac{1}{X}\right)\\
+   &=E\left[\frac{1}{X^2}\right]+E\left[\frac{1}{X^2}\right]-\left(E\left[\frac{1}{X}\right]\right)^2\\
+   &=E\left[\frac{2}{X^2}\right]-(\ln 2)^2\\
+   &=1-(\ln 2)^2.
   \end{align}
 </li>
 </ol>
