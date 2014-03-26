@@ -92,9 +92,8 @@ Therefore,
 The second way to find $P(X \leq \frac{z}{Y})$ is to use the law of total probability. We have
 \begin{align}
   \nonumber P(X \leq \frac{z}{Y})&=\int_{0}^{1} P(X \leq \frac{z}{Y}|Y=y) f_Y(y) \hspace{5pt} dy\\
-
-\end{align}
   \nonumber &=\int_{0}^{1} P\left(X \leq \frac{z}{y}\right) f_Y(y) \hspace{5pt} dy &\textrm{ since $X$ and $Y$ are independent.}\\
+\end{align}
 Note that
 \begin{equation}
  \nonumber P\left(X \leq \frac{z}{y}\right) = \left\{
