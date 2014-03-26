@@ -2,7 +2,7 @@
 	$section_no			= "5.2.5";
 	$section_title	= "Solved Problems";
 	$section_prev		= "chapter5/5_2_4_functions.php";
-	$section_next		= "chapter5/5_3_";
+	$section_next		= "chapter5/5_3_1_covariance_correlation.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(70);
 	include						"section_header.php";
