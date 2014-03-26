@@ -149,7 +149,7 @@ First, note that since $Z_1$ and $Z_2$ are normal and independent, they are join
 </li></ul></div><hr /><br />
 <!-- /Example -->
 
-We call the above joint distribution for $X$ and $Y$ \textbf{the standard bivariate normal distribution with correlation coefficient} $\mathbf{\rho}$. It is the distribution for two jointly normal random variables when their variances are equal to one and their correlation coefficient is $\rho$.
+We call the above joint distribution for $X$ and $Y$ <b>the standard bivariate normal distribution with correlation coefficient</b> $\mathbf{\rho}$. It is the distribution for two jointly normal random variables when their variances are equal to one and their correlation coefficient is $\rho$.
 
 <div class="cbox">
 Two random variables $X$ and $Y$ are said to have the <b>standard bivariate normal distribution with correlation coefficient</b> $\mathbf{\rho}$ if their joint PDF is given by
