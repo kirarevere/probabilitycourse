@@ -502,7 +502,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.6.<br 
 		</tr>
 	</table>
 
-  Find $\cov(X,Y)$ and $\rho(X,Y)$.
+  Find $Cov(X,Y)$ and $\rho(X,Y)$.
 <br />
 
 
@@ -520,13 +520,13 @@ Let $X$ and $Y$ be two independent $N(0,1)$ random variable and
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be two random variables. Suppose that $\sigma^2_X=4$, and $\sigma^2_Y=9$. If we know that the two random variables $Z=2X-Y $ and $W=X+Y$ are independent, find $\cov(X,Y)$ and $\rho(X,Y)$.
+Let $X$ and $Y$ be two random variables. Suppose that $\sigma^2_X=4$, and $\sigma^2_Y=9$. If we know that the two random variables $Z=2X-Y $ and $W=X+Y$ are independent, find $Cov(X,Y)$ and $\rho(X,Y)$.
 <br />
 
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X \sim Uniform(1,3)$ and $Y|X \sim Exponential(X)$. Find $\cov(X,Y)$.
+Let $X \sim Uniform(1,3)$ and $Y|X \sim Exponential(X)$. Find $Cov(X,Y)$.
 <br />
 
 
@@ -546,7 +546,7 @@ Let $X$ and $Y$ be two independent $N(0,1)$ random variable and
 item Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=-1$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=1$, and $\rho=-\frac{1}{2}$.
 <ol type="a">
   <li> Find $P(X+2Y \leq 3)$.</li>
-  <li> Find $\cov(X-Y,X+2Y)$.</li>
+  <li> Find $Cov(X-Y,X+2Y)$.</li>
 </ol>
 <br />
 
