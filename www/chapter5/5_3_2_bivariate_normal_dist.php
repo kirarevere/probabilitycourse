@@ -179,7 +179,7 @@ generating functions.
 </p>
 <!-- /Section Content -->
 
-<div class="cbox" style="width:800px;">
+<div class="cbox" style="width:850px;">
 <span class="definition" >Definition </span><br />
 Two random variables $X$ and $Y$ are said to have a <b>bivariate normal distribution</b> with parameters $\mu_X$, $\sigma^2_X$, $\mu_Y$, $\sigma^2_Y$, and $\rho$, if their joint PDF is given by
 \begin{align} \label{eq:bivariate-normal}
