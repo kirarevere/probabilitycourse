@@ -55,7 +55,7 @@ where $D=\{(x,y)|g(x,y)&lt;z\}$. To find the PDF of $Z$, we differentiate $F_Z(z
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
 Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables, and $Z=XY$. Find the CDF and PDF of $Z$.
-<dir class="solvedprob"><ul><li><a><b>Solution</b></a>
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 First note that $R_Z=[0,1]$. Thus,
 \begin{align}
