@@ -58,12 +58,11 @@ In particular, note that  $X$ and $Y$ are both normal but their sum is not. Now,
 <span class="definition">Definition </span><br />
 Two random variables $X$ and $Y$ are said to be <b>bivariate normal</b>, or <b>jointly normal</b>, if $aX+bY$ has a normal distribution for all $a,b \in \mathbb{R}$.
 </div><br />
-In the above definition, if we let $a=b=0$, then $aX+bY=0$. We agree that the constant zero is a normal random variable with mean and variance $0$. From the above definition, we can immediately conclude the following facts:
-  - If $X$ and $Y$ are bivariate normal, then by letting $a=1$, $b=0$, we conclude $X$ must be normal.
-  - If $X$ and $Y$ are bivariate normal, then by letting $a=0$, $b=1$, we conclude $Y$ must be normal.
-  - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are independent, then they are jointly normal (Theorem 5.2).
-  - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are jointly normal, then $X+Y \hspace{5pt} \sim \hspace{5pt} N(\mu_X+\mu_Y,\sigma^2_X+\sigma^2_Y+2 \rho(X,Y) \sigma_X \sigma_Y)$ (Equation 5.21).
-\end{itemize}
+In the above definition, if we let $a=b=0$, then $aX+bY=0$. We agree that the constant zero is a normal random variable with mean and variance $0$. From the above definition, we can immediately conclude the following facts:<br />
+  - If $X$ and $Y$ are bivariate normal, then by letting $a=1$, $b=0$, we conclude $X$ must be normal.<br />
+  - If $X$ and $Y$ are bivariate normal, then by letting $a=0$, $b=1$, we conclude $Y$ must be normal.<br />
+  - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are independent, then they are jointly normal (Theorem 5.2).<br />
+  - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are jointly normal, then $X+Y \hspace{5pt} \sim \hspace{5pt} N(\mu_X+\mu_Y,\sigma^2_X+\sigma^2_Y+2 \rho(X,Y) \sigma_X \sigma_Y)$ (Equation 5.21).<br />
 But how can we obtain the joint normal PDF in general? Can we provide a simple way to generate jointly normal random variables? The basic idea is that we can start from several independent random variables and by considering their linear combinations, we can obtain bivariate normal random variables. Similar to our discussion on normal random variables, we start by introducing the <b>standard bivariate normal distribution</b> and then obtain the general case from the standard one. The following example gives the idea.
 
 <!-- Example -->
