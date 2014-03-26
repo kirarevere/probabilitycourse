@@ -91,9 +91,9 @@ Therefore,
 \end{align}
 The second way to find $P(X \leq \frac{z}{Y})$ is to use the law of total probability. We have
 \begin{align}
-  \nonumber P\left(X \leq \frac{z}{Y}\right)&=\int_{0}^{1} P\left(X \leq \frac{z}{Y}\bigg{|}Y=y\right) f_Y(y) \hspace{5pt} dy\\
-  \nonumber &=\int_{0}^{1} P\left(X \leq \frac{z}{y}\right) f_Y(y) \hspace{5pt} dy &\textrm{ since $X$ and $Y$ are independent.}\\
+  \nonumber P\big{(}X \leq \frac{z}{Y}\big{)}&=\int_{0}^{1} P\big{(}X \leq \frac{z}{Y}\big{|}Y=y\big{)} f_Y(y) \hspace{5pt} dy\\
 \end{align}
+  \nonumber &=\int_{0}^{1} P\left(X \leq \frac{z}{y}\right) f_Y(y) \hspace{5pt} dy &\textrm{ since $X$ and $Y$ are independent.}\\
 Note that
 \begin{equation}
  \nonumber P\left(X \leq \frac{z}{y}\right) = \left\{
@@ -131,7 +131,7 @@ You can check that $F_Z(z)$ is a continuous function. To find the PDF, we differ
 <!-- /Example -->
 
 <h2>The Method of Transformations:</h2>
-When we have functions of two or more jointly continuous random variables, we may be able to use a method similar to Theorems \ref{thm:func-monotone} and \ref{thm:func-pdf} to find the resulting PDFs. In particular, we can state the following theorem. While the statement of the theorem might look a little confusing, its application is quite straight forward and we will see a few examples to illustrate the methodology.
+When we have functions of two or more jointly continuous random variables, we may be able to use a method similar to Theorems 4.1 and 4.2 to find the resulting PDFs. In particular, we can state the following theorem. While the statement of the theorem might look a little confusing, its application is quite straight forward and we will see a few examples to illustrate the methodology.
 
 <div class="cbox">
 <span class="theorem">Theorem </span><br />
@@ -147,6 +147,7 @@ where $J$ is the Jacobian of $h$ defined by
                         \frac{\partial h_2}{\partial z}  & \frac{\partial h_2}{\partial w}  \\
                       \end{bmatrix}
                       =\frac{\partial h_1}{\partial z}.\frac{\partial h_2}{\partial w}-\frac{\partial h_2}{\partial z}\frac{\partial h_1}{\partial w}.
+\end{align}
 </div>
 
 The following examples show how to apply the above theorem.
@@ -209,6 +210,7 @@ Thus, we conclude that
 <hr /><span class="example">Example </span><br />
 Let $X$ and $Y$ be two random variables with joint PDF $f_{XY}(x,y)$. Let $Z=X+Y$. Find $f_{Z}(z)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
  To apply Theorem 5.1, we need two random variables $Z$ and $W$. We can simply define $W=X$. Thus, the function $g$ is given by
 \begin{equation}
  \nonumber  \left\{
@@ -247,7 +249,7 @@ Note that, if $X$ and $Y$ are independent, then $f_{XY}(x,y)=f_X(x)f_Y(y)$ and w
   \nonumber f_Z(z)=\int_{-\infty}^{\infty} f_{X}(w)f_Y(z-w)dw.
 \end{align}
 </li></ul>
-</li></ul></div><br />
+</li></ul></div><hr /><br />
 <!-- /Example -->
 
 <div class="cbox">
