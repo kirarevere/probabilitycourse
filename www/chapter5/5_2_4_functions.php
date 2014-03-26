@@ -206,7 +206,7 @@ Thus, we conclude that
 <!-- /Example -->
 
 <!-- Example -->
-<span class="example">
+<hr /><span class="example">Example </span><br />
 Let $X$ and $Y$ be two random variables with joint PDF $f_{XY}(x,y)$. Let $Z=X+Y$. Find $f_{Z}(z)$.
 \end{example}
 \textit{Solution:} To apply Theorem \ref{thm:pdf-transform-2}, we need two random variables $Z$ and $W$. We can simply define $W=X$. Thus, the function $g$ is given by
