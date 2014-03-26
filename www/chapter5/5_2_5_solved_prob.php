@@ -317,7 +317,7 @@ $X$ and $Y$ are not independent, since $f_{XY}(x,y)\neq f_x(x)f_Y(y)$.
 </li></ul>
 </li></ul></div><br />
 
-<hr /><span class="problem">Problem </span>
+<hr /><span class="problem">Problem </span><br />
 Consider the unit disc
 \begin{align}%\label{}
 \nonumber  D=\{(x,y)|x^2+y^2 \leq 1\}.
