@@ -185,7 +185,7 @@ Two random variables $X$ and $Y$ are said to have a <b>bivariate normal distribu
 \begin{align} \label{eq:bivariate-normal}
   \nonumber f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}}  \cdot\\
   & \exp \left\{-\frac{1}{2 (1-\rho^2)}\bigg[\bigg(\frac{x-\mu_X}{\sigma_X}\bigg)^2
-   +\bigg(\frac{y-\mu_Y}{\sigma_Y}\bigg)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \bigg] \right\}
+   +\bigg(\frac{y-\mu_Y}{\sigma_Y}\bigg)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \bigg] \right\} (5.24)
   \end{align}
 where $\mu_X,\mu_Y \in \mathbb{R}$,  $\sigma_X,\sigma_Y>0$ and $\rho \in (-1,1)$ are all constants.
 </div><br />
