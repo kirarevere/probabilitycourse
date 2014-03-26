@@ -2,7 +2,7 @@
 	$section_no			=	"5.2.4";
 	$section_title	= "Functions of Two Continuous Random Variables";
 	$section_prev		= "chapter5/5_2_3_conditioning_independence.php";
-	$section_next		= "chapter5/5_2_4_solved_prob.php";
+	$section_next		= "chapter5/5_2_5_solved_prob.php";
 	include					"../Control/autonumber.php";
 	loadHeaders(69);
 	include					"section_header.php";	
