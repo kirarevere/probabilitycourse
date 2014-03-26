@@ -13,13 +13,11 @@
 Here, we define jointly continuous random variables. Basically, two random variables are jointly continuous if they have a joint probability density function as defined bellow.
 </p>
 <div style="padding: 25px;margin:30px 40px; border: 2px solid black;">
-\begin{define}
 Two random variables $X$ and $Y$ are <b>jointly continuous</b> if there exists a nonnegative function $f_{XY}:\mathbb{R}^2 \rightarrow \mathbb{R}$, such that, for any set $A\in \mathbb{R}^2$, we have
 \begin{align}\label{eq:double-int}
   P\big((X,Y) \in A\big) =\iint \limits_A f_{XY}(x,y)dxdy. \hspace{30pt} (5.15)
 \end{align}
 The function $f_{XY}(x,y)$ is called the <b>joint probability density function (PDF)</b> of $X$ and $Y$.
-\end{define}
 </div><br />
 In the above definition, the domain of $f_{XY}(x,y)$ is the entire $\mathbb{R}^2$. We may define the range of $(X,Y)$ as
 \begin{align}%\label{}
@@ -43,7 +41,6 @@ Similarly, for small $\delta_x$ and $\delta_y$, we can write
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
-\begin{example} \label{EX:jointPDF-first}
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 \begin{equation}
  \nonumber f_{XY}(x,y) = \left\{
@@ -57,7 +54,6 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   <li>Find the constant $c$.</li>
   <li>Find $P(0 \leq X \leq \frac{1}{2}, 0 \leq Y \leq \frac{1}{2})$.</li>
 </ol>
-\end{example}
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 <ol>
@@ -229,7 +225,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 
   <li> To find $P(Y\leq \frac{X}{4}|Y\leq \frac{X}{2})$, we have
   \begin{align}%\label{}
-  \nonumber  P\left(Y\leq \frac{X}{4}\bigg{|}Y\leq \frac{X}{2}\right)&=\frac{P\left(Y\leq \frac{X}{4},Y\leq \frac{X}{2}\right)}{P\left(Y\leq \frac{X}{2}\right)}\\
+  \nonumber  P\left(Y\leq \frac{X}{4}|Y\leq \frac{X}{2}\right)&=\frac{P\left(Y\leq \frac{X}{4},Y\leq \frac{X}{2}\right)}{P\left(Y\leq \frac{X}{2}\right)}\\
   \nonumber  &=4P\left(Y\leq \frac{X}{4}\right)\\
   \nonumber  &=4\int_{0}^{1} \int_{0}^{\frac{x}{4}}  10x^2y  \hspace{5pt} dydx\\
   \nonumber  &=4\int_{0}^{1} \frac{5}{16} x^4 dx\\
