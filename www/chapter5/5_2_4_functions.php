@@ -14,7 +14,7 @@ So far, we have seen several examples involving functions of random variables. W
 <div class="cbox">
 <p class="centered">LOTUS for two continuous random variables:</p>
 \begin{align}\label{eq:LOTUS-2D-Cont}
-  E[g(X,Y)]=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y)f_{XY}(x,y) \hspace{5pt} dxdy
+  E[g(X,Y)]=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y)f_{XY}(x,y) \hspace{5pt} dxdy \hspace{40pt} (5.19)
 \end{align}
 </div>
 
@@ -93,6 +93,7 @@ The second way to find $P(X \leq \frac{z}{Y})$ is to use the law of total probab
 \begin{align}
   \nonumber P(X \leq \frac{z}{Y})&=\int_{0}^{1} P(X \leq \frac{z}{Y}|Y=y) f_Y(y) \hspace{5pt} dy\\
   \nonumber &=\int_{0}^{1} P\left(X \leq \frac{z}{y}\right) f_Y(y) \hspace{5pt} dy &\textrm{ since $X$ and $Y$ are independent.}\\
+	\hspace{500pt} (5.20)
 \end{align}
 Note that
 \begin{equation}
