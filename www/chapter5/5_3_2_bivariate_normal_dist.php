@@ -27,12 +27,12 @@ Find the PDF of $Y$ and $X+Y$.
 <ul><li>
 Note that by symmetry of $N(0,1)$ around zero, $-X$ is also $N(0,1)$. In particular, we can write
 \begin{align}%\label{}
-\no  F_Y(y) &=P(Y \leq y)\\
-\no  &=P(Y \leq y | W=0) P(W=0)+P(Y \leq y | W=1) P(W=1)\\
-\no  &=\frac{1}{2} P(X \leq y | W=0) +\frac{1}{2} P(-X \leq y | W=1) \\
-\no  &=\frac{1}{2} P(X \leq y) +\frac{1}{2} P(-X \leq y) \hsb \textrm{(since $X$ and $W$ are independent)}\\
-\no  &=\frac{1}{2} \Phi (y)  +\frac{1}{2} \Phi (y) \hsb (\textrm{since $X$ and $-X$ are }N(0,1))\\
-\no &=\Phi (y).
+ F_Y(y) &=P(Y \leq y)\\
+ &=P(Y \leq y | W=0) P(W=0)+P(Y \leq y | W=1) P(W=1)\\
+ &=\frac{1}{2} P(X \leq y | W=0) +\frac{1}{2} P(-X \leq y | W=1) \\
+ &=\frac{1}{2} P(X \leq y) +\frac{1}{2} P(-X \leq y)  \textrm{(since $X$ and $W$ are independent)}\\
+ &=\frac{1}{2} \Phi (y)  +\frac{1}{2} \Phi (y)  (\textrm{since $X$ and $-X$ are }N(0,1))\\
+&=\Phi (y).
 \end{align}
 Thus, $Y \sim N(0,1)$. Now, note that
 \begin{equation}
@@ -62,7 +62,7 @@ In the above definition, if we let $a=b=0$, then $aX+bY=0$. We agree that the co
   - If $X$ and $Y$ are bivariate normal, then by letting $a=1$, $b=0$, we conclude $X$ must be normal.
   - If $X$ and $Y$ are bivariate normal, then by letting $a=0$, $b=1$, we conclude $Y$ must be normal.
   - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are independent, then they are jointly normal (Theorem 5.2).
-  - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are jointly normal, then $X+Y \hspace{5pt} \sim \hspace{5pt} N\bigg(\mu_X+\mu_Y,\sigma^2_X+\sigma^2_Y+2 \rho(X,Y) \sigma_X \sigma_Y\bigg)$ (Equation \ref{eq:var-aX+bY}).
+  - If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are jointly normal, then $X+Y \hspace{5pt} \sim \hspace{5pt} N(\mu_X+\mu_Y,\sigma^2_X+\sigma^2_Y+2 \rho(X,Y) \sigma_X \sigma_Y)$ (Equation 5.21).
 \end{itemize}
 But how can we obtain the joint normal PDF in general? Can we provide a simple way to generate jointly normal random variables? The basic idea is that we can start from several independent random variables and by considering their linear combinations, we can obtain bivariate normal random variables. Similar to our discussion on normal random variables, we start by introducing the <b>standard bivariate normal distribution</b> and then obtain the general case from the standard one. The following example gives the idea.
 
@@ -74,17 +74,17 @@ Let $Z_1$ and $Z_2$ be two independent $N(0,1)$ random variables. Define
 \nonumber Y&=\rho Z_1 +\sqrt{1-\rho^2} Z_2,
 \end{align}
 where $\rho$ is a real number in $(-1,1)$.
-\begin{enumerate}[(a)]
-  \item Show that $X$ and $Y$ are bivariate normal.
-  \item Find the joint PDF of $X$ and $Y$.
-  \item Find $\rho(X,Y)$.
-\end{enumerate}
+<ol type="a">
+  <li> Show that $X$ and $Y$ are bivariate normal.</li>
+  <li> Find the joint PDF of $X$ and $Y$.</li>
+  <li> Find $\rho(X,Y)$.</li>
+</ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 First, note that since $Z_1$ and $Z_2$ are normal and independent, they are jointly normal, with the joint PDF
 \begin{align}%\label{}
-\no  f_{Z_1Z_2}(z_1,z_2)&=f_{Z_1}(z_1)f_{Z_2}(z_2)\\
-\no  &=\frac{1}{2 \pi} \exp \bigg\{-\frac{1}{2} \big[ z_1^2+z^2_2\big] \bigg\}.
+ f_{Z_1Z_2}(z_1,z_2)&=f_{Z_1}(z_1)f_{Z_2}(z_2)\\
+ &=\frac{1}{2 \pi} \exp \bigg\{-\frac{1}{2} \big[ z_1^2+z^2_2\big] \bigg\}.
 \end{align}
 
 <ol type="a">
@@ -127,23 +127,23 @@ First, note that since $Z_1$ and $Z_2$ are normal and independent, they are join
   \nonumber f_{XY}(x,y)&=f_{Z_1Z_2}(x,-\frac{\rho}{\sqrt{1-\rho^2}} x+\frac{1}{\sqrt{1-\rho^2}}y) |J|\\
   \nonumber &=\frac{1}{2 \pi} \exp \left\{-\frac{1}{2} \bigg[ x^2+\frac{1}{1-\rho^2}(-\rho x+y)^2 \bigg] \right\} \cdot \frac{1}{\sqrt{1-\rho^2}}\\
   \nonumber &=\frac{1}{2 \pi \sqrt{1-\rho^2}} \exp \bigg\{-\frac{1}{2 (1-\rho^2)} \big[ x^2-2\rho x y+y^2 \big] \bigg\}.
+	\end{align}
 	</li>
 
   <li> To find $\rho(X,Y)$, first note
   \begin{align}
-  \no &\var(X)=\var(Z_1)=1,\\
-  \no &\var(Y)=\rho^2 \var(Z_1)+(1-\rho^2) \var(Z_2)=1.
+  &Var(X)=Var(Z_1)=1,\\
+  &Var(Y)=\rho^2 Var(Z_1)+(1-\rho^2) Var(Z_2)=1.
   \end{align}
   Therefore,
   \begin{align}
-  \nonumber \rho(X,Y) &=\cov(X,Y)\\
-  \nonumber &=\cov(Z_1,\rho Z_1 +\sqrt{1-\rho^2} Z_2)\\
-  \nonumber &=\rho \cov(Z_1,Z_1)+\sqrt{1-\rho^2} \cov(Z_1,Z_2)\\
+  \nonumber \rho(X,Y) &=Cov(X,Y)\\
+  \nonumber &=Cov(Z_1,\rho Z_1 +\sqrt{1-\rho^2} Z_2)\\
+  \nonumber &=\rho Cov(Z_1,Z_1)+\sqrt{1-\rho^2} Cov(Z_1,Z_2)\\
   \nonumber &=\rho \cdot 1+ \sqrt{1-\rho^2} \cdot 0\\
   \nonumber &=\rho.
   \end{align}
 
-  \end{align}
 	</li>
 </ol>
 </li></ul>
@@ -166,7 +166,7 @@ Now, if you want two jointly normal random variables $X$ and $Y$ such that $X \s
  \left\{
   \begin{array}{l l}
   X&=\sigma_X Z_1+\mu_X  \\
-  Y&=\sigma_Y (\rho Z_1 +\sqrt{1-\rho^2} Z_2)+\mu_Y
+  Y&=\sigma_Y (\rho Z_1 +\sqrt{1-\rho^2} Z_2)+\mu_Y \hspace{20pt} (5.23)
   \end{array} \right.
 \end{align}
 
@@ -180,10 +180,10 @@ generating functions.
 <!-- /Section Content -->
 
 <div class="cbox">
-<span class="definition">Definition </span><br />
+<span class="definition" style="width:800px;">Definition </span><br />
 Two random variables $X$ and $Y$ are said to have a <b>bivariate normal distribution</b> with parameters $\mu_X$, $\sigma^2_X$, $\mu_Y$, $\sigma^2_Y$, and $\rho$, if their joint PDF is given by
 \begin{align} \label{eq:bivariate-normal}
-  \nonumber f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}} \hs \cdot\\
+  \nonumber f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}}  \cdot\\
   & \exp \left\{-\frac{1}{2 (1-\rho^2)}\bigg[\bigg(\frac{x-\mu_X}{\sigma_X}\bigg)^2
    +\bigg(\frac{y-\mu_Y}{\sigma_Y}\bigg)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \bigg] \right\}
   \end{align}
@@ -245,7 +245,7 @@ Since $Z_1$ and $Z_2$ are independent, knowing $Z_1$ does not provide any inform
 \begin{align}%\label{}
 \nonumber  E[Y|X=x]&= \sigma_Y \rho \frac{x-\mu_X}{\sigma_X}  +\sigma_Y \sqrt{1-\rho^2} E[Z_2]+\mu_Y\\
 \nonumber  &=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X}\\
-\nonumber  \var(Y|X=x)&= \sigma^2_Y (1-\rho^2) \var(Z_2)\\
+\nonumber  Var(Y|X=x)&= \sigma^2_Y (1-\rho^2) Var(Z_2)\\
 \nonumber  &=(1-\rho^2)\sigma^2_Y.
 \end{align}
 We conclude that given $X=x$, $Y$ is normally distributed with mean $\mu_Y$+ $\rho \sigma_Y \frac{x-\mu_X}{\sigma_X}$ and variance $(1-\rho^2)\sigma^2_Y$.
@@ -258,7 +258,7 @@ We conclude that given $X=x$, $Y$ is normally distributed with mean $\mu_Y$+ $\r
   Suppose $X$ and $Y$ are jointly normal random variables with parameters $\mu_X$, $\sigma^2_X$, $\mu_Y$, $\sigma^2_Y$, and $\rho$. Then, given $X=x$, $Y$ is normally distributed with
  \begin{align}%\label{}
 \nonumber  &E[Y|X=x]=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X}\\
-\nonumber  &\var(Y|X=x)=(1-\rho^2)\sigma^2_Y.
+\nonumber  &Var(Y|X=x)=(1-\rho^2)\sigma^2_Y.
 \end{align}
 </div><br />
 
@@ -267,7 +267,7 @@ We conclude that given $X=x$, $Y$ is normally distributed with mean $\mu_Y$+ $\r
 Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\sigma^2_X=1$, $\mu_Y=0$, $\sigma^2_Y=4$, and $\rho=\frac{1}{2}$.
 <ol type="a">
   <li> Find $P(2X+Y \leq 3)$.</li>
-  <li> Find $\cov(X+Y,2X-Y)$.</li>
+  <li> Find $Cov(X+Y,2X-Y)$.</li>
   <li> Find $P(Y>1|X=2)$.</li>
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
@@ -278,7 +278,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
   \nonumber &EV=2EX+EY=2
   \end{align}
   \begin{align}
-  \nonumber \var(V)&=4\var(X)+\var(Y)+4 \cov(X,Y) \\
+  \nonumber Var(V)&=4Var(X)+Var(Y)+4 Cov(X,Y) \\
   \nonumber &=4+4+4 \sigma_X \sigma_Y \rho(X,Y)\\
   \nonumber &=8+4 \times 1\times2\times\frac{1}{2}\\
   \nonumber &=12.
@@ -290,9 +290,9 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
 	</li>
 
 
-  <li> Note that $\cov(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=1$. We have
+  <li> Note that $Cov(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=1$. We have
   \begin{align}
-  \nonumber \cov(X+Y,2X-Y)&=2\cov(X,X)-\cov(X,Y)+2\cov(Y,X)-\cov(Y,Y) \\
+  \nonumber Cov(X+Y,2X-Y)&=2Cov(X,X)-Cov(X,Y)+2Cov(Y,X)-Cov(Y,Y) \\
   \nonumber &=2-1+2-4=-1.
   \end{align}
 	</li>
@@ -300,7 +300,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
  Using Theorem 5.4, we conclude that given $X=2$, $Y$ is normally distributed with
   \begin{align}%\label{}
   \nonumber  &E[Y|X=2]=\mu_Y+ \rho \sigma_Y \frac{2-\mu_X}{\sigma_X}=1\\
-  \nonumber  &\var(Y|X=x)=(1-\rho^2)\sigma^2_Y=3.
+  \nonumber  &Var(Y|X=x)=(1-\rho^2)\sigma^2_Y=3.
   \end{align}
   Thus
   \begin{align}%\label{}
@@ -312,7 +312,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
 </li></ul></div><hr /><br />
 <!-- /Example -->
 
-Remember that if two random variables $X$ and $Y$ are independent, then they are uncorrelated, i.e., $\cov(X,Y)=0$. However, the converse is not true in general. In the case of jointly normal random variables, the converse is true. Thus, for jointly normal random variables being independent and being uncorrelated are equivalent.
+Remember that if two random variables $X$ and $Y$ are independent, then they are uncorrelated, i.e., $Cov(X,Y)=0$. However, the converse is not true in general. In the case of jointly normal random variables, the converse is true. Thus, for jointly normal random variables being independent and being uncorrelated are equivalent.
 
 <div class="cbox">
 <span class="theorem">Theorem </span><br />
@@ -322,7 +322,7 @@ If $X$ and $Y$ are bivariate normal and uncorrelated, then they are independent.
 <i>Proof. </i>Since $X$ and $Y$ are uncorrelated, we have $\rho(X,Y)=0$. By Theorem 5.4, given $X=x$, $Y$ is normally distributed with
  \begin{align}%\label{}
 \nonumber  &E[Y|X=x]=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X}=\mu_Y\\
-\nonumber  &\var(Y|X=x)=(1-\rho^2)\sigma^2_Y=\sigma^2_Y.
+\nonumber  &Var(Y|X=x)=(1-\rho^2)\sigma^2_Y=\sigma^2_Y.
 \end{align}
 Thus $f_{Y|X}(y|x)=f_Y(y)$ for all $x,y \in \mathbb{R}$. Thus $X$ and $Y$ are independent. Another way to prove the theorem is to let $\rho=0$ in Equation 5.24 and observe that $f_{XY}(x,y)=f_X(x)f_Y(y)$.
 
