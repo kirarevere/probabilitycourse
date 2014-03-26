@@ -13,7 +13,7 @@ Here, we discuss conditioning for continuous random variables. In particular, we
 \begin{align}\label{}
   \nonumber P(A|B)=\frac{P(A \cap B)}{P(B)}, \textrm{ when } P(B)>0.
 \end{align}
-Any other formula regarding conditional probability can be derived from the above formula. In fact, for some problems we only need to apply the above formula. You have already used this in Example \ref{ex:joint-PDF-third}. As another example, if you have two random variables $X$ and $Y$, you can write
+Any other formula regarding conditional probability can be derived from the above formula. In fact, for some problems we only need to apply the above formula. You have already used this in Example 5.17. As another example, if you have two random variables $X$ and $Y$, you can write
 \begin{align}\label{}
   \nonumber P(X \in C|Y \in D)=\frac{P(X \in C, Y \in D)}{P(Y \in D)}, \textrm{ where } C, D \subset \mathbb{R}.
 \end{align}
@@ -149,7 +149,7 @@ Let $X \sim Exponential(1)$.
   \end{equation}
 </li>
 <li>
-  \item We have
+  We have
   \begin{align}%\label{}
     \nonumber E[X|X&gt;1]&= \int_{1}^{\infty}xf_{X|X&gt;1}(x)dx \\
     \nonumber &=\int_{1}^{\infty}xe^{-x+1}dx\\
@@ -203,7 +203,6 @@ Similarly, we can write the conditional PDF of $Y$, given $X=x$, as
 
 <div style="padding:25px;margin:30px 40px; border:2px solid black">
 For two jointly continuous random variables $X$ and $Y$, we can define the following conditional concepts:
-\begin{enumerate}
 <ol>
 <li>
   The Conditional PDF of $X$ given $Y=y$:
@@ -404,7 +403,7 @@ Determine whether $X$ and $Y$ are independent:
   Thus, we conclude that $X$ and $Y$ are independent.
 </li>
 <li>
-  \item For this case, it does not seem that we can write $f_{XY}(x,y)$ as a product of some $f_1(x)$ and $f_2(y)$. Note that the given region $0&lt;x&lt;y&lt;1$ enforces that $x&lt;y$. That is, we always have $X&lt;Y$. Thus, we conclude that $X$ and $Y$ are not independent. To show this, we can obtain the marginal PDFs of $X$ and $Y$ and show that $f_{XY}(x,y) \neq f_X(x) f_Y(y), \textrm{ for some }x,y$. We have for $0 \leq x \leq 1$:
+  For this case, it does not seem that we can write $f_{XY}(x,y)$ as a product of some $f_1(x)$ and $f_2(y)$. Note that the given region $0&lt;x&lt;y&lt;1$ enforces that $x&lt;y$. That is, we always have $X&lt;Y$. Thus, we conclude that $X$ and $Y$ are not independent. To show this, we can obtain the marginal PDFs of $X$ and $Y$ and show that $f_{XY}(x,y) \neq f_X(x) f_Y(y), \textrm{ for some }x,y$. We have for $0 \leq x \leq 1$:
       \begin{align}%\label{}
       \nonumber f_X(x)&=\int_{x}^{1}8xy dy   \\
       \nonumber  &=4x(1-x^2).
@@ -525,14 +524,14 @@ We now discuss the law of total probability for continuous random variables. Thi
 <div class="cbox">
 <p style="text-align:center;">Law of Total Probability:</p>
 \begin{align}\label{eq:LOTP-cont}
-  P(A)=\int_{-\infty}^{\infty}P(A|X=x)f_X(x) \hspace{5pt} dx
+  P(A)=\int_{-\infty}^{\infty}P(A|X=x)f_X(x) \hspace{5pt} dx \hspace{20pt} (5.16)
 \end{align}
 </div><br />
 
 <div class="cbox">
 <p class="centered">Law of Total Expectation:</p>
 \begin{align}\label{eq:LOTE-cont}
-  \nonumber E[Y]&=\int_{-\infty}^{\infty}E[Y|X=x]f_X(x) \hspace{5pt} dx\\
+  \nonumber E[Y]&=\int_{-\infty}^{\infty}E[Y|X=x]f_X(x) \hspace{5pt} dx \hspace{20pt} (5.17)\\
   &=E[E[Y|X]]
 \end{align}
 </div><br />
@@ -540,7 +539,7 @@ We now discuss the law of total probability for continuous random variables. Thi
 <div class="cbox">
 <p class="centered">Law of Total Variance:</p>
 \begin{align}\label{eq:LOTV-cont}
-  \textrm{Var}(Y)=E[\textrm{Var}(Y|X)]+\textrm{Var}(E[Y|X])
+  \textrm{Var}(Y)=E[\textrm{Var}(Y|X)]+\textrm{Var}(E[Y|X]) \hspace{20pt} (5.18)
 \end{align}
 </div>
 
