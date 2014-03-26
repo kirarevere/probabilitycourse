@@ -229,11 +229,11 @@ Then, we can find the inverse transform:
 \end{equation}
 Then, we have
 \begin{align}
-  \nonumber |J|=  | \det  \begin{bmatrix}
+  \nonumber |J|=  \big{|} \det  \begin{bmatrix}
                         0 & 1  \\
                          &  \\
                         1  & -1  \\
-                      \end{bmatrix}|
+                      \end{bmatrix}\big{|}
                       =|-1|=1.
 \end{align}
 Thus,
