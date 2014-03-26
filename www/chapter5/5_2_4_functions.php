@@ -37,7 +37,7 @@ We have
   \nonumber E[XY^2]&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} (xy^2)f_{XY}(x,y) \hspace{5pt} dxdy\\
   \nonumber &=\int_{0}^{1} \int_{0}^{1} xy^2(x+y) \hspace{5pt} dxdy\\
   \nonumber &=\int_{0}^{1} \int_{0}^{1} x^2y^2+xy^3 \hspace{5pt} dxdy\\
-  \nonumber &=\int_{0}^{1} \left(\frac{1}{3}y^2+\frac{1}{2}y^3\right) \hs dy\\
+  \nonumber &=\int_{0}^{1} \left(\frac{1}{3}y^2+\frac{1}{2}y^3\right) dy\\
   \nonumber &=\frac{17}{72}.
 \end{align}
 </li></ul>
@@ -229,11 +229,11 @@ Then, we can find the inverse transform:
 \end{equation}
 Then, we have
 \begin{align}
-  \nonumber |J|=  \bigg{|} \det  \begin{bmatrix}
+  \nonumber |J|=  | \det  \begin{bmatrix}
                         0 & 1  \\
                          &  \\
                         1  & -1  \\
-                      \end{bmatrix}\bigg{|}
+                      \end{bmatrix}|
                       =|-1|=1.
 \end{align}
 Thus,
@@ -258,7 +258,6 @@ If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are independent
 \begin{align}%\label{}
 \nonumber   X+Y \hspace{5pt} \sim \hspace{5pt} N\bigg(\mu_X+\mu_Y, \sigma_X^2+\sigma_Y^2\bigg).
 \end{align}
-\end{thm}
  We will see an easier proof of Theorem 5.2 when we discuss <i>moment generating functions</i>.
 </div>
 
