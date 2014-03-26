@@ -20,12 +20,12 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
     0 &  \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
-  \begin{enumerate}
-    \item Show the range of $(X,Y)$, $R_{XY}$, in the $x-y$ plane.
-    \item Find the constant $c$.
-    \item Find the marginal PDFs $f_X(x)$ and $f_Y(y)$.
-    \item Find $P(Y&lt;2X^2)$.
-  \end{enumerate}
+<ol>
+    <li> Show the range of $(X,Y)$, $R_{XY}$, in the $x-y$ plane.</li>
+    <li> Find the constant $c$.</li>
+    <li> Find the marginal PDFs $f_X(x)$ and $f_Y(y)$.</li>
+    <li> Find $P(Y&lt;2X^2)$.</li>
+</ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 
@@ -104,8 +104,8 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
   \end{equation}
 <ol>
     <li> Are $X$ and $Y$ independent?</li>
-    <li>\item Find $E[Y|X&gt;2]$.</li>
-    <li>\item Find $P(X&gt;Y)$.</li>
+    <li> Find $E[Y|X&gt;2]$.</li>
+    <li> Find $P(X&gt;Y)$.</li>
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
@@ -203,11 +203,11 @@ Let $X$ be a continuous random variable with PDF
   \end{equation}
 	</li>
 
-    <li> To find $P(|Y|<X^3)$, we can use the law of total probability (Equation \ref{eq:LOTP-cont}):
+    <li> To find $P(|Y|&lt;X^3)$, we can use the law of total probability (Equation \ref{eq:LOTP-cont}):
 
     \begin{align}%\label{}
-    \nonumber P(|Y|<X^3)&=\int_0^1 p(|Y|<X^3|X=x) f_X(x) \hs dx   \\
-   \nonumber &= \int_0^1 p(|Y|<x^3|X=x) 2x \hs dx \\
+    \nonumber P(|Y|&lt;X^3)&=\int_0^1 p(|Y|&lt;X^3|X=x) f_X(x) \hs dx   \\
+   \nonumber &= \int_0^1 p(|Y|&lt;x^3|X=x) 2x \hs dx \\
    \nonumber &= \int_0^1 \left(\frac{2x^3}{2x}\right) 2x dx \hspace{20pt} \textrm{since }Y|X=x \hspace{5pt} \sim \hspace{5pt} Uniform(-x,x)\\
    \nonumber &=\frac{1}{2}.
    \end{align}
@@ -218,7 +218,7 @@ Let $X$ be a continuous random variable with PDF
 </li></ul></div><br />
 
 
-<span class="problem">Problem </span><br />
+<hr /><span class="problem">Problem </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \begin{equation}
   \nonumber f_{X,Y}(x,y) = \left\{
