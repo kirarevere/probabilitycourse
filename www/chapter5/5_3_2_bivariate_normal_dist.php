@@ -179,8 +179,8 @@ generating functions.
 </p>
 <!-- /Section Content -->
 
-<div class="cbox">
-<span class="definition" style="width:1000px;">Definition </span><br />
+<div class="cbox" style="width:800px;">
+<span class="definition" >Definition </span><br />
 Two random variables $X$ and $Y$ are said to have a <b>bivariate normal distribution</b> with parameters $\mu_X$, $\sigma^2_X$, $\mu_Y$, $\sigma^2_Y$, and $\rho$, if their joint PDF is given by
 \begin{align} \label{eq:bivariate-normal}
   \nonumber f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}}  \cdot\\
