@@ -28,7 +28,6 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
-
 <ol>
 <li>Figure 5.8(a) shows $R_{XY}$ in the $x-y$ plane.
 <img src="images/chapter5/solved5_8.png" style="width:400px;height:auto;margin:10px auto;" />
@@ -149,11 +148,11 @@ Let $X$ be a continuous random variable with PDF
   \end{array} \right.
   \end{equation}
   We know that given $X=x$, the random variable $Y$ is uniformly distributed on $[-x,x]$.
-  \begin{enumerate}
-    \item Find the joint PDF $f_{XY}(x,y)$.
-    \item Find $f_Y(y)$.
-    \item Find $P(|Y|<X^3)$.
-  \end{enumerate}
+<ol>
+   <li> Find the joint PDF $f_{XY}(x,y)$.</li>
+     <li>Find $f_Y(y)$.</li>
+ 		<li> Find $P(|Y|&lt;X^3)$.</li>
+</ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 <ol>
