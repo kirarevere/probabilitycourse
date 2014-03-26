@@ -30,7 +30,7 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
 <ul><li>
 <ol>
 <li>Figure 5.8(a) shows $R_{XY}$ in the $x-y$ plane.
-<img src="images/chapter5/solved5_8.png" style="width:400px;height:auto;margin:10px auto;" />
+<img src="images/chapter5/solved5_8.png" style="display:block;width:400px;height:auto;margin:10px auto;" />
 <p class="centered">The figure shows (a) $R_{XY}$ as well as (b) the integration region for finding $P(Y&lt;2X^2)$ for Solved Problem 1.</p>
 </li>
 <li>
@@ -77,7 +77,7 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
   \end{equation}
 </li>
 <li>
-     To find $P(Y<2X^2)$, we need to integrate $f_{XY}(x,y)$ over the region shown in Figure \ref{fig:Joint-PDF-3}(b). We have
+     To find $P(Y<2X^2)$, we need to integrate $f_{XY}(x,y)$ over the region shown in Figure 5.8(b). We have
     \begin{align}%\label{}
      \nonumber  P(Y<2X^2)&=\int_{-\infty}^{\infty} \int_{-\infty}^{2x^2} f_{XY}(x,y)dydx\\
      \nonumber &=\int_{0}^{1} \int_{0}^{\min(2x^2,1-x)}  3x+1  \hspace{5pt} dydx\\
@@ -137,7 +137,7 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
 </li></ul></div><br />
 
 
-<span class="problem">Problem </span><br />
+<hr /><span class="problem">Problem </span><br />
 Let $X$ be a continuous random variable with PDF
   \begin{equation}
   \nonumber f_X(x) = \left\{
@@ -188,7 +188,7 @@ Let $X$ be a continuous random variable with PDF
     First, note that $R_Y=[-1,1]$. To find $f_Y(y)$, we can write
     \begin{align}
     \nonumber f_Y(y)&=\int_{-\infty}^{\infty}f_{XY}(x,y)dx\\
-    \nonumber &=\int_{|y|}^{1} 1 \hs dx\\
+    \nonumber &=\int_{|y|}^{1} 1 dx\\
     \nonumber &=1-|y|.
     \end{align}
     Thus,
@@ -202,15 +202,14 @@ Let $X$ be a continuous random variable with PDF
   \end{equation}
 	</li>
 
-    <li> To find $P(|Y|&lt;X^3)$, we can use the law of total probability (Equation \ref{eq:LOTP-cont}):
+    <li> To find $P(|Y|&lt;X^3)$, we can use the law of total probability (Equation 5.16):
 
     \begin{align}%\label{}
-    \nonumber P(|Y|&lt;X^3)&=\int_0^1 p(|Y|&lt;X^3|X=x) f_X(x) \hs dx   \\
-   \nonumber &= \int_0^1 p(|Y|&lt;x^3|X=x) 2x \hs dx \\
+    \nonumber P(|Y|&lt;X^3)&=\int_0^1 p(|Y|&lt;X^3|X=x) f_X(x) dx   \\
+   \nonumber &= \int_0^1 p(|Y|&lt;x^3|X=x) 2x dx \\
    \nonumber &= \int_0^1 \left(\frac{2x^3}{2x}\right) 2x dx \hspace{20pt} \textrm{since }Y|X=x \hspace{5pt} \sim \hspace{5pt} Uniform(-x,x)\\
    \nonumber &=\frac{1}{2}.
    \end{align}
-  \end{enumerate}
 	</li>
 	</ol>
 </li></ul>
@@ -227,14 +226,14 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
     0 &  \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
-  \begin{enumerate}
-    \item Show $R_{XY}$ in the $x-y$ plane.
-    \item Find $f_X(x)$ and $f_Y(y)$.
-    \item Are $X$ and $Y$ independent?
-    \item Find the conditional PDF of $X$ given $Y=y$, $f_{X|Y}(x|y)$.
-    \item Find $E[X|Y=y]$, for $0 \leq y \leq 1$.
-    \item Find $Var(X|Y=y)$, for $0 \leq y \leq 1$.
-  \end{enumerate}
+<ol>
+   <li> Show $R_{XY}$ in the $x-y$ plane.</li>
+    <li> Find $f_X(x)$ and $f_Y(y)$.</li>
+    <li> Are $X$ and $Y$ independent?</li>
+    <li> Find the conditional PDF of $X$ given $Y=y$, $f_{X|Y}(x|y)$.</li>
+    <li> Find $E[X|Y=y]$, for $0 \leq y \leq 1$.</li>
+    <li> Find $Var(X|Y=y)$, for $0 \leq y \leq 1$.</li>
+</ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 <ol>
@@ -332,7 +331,7 @@ Suppose that we choose a point $(X,Y)$ uniformly at random in $D$. That is, the 
     0 &  \quad \text{otherwise}
   \end{array} \right.
 \end{equation}
-  Let $(R,\Theta)$ be the corresponding polar coordinates as shown in Figure \ref{fig:Polar}. The inverse transformation is given by
+  Let $(R,\Theta)$ be the corresponding polar coordinates as shown in Figure 5.10. The inverse transformation is given by
   \begin{equation}
   \nonumber  \left\{
   \begin{array}{l}
@@ -345,7 +344,7 @@ Suppose that we choose a point $(X,Y)$ uniformly at random in $D$. That is, the 
 	<p class="centered">Figure 5.10: Polar Coordinates</p>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
-Here $(X,Y)$ are jointly continuous and are related to $(R,\Theta)$ by a one-to-one relationship. We use the method of transformations (Theorem \ref{thm:pdf-transform-2}). The function $h(r,\theta)$ is given by
+Here $(X,Y)$ are jointly continuous and are related to $(R,\Theta)$ by a one-to-one relationship. We use the method of transformations (Theorem 5.1). The function $h(r,\theta)$ is given by
   \begin{equation}
   \nonumber  \left\{
   \begin{array}{l}
