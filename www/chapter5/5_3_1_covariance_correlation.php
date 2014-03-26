@@ -9,7 +9,7 @@
 ?>
 
 <!-- Section Content -->
-Consider two random variables $X$ and $Y$. Here, we define the \textbf{covariance} between $X$ and $Y$, written $\cov(X,Y)$. The covariance gives some information about how $X$ and $Y$ are statistically related. Let us provide the definition, and then discuss the properties and applications of covariance.
+Consider two random variables $X$ and $Y$. Here, we define the <b>covariance</b> between $X$ and $Y$, written $Cov(X,Y)$. The covariance gives some information about how $X$ and $Y$ are statistically related. Let us provide the definition, and then discuss the properties and applications of covariance.
 
 <div class="cbox">
 The <b>covariance</b> between $X$ and $Y$ is defined as
@@ -26,7 +26,7 @@ Note that
 Intuitively, the covariance between $X$ and $Y$ indicates how the values of $X$ and $Y$ move relative to each other. If the covariance is positive, we conclude that $X-EX$ and $Y-EY$ tend to have the same signs (if one is positive, the other is more likely to be positive and vice versa). In other words, if $X$ is less than $EX$, it is more likely that $Y$ is also less than $EY$ (and vice versa). On the other hand, if covariance is negative, $X-EX$ and $Y-EY$ tend to have the opposite signs; so, if $X$ is less than $EX$, it is more likely that $Y$ is greater than $EY$ and vice versa.
 
 <!-- Example -->
-<span class="example">Example </span><br />
+<br /><hr /><span class="example">Example </span><br />
 Suppose $X \sim Uniform(1,2)$, and given $X=x$, $Y$ is exponential with parameter $\lambda=x$. Find Cov$(X,Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
@@ -56,13 +56,13 @@ Now we discuss the properties of covariance.
 <span class="lemma">Lemma </span><br />
 The covariance has the following properties.
 <ol>
-  <li> \label{eq:cov-var}$\textrm{Cov}(X,X)=\textrm{Var}(X)$</li>
+  <li> $\textrm{Cov}(X,X)=\textrm{Var}(X)$</li>
   <li> If $X$ and $Y$ are independent then $\textrm{Cov}(X,Y)=0$.</li>
   <li> $\textrm{Cov}(X,Y)=\textrm{Cov}(Y,X)$</li>
   <li> $\textrm{Cov}(aX,Y)=a\textrm{Cov}(X,Y)$</li>
-  <li> \label{eq:cov-add-c} $\textrm{Cov}(X+c,Y)=\textrm{Cov}(X,Y)$</li>
-  <li> \label{eq:cov-bilinear}$\textrm{Cov}(X+Y,Z)=\textrm{Cov}(X,Z)+\textrm{Cov}(Y,Z)$</li>
-  <li> \label{eq:cov-bilinear-gen} More generally,</li>
+  <li>  $\textrm{Cov}(X+c,Y)=\textrm{Cov}(X,Y)$</li>
+  <li> $\textrm{Cov}(X+Y,Z)=\textrm{Cov}(X,Z)+\textrm{Cov}(Y,Z)$</li>
+  <li> More generally,</li>
 </ol>
   \begin{align}%\label{}
   \nonumber  \textrm{Cov}\left(\sum_{i=1}^{m}a_iX_i, \sum_{j=1}^{n}b_jY_j\right)=\sum_{i=1}^{m} \sum_{j=1}^{n} a_ib_j \textrm{Cov}(X_i,Y_j).
@@ -75,7 +75,7 @@ All of the above results can be proven directly from the definition of covarianc
 \end{align}
 Note that the converse is not necessarily true. That is, if $\textrm{Cov}(X,Y)=0$, $X$ and $Y$ may or may not be independent.
 
-Let us prove item \ref{eq:cov-bilinear} in Lemma \ref{lem:cov-prop}, $\cov(X+Y,Z)=\cov(X,Z)+\cov(Y,Z)$. We have
+Let us prove item 6 in Lemma 5.3, $Cov(X+Y,Z)=Cov(X,Z)+Cov(Y,Z)$. We have
 \begin{align}%\label{}
 \nonumber  \textrm{Cov}(X+Y,Z)&=E[(X+Y)Z]-E(X+Y)EZ\\
 \nonumber  &=E[XZ+YZ]-(EX+EY)EZ\\
@@ -95,9 +95,9 @@ Find Cov$(Z,W)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 \begin{align}%\label{}
-\nonumber \cov(Z,W)&=\cov(1+X+XY^2,1+X)  \\
-\nonumber  &=\cov(X+XY^2,X) &(\textrm{by part 5 of Lemma 5.3}) \\
-\nonumber  &=\cov(X,X)+\cov(XY^2,X) &(\textrm{by part 6 of Lemma 5.3}) \\
+\nonumber Cov(Z,W)&=Cov(1+X+XY^2,1+X)  \\
+\nonumber  &=Cov(X+XY^2,X) &(\textrm{by part 5 of Lemma 5.3}) \\
+\nonumber  &=Cov(X,X)+Cov(XY^2,X) &(\textrm{by part 6 of Lemma 5.3}) \\
 \nonumber  &=\var(X)+E[X^2Y^2]-E[XY^2]EX  &(\textrm{by part 1 of Lemma 5.3 and definition of covariance})     \\
 \nonumber  &=1+E[X^2]E[Y^2]-E[X]^2E[Y^2] &(\textrm{since $X$ and $Y$ are independent})\\
 \nonumber  &=1+1-0=2.
@@ -140,29 +140,29 @@ Then,
 
  A nice thing about the correlation coefficient is that it is always between $-1$ and $1$. This is an immediate result of Cauchy-Schwarz inequality that is discussed in section \ref{sec:cauchy-schwarz}. One way to prove that $-1 \leq \rho \leq 1$ is to use the following inequality:
  \begin{align}%\label{}
-\no  \alpha \beta \leq \frac{\alpha^2+\beta^2}{2}, \hsb \textrm{for }\alpha,\beta \in \mathbb{R}.
+ \alpha \beta \leq \frac{\alpha^2+\beta^2}{2},  \textrm{for }\alpha,\beta \in \mathbb{R}.
 \end{align}
 This is because $(\alpha-\beta)^2 \geq 0$. The equality holds only if $\alpha=\beta$. From this, we can conclude that for any two random variables $U$ and $V$,
  \begin{align}%\label{}
-\no  E[UV] \leq \frac{EU^2+EV^2}{2},
+ E[UV] \leq \frac{EU^2+EV^2}{2},
 \end{align}
 with equality only if $U=V$ with probability one. Now, let $ U$ and $V$ be the standardized versions of $X$ and $Y$ as defined in Equation 5.22. Then, by definition $\rho_{XY}=\textrm{Cov}(U,V)=EUV$. But since $EU^2=EV^2=1$, we conclude
 \begin{align}%\label{}
-\no  \rho_{XY}=E[UV] & \leq \frac{EU^2+EV^2}{2}=1,
+ \rho_{XY}=E[UV] & \leq \frac{EU^2+EV^2}{2}=1,
 \end{align}
 
 with equality only if $U=V$ with probability one. Now, let $ U$ and $V$ be the standardized versions of $X$ and $Y$ as defined in Equation 5.22. Then, by definition $\rho_{XY}=\textrm{Cov}(U,V)=EUV$. But since $EU^2=EV^2=1$, we conclude
 \begin{align}%\label{}
-\no  \rho_{XY}=E[UV] & \leq \frac{EU^2+EV^2}{2}=1,
+ \rho_{XY}=E[UV] & \leq \frac{EU^2+EV^2}{2}=1,
 \end{align}
 with equality only if $U=V$. That is,
 \begin{align}%\label{}
-\no  \frac{Y-EY}{\sigma_Y}=\frac{X-EX}{\sigma_X},
+ \frac{Y-EY}{\sigma_Y}=\frac{X-EX}{\sigma_X},
 \end{align}
 which implies
 \begin{align}%\label{}
-\no  Y&=\frac{\sigma_Y}{\sigma_X} X+ \left(EY-\frac{\sigma_Y}{\sigma_X} EX\right)\\
-\no &=aX+b, \hsb \textrm{where $a$ and $b$ are constants.}
+ Y&=\frac{\sigma_Y}{\sigma_X} X+ \left(EY-\frac{\sigma_Y}{\sigma_X} EX\right)\\
+ &=aX+b,  \textrm{where $a$ and $b$ are constants.}
 \end{align}
 Replacing $X$ by $-X$, we conclude that
 \begin{align}%\label{}
@@ -182,9 +182,9 @@ Properties of the correlation coefficient:
 
 <span class="definition">Definition </span><br />
 Consider two random variables $X$ and $Y$:
-  - If $\rho(X,Y)=0$, we say that $X$ and $Y$ are  \textbf{uncorrelated}.
-  - If $\rho(X,Y)>0$, we say that $X$ and $Y$ are  \textbf{positively} correlated.
-  - If $\rho(X,Y)<0$, we say that $X$ and $Y$ are  \textbf{negatively} correlated.
+  - If $\rho(X,Y)=0$, we say that $X$ and $Y$ are  <b>uncorrelated</b>.
+  - If $\rho(X,Y)>0$, we say that $X$ and $Y$ are  <b>positively</b> correlated.
+  - If $\rho(X,Y)<0$, we say that $X$ and $Y$ are  <b>negatively</b> correlated.
 <hr /><br />
 Note that as we discussed previously, two independent random variables are always uncorrelated, but the converse is not necessarily true. That is, if $X$ and $Y$ are uncorrelated, then $X$ and $Y$ may or may not be independent. Also, note that if $X$ and $Y$ are uncorrelated from Equation 5.21 we conclude that $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$.
 
@@ -197,6 +197,7 @@ If $X$ and $Y$ are uncorrelated, then
 More generally, if $X_1,X_2,...,X_n$ are pairwise uncorrelated, i.e., $\rho(X_i,X_j)=0$ when $i \neq j$, then
 \begin{align}%\label{}
 \nonumber  \textrm{Var}(X_1+X_2+...+X_n)=\textrm{Var}(X_1)+\textrm{Var}(X_2)+...+\textrm{Var}(X_n).
+\end{align}
 </div><br />
 
 Note that if $X$ and $Y$ are independent, then they are uncorrelated, and so $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$. This is a fact that we stated previously in Chapter \ref{chapt:disc-rv}, and now we could easily prove using covariance.
@@ -210,11 +211,11 @@ Let $X$ and $Y$ be as in Example 5.24 in section 5.2.3, i.e., suppose that we ch
 Are $X$ and $Y$ uncorrelated?
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
-We need to check whether $\cov(X,Y)=0$. First note that, in Example 5.24 of Section 5.2.3, we found out that $X$ and $Y$ are not independent and in fact, we found that
+We need to check whether $Cov(X,Y)=0$. First note that, in Example 5.24 of Section 5.2.3, we found out that $X$ and $Y$ are not independent and in fact, we found that
 \begin{align}%\label{}
   \nonumber  X|Y \hspace{5pt}  \sim \hspace{5pt}  Uniform(-\sqrt{1-Y^2},\sqrt{1-Y^2}).
 \end{align}
-Now let's find $\cov(X,Y)=EXY-EXEY$. We have
+Now let's find $Cov(X,Y)=EXY-EXEY$. We have
 \begin{align}%\label{}
 \nonumber  EX &=E[E[X|Y]] &\big(\textrm{law of iterated expectations (Equation 5.17)}\big) \\
 \nonumber  &=E[0]=0 &\big(\textrm{since }X|Y \hspace{5pt}  \sim \hspace{5pt}  Uniform(-\sqrt{1-Y^2},\sqrt{1-Y^2})\big).
@@ -227,7 +228,7 @@ Also, we have
 \end{align}
 Thus,
 \begin{align}%\label{}
-\nonumber  \cov(X,Y)=E[XY]-EXEY=0.
+\nonumber  Cov(X,Y)=E[XY]-EXEY=0.
 \end{align}
 Thus, $X$ and $Y$ are uncorrelated.
 </li></ul>
