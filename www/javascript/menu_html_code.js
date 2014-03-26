@@ -151,7 +151,7 @@ htmlText += '		</ul>';
 htmlText += '		</li>';
 htmlText += '		<li><a>5.2 Two Continuous Random Variables</a>';
 htmlText += '		<ul>';
-htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_2_0_continuous_var.php">5.2.0 Two Continuous Random Variables</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_2_0_continuous_vars.php">5.2.0 Two Continuous Random Variables</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_2_1_joint_pdf.php">5.2.1 Joint Probability Density Function</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_2_2_joint_cdf.php">5.2.2 Joint Cumulative Distribution Function</a></li>';
 htmlText +=	'			<li><a href="http://probabilitycourse.com/chapter5/5_2_3_conditioning_independence.php">5.2.3 Conditioning and Independence</a></li>';
