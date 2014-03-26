@@ -10,9 +10,10 @@
 
 <!-- Section content -->
 <span class="problem">Problem </span><br />
-Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4
+Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br />
 <style>
 	#table5_4 {
+		font-size:12pt;
 		border-collapse: collapse:
 		width: 400px;
 		margin: 20px auto;
@@ -71,7 +72,7 @@ A box contains two coins: a regular coin and a biased coin with $P(H)=\frac{2}{3
 <hr /><span class="problem">Problem </span><br />
 Consider two random variables $X$ and $Y$ with joint PMF given by
   \begin{align}%\label{}
-  \no  P_{XY}(k,l)=\frac{1}{2^{k+l}}, \hsb \textrm{for }k,l=1,2,3,...
+    P_{XY}(k,l)=\frac{1}{2^{k+l}}, \hsb \textrm{for }k,l=1,2,3,...
   \end{align}
 <ol>
   <li> Show that $X$ and $Y$ are independent and find the marginal PMFs of $X$ and $Y$.</li>
@@ -86,7 +87,7 @@ Let $X$ and $Y$ be as defined in Problem \ref{prob:JointPMF-2}. Also, suppose th
 <ol>
   <li> Find the conditional PMF of $X$ given $Y=1$. That is, find $P_{X|Y}(x|1)$.</li>
   <li> Find $E[X|Y=1]$.</li>
-  <li> Find $\var(X|Y=1)$.</li>
+  <li> Find $Var(X|Y=1)$.</li>
 </ol>
 <br />
 
@@ -97,7 +98,7 @@ The number of customers visiting a store in one hour has a Poisson distribution 
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X \sim Geometric(p)$. Find $\var(X)$ as follows: Find $EX$ and $EX^2$ by conditioning on the result of the first ``coin toss'', and use $\var(X)$$=EX^2-(EX)^2$.
+Let $X \sim Geometric(p)$. Find $Var(X)$ as follows: Find $EX$ and $EX^2$ by conditioning on the result of the first ``coin toss'', and use $Var(X)$$=EX^2-(EX)^2$.
 <br />
 
 
@@ -130,7 +131,7 @@ Consider the set of points in the set $C$:
   Suppose that we pick a point $(X,Y)$ from this set completely at random. Thus, each point has a probability of $\frac{1}{11}$ of being chosen.
 <ol>
  <li> Find $E[X|Y=1]$.</li>
-  <li> Find $\var(X|Y=1)$.</li>
+  <li> Find $Var(X|Y=1)$.</li>
   <li> Find $E[X| |Y| \leq 1]$.</li>
   <li> Find $E[X^2 |Y| \leq 1]$.</li>
 </ol>
@@ -142,15 +143,10 @@ The number of cars being repaired at a small repair shop has the following PMF:
   \begin{equation}
    \nonumber P_X(x) = \left\{
   \begin{array}{l l}
-     \vspace{8 pt}
      \frac{1}{8} & \quad \text{for  } x=0\\
-     \vspace{8 pt}
      \frac{1}{8} & \quad \text{for  } x=1\\
-     \vspace{8 pt}
      \frac{1}{4} & \quad \text{for  } x=2\\
-     \vspace{8 pt}
      \frac{1}{2} & \quad \text{for  } x=3\\
-     \vspace{8pt}
      0   & \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
@@ -169,9 +165,7 @@ Let $X$ and $Y$ be two independent random variables with PMFs
   \begin{equation}
    \nonumber P_X(k)=P_Y(k) = \left\{
   \begin{array}{l l}
-     \vspace{8 pt}
      \frac{1}{5} & \quad \text{for  } x=1,2,3,4,5\\
-     \vspace{8 pt}
       0   & \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
@@ -180,9 +174,10 @@ Let $X$ and $Y$ be two independent random variables with PMFs
 
 
 <hr /><span class="problem">Problem </span><br />
-Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.5
+Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.5<br />
 <style>
 	#table5_5 {
+		font-size: 12pt;
 		width: 400px;
 		border-collapse: collapse;
 		margin: 20px auto;
@@ -227,11 +222,11 @@ Define the random variable $Z$ as $Z=E[X|Y]$.
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$, $Y$, and $Z=E[X|Y]$ be as in Problem \ref{prob-EX|Y}. Define the random variable $V$ as $V=\var(X|Y)$.
+Let $X$, $Y$, and $Z=E[X|Y]$ be as in Problem 1. Define the random variable $V$ as $V=Var(X|Y)$.
 <ol type="a">
   <li> Find the PMF of $V$.</li>
   <li> Find $EV$.</li>
-  <li> Check that $\var(X)=EV+\var(Z)$.</li>
+  <li> Check that $Var(X)=EV+Var(Z)$.</li>
 </ol>
 <br />
 
@@ -255,7 +250,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \begin{equation}
   \nonumber f_{XY}(x,y) = \left\{
   \begin{array}{l l}
-     \frac{1}{2} e^{-x}+\frac{cy}{(1+x)^2} &  \quad 0 \leq x, \hs 0 \leq y \leq 1  \\
+     \frac{1}{2} e^{-x}+\frac{cy}{(1+x)^2} &  \quad 0 \leq x,  0 \leq y \leq 1  \\
       &  \quad   \\
     0 &  \quad \text{otherwise}
   \end{array} \right.
@@ -273,7 +268,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \begin{equation}
   \nonumber f_{XY}(x,y) = \left\{
   \begin{array}{l l}
-     e^{-xy} &  \quad 1 \leq x \leq e, \hs y>0 \\
+     e^{-xy} &  \quad 1 \leq x \leq e,  y>0 \\
       &  \quad   \\
     0 &  \quad \text{otherwise}
   \end{array} \right.
@@ -291,7 +286,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \begin{equation}
   \nonumber f_{XY}(x,y) = \left\{
   \begin{array}{l l}
-     \frac{1}{4}x^2+\frac{1}{6}y &  \quad -1 \leq x \leq 1, \hs 0 \leq y \leq 2 \\
+     \frac{1}{4}x^2+\frac{1}{6}y &  \quad -1 \leq x \leq 1,  0 \leq y \leq 2 \\
       &  \quad   \\
     0 &  \quad \text{otherwise}
   \end{array} \right.
@@ -372,9 +367,9 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 
 
 <hr /><span class="problem">Problem </span><br />
-  \item Consider the set
+  Consider the set
   \begin{align}%\label{}
-  \nonumber  E=\{(x,y)\big{|} |x|+|y| \leq 1\}.
+  \nonumber  E=\{(x,y)| |x|+|y| \leq 1\}.
   \end{align}
   Suppose that we choose a point $(X,Y)$ uniformly at random in $E$. That is, the joint PDF of $X$ and $Y$ is given by
   \begin{equation}
@@ -412,7 +407,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,2)$ random variables. Find $P(XY<1
   \end{align}
 <ol type="a">
   <li> Find $EY$.</li>
-  <li> Find $\var(Y)$.</li>
+  <li> Find $Var(Y)$.</li>
 </ol>
 <br />
 
@@ -442,7 +437,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables, and $Z=\frac
    <li> Find the conditional PDF of $U$ given $X=x$, $f_{U|X}(u|x)$.</li>
     <li> Find the PDF of $U$, $f_{U}(u)$.</li>
     <li> Find the conditional PDF of $X$ given $U=u$, $f_{X|U}(x|u)$.</li>
-    <li> Find $E[X|U=u]$, and $\var(X|U=u)$.</li>
+    <li> Find $E[X|U=u]$, and $Var(X|U=u)$.</li>
 </ol>
 <br />
 
@@ -470,10 +465,11 @@ In Problem 29, suppose that $X$ and $Y$ are independent $Uniform(0,1)$ random va
 
 
 <hr /><span class="problem">Problem </span><br />
-Consider two random variables $X$ and $Y$ with joint PMF given in Table \ref{table:joint-PMF-5}.
+Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.6.<br />
 
 <style>
 	#table5_6 {
+		font-size: 12pt;
 		width: 400px;
 		border-collapse: collapse;
 		margin: 20px auto;
@@ -569,7 +565,7 @@ Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=1$,
 Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=2$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=9$, and $\rho=-\frac{1}{2}$.
 <ol type="a">
   <li> Find $E[Y|X=3]$.</li>
-  <li> Find $\var(Y|X=2)$.</li>
+  <li> Find $Var(Y|X=2)$.</li>
   <li> Find $P(X+2Y \leq 5 | X+Y=3)$.</li>
 </ol><br />
 <!-- /Section Content -->
