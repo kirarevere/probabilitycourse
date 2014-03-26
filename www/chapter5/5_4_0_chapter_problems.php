@@ -33,8 +33,8 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br /
 	</tr>
 	<tr style="height: 80px;">
 		<td>$X = 1$</td>
-		<td>$\frac{1}{3}</td>
-		<td>$\frac{1}{12}</td>
+		<td>$\frac{1}{3}$</td>
+		<td>$\frac{1}{12}$</td>
 	</tr>
 	<tr style="height: 80px;">
 		<td>$X = 2$</td>
