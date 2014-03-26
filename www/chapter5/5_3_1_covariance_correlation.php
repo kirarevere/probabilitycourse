@@ -82,7 +82,7 @@ Let us prove item 6 in Lemma 5.3, $Cov(X+Y,Z)=Cov(X,Z)+Cov(Y,Z)$. We have
 \nonumber  &=EXZ-EXEZ+EYZ-EYEZ\\
 \nonumber  &=\textrm{Cov}(X,Z)+\textrm{Cov}(Y,Z).
 \end{align}
-You can prove the rest of the items in Lemma \ref{lem:cov-prop} similarly.
+You can prove the rest of the items in Lemma 5.3 similarly.
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
@@ -98,7 +98,7 @@ Find Cov$(Z,W)$.
 \nonumber Cov(Z,W)&=Cov(1+X+XY^2,1+X)  \\
 \nonumber  &=Cov(X+XY^2,X) &(\textrm{by part 5 of Lemma 5.3}) \\
 \nonumber  &=Cov(X,X)+Cov(XY^2,X) &(\textrm{by part 6 of Lemma 5.3}) \\
-\nonumber  &=\var(X)+E[X^2Y^2]-E[XY^2]EX  &(\textrm{by part 1 of Lemma 5.3 and definition of covariance})     \\
+\nonumber  &=Var(X)+E[X^2Y^2]-E[XY^2]EX  &(\textrm{by part 1 of Lemma 5.3 and definition of covariance})     \\
 \nonumber  &=1+E[X^2]E[Y^2]-E[X]^2E[Y^2] &(\textrm{since $X$ and $Y$ are independent})\\
 \nonumber  &=1+1-0=2.
 \end{align}
@@ -138,7 +138,7 @@ Then,
 \end{align}
 </div><br />
 
- A nice thing about the correlation coefficient is that it is always between $-1$ and $1$. This is an immediate result of Cauchy-Schwarz inequality that is discussed in section \ref{sec:cauchy-schwarz}. One way to prove that $-1 \leq \rho \leq 1$ is to use the following inequality:
+ A nice thing about the correlation coefficient is that it is always between $-1$ and $1$. This is an immediate result of Cauchy-Schwarz inequality that is discussed in section 6.2.4. One way to prove that $-1 \leq \rho \leq 1$ is to use the following inequality:
  \begin{align}%\label{}
  \alpha \beta \leq \frac{\alpha^2+\beta^2}{2},  \textrm{for }\alpha,\beta \in \mathbb{R}.
 \end{align}
@@ -181,10 +181,10 @@ Properties of the correlation coefficient:
 </div><br />
 
 <span class="definition">Definition </span><br />
-Consider two random variables $X$ and $Y$:
-  - If $\rho(X,Y)=0$, we say that $X$ and $Y$ are  <b>uncorrelated</b>.
-  - If $\rho(X,Y)>0$, we say that $X$ and $Y$ are  <b>positively</b> correlated.
-  - If $\rho(X,Y)<0$, we say that $X$ and $Y$ are  <b>negatively</b> correlated.
+Consider two random variables $X$ and $Y$:<br />
+  - If $\rho(X,Y)=0$, we say that $X$ and $Y$ are  <b>uncorrelated</b>.<br />
+  - If $\rho(X,Y)>0$, we say that $X$ and $Y$ are  <b>positively</b> correlated.<br />
+  - If $\rho(X,Y)<0$, we say that $X$ and $Y$ are  <b>negatively</b> correlated.<br >
 <hr /><br />
 Note that as we discussed previously, two independent random variables are always uncorrelated, but the converse is not necessarily true. That is, if $X$ and $Y$ are uncorrelated, then $X$ and $Y$ may or may not be independent. Also, note that if $X$ and $Y$ are uncorrelated from Equation 5.21 we conclude that $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$.
 
@@ -200,7 +200,7 @@ More generally, if $X_1,X_2,...,X_n$ are pairwise uncorrelated, i.e., $\rho(X_i,
 \end{align}
 </div><br />
 
-Note that if $X$ and $Y$ are independent, then they are uncorrelated, and so $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$. This is a fact that we stated previously in Chapter \ref{chapt:disc-rv}, and now we could easily prove using covariance.
+Note that if $X$ and $Y$ are independent, then they are uncorrelated, and so $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$. This is a fact that we stated previously in Chapter 3, and now we could easily prove using covariance.
 
 <!-- Example -->
 <hr /><span class="example">Example </span><br />
