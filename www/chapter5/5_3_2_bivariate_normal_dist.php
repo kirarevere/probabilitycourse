@@ -5,7 +5,7 @@
 	$section_next		=	"chapter5/5_3_3_solved_probs.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(72);
-	include						"section_headers.php";
+	include						"section_header.php";
 ?>
 
 <!-- Section Content -->
