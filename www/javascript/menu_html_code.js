@@ -159,6 +159,18 @@ htmlText +=	'			<li><a href="http://probabilitycourse.com/chapter5/5_2_4_functio
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_2_5_solved_prob.php">5.2.5 Solved Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
+htmlText += '		<li><a><5.3 More Topics</a>';
+htmlText += '		<ul>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_3_1_covariance_correlation.php">5.3.1 Covariance and Correlation</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_3_2_bivariate_normal_dist.php">5.3.2 Bivariate Normal Distribution</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter5/5_3_3_solved_probs.php">5.3.3 Solved Problems</a></li>';
+htmlText +=	'		</ul>';
+htmlText += '		</li>';
+htmlText +=	'		<li><a>5.4 Problems</a>';
+htmlText +=	'		<ul>';
+htmlText +=	'			<li><a href="http://probabilitycourse.com/chapter5/5_4_0_chapter_problems.php">5.4.0 End of Chapter Problems</a></li>';
+htmlText += '		</ul>';
+htmlText += '		</li>';
 htmlText += '	</ul>';
 htmlText += '	</li>';
 htmlText += '	<li><a href="http://probabilitycourse.com/bibliography.html">Bibliography</a>';

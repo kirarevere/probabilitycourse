@@ -56,7 +56,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br /
 <br />
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be as defined in Problem \ref{prob:JointPMF-2}. I define a new random variable $Z=X-2Y$.
+Let $X$ and $Y$ be as defined in Problem 1. I define a new random variable $Z=X-2Y$.
 <ol>
   <li> Find PMF of $Z$.</li>
   <li> Find $P(X=2 | Z=0)$.</li>
@@ -72,7 +72,7 @@ A box contains two coins: a regular coin and a biased coin with $P(H)=\frac{2}{3
 <hr /><span class="problem">Problem </span><br />
 Consider two random variables $X$ and $Y$ with joint PMF given by
   \begin{align}%\label{}
-    P_{XY}(k,l)=\frac{1}{2^{k+l}}, \hsb \textrm{for }k,l=1,2,3,...
+    P_{XY}(k,l)=\frac{1}{2^{k+l}}, \textrm{for }k,l=1,2,3,...
   \end{align}
 <ol>
   <li> Show that $X$ and $Y$ are independent and find the marginal PMFs of $X$ and $Y$.</li>
@@ -83,7 +83,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given by
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be as defined in Problem \ref{prob:JointPMF-2}. Also, suppose that we are given that $Y=1$.
+Let $X$ and $Y$ be as defined in Problem 1. Also, suppose that we are given that $Y=1$.
 <ol>
   <li> Find the conditional PMF of $X$ given $Y=1$. That is, find $P_{X|Y}(x|1)$.</li>
   <li> Find $E[X|Y=1]$.</li>
