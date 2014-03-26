@@ -20,7 +20,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
     0 &  \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
-  Find $\cov(X,Y)$ and $\rho(X,Y)$.
+  Find $Cov(X,Y)$ and $\rho(X,Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   For $0 \leq x \leq 1$, we have
@@ -58,7 +58,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \end{align}
   Thus,
   \begin{align}%\label{}
-  \nonumber  \var (X)=\var(Y)=\frac{1}{18}.
+  \nonumber  Var (X)=Var(Y)=\frac{1}{18}.
   \end{align}
   We also have
   \begin{align}%\label{}
@@ -68,37 +68,37 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \end{align}
 
 
-  Now, we can find $\cov(X,Y)$ and $\rho(X,Y)$:
+  Now, we can find $Cov(X,Y)$ and $\rho(X,Y)$:
   \begin{align}%\label{}
-  \nonumber  \cov(X,Y)&=EXY-EXEY\\
+  \nonumber  Cov(X,Y)&=EXY-EXEY\\
   \nonumber  &=\frac{1}{12}-\left(\frac{1}{3}\right)^2\\
   \nonumber  &=-\frac{1}{36}.
   \end{align}
 
   \begin{align}%\label{}
-  \nonumber  \rho(X,Y)&=\frac{\cov(X,Y)}{\sqrt{\var(X) \var(Y)}}\\
+  \nonumber  \rho(X,Y)&=\frac{Cov(X,Y)}{\sqrt{Var(X) Var(Y)}}\\
   \nonumber  &=-\frac{1}{2}.
   \end{align}
 </li></ul>
 </li></ul></div><br />
 
 <hr /><span class="problem">Problem </span><br />
-I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $\cov(X,Y)$ and $\rho(X,Y)$. \textit{Hint:} One way to solve this problem is two look at $\var(X+Y)$.
+I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $Cov(X,Y)$ and $\rho(X,Y)$. \textit{Hint:} One way to solve this problem is two look at $Var(X+Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   Note that you can look at this as a binomial experiment. In particular, we can say that $X$ and $Y$ are $Binomial(n,\frac{1}{6})$. Also, $X+Y$ is $Binomial(n,\frac{2}{6})$. Remember the variance of a $Binomial(n,p)$ random variable is $np(1-p)$. Thus, we can write
   \begin{align}%\label{}
-  \nonumber  n\frac{2}{6}.\frac{4}{6}&=\var(X+Y)\\
-  \nonumber  &=\var(X)+\var(Y)+2\cov(X,Y)\\
-  \nonumber  &=n\frac{1}{6}.\frac{5}{6}+n\frac{1}{6}.\frac{5}{6}+2\cov(X,Y).
+  \nonumber  n\frac{2}{6}.\frac{4}{6}&=Var(X+Y)\\
+  \nonumber  &=Var(X)+Var(Y)+2Cov(X,Y)\\
+  \nonumber  &=n\frac{1}{6}.\frac{5}{6}+n\frac{1}{6}.\frac{5}{6}+2Cov(X,Y).
   \end{align}
   Thus,
   \begin{align}%\label{}
-  \nonumber  \cov(X,Y)=-\frac{n}{36}.
+  \nonumber  Cov(X,Y)=-\frac{n}{36}.
   \end{align}
   And,
   \begin{align}%\label{}
-  \nonumber  \rho(X,Y)=\frac{\cov(X,Y)}{\sqrt{\var(X) \var(Y)}}=-\frac{1}{5}.
+  \nonumber  \rho(X,Y)=\frac{Cov(X,Y)}{\sqrt{Var(X) Var(Y)}}=-\frac{1}{5}.
   \end{align}
 </li></ul>
 </li></ul></div><br />
@@ -107,7 +107,7 @@ I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and l
 <hr /><span class="problem">Problem </span><br />
 In this problem, you provide another proof for the fact that $|\rho(X,Y)| \leq 1$. By definition $\rho_{XY}=\textrm{Cov}(U,V)$, where $ U$ and $V$ are the normalized versions of $X$ and $Y$ as defined in Equation 5.22:
        \begin{align}
-       \no U=\frac{X-EX}{\sigma_X}, \hspace{10pt} V=\frac{Y-EY}{\sigma_Y}.
+        U=\frac{X-EX}{\sigma_X}, \hspace{10pt} V=\frac{Y-EY}{\sigma_Y}.
        \end{align}
        Use the fact that $\textrm{Var}(U+V) \geq 0$ to show that $|\rho(X,Y)| \leq 1$
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
@@ -126,7 +126,7 @@ In this problem, you provide another proof for the fact that $|\rho(X,Y)| \leq 1
 </li></ul></div><br />
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=\max(X,Y)$ and $W=\min(X,Y)$. Find $\cov(Z,W)$.
+Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=\max(X,Y)$ and $W=\min(X,Y)$. Find $Cov(Z,W)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   It is useful to find the distributions of $Z$ and $W$. To find the CDF of $Z$, we can write
@@ -190,27 +190,27 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
     0 &  \text{otherwise}
   \end{array} \right.
   \end{equation}
-  From the above PDF we can verify that $EW=\frac{1}{3}$. Now, to find $\cov(Z,W)$, we can write
+  From the above PDF we can verify that $EW=\frac{1}{3}$. Now, to find $Cov(Z,W)$, we can write
   \begin{align}%\label{}
-  \nonumber \cov(Z,W)&=E[ZW]-EZEW \\
+  \nonumber Cov(Z,W)&=E[ZW]-EZEW \\
   \nonumber &=E[XY]-EZEW\\
   \nonumber &=E[X]E[Y]-E[Z]E[W] &(\textrm{ since }X \textrm{ and }Y \textrm{ are independent})\\
   \nonumber &=\frac{1}{2}.\frac{1}{2}-\frac{2}{3}.\frac{1}{3}\\
   \nonumber &=\frac{1}{36}.
   \end{align}
-  Note that $\cov(Z,W)>0$ as we expect intuitively.
+  Note that $Cov(Z,W)>0$ as we expect intuitively.
 </li></ul>
 </li></ul></div><br />
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be jointly (bivariate) normal, with $\var(X)=\var(Y)$. Show that the two random variables $X+Y$ and $X-Y$ are independent.
+Let $X$ and $Y$ be jointly (bivariate) normal, with $Var(X)=Var(Y)$. Show that the two random variables $X+Y$ and $X-Y$ are independent.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
    Note that since $X$ and $Y$ are jointly normal, we conclude that the random variables $X+Y$ and $X-Y$ are also jointly normal. We have
   \begin{align}%\label{}
-  \nonumber  \cov(X+Y,X-Y)&=\cov(X,X)-\cov(X,Y)+\cov(Y,X)-\cov(Y,Y)\\
-  \nonumber  &=\var(X)-\var(Y)\\
+  \nonumber  Cov(X+Y,X-Y)&=Cov(X,X)-Cov(X,Y)+Cov(Y,X)-Cov(Y,Y)\\
+  \nonumber  &=Var(X)-Var(Y)\\
   \nonumber  &=0.
   \end{align}
   Since $X+Y$ and $X-Y$ are jointly normal and uncorrelated, they are independent.
@@ -233,7 +233,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
   \nonumber &EU=EX+EY=-1
   \end{align}
   \begin{align}
-  \nonumber \var(U)&=\var(X)+\var(Y)+2 \cov(X,Y) \\
+  \nonumber Var(U)&=Var(X)+Var(Y)+2 Cov(X,Y) \\
   \nonumber &=1+4+2 \sigma_X \sigma_Y \rho(X,Y)\\
   \nonumber &=5-2 \times 1\times2\times\frac{1}{2}\\
   \nonumber &=3.
@@ -245,9 +245,9 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
 	</li>
 
 
-  <li> Note that $aX+Y$ and $X+2Y$ are jointly normal. Thus, for them, independence is equivalent to having $\cov(aX+Y,X+2Y)=0$. Also, note that $\cov(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=-1$. We have
+  <li> Note that $aX+Y$ and $X+2Y$ are jointly normal. Thus, for them, independence is equivalent to having $Cov(aX+Y,X+2Y)=0$. Also, note that $Cov(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=-1$. We have
   \begin{align}
-  \nonumber \cov(aX+Y,X+2Y)&=a\cov(X,X)+2a\cov(X,Y)+\cov(Y,X)+2\cov(Y,Y) \\
+  \nonumber Cov(aX+Y,X+2Y)&=aCov(X,X)+2aCov(X,Y)+Cov(Y,X)+2Cov(Y,Y) \\
   \nonumber &=a-(2a+1)+8\\
   \nonumber &=-a+7.
   \end{align}
@@ -256,33 +256,33 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
 	<li>
    If we define $U=X+Y$ and $V=2X-Y$, then note that $U$ and $V$ are jointly normal. We have
   \begin{align}
-  \nonumber &EU=-1, \hs  \var(U)=3\\
-  \nonumber &EV=2, \hs  \var(V)=12,
+  \nonumber &EU=-1,   Var(U)=3\\
+  \nonumber &EV=2,   Var(V)=12,
   \end{align}
   and
   \begin{align}%\label{}
-  \nonumber  \cov(U,V)&=\cov(X+Y,2X-Y)\\
-  \no &=2\cov(X,X)-\cov(X,Y)+2\cov(Y,X)-\cov(Y,Y)\\
-  \nonumber  &=2\var(X)+\cov(X,Y)-\var(Y)\\
+  \nonumber  Cov(U,V)&=Cov(X+Y,2X-Y)\\
+   &=2Cov(X,X)-Cov(X,Y)+2Cov(Y,X)-Cov(Y,Y)\\
+  \nonumber  &=2Var(X)+Cov(X,Y)-Var(Y)\\
   \nonumber  &=2-1-4\\
   \nonumber  &=-3.
   \end{align}
   Thus,
   \begin{align}%\label{}
-  \nonumber  \rho(U,V)&=\frac{\cov(U,V)}{\sqrt{\var(U) \var(V)}}\\
+  \nonumber  \rho(U,V)&=\frac{Cov(U,V)}{\sqrt{Var(U) Var(V)}}\\
   \nonumber  &=-\frac{1}{2}.
   \end{align}
 
   Using Theorem 5.4, we conclude that given $V=0$, $U$ is normally distributed with
   \begin{align}%\label{}
   \nonumber  &E[U|V=1]=\mu_U+ \rho(U,V) \sigma_U \frac{0-\mu_V}{\sigma_V}=-\frac{1}{2} \\
-  \nonumber  &\var(U|V=1)=(1-\rho_{UV}^2)\sigma^2_U=\frac{9}{4}.
+  \nonumber  &Var(U|V=1)=(1-\rho_{UV}^2)\sigma^2_U=\frac{9}{4}.
   \end{align}
   Thus
   \begin{align}%\label{}
   \nonumber P(X+Y>0|X-2Y=1)&=P(U>0|V=0)\\
   \nonumber &=1-\Phi\left(\frac{0-(-\frac{1}{2})}{\frac{3}{2}}\right)\\
-  \no &= 1-\Phi\left(\frac{1}{3}\right)=0.3694.
+   &= 1-\Phi\left(\frac{1}{3}\right)=0.3694.
   \end{align}
 </li>
 </li></ul>
