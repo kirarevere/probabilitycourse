@@ -224,7 +224,18 @@
 				independent $Exponential(\lambda)$ random variables, then you will get a $Gamma(n,\lambda)$
 				random variable. We will prove this later on using the moment generating function. The gamma
 				distribution is also related to the normal distribution as will be discussed later. Figure 4.10 
-				shows the PDF of the gamma distribution for several values of $\alpha$.<br /><hr />
+				shows the PDF of the gamma distribution for several values of $\alpha$. 
+				<br>
+				<br>
+				
+				<div style="width:100%;text-align:center;">
+										<img style="margin: 0 auto;width:500px; height: auto; display: block;" src="../images/chapter4/gamma-color.png" />
+										Figure 4.10: PDF of the gamma distribution for some values of $\alpha$ and $\lambda$.
+									</div>
+
+
+				<br>
+				<hr /><br />
 
 				<span class="example">Example </span><br />
 				Using the properties of the gamma function, show that the gamma PDF integrates to 1, i.e., show
@@ -248,18 +259,17 @@
 										\\ \hspace{0px} &#38;= 1.
 										\end{align*}
 									$$
-									<div style="width:100%;text-align:center;">
-										<img style="margin: 0 auto;width:500px; height: auto; display: block;" src="../images/chapter4/gamma-color.png" />
-										Figure 4.10: PDF of the gamma distribution for some values of $\alpha$ and $\lambda$.
-									</div>
+									
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 				<!-- /Solution -->
-
+				
 				<hr /><br />
+				
+				
 
 				In the solved problems section, we calculate the mean and variance for the gamma distribution. In particular,
 				we find out that if $X \sim Gamma(\alpha,\lambda)$, then

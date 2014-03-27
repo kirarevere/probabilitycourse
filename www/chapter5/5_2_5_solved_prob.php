@@ -34,7 +34,7 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
 <p class="centered">The figure shows (a) $R_{XY}$ as well as (b) the integration region for finding $P(Y&lt;2X^2)$ for Solved Problem 1.</p>
 </li>
 <li>
-    \item To find the constant $c$, we write
+    To find the constant $c$, we write
     \begin{align}%\label{}
      \nonumber  1&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{XY}(x,y)dxdy\\
      \nonumber  &=\int_{0}^{1} \int_{0}^{1-x}  cx+1  \hspace{5pt} dydx\\

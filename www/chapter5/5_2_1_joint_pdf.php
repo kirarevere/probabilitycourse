@@ -57,7 +57,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
-<ol>
+<ol type="a">
   <li>To find $c$, we use
 \begin{align}%\label{}
 \nonumber  \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{XY}(x,y)dxdy=1.

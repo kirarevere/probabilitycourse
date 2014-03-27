@@ -83,7 +83,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 </li></ul></div><br />
 
 <hr /><span class="problem">Problem </span><br />
-I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $Cov(X,Y)$ and $\rho(X,Y)$. \textit{Hint:} One way to solve this problem is two look at $Var(X+Y)$.
+I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $Cov(X,Y)$ and $\rho(X,Y)$. <i>Hint:</i> One way to solve this problem is two look at $Var(X+Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   Note that you can look at this as a binomial experiment. In particular, we can say that $X$ and $Y$ are $Binomial(n,\frac{1}{6})$. Also, $X+Y$ is $Binomial(n,\frac{2}{6})$. Remember the variance of a $Binomial(n,p)$ random variable is $np(1-p)$. Thus, we can write
@@ -138,7 +138,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
   \nonumber &=F_X(z)F_Y(z).
   \end{align}
   Thus, we conclude
-  \textit{\begin{equation}
+  <i>\begin{equation}
   \nonumber F_Z(z) = \left\{
   \begin{array}{l l}
     0  &  \quad z<0  \\
@@ -146,7 +146,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
     1 &  \quad z>1
   \end{array} \right.
   \end{equation}
-  }
+  </i>
   Therefore,
   \begin{equation}
   \nonumber f_Z(z) = \left\{
@@ -173,7 +173,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
   \nonumber &=F_X(w)+F_Y(w)-F_X(w)F_Y(w).
   \end{align}
   Thus,
-  \textit{\begin{equation}
+  <i>\begin{equation}
   \nonumber F_W(w) = \left\{
   \begin{array}{l l}
     0  &  \quad w<0  \\
@@ -181,7 +181,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
     1 &  \quad w>1
   \end{array} \right.
   \end{equation}
-  }
+ </i> 
   Therefore,
   \begin{equation}
   \nonumber f_W(w) = \left\{

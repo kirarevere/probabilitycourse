@@ -14,7 +14,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br /
 <style>
 	#table5_4 {
 		font-size:12pt;
-		border-collapse: collapse:
+		border-collapse: collapse;
 		width: 400px;
 		margin: 20px auto;
 	}
@@ -397,7 +397,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,2)$ random variables. Find $P(XY<1
 
 
 <hr /><span class="problem">Problem </span><br />
-\item Suppose $X \sim Exponential(1)$ and given $X=x$, $Y$ is a uniform random variable in $[0,x]$, i.e.,
+Suppose $X \sim Exponential(1)$ and given $X=x$, $Y$ is a uniform random variable in $[0,x]$, i.e.,
   \begin{align}%\label{}
   \nonumber  Y|X=x \hspace{10pt} \sim \hspace{10pt} Uniform(0,x),
   \end{align}
@@ -432,7 +432,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables, and $Z=\frac
 
 
 <hr /><span class="problem">Problem </span><br />
- \item Let $X$ and $Y$ be two independent $N(0,1)$ random variables, and $U=X+Y$.
+ Let $X$ and $Y$ be two independent $N(0,1)$ random variables, and $U=X+Y$.
 <ol>
    <li> Find the conditional PDF of $U$ given $X=x$, $f_{U|X}(u|x)$.</li>
     <li> Find the PDF of $U$, $f_{U}(u)$.</li>
@@ -543,7 +543,7 @@ Let $X$ and $Y$ be two independent $N(0,1)$ random variable and
 
 
 <hr /><span class="problem">Problem </span><br />
-item Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=-1$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=1$, and $\rho=-\frac{1}{2}$.
+item Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=-1$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=1$, and $\rho=-\frac{1}{2}$.
 <ol type="a">
   <li> Find $P(X+2Y \leq 3)$.</li>
   <li> Find $Cov(X-Y,X+2Y)$.</li>
@@ -553,7 +553,7 @@ item Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=1$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=1$, and $\rho=0$.
+Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=1$, and $\rho=0$.
 <ol type="a">
   <li> Find $P(X+2Y >4)$.</li>
   <li> Find $E[X^2Y^2]$.</li>
@@ -562,7 +562,7 @@ Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=1$,
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be be jointly normal random variables with parameters $\mu_X=2$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=9$, and $\rho=-\frac{1}{2}$.
+Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=2$, $\sigma^2_X=4$, $\mu_Y=1$, $\sigma^2_Y=9$, and $\rho=-\frac{1}{2}$.
 <ol type="a">
   <li> Find $E[Y|X=3]$.</li>
   <li> Find $Var(Y|X=2)$.</li>
