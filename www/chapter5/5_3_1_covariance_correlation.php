@@ -9,7 +9,7 @@
 ?>
 
 <!-- Section Content -->
-Consider two random variables $X$ and $Y$. Here, we define the <b>covariance</b> between $X$ and $Y$, written $Cov(X,Y)$. The covariance gives some information about how $X$ and $Y$ are statistically related. Let us provide the definition, and then discuss the properties and applications of covariance.
+Consider two random variables $X$ and $Y$. Here, we define the <b>covariance</b> between $X$ and $Y$, written $\textrm{Cov}(X,Y)$. The covariance gives some information about how $X$ and $Y$ are statistically related. Let us provide the definition, and then discuss the properties and applications of covariance.
 
 <div class="cbox">
 The <b>covariance</b> between $X$ and $Y$ is defined as
@@ -27,7 +27,7 @@ Intuitively, the covariance between $X$ and $Y$ indicates how the values of $X$ 
 
 <!-- Example -->
 <br /><hr /><span class="example">Example </span><br />
-Suppose $X \sim Uniform(1,2)$, and given $X=x$, $Y$ is exponential with parameter $\lambda=x$. Find Cov$(X,Y)$.
+Suppose $X \sim Uniform(1,2)$, and given $X=x$, $Y$ is exponential with parameter $\lambda=x$. Find \textrm{Cov}$(X,Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 We can use Cov$(X,Y)=EXY-EXEY$. We have $EX=\frac{3}{2}$ and
@@ -75,7 +75,7 @@ All of the above results can be proven directly from the definition of covarianc
 \end{align}
 Note that the converse is not necessarily true. That is, if $\textrm{Cov}(X,Y)=0$, $X$ and $Y$ may or may not be independent.
 
-Let us prove item 6 in Lemma 5.3, $Cov(X+Y,Z)=Cov(X,Z)+Cov(Y,Z)$. We have
+Let us prove Item 6 in Lemma 5.3, $\textrm{Cov}(X+Y,Z)=\textrm{Cov}(X,Z)+\textrm{Cov}(Y,Z)$. We have
 \begin{align}%\label{}
 \nonumber  \textrm{Cov}(X+Y,Z)&=E[(X+Y)Z]-E(X+Y)EZ\\
 \nonumber  &=E[XZ+YZ]-(EX+EY)EZ\\
@@ -88,14 +88,14 @@ You can prove the rest of the items in Lemma 5.3 similarly.
 <hr /><span class="example">Example </span><br />
 Let $X$ and $Y$ be two independent $N(0,1)$ random variable and
 \begin{align}%\label{}
-\nonumber  &Z=1+X+XY^2 \\
+\nonumber  &Z=1+X+XY^2, \\
 \nonumber  &W=1+X.
 \end{align}
 Find Cov$(Z,W)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 \begin{align}%\label{}
-\nonumber Cov(Z,W)&=Cov(1+X+XY^2,1+X)  \\
+\nonumber \textrm{Cov}(Z,W)&=\textrm{Cov}(1+X+XY^2,1+X)  \\
 \nonumber  &=Cov(X+XY^2,X) &(\textrm{by part 5 of Lemma 5.3}) \\
 \nonumber  &=Cov(X,X)+Cov(XY^2,X) &(\textrm{by part 6 of Lemma 5.3}) \\
 \nonumber  &=Var(X)+E[X^2Y^2]-E[XY^2]EX  &(\textrm{by part 1 of Lemma 5.3 and definition of covariance})     \\
@@ -124,12 +124,12 @@ More generally, for $a,b \in \mathbb{R}$, we conclude:
 <h2>Correlation Coefficient:</h2>
 The <b>correlation coefficient</b>, denoted by $\rho_{XY}$ or $\rho(X,Y)$, is obtained by normalizing the covariance. In particular, we define the correlation coefficient of two random variables $X$ and $Y$ as the covariance of the standardized versions of $X$ and $Y$. Define the standardized versions of $X$ and $Y$ as
 \begin{align}\label{eq:normalize}
- U=\frac{X-EX}{\sigma_X}, \hspace{10pt} V=\frac{Y-EY}{\sigma_Y}. \hspace{20pt} (5.22)
+ U=\frac{X-EX}{\sigma_X}, \hspace{10pt} V=\frac{Y-EY}{\sigma_Y} \hspace{20pt} (5.22)
 \end{align}
 Then,
 \begin{align}%\label{}
  \nonumber \rho_{XY}=\textrm{Cov}(U,V)&=\textrm{Cov}\left(\frac{X-EX}{\sigma_X},\frac{Y-EY}{\sigma_Y}\right)\\
- \nonumber &=\textrm{Cov}\left(\frac{X}{\sigma_X},\frac{Y}{\sigma_Y}\right) &(\textrm{by part 5 of Lemma 5.3})\\
+ \nonumber &=\textrm{Cov}\left(\frac{X}{\sigma_X},\frac{Y}{\sigma_Y}\right) &(\textrm{by Item 5 of Lemma 5.3})\\
  \nonumber &=\frac{\textrm{Cov}(X,Y)}{\sigma_X \sigma_Y}.
 \end{align}
 <div class="cbox">
@@ -138,7 +138,7 @@ Then,
 \end{align}
 </div><br />
 
- A nice thing about the correlation coefficient is that it is always between $-1$ and $1$. This is an immediate result of Cauchy-Schwarz inequality that is discussed in section 6.2.4. One way to prove that $-1 \leq \rho \leq 1$ is to use the following inequality:
+ A nice thing about the correlation coefficient is that it is always between $-1$ and $1$. This is an immediate result of Cauchy-Schwarz inequality that is discussed in Section 6.2.4. One way to prove that $-1 \leq \rho \leq 1$ is to use the following inequality:
  \begin{align}%\label{}
  \alpha \beta \leq \frac{\alpha^2+\beta^2}{2},  \textrm{for }\alpha,\beta \in \mathbb{R}.
 \end{align}
@@ -173,9 +173,9 @@ But $\rho(-X,Y)=-\rho(X,Y)$, thus we conclude $\rho(X,Y) \geq -1$. Thus, we can 
 <div class="cbox">
 Properties of the correlation coefficient:
 <ol>
-  <li> $-1 \leq \rho(X,Y) \leq 1$
-  <li> If $\rho(X,Y)=1$, then $Y=aX+b$, where $a>0$.</li>
-  <li> If $\rho(X,Y)=-1$, then $Y=aX+b$, where $a<0$.</li>
+  <li> $-1 \leq \rho(X,Y) \leq 1$;
+  <li> If $\rho(X,Y)=1$, then $Y=aX+b$, where $a>0$;</li>
+  <li> If $\rho(X,Y)=-1$, then $Y=aX+b$, where $a<0$;</li>
   <li> $\rho(aX+b,cY+d)=\rho(X,Y)$ for $a,b>0$.</li>
 </ol>
 </div><br />
@@ -186,7 +186,7 @@ Consider two random variables $X$ and $Y$:<br />
   - If $\rho(X,Y)>0$, we say that $X$ and $Y$ are  <b>positively</b> correlated.<br />
   - If $\rho(X,Y)<0$, we say that $X$ and $Y$ are  <b>negatively</b> correlated.<br >
 <hr /><br />
-Note that as we discussed previously, two independent random variables are always uncorrelated, but the converse is not necessarily true. That is, if $X$ and $Y$ are uncorrelated, then $X$ and $Y$ may or may not be independent. Also, note that if $X$ and $Y$ are uncorrelated from Equation 5.21 we conclude that $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$.
+Note that as we discussed previously, two independent random variables are always uncorrelated, but the converse is not necessarily true. That is, if $X$ and $Y$ are uncorrelated, then $X$ and $Y$ may or may not be independent. Also, note that if $X$ and $Y$ are uncorrelated from Equation 5.21, we conclude that $\textrm{Var}(X+Y)=\textrm{Var}(X)+\textrm{Var}(Y)$.
 
 
 <div class="cbox">

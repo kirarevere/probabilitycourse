@@ -168,7 +168,7 @@
 			
 			<hr /><br>
 			<span class='example'>Example </span><br>
-			<p>Let $Y$ be the mixed random variable defined in Example 4.12.
+			<p>Let $Y$ be the mixed random variable defined in Example 4.14.
 			<ol type="a">
                 <li>Find $P(\frac{1}{4} \leq Y \leq \frac{3}{8})$.</li>
                 <li>Find $P(Y \geq \frac{1}{4})$.</li>

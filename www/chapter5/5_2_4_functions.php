@@ -168,7 +168,7 @@ Find $f_{ZW}(z,w)$.
 <ul><li>
 $X$ and $Y$ are jointly continuous and their joint PDF is given by
 \begin{align}%\label{}
-\nonumber f_{XY}(x,y)=f_X(x)f_Y(y)=\frac{1}{2 \pi} e^{-\frac{x^2+y^2}{2}},  \hspace{30pt} \textrm{ for all }x,y \in \mathbb{R}.
+\nonumber f_{XY}(x,y)=f_X(x)f_Y(y)=\frac{1}{2 \pi} \exp{-\frac{x^2+y^2}{2}},  \hspace{30pt} \textrm{ for all }x,y \in \mathbb{R}.
 \end{align}
 Here, the function $g$ is defined by $(z,w)=g(x,y)=(g_1(x,y),g_2(x,y))=(2x-y,-x+y)$. Solving for $x$ and $y$, we obtain the inverse function $h$:
 \begin{equation}
@@ -200,8 +200,8 @@ where
 Thus, we conclude that
 \begin{align}
   \nonumber f_{ZW}(z,w)&=f_{XY}(z+w,z+2w) |J|\\
-  \nonumber &=\frac{1}{2 \pi} e^{-\frac{(z+w)^2+(z+2w)^2}{2}} \\
-  \nonumber &=\frac{1}{2 \pi} e^{-\frac{2z^2+5w^2+6zw}{2}}.
+  \nonumber &=\frac{1}{2 \pi} \exp{-\frac{(z+w)^2+(z+2w)^2}{2}} \\
+  \nonumber &=\frac{1}{2 \pi} \exp{-\frac{2z^2+5w^2+6zw}{2}}.
 \end{align}
 </li></ul>
 </li></ul></div><br />

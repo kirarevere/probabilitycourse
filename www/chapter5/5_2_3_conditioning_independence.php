@@ -9,7 +9,7 @@
 ?>
 
 <!-- Section Content -->
-Here, we discuss conditioning for continuous random variables. In particular, we discuss the conditional PDF, conditional CDF, and conditional expectation. We have discussed conditional probability for discrete random variables before. The ideas behind conditional probability for continuous random variables are very similar to the discrete case. The difference lies in the fact that we need to work with probability density in the case of continuous random variables. Nevertheless, we would like to emphasize again that there is only one main formula regarding conditional probability which is
+Here, we will discuss conditioning for continuous random variables. In particular, we will discuss the conditional PDF, conditional CDF, and conditional expectation. We have discussed conditional probability for discrete random variables before. The ideas behind conditional probability for continuous random variables are very similar to the discrete case. The difference lies in the fact that we need to work with probability density in the case of continuous random variables. Nevertheless, we would like to emphasize again that there is only one main formula regarding conditional probability which is
 \begin{align}\label{}
   \nonumber P(A|B)=\frac{P(A \cap B)}{P(B)}, \textrm{ when } P(B)>0.
 \end{align}
@@ -17,7 +17,7 @@ Any other formula regarding conditional probability can be derived from the abov
 \begin{align}\label{}
   \nonumber P(X \in C|Y \in D)=\frac{P(X \in C, Y \in D)}{P(Y \in D)}, \textrm{ where } C, D \subset \mathbb{R}.
 \end{align}
-However, sometimes we need to use the concepts of conditional PDFs and CDFs. The formulas for conditional PDFs and CDFs of continuous random variables are very similar to those of discrete random variables. Since there is no new fundamental ideas in this section, we usually provide the main formulas and guidelines, and then work on examples. Specifically, we do not spend much time deriving formulas. Nevertheless, to give you the basic idea of how to derive these formulas, we start by deriving a formula for the conditional CDF and PDF of a random variable $X$ given that $X \in I=[a,b]$.
+However, sometimes we need to use the concepts of conditional PDFs and CDFs. The formulas for conditional PDFs and CDFs of continuous random variables are very similar to those of discrete random variables. Since there are no new fundamental ideas in this section, we usually provide the main formulas and guidelines, and then work on examples. Specifically, we do not spend much time deriving formulas. Nevertheless, to give you the basic idea of how to derive these formulas, we start by deriving a formula for the conditional CDF and PDF of a random variable $X$ given that $X \in I=[a,b]$.
 Consider a continuous random variable $X$. Suppose that we know that the event $X \in I=[a,b]$ has occurred. Call this event $A$. The conditional CDF of $X$ given $A$, denoted by $F_{X|A}(x)$ or $F_{X| a \leq X \leq b}(x)$, is
 \begin{align}%\label{}
 \nonumber  F_{X|A}(x) &=P(X \leq x|A)\\
@@ -288,19 +288,19 @@ For two jointly continuous random variables $X$ and $Y$, we have:
 <li>
   Expected value of $X$ given $Y=y$:
   \begin{align}
-   \nonumber E[X|Y=y]=\int_{-\infty}^{\infty} xf_{X|Y}(x|y) dx.
+   \nonumber E[X|Y=y]=\int_{-\infty}^{\infty} xf_{X|Y}(x|y) dx
   \end{align}
 </li>
 <li>
    Conditional LOTUS:
   \begin{align}
-   \nonumber E[g(X)|Y=y]=\int_{-\infty}^{\infty} g(x)f_{X|Y}(x|y) dx.
+   \nonumber E[g(X)|Y=y]=\int_{-\infty}^{\infty} g(x)f_{X|Y}(x|y) dx
   \end{align}
 </li>
 <li>
    Conditional variance of $X$ given $Y=y$:
   \begin{align}
-   \nonumber Var(X|Y=y)=E[X^2|Y=y]-(E[X|Y=y])^2.
+   \nonumber Var(X|Y=y)=E[X^2|Y=y]-(E[X|Y=y])^2
   \end{align}
 </li>
 </ol>
@@ -316,7 +316,7 @@ Let $X$ and $Y$ be as in Example 5.21. Find $E[X|Y=1]$ and Var$(X|Y=1)$.
    \nonumber &=\int_{0}^{1} x\frac{3x^2+3y^2+2xy}{3y^2+y+1}|_{y=1} \hspace{5pt} dx\\
    \nonumber &=\int_{0}^{1} x\frac{3x^2+3+2x}{3+1+1} \hspace{5pt} dx    \hspace{30pt}  (y=1)\\
    \nonumber &=\frac{1}{5} \int_{0}^{1} 3x^3+2x^2+3x \hspace{5pt} dx \\
-   \nonumber &=\frac{7}{12},
+   \nonumber &=\frac{7}{12}
 \end{align}
 \begin{align}
    \nonumber E[X^2|Y=1]&=\int_{-\infty}^{\infty} x^2f_{X|Y}(x|1) dx\\
@@ -403,7 +403,7 @@ Determine whether $X$ and $Y$ are independent:
   Thus, we conclude that $X$ and $Y$ are independent.
 </li>
 <li>
-  For this case, it does not seem that we can write $f_{XY}(x,y)$ as a product of some $f_1(x)$ and $f_2(y)$. Note that the given region $0&lt;x&lt;y&lt;1$ enforces that $x&lt;y$. That is, we always have $X&lt;Y$. Thus, we conclude that $X$ and $Y$ are not independent. To show this, we can obtain the marginal PDFs of $X$ and $Y$ and show that $f_{XY}(x,y) \neq f_X(x) f_Y(y), \textrm{ for some }x,y$. We have for $0 \leq x \leq 1$:
+  For this case, it does not seem that we can write $f_{XY}(x,y)$ as a product of some $f_1(x)$ and $f_2(y)$. Note that the given region $0&lt;x&lt;y&lt;1$ enforces that $x&lt;y$. That is, we always have $X&lt;Y$. Thus, we conclude that $X$ and $Y$ are not independent. To show this, we can obtain the marginal PDFs of $X$ and $Y$ and show that $f_{XY}(x,y) \neq f_X(x) f_Y(y), \textrm{ for some }x,y$. We have, for $0 \leq x \leq 1$,
       \begin{align}%\label{}
       \nonumber f_X(x)&=\int_{x}^{1}8xy dy   \\
       \nonumber  &=4x(1-x^2).

@@ -69,7 +69,7 @@ But how can we obtain the joint normal PDF in general? Can we provide a simple w
 <hr /><span class="example">Example </span><br />
 Let $Z_1$ and $Z_2$ be two independent $N(0,1)$ random variables. Define
 \begin{align}%\label{}
-\nonumber X&=Z_1  \\
+\nonumber X&=Z_1,  \\
 \nonumber Y&=\rho Z_1 +\sqrt{1-\rho^2} Z_2,
 \end{align}
 where $\rho$ is a real number in $(-1,1)$.
@@ -98,7 +98,7 @@ First, note that since $Z_1$ and $Z_2$ are normal and independent, they are join
    We can use the method of transformations (Theorem 5.1) to find the joint PDF of $X$ and $Y$. The inverse transformation is given by
 
       \begin{align}%\label{}
-         \nonumber Z_1&=X=h_1(X,Y).  \\
+         \nonumber Z_1&=X=h_1(X,Y),  \\
          \nonumber Z_2&=-\frac{\rho}{\sqrt{1-\rho^2}} X+\frac{1}{\sqrt{1-\rho^2}}Y=h_2(X,Y).
       \end{align}
 
@@ -256,7 +256,7 @@ We conclude that given $X=x$, $Y$ is normally distributed with mean $\mu_Y$+ $\r
 <span class="theorem">Theorem </span><br />
   Suppose $X$ and $Y$ are jointly normal random variables with parameters $\mu_X$, $\sigma^2_X$, $\mu_Y$, $\sigma^2_Y$, and $\rho$. Then, given $X=x$, $Y$ is normally distributed with
  \begin{align}%\label{}
-\nonumber  &E[Y|X=x]=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X}\\
+\nonumber  &E[Y|X=x]=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X},\\
 \nonumber  &Var(Y|X=x)=(1-\rho^2)\sigma^2_Y.
 \end{align}
 </div><br />
@@ -274,7 +274,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
 <ol type="a">
   <li> Since $X$ and $Y$ are jointly normal, the random variable $V=2X+Y$ is normal. We have
   \begin{align}%\label{}
-  \nonumber &EV=2EX+EY=2
+  \nonumber &EV=2EX+EY=2,
   \end{align}
   \begin{align}
   \nonumber Var(V)&=4Var(X)+Var(Y)+4 Cov(X,Y) \\
@@ -284,7 +284,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
   \end{align}
   Thus, $V \sim N(2,12)$. Therefore,
   \begin{align}%\label{}
-  \nonumber P(V \leq 3)=\Phi\left(\frac{3-2}{\sqrt{12}}\right)=\Phi\left(\frac{1}{\sqrt{12}}\right)=0.6136.
+  \nonumber P(V \leq 3)=\Phi\left(\frac{3-2}{\sqrt{12}}\right)=\Phi\left(\frac{1}{\sqrt{12}}\right)=0.6136
   \end{align}
 	</li>
 
@@ -320,9 +320,9 @@ If $X$ and $Y$ are bivariate normal and uncorrelated, then they are independent.
 
 <i>Proof. </i>Since $X$ and $Y$ are uncorrelated, we have $\rho(X,Y)=0$. By Theorem 5.4, given $X=x$, $Y$ is normally distributed with
  \begin{align}%\label{}
-\nonumber  &E[Y|X=x]=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X}=\mu_Y\\
+\nonumber  &E[Y|X=x]=\mu_Y+ \rho \sigma_Y \frac{x-\mu_X}{\sigma_X}=\mu_Y,\\
 \nonumber  &Var(Y|X=x)=(1-\rho^2)\sigma^2_Y=\sigma^2_Y.
 \end{align}
-Thus $f_{Y|X}(y|x)=f_Y(y)$ for all $x,y \in \mathbb{R}$. Thus $X$ and $Y$ are independent. Another way to prove the theorem is to let $\rho=0$ in Equation 5.24 and observe that $f_{XY}(x,y)=f_X(x)f_Y(y)$.
+Thus, $f_{Y|X}(y|x)=f_Y(y)$ for all $x,y \in \mathbb{R}$. Thus $X$ and $Y$ are independent. Another way to prove the theorem is to let $\rho=0$ in Equation 5.24 and observe that $f_{XY}(x,y)=f_X(x)f_Y(y)$.
 
 <?php include				"section_footer.php"; ?>

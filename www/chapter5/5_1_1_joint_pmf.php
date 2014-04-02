@@ -59,7 +59,7 @@ Note that the event $X=x$ can be written as $\{(x_i,y_j): x_i=x, y_j \in R_Y \}$
 \nonumber &=\sum_{y_j \in R_Y} P(X=x, Y=y_j) &\textrm{law of total probablity}\\
 \nonumber &=\sum_{y_j \in R_Y} P_{XY}(x,y_j).
 \end{align}
-Here we call $P_X(x)$ the <b>marginal PMF</b> of $X$. Similarly, we can find the marginal PMF of $Y$ as
+Here, we call $P_X(x)$ the <b>marginal PMF</b> of $X$. Similarly, we can find the marginal PMF of $Y$ as
 \begin{align}%\label{}
 \nonumber P_Y(Y)=\sum_{x_i \in R_X} P_{XY}(x_i,y).
 \end{align}

@@ -72,7 +72,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \begin{align}%\label{}
   \nonumber  Cov(X,Y)&=EXY-EXEY\\
   \nonumber  &=\frac{1}{12}-\left(\frac{1}{3}\right)^2\\
-  \nonumber  &=-\frac{1}{36}.
+  \nonumber  &=-\frac{1}{36},
   \end{align}
 
   \begin{align}%\label{}
@@ -83,7 +83,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 </li></ul></div><br />
 
 <hr /><span class="problem">Problem </span><br />
-I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $Cov(X,Y)$ and $\rho(X,Y)$. <i>Hint:</i> One way to solve this problem is two look at $Var(X+Y)$.
+I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $Cov(X,Y)$ and $\rho(X,Y)$. <i>Hint:</i> One way to solve this problem is to look at $Var(X+Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   Note that you can look at this as a binomial experiment. In particular, we can say that $X$ and $Y$ are $Binomial(n,\frac{1}{6})$. Also, $X+Y$ is $Binomial(n,\frac{2}{6})$. Remember the variance of a $Binomial(n,p)$ random variable is $np(1-p)$. Thus, we can write
@@ -105,11 +105,11 @@ I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and l
 
 
 <hr /><span class="problem">Problem </span><br />
-In this problem, you provide another proof for the fact that $|\rho(X,Y)| \leq 1$. By definition $\rho_{XY}=\textrm{Cov}(U,V)$, where $ U$ and $V$ are the normalized versions of $X$ and $Y$ as defined in Equation 5.22:
+In this problem, you will provide another proof for the fact that $|\rho(X,Y)| \leq 1$. By definition $\rho_{XY}=\textrm{Cov}(U,V)$, where $ U$ and $V$ are the normalized versions of $X$ and $Y$ as defined in Equation 5.22:
        \begin{align}
         U=\frac{X-EX}{\sigma_X}, \hspace{10pt} V=\frac{Y-EY}{\sigma_Y}.
        \end{align}
-       Use the fact that $\textrm{Var}(U+V) \geq 0$ to show that $|\rho(X,Y)| \leq 1$
+       Use the fact that $\textrm{Var}(U+V) \geq 0$ to show that $|\rho(X,Y)| \leq 1$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   We have
@@ -134,7 +134,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
   \nonumber F_Z(z)&=P(Z \leq z) \\
   \nonumber &=P(\max(X,Y) \leq z)\\
   \nonumber &=P\bigg((X \leq z) \textrm{ and } (Y \leq z)\bigg)\\
-  \nonumber &=P(X \leq z) P(Y \leq z) &(\textrm{ since }X \textrm{ and }Y \textrm{ are indpendent})\\
+  \nonumber &=P(X \leq z) P(Y \leq z) &(\textrm{since }X \textrm{ and }Y \textrm{ are indpendent})\\
   \nonumber &=F_X(z)F_Y(z).
   \end{align}
   Thus, we conclude
@@ -168,7 +168,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
   \nonumber &=P(\min(X,Y) \leq w)\\
   \nonumber &=1-P(\min(X,Y) > w)\\
   \nonumber &=1-P\bigg((X > w) \textrm{ and } (Y > w)\bigg)\\
-  \nonumber &=1-P(X > w) P(Y > w) &(\textrm{ since }X \textrm{ and }Y \textrm{ are independent})\\
+  \nonumber &=1-P(X > w) P(Y > w) &(\textrm{since }X \textrm{ and }Y \textrm{ are independent})\\
   \nonumber &=1-(1-F_X(w))(1-F_Y(w))\\
   \nonumber &=F_X(w)+F_Y(w)-F_X(w)F_Y(w).
   \end{align}
@@ -194,7 +194,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
   \begin{align}%\label{}
   \nonumber Cov(Z,W)&=E[ZW]-EZEW \\
   \nonumber &=E[XY]-EZEW\\
-  \nonumber &=E[X]E[Y]-E[Z]E[W] &(\textrm{ since }X \textrm{ and }Y \textrm{ are independent})\\
+  \nonumber &=E[X]E[Y]-E[Z]E[W] &(\textrm{since }X \textrm{ and }Y \textrm{ are independent})\\
   \nonumber &=\frac{1}{2}.\frac{1}{2}-\frac{2}{3}.\frac{1}{3}\\
   \nonumber &=\frac{1}{36}.
   \end{align}
@@ -230,7 +230,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
 <ol>
   <li> Since $X$ and $Y$ are jointly normal, the random variable $U=X+Y$ is normal. We have
   \begin{align}%\label{}
-  \nonumber &EU=EX+EY=-1
+  \nonumber &EU=EX+EY=-1,
   \end{align}
   \begin{align}
   \nonumber Var(U)&=Var(X)+Var(Y)+2 Cov(X,Y) \\
@@ -240,7 +240,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
   \end{align}
   Thus, $U \sim N(-1,3)$. Therefore,
   \begin{align}%\label{}
-  \nonumber P(U>0)=1-\Phi\left(\frac{0-(-1)}{\sqrt{3}}\right)=1-\Phi\left(\frac{1}{\sqrt{3}}\right)=0.2819.
+  \nonumber P(U>0)=1-\Phi\left(\frac{0-(-1)}{\sqrt{3}}\right)=1-\Phi\left(\frac{1}{\sqrt{3}}\right)=0.2819
   \end{align}
 	</li>
 
@@ -256,7 +256,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
 	<li>
    If we define $U=X+Y$ and $V=2X-Y$, then note that $U$ and $V$ are jointly normal. We have
   \begin{align}
-  \nonumber &EU=-1,   Var(U)=3\\
+  \nonumber &EU=-1,   Var(U)=3,\\
   \nonumber &EV=2,   Var(V)=12,
   \end{align}
   and

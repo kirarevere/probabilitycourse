@@ -10,7 +10,7 @@
 
 <!-- Section Content -->
 <p>
-We have discussed conditional probability before, and you have already seen some problems regarding random variables and conditional probability. Here we will discuss conditioning for random variables more in detail and introduce the conditional PMF, conditional CDF, and conditional expectation. We would like to emphasize that there is only one main formula regarding conditional probability which is
+We have discussed conditional probability before, and you have already seen some problems regarding random variables and conditional probability. Here, we will discuss conditioning for random variables more in detail and introduce the conditional PMF, conditional CDF, and conditional expectation. We would like to emphasize that there is only one main formula regarding conditional probability which is
 \begin{align}\label{}
   \nonumber P(A|B)=\frac{P(A \cap B)}{P(B)}, \textrm{ when } P(B)>0.
 \end{align}
@@ -79,7 +79,7 @@ Similarly, we can define the conditional probability of $Y$ given $X$:
 <div style="padding: 25px; border: 2px solid black; margin: 30px 40px;">
 For discrete random variables $X$ and event $A$, the <b>conditional PMFs</b> of $X$ given $Y$ and vice versa are defined as
 \begin{align}%\label{}
-\nonumber  P_{X|Y}(x_i|y_j)&=\frac{P_{XY}(x_i,y_j)}{P_Y(y_j)},\\
+\nonumber  P_{X|Y}(x_i|y_j)&=\frac{P_{XY}(x_i,y_j)}{P_Y(y_j)}\\
 \nonumber  P_{Y|X}(y_j|x_i)&=\frac{P_{XY}(x_i,y_j)}{P_X(x_i)}
 \end{align}
 for any $x_i \in R_X$ and $y_j \in R_Y$.
@@ -165,13 +165,13 @@ Suppose that we pick a point $(X,Y)$ from this grid completely at random. Thus, 
 
   We can write this in a more compact form as
   \begin{align}%\label{}
-  \nonumber  P_{X}(k)=P_{Y}(k)=\frac{5-2|k|}{13}, \hspace{10pt} \textrm{ for }k=-2,-1,0,1,2.
+  \nonumber  P_{X}(k)=P_{Y}(k)=\frac{5-2|k|}{13} \hspace{10pt} \textrm{ for }k=-2,-1,0,1,2.
   \end{align}
 	</li>
   <li> For $i=-1,0,1$, we can write
   \begin{align}%\label{}
   \nonumber  P_{X|Y}(i|1)&=\frac{P_{XY}(i,1)}{P_Y(1)}\\
-  \nonumber  &=\frac{\frac{1}{13}}{\frac{3}{13}}=\frac{1}{3}, \hspace{10pt} \textrm{ for }i=-1,0,1.
+  \nonumber  &=\frac{\frac{1}{13}}{\frac{3}{13}}=\frac{1}{3} \hspace{10pt} \textrm{ for }i=-1,0,1.
   \end{align}
   Thus, we conclude
   \begin{equation}
@@ -257,7 +257,7 @@ Let $X$ and $Y$ be the same as in Example 5.4.
      Thus, we have
      \begin{align}%\label{}
       \nonumber E[X|A]&=\sum_{x_i \in R_{X}} x_i P_{X|A}(x)\\
-      \nonumber &=(-2)\frac{1}{8}+(-1)\frac{1}{4}+0 \frac{1}{4}+1 . \frac{1}{4}+2 . \frac{1}{8}=0.
+      \nonumber &=(-2)\frac{1}{8}+(-1)\frac{1}{4}+(0)\frac{1}{4}+(1)\frac{1}{4}+(2)\frac{1}{8}=0.
      \end{align}
 			</li><li>
 

@@ -20,7 +20,9 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br /
 	}
 
 	#table5_4 td {
-		width: 80px;
+		width: 60px;
+    text-align:center;
+  vertical-align:middle;
 		border: 2px solid black;
 	}
 </style>
@@ -42,12 +44,12 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br /
 		<td>$0$</td>
 	</tr>
 	<tr style="height: 80px;">
-		<td>$X = 3$</td>
+		<td>$X = 4$</td>
 		<td>$\frac{1}{12}$</td>
 		<td>$\frac{1}{3}$</td>
 	</tr>
 </table>
-<ol>
+<ol type="a">
   <li> Find $P(X \leq 2, Y > 1)$.</li>
   <li> Find the marginal PMFs of $X$ and $Y$.</li>
   <li> Find $P(Y=2 | X=1)$.</li>
@@ -57,7 +59,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.4<br /
 
 <hr /><span class="problem">Problem </span><br />
 Let $X$ and $Y$ be as defined in Problem 1. I define a new random variable $Z=X-2Y$.
-<ol>
+<ol type="a">
   <li> Find PMF of $Z$.</li>
   <li> Find $P(X=2 | Z=0)$.</li>
 </ol>
@@ -74,7 +76,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given by
   \begin{align}%\label{}
     P_{XY}(k,l)=\frac{1}{2^{k+l}}, \textrm{for }k,l=1,2,3,...
   \end{align}
-<ol>
+<ol type="a">
   <li> Show that $X$ and $Y$ are independent and find the marginal PMFs of $X$ and $Y$.</li>
   <li> Find $P(X^2+Y^2 \leq 10)$.</li>
 </ol>
@@ -84,7 +86,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given by
 
 <hr /><span class="problem">Problem </span><br />
 Let $X$ and $Y$ be as defined in Problem 1. Also, suppose that we are given that $Y=1$.
-<ol>
+<ol type="a">
   <li> Find the conditional PMF of $X$ given $Y=1$. That is, find $P_{X|Y}(x|1)$.</li>
   <li> Find $E[X|Y=1]$.</li>
   <li> Find $Var(X|Y=1)$.</li>
@@ -98,7 +100,7 @@ The number of customers visiting a store in one hour has a Poisson distribution 
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X \sim Geometric(p)$. Find $Var(X)$ as follows: Find $EX$ and $EX^2$ by conditioning on the result of the first ``coin toss'', and use $Var(X)$$=EX^2-(EX)^2$.
+Let $X \sim Geometric(p)$. Find $Var(X)$ as follows: Find $EX$ and $EX^2$ by conditioning on the result of the first ``coin toss,'' and use $Var(X)$$=EX^2-(EX)^2$.
 <br />
 
 
@@ -115,7 +117,7 @@ Consider the set of points in the set $C$:
   \nonumber  C=\{(x,y) | x,y \in \mathbb{Z}, x^2+ |y| \leq 2\}.
   \end{align}
   Suppose that we pick a point $(X,Y)$ from this set completely at random. Thus, each point has a probability of $\frac{1}{11}$ of being chosen.
-	<ol>
+	<ol type="a">
  <li> Find the joint and marginal PMFs of $X$ and $Y$.</li>
   <li> Find the conditional PMF of $X$ given $Y=1$.</li>
   <li> Are $X$ and $Y$ independent?</li>
@@ -126,10 +128,10 @@ Consider the set of points in the set $C$:
 <hr /><span class="problem">Problem </span><br />
 Consider the set of points in the set $C$:
   \begin{align}%\label{}
-  \nonumber  G=\{(x,y) | x,y \in \mathbb{Z}, x^2+ |y| \leq 2\}.
+  \nonumber  C=\{(x,y) | x,y \in \mathbb{Z}, x^2+ |y| \leq 2\}.
   \end{align}
   Suppose that we pick a point $(X,Y)$ from this set completely at random. Thus, each point has a probability of $\frac{1}{11}$ of being chosen.
-<ol>
+<ol type="a">
  <li> Find $E[X|Y=1]$.</li>
   <li> Find $Var(X|Y=1)$.</li>
   <li> Find $E[X| |Y| \leq 1]$.</li>
@@ -151,7 +153,7 @@ The number of cars being repaired at a small repair shop has the following PMF:
   \end{array} \right.
   \end{equation}
   Each car that is being repaired is a four-door car with probability $\frac{3}{4}$ and a two-door car with probability $\frac{1}{4}$, independently from other cars and independently from the number of cars being repaired. Let $X$ be the number of four-door cars and $Y$ be the number of two-door cars currently being repaired.
-<ol>
+<ol type="a">
 <li> Find the marginal PMFs of $X$ and $Y$.</li>
    <li> Find joint PMF of $X$ and $Y$.</li>
     <li> Are $X$ and $Y$ independent?</li>
@@ -213,7 +215,7 @@ Define the random variable $Z$ as $Z=E[X|Y]$.
 <ol type="a">
   <li> Find the Marginal PMFs of $X$ and $Y$.</li>
   <li> Find the conditional PMF of $X$, given $Y=0$ and $Y=1$, i.e., find $P_{X|Y}(x|0)$ and $P_{X|Y}(x|1)$.</li>
-  <li> Find the $PMF$ of $Z$.</li>
+  <li> Find the PMF of $Z$.</li>
   <li> Find $EZ$, and check that $EZ=EX$.</li>
   <li> Find Var$(Z)$.</li>
 </ol>
@@ -340,9 +342,9 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
     0 &  \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
-  For $0 \leq y \leq 1$, find
+  For $0 \leq y \leq 1$, find the following:
 <ol type="a">
-  <li> the conditional PDF of $X$ given $Y=y$;</li>
+  <li> The conditional PDF of $X$ given $Y=y$.</li>
   <li> $P(X>0|Y=y)$. Does this value depend on $y$?</li>
   <li> Are $X$ and $Y$ independent?</li>
 </ol>
@@ -416,10 +418,10 @@ Suppose $X \sim Exponential(1)$ and given $X=x$, $Y$ is a uniform random variabl
 <hr /><span class="problem">Problem </span><br />
 Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Find
 <ol type="a">
-    <li> $E[XY]$.</li>
-    <li> $E[e^{X+Y}]$.</li>
-    <li> $E[X^2+Y^2+XY]$.</li>
-    <li> $E[Ye^{XY}]$.</li>
+    <li> $E[XY]$</li>
+    <li> $E[e^{X+Y}]$</li>
+    <li> $E[X^2+Y^2+XY]$</li>
+    <li> $E[Ye^{XY}]$</li>
 </ol>
 <br />
 
@@ -433,7 +435,7 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables, and $Z=\frac
 
 <hr /><span class="problem">Problem </span><br />
  Let $X$ and $Y$ be two independent $N(0,1)$ random variables, and $U=X+Y$.
-<ol>
+<ol type="a">
    <li> Find the conditional PDF of $U$ given $X=x$, $f_{U|X}(u|x)$.</li>
     <li> Find the PDF of $U$, $f_{U}(u)$.</li>
     <li> Find the conditional PDF of $X$ given $U=u$, $f_{X|U}(x|u)$.</li>

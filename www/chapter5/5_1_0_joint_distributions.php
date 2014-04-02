@@ -16,8 +16,8 @@ of people in the family, the household income, the ages of the family members, e
 these is a random variable, and we suspect that they are dependent. In this chapter, we develop
 tools to study joint distributions of random variables. The concepts are similar to what we have
 seen so far. The only difference is that instead of one random variable, we consider two or more.
-In this chapter, we focus on two random variables, but once you understand the theory for two
-random variables, the extension to n random variables is straight forward. We first discuss joint
+In this chapter, we will focus on two random variables, but once you understand the theory for two
+random variables, the extension to n random variables is straight forward. We will first discuss joint
 distributions of discrete random variables and then extend the results to continuous random
 variables.
 </p>

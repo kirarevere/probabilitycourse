@@ -48,7 +48,7 @@ Let $X$ and $Y$ be jointly continuous random variables with joint PDF
     \begin{align}%\label{}
      \nonumber  f_X(x)&=\int_{-\infty}^{\infty} f_{XY}(x,y)dy\\
      \nonumber  &=\int_{0}^{1-x}  3x+1  \hspace{5pt} dy\\
-     \nonumber  &=(3x+1)(1-x) \hspace{10pt} \textrm{ for }x \in [0,1].
+     \nonumber  &=(3x+1)(1-x), \hspace{10pt} \textrm{ for }x \in [0,1].
     \end{align}
     Thus, we have
     \begin{equation}
@@ -239,7 +239,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 <ol>
 <li> Figure 5.9 shows $R_{XY}$ in the $x-y$ plane.
 <img src="images/chapter5/solved5_9.png" style="width:400px;height:auto;display:block;margin:10px auto;" />
-<p class="centered">Figure 5.9: The figure shows $R_{XY}$ for solved problem 4.</p>
+<p class="centered">Figure 5.9: The figure shows $R_{XY}$ for Solved Problem 4.</p>
 </li>
 <li>
 First, note that $R_X=R_Y=[0,1]$. To find $f_X(x)$ for $0 \leq x \leq 1$, we can write

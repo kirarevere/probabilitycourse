@@ -124,7 +124,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.2. Let
   \end{align}
   Similarly, we find
   \begin{align}%\label{}
-  \nonumber &P_{X|Y}(0|1)=1,\\
+  \nonumber &P_{X|Y}(0|1)=1\\
   \nonumber &P_{X|Y}(1|1)=0.
   \end{align}
   Thus, given $Y=1$, we have always $X=0$.
@@ -280,7 +280,7 @@ Using LOTUS, we have
 \nonumber  E[XY] &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_{XY}(x,y)\\
 \nonumber   &=\sum_{x \in R_x} \sum_{y \in R_y} xy P_X(x)P_Y(y)\\
 \nonumber   &=\bigg(\sum_{x \in R_x}  x P_X(x) \bigg) \bigg(\sum_{y \in R_y} yP_Y(y)\bigg)\\
-\nonumber   &=EX EY. ied
+\nonumber   &=EX EY. 
 \end{align}
 Note that the converse is <b>not</b> true. That is, if the only thing that we know about $X$ and $Y$ is that $E[XY]=EX EY$, then $X$ and $Y$ may or may not be independent. Using essentially the same proof as above, we can show if $X$ and $Y$ are independent, then $E[g(X)h(Y)]=E[g(X)]E[h(Y)]$ for any functions $g:\mathbb{R} \mapsto \mathbb{R}$ and $h:\mathbb{R} \mapsto \mathbb{R}$.
 
@@ -380,8 +380,8 @@ In Example 5.11, we found out that $X,Y \sim Bernoulli(\frac{2}{5})$. We also ob
    <li>To check that Var$(X)=E(V)+$Var$(Z)$, we just note that
 
    \begin{align}%\label{}
-    \nonumber &\textrm{Var}(X)=\frac{2}{5} \cdot \frac{3}{5}=\frac{6}{25}\\
-    \nonumber &EV=\frac{2}{15}\\
+    \nonumber &\textrm{Var}(X)=\frac{2}{5} \cdot \frac{3}{5}=\frac{6}{25},\\
+    \nonumber &EV=\frac{2}{15},\\
     \nonumber &\textrm{Var}(Z)=\frac{8}{75}.
    \end{align}
 		</li></ol>
@@ -400,12 +400,12 @@ It turns out this is true in general and it is called <i>the law of total varian
 Thus,
 \begin{align}\label{eq:1of2}
     \nonumber EV&=E[E[X^2|Y]]-E[Z^2]\\
-     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation 5.7)}\big). \hspace{20pt} (5.8)
+     &=E[X^2]-E[Z^2] &\big(\textrm{law of iterated expectations(Equation 5.7)}\big) \hspace{20pt} (5.8)
 \end{align}
 Next, we have
 \begin{align}\label{eq:2of2}
     \nonumber \textrm{Var}(Z)&=E[Z^2]-(EZ)^2\\
-     &=E[Z^2]-(EX)^2 &(\textrm{law of iterated expectations}). \hspace{20pt} (5.9)
+     &=E[Z^2]-(EX)^2 &(\textrm{law of iterated expectations}) \hspace{20pt} (5.9)
 \end{align}
 Combining Equations 5.8 and  5.9, we obtain  the law of total variance.
 
@@ -417,7 +417,7 @@ Combining Equations 5.8 and  5.9, we obtain  the law of total variance.
 </div><br />
 There are several ways that we can look at the law of total variance to get some intuition. Let us first note that all the terms in Equation 5.10 are positive (since variance is always positive). Thus, we conclude
 \begin{align}\label{eq:condReducesVariance}
-  \textrm{Var}(X) \geq E(\textrm{Var}(X|Y)). \hspace{30pt} (5.11)
+  \textrm{Var}(X) \geq E(\textrm{Var}(X|Y)) \hspace{30pt} (5.11)
 \end{align}
 <p>
 This states that when we condition on $Y$, the variance of $X$ reduces on average. To describe this intuitively, we can say that variance of a random variable is a measure of our uncertainty about that random variable. For example, if Var$(X)=0$, we do not have any uncertainty about $X$. Now, the above inequality simply states that if we obtain some extra information, i.e., we know the value of $Y$, our uncertainty about the value of the random variable $X$  reduces on average. So, the above inequality makes sense. Now, how do we explain the whole law of total variance?
@@ -432,7 +432,7 @@ Note that $\textrm{Var}(X|Y=i)$, is the variance of $X$ in country $i$. Thus, $E
 
 <!-- Example -->
 <br /><hr /><span class="example">Example </span><br />
-Let $N$ be the number of customers that visit a certain store in a given day. Suppose that we know $E[N]$ and Var$(N)$. Let $X_i$ be the amount that the $i$'th customer spends on average. We assume $X_i$'s are independent of each other and also independent of $N$. We further assume they have the same mean and variance
+Let $N$ be the number of customers that visit a certain store in a given day. Suppose that we know $E[N]$ and Var$(N)$. Let $X_i$ be the amount that the $i$th customer spends on average. We assume $X_i$'s are independent of each other and also independent of $N$. We further assume they have the same mean and variance
 \begin{align}%\label{}
 \nonumber  &EX_i=EX, \\
 \nonumber  &\textrm{Var}(X_i)=\textrm{Var}(X).
@@ -459,7 +459,7 @@ To find Var$(Y)$, we use the law of total variance:
 \begin{align}\label{al1}
 \nonumber  \textrm{Var}(Y)&=E(\textrm{Var}(Y|N))+\textrm{Var}(E[Y|N])\\
 \nonumber  &=E(\textrm{Var}(Y|N))+\textrm{Var}(NEX) &(\textrm{as above})\\
- &=E(\textrm{Var}(Y|N))+(EX)^2\textrm{Var}(N). \hspace{30pt} (5.12)
+ &=E(\textrm{Var}(Y|N))+(EX)^2\textrm{Var}(N) \hspace{30pt} (5.12)
 \end{align}
 To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ independent random variables. As we discussed before, for $n$ independent random variables, the variance of the sum is equal to sum of the variances. This fact is officially proved in Section 5.3 and also in Chapter 6, but we have occasionally used it as it simplifies the analysis. Thus, we can write
 
@@ -471,7 +471,7 @@ To find $E(\textrm{Var}(Y|N))$, note that, given $N=n$, $Y$ is a sum $n$ indepen
 
 Thus, we have
 \begin{align}\label{al2}
-  E(\textrm{Var}(Y|N))=EN Var(X). \hspace{30pt} (5.13)
+  E(\textrm{Var}(Y|N))=EN Var(X) \hspace{30pt} (5.13)
 \end{align}
 Combining Equations 5.12 and 5.13, we obtain
 \begin{align}

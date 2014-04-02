@@ -24,7 +24,7 @@ The joint CDF satisfies the following properties:
   <li> $F_{XY}(\infty, \infty)=1$.</li>
   <li> $F_{XY}(-\infty, y)=F_{XY}(x,-\infty)=0$.</li>
 	<li>
-   $P(x_1&lt;X \leq x_2, \hspace{5pt} y_1&lt;Y \leq y_2)=$\\
+   $P(x_1&lt;X \leq x_2, \hspace{5pt} y_1&lt;Y \leq y_2)=$ \\
      $\hspace{60pt} F_{XY}(x_2,y_2)-F_{XY}(x_1,y_2)-F_{XY}(x_2,y_1)+F_{XY}(x_1,y_1)$.
 	</li>
   <li>If $X$ and $Y$ are independent, then $F_{XY}(x,y)=F_X(x)F_Y(y)$.</li>
@@ -43,7 +43,7 @@ Since $X,Y \sim Uniform(0,1)$, we have
   \nonumber F_X(x)  = \left\{
   \begin{array}{l l}
     0 & \quad \textrm{for } x < 0 \\
-    x & \quad \textrm{for } 0 \leq x \leq 1\\
+    x & \quad \textrm{for } 0 \leq x \leq 1 \\
     1 & \quad \textrm{for } x > 1
   \end{array} \right.
   \end{equation}
@@ -51,7 +51,7 @@ Since $X,Y \sim Uniform(0,1)$, we have
   \nonumber F_Y(y)  = \left\{
   \begin{array}{l l}
     0 & \quad \textrm{for } y < 0 \\
-    y & \quad \textrm{for } 0 \leq y \leq 1\\
+    y & \quad \textrm{for } 0 \leq y \leq 1 \\
     1 & \quad \textrm{for } y > 1
   \end{array} \right.
 \end{equation}
@@ -61,11 +61,11 @@ Since, $X$ and $Y$ are independent, we obtain
   \begin{array}{l l}
     0 & \quad \textrm{for } y < 0 \textrm{ or } x<0 \\
      &  \\
-    xy & \quad \textrm{for } 0 \leq x,y \leq 1\\
+    xy & \quad \textrm{for } 0 \leq x,y \leq 1 \\
      &  \\
-    y & \quad \textrm{for } x>1, 0 \leq y \leq 1\\
+    y & \quad \textrm{for } x>1, 0 \leq y \leq 1 \\
      &  \\
-    x & \quad \textrm{for } y>1, 0 \leq x \leq 1\\
+    x & \quad \textrm{for } y>1, 0 \leq x \leq 1 \\
      &  \\
     1 & \quad \textrm{for } x,y > 1
   \end{array} \right.

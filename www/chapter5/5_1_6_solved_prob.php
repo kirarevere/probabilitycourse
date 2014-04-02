@@ -144,7 +144,7 @@ This is, in fact, a hypergeometric distribution. First, note that we must have $
 <span class="problem">Problem </span><br />
 Let $X$ and $Y$ be two independent discrete random variables with the same CDFs $F_{X}$ and $F_Y$ . Define
   \begin{align}%\label{}
-  \nonumber Z=\max (X,Y),  \\
+  \nonumber Z=\max (X,Y)  \\
   \nonumber W=\min(X,Y).
   \end{align}
   Find the CDFs of $Z$ and $W$.
@@ -185,7 +185,7 @@ Let $X$ and $Y$ be two discrete random variables, with range
 <img src="images/chapter5/solved1.png" style="width:400px;height:auto;margin:10px auto;display:block;" />
 <p style="text-align:center;">Figure 5.5: Figure shows $R_{XY}$ for $X$ and $Y$ in problem 4</p>
 
-<ol>
+<ol type="a">
     <li>Pictorially show $R_{XY}$ in the $x-y$ plane.</li>
     <li>Find the marginal PMFs $P_X(i)$, $P_Y(j)$.</li>
     <li>Find $P(X=Y|X<2)$.</li>
@@ -200,9 +200,9 @@ Let $X$ and $Y$ be two discrete random variables, with range
 <ol type="a"> 
     <li>First, by symmetry we note that $X$ and $Y$ have the same PDF. Next, we can write
     \begin{align}\label{}
-      \nonumber &P_X(0)=P_{XY}(0,0)+P_{XY}(0,1)=\frac{1}{6}+\frac{1}{6}=\frac{1}{3};\\
-      \nonumber &P_X(1)=P_{XY}(1,0)+P_{XY}(1,1)+P_{XY}(1,2)=\frac{1}{6}\left(1+\frac{1}{2}+\frac{1}{2}\right)=\frac{1}{3};\\
-      \nonumber &P_X(2)=P_{XY}(2,1)+P_{XY}(2,2)+P_{XY}(2,3)=\frac{1}{6}\left(\frac{1}{2}+\frac{1}{4}+\frac{1}{4}\right)=\frac{1}{6};\\
+      \nonumber &P_X(0)=P_{XY}(0,0)+P_{XY}(0,1)=\frac{1}{6}+\frac{1}{6}=\frac{1}{3},\\
+      \nonumber &P_X(1)=P_{XY}(1,0)+P_{XY}(1,1)+P_{XY}(1,2)=\frac{1}{6}\left(1+\frac{1}{2}+\frac{1}{2}\right)=\frac{1}{3},\\
+      \nonumber &P_X(2)=P_{XY}(2,1)+P_{XY}(2,2)+P_{XY}(2,3)=\frac{1}{6}\left(\frac{1}{2}+\frac{1}{4}+\frac{1}{4}\right)=\frac{1}{6},\\
       \nonumber &P_X(3)=P_{XY}(3,2)+P_{XY}(3,3)+P_{XY}(3,4)=\frac{1}{6}\left(\frac{1}{4}+\frac{1}{8}+\frac{1}{8}\right)=\frac{1}{12}.
     \end{align}
     In general, we obtain
@@ -274,7 +274,7 @@ Let $X$ and $Y$ be two discrete random variables, with range
     \end{align}
     Thus,
      \begin{align}\label{}
-      \nonumber \textrm{Var}(X)&=E[X^2|Y=2]-E[X|Y=2]\\
+      \nonumber \textrm{Var}(X)&=E[X^2|Y=2]-\big(E[X|Y=2]\big)^2\\
       \nonumber &=\frac{15}{4}-\frac{49}{16}\\
       \nonumber &=\frac{11}{16}.
     \end{align}
@@ -312,7 +312,7 @@ Let $X$ and $Y$ be two discrete random variables, with range
       \end{align}
       Thus, we conclude that
       \begin{align}\label{}
-      \nonumber &X \hspace{10pt} \sim \hspace{10pt} Poisson(\lambda p),\\
+      \nonumber &X \hspace{10pt} \sim \hspace{10pt} Poisson(\lambda p)\\
       \nonumber &Y \hspace{10pt} \sim \hspace{10pt} Poisson(\lambda q).
       \end{align}
 		</li>
@@ -368,7 +368,7 @@ We solve this problem using a similar approach as in Example 5.6. Let $\mu=EX$. 
   \end{align}
   In this equation, $E[X|T]=1+EX$, because the tosses are independent, so if the first toss is tails, it is like starting over on the second toss. Thus,
   \begin{align}\label{alhh}
-      p\mu=pE[X|H]+(1-p).
+      p\mu=pE[X|H]+(1-p)
   \end{align}
   We still need to find $E[X|H]$ so we condition on the second coin toss
    \begin{align}

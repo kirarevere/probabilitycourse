@@ -10,13 +10,13 @@
 
 <!-- Section Content -->
 <p>
-Here, we define jointly continuous random variables. Basically, two random variables are jointly continuous if they have a joint probability density function as defined bellow.
+Here, we will define jointly continuous random variables. Basically, two random variables are jointly continuous if they have a joint probability density function as defined bellow.
 </p>
 <div style="padding: 25px;margin:30px 40px; border: 2px solid black;">
 <span class="definition">Definition </span><br />
 Two random variables $X$ and $Y$ are <b>jointly continuous</b> if there exists a nonnegative function $f_{XY}:\mathbb{R}^2 \rightarrow \mathbb{R}$, such that, for any set $A\in \mathbb{R}^2$, we have
 \begin{align}\label{eq:double-int}
-  P\big((X,Y) \in A\big) =\iint \limits_A f_{XY}(x,y)dxdy. \hspace{30pt} (5.15)
+  P\big((X,Y) \in A\big) =\iint \limits_A f_{XY}(x,y)dxdy \hspace{30pt} (5.15)
 \end{align}
 The function $f_{XY}(x,y)$ is called the <b>joint probability density function (PDF)</b> of $X$ and $Y$.
 </div><br />
