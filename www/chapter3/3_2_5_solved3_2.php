@@ -39,7 +39,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>3.2.5 More about Discrete Random Variables: <br>Solved Problems</h2></div>
+			<div class="left"><h2>3.2.5 Solved Problems:<br>More about Discrete Random Variables</h2></div>
     		<div class="right hide_print">
 			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>

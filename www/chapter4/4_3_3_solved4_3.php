@@ -38,7 +38,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>4.3.3 Mixed Random Variables: Solved Problems</h2></div>
+			<div class="left"><h2>4.3.3 Solved Problems:<br>Mixed Random Variables</h2></div>
     		<div class="right hide_print">
 			<a href=""><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
 			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>

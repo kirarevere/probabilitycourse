@@ -48,7 +48,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>1.4.5 Conditional Probability: Solved Problems</h2></div>
+			<div class="left"><h2>1.4.5 Solved Problems:<br>Conditional Probability</h2></div>
     		<div class="right hide_print"><a href="videos/chapter1/video1_10.html"><img src="images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
 			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>
