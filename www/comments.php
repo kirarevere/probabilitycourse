@@ -58,6 +58,11 @@
               </tr>
 							</table>
 <div style="margin-left:65px;">
+ <script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'clean'
+ };
+ </script>
 <?php
   require_once('recaptchalib.php');
   $publickey = "6Lf8IPESAAAAAL6JeronnI-mqzKcxYURgGuw2tiD"; // you got this from the signup page
