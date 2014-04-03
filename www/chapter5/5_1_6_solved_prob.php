@@ -71,7 +71,7 @@ Consider two random variables $X$ and $Y$ with joint PMF given in Table 5.3.
 
   <li>Note from the table that
   \begin{align}%\label{}
-  \nonumber R_X=\{1,2,3\}  \textrm{and} R_Y=\{2,4,5\}.
+  \nonumber R_X=\{1,2,3\}  \textrm{ and } R_Y=\{2,4,5\}.
   \end{align}
   Now we can use Equation 5.1 to find the marginal PMFs:
 
@@ -304,11 +304,11 @@ Let $X$ and $Y$ be two discrete random variables, with range
        We have
       \begin{align}\label{}
       \nonumber P_X(k)&=\sum_{n=0}^{\infty} P(X=k|N=n)P_N(n) & (\textrm{law of total probability})\\
-      \nonumber &=\sum_{n=k}^{\infty} {n \choose k} p^k q^{n-k} e^{-\lambda} \frac{\lambda^n}{n!}\\
-      \nonumber &=\sum_{n=k}^{\infty} \frac{p^k q^{n-k} e^{-\lambda} \lambda^n}{k! (n-k)!} \\
-      \nonumber &=\frac{e^{-\lambda} (\lambda p)^k}{k!}  \sum_{n=k}^{\infty} \frac{(\lambda q)^{n-k}}{(n-k)!} \\
-      \nonumber &=\frac{e^{-\lambda} (\lambda p)^k}{k!} e^{\lambda q} & (\textrm{Taylor series for } e^x)\\
-      \nonumber &=\frac{e^{-\lambda p} (\lambda p)^k}{k!}, \hspace{40pt} \textrm{ for }k=0,1,2,...
+      \nonumber &=\sum_{n=k}^{\infty} {n \choose k} p^k q^{n-k} exp{-\lambda} \frac{\lambda^n}{n!}\\
+      \nonumber &=\sum_{n=k}^{\infty} \frac{p^k q^{n-k} exp{-\lambda} \lambda^n}{k! (n-k)!} \\
+      \nonumber &=\frac{exp{-\lambda} (\lambda p)^k}{k!}  \sum_{n=k}^{\infty} \frac{(\lambda q)^{n-k}}{(n-k)!} \\
+      \nonumber &=\frac{exp{-\lambda} (\lambda p)^k}{k!} exp{\lambda q} & (\textrm{Taylor series for } e^x)\\
+      \nonumber &=\frac{exp{-\lambda p} (\lambda p)^k}{k!}, \hspace{40pt} \textrm{ for }k=0,1,2,...
       \end{align}
       Thus, we conclude that
       \begin{align}\label{}
@@ -325,9 +325,9 @@ Let $X$ and $Y$ be two discrete random variables, with range
       \begin{align}\label{}
       \nonumber P_{XY}(i,j)&=P(X=i, Y=j|N=i+j)P_N(i+j)\\
       \nonumber &=P(X=i|N=i+j)P_N(i+j)\\
-      \nonumber &={i+j \choose i} p^i q^j e^{-\lambda} \frac{\lambda^{i+j}}{(i+j)!}\\
-      \nonumber &=\frac{e^{-\lambda} (\lambda p)^i (\lambda q)^j}{i! j!}\\
-      \nonumber &=\frac{e^{-\lambda p} (\lambda p)^i}{i!}. \frac{e^{-\lambda q} (\lambda q)^j}{j!}\\
+      \nonumber &={i+j \choose i} p^i q^j exp{-\lambda} \frac{\lambda^{i+j}}{(i+j)!}\\
+      \nonumber &=\frac{exp{-\lambda} (\lambda p)^i (\lambda q)^j}{i! j!}\\
+      \nonumber &=\frac{exp{-\lambda p} (\lambda p)^i}{i!}. \frac{exp{-\lambda q} (\lambda q)^j}{j!}\\
       \nonumber &=P_X(i)P_Y(j).
       \end{align}
 		</li>
