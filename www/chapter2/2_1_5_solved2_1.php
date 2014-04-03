@@ -41,7 +41,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>2.1.5 Combinatorics: Solved Problems</h2></div>
+			<div class="left"><h2>2.1.5 Solved Problems:<br>Combinatorics</h2></div>
     		<div class="right hide_print">
 			<img src="http://probabilitycourse.com/images/print.png" id="printButton" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>

@@ -43,7 +43,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>1.2.5 Review of Set Theory: Solved Problems</h2></div>
+			<div class="left"><h2>1.2.5 Solved Problems:<br>Review of Set Theory</h2></div>
     		<div class="right hide_print">
 			<img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>

@@ -48,7 +48,7 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>1.3.6 Random Experiments and Probabilities: Solved Problems</h2></div>
+			<div class="left"><h2>1.3.6 Solved Problems:<br>Random Experiments and Probabilities</h2></div>
     		<div class="right hide_print"><img src="images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;" id="printButton"/></div>
     		<div class="clear"></div>
 			
