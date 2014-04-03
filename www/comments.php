@@ -56,14 +56,15 @@
                 <textarea  name="comments" cols="50" rows="10"></textarea>
                </td>
               </tr>
-              <tr>
-							 <td>
+							</table>
+							<table>
+							<tr>
 <?php
   require_once('recaptchalib.php');
   $publickey = "6Lf8IPESAAAAAL6JeronnI-mqzKcxYURgGuw2tiD"; // you got this from the signup page
   echo recaptcha_get_html($publickey);
 ?>
-								</td>
+							</tr>
 							<tr>
                <td  style="text-align:center">
                 <input type="submit" value="Submit">
