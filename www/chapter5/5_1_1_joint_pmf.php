@@ -40,7 +40,7 @@ In fact, sometimes we define $R_{XY}=R_X \times R_Y$ to simplify the analysis. I
 </div>
 
 We can use the joint PMF to find $P\big( (X,Y) \in A \big)$ for any set $A \subset \mathbb{R}^2$. Specifically, we have
-<div style="padding: 20px; margin: 30px auto;width:400px; border: 2px solid black;">
+<div style="padding: 20px; margin: 30px auto;width:600px; border: 2px solid black;">
 \begin{align}%\label{}
 \nonumber P\big( (X,Y) \in A \big)=\sum_{(x_i,y_j) \in (A \cap R_{XY})} P_{XY}(x_i,y_j)
 \end{align}
