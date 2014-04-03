@@ -31,7 +31,7 @@
 			
 			<form name="contactform" method="post" action="http://probabilitycourse.com/send_form_email.php">
 
-              <table width="800px">
+              <table width="450px">
               <tr>
                <td valign="top">
                 <label for="name">Name</label>
