@@ -289,9 +289,9 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
 	</li>
 
 
-  <li> Note that $Cov(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=1$. We have
+  <li> Note that $\textrm{Cov}(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=1$. We have
   \begin{align}
-  \nonumber Cov(X+Y,2X-Y)&=2Cov(X,X)-Cov(X,Y)+2Cov(Y,X)-Cov(Y,Y) \\
+  \nonumber \textrm{Cov}(X+Y,2X-Y)&=2\textrm{Cov}(X,X)-\textrm{Cov}(X,Y)+2\textrm{Cov}(Y,X)-\textrm{Cov}(Y,Y) \\
   \nonumber &=2-1+2-4=-1.
   \end{align}
 	</li>
@@ -311,7 +311,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
 </li></ul></div><hr /><br />
 <!-- /Example -->
 
-Remember that if two random variables $X$ and $Y$ are independent, then they are uncorrelated, i.e., $Cov(X,Y)=0$. However, the converse is not true in general. In the case of jointly normal random variables, the converse is true. Thus, for jointly normal random variables being independent and being uncorrelated are equivalent.
+Remember that if two random variables $X$ and $Y$ are independent, then they are uncorrelated, i.e., $\textrm{Cov}(X,Y)=0$. However, the converse is not true in general. In the case of jointly normal random variables, the converse is true. Thus, for jointly normal random variables being independent and being uncorrelated are equivalent.
 
 <div class="cbox">
 <span class="theorem">Theorem </span><br />
