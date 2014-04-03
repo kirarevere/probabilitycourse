@@ -24,7 +24,7 @@ htmlText += '<ul>';
 htmlText += '<li><a href="http://probabilitycourse.com/index.html">HOME</a></li>';
 htmlText += '<li><a href="http://probabilitycourse.com/videos/videos.html">VIDEOS</a></li>';
 htmlText += '<li><a href="http://probabilitycourse.com/calculator/calculator.html">CALCULATOR</a></li>';
-htmlText += '<li><a href="http://probabilitycourse.com/comments.html">COMMENTS</a></li>';
+htmlText += '<li><a href="http://probabilitycourse.com/comments.php">COMMENTS</a></li>';
 htmlText += '</ul>';
 htmlText += '</div>';
 
