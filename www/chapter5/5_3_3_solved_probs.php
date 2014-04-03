@@ -20,7 +20,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
     0 &  \quad \text{otherwise}
   \end{array} \right.
   \end{equation}
-  Find $Cov(X,Y)$ and $\rho(X,Y)$.
+  Find $\textrm{Cov}(X,Y)$ and $\rho(X,Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   For $0 \leq x \leq 1$, we have
@@ -68,37 +68,37 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \end{align}
 
 
-  Now, we can find $Cov(X,Y)$ and $\rho(X,Y)$:
+  Now, we can find $\textrm{Cov}(X,Y)$ and $\rho(X,Y)$:
   \begin{align}%\label{}
-  \nonumber  Cov(X,Y)&=EXY-EXEY\\
+  \nonumber  \textrm{Cov}(X,Y)&=EXY-EXEY\\
   \nonumber  &=\frac{1}{12}-\left(\frac{1}{3}\right)^2\\
   \nonumber  &=-\frac{1}{36},
   \end{align}
 
   \begin{align}%\label{}
-  \nonumber  \rho(X,Y)&=\frac{Cov(X,Y)}{\sqrt{Var(X) Var(Y)}}\\
+  \nonumber  \rho(X,Y)&=\frac{\textrm{Cov}(X,Y)}{\sqrt{Var(X) Var(Y)}}\\
   \nonumber  &=-\frac{1}{2}.
   \end{align}
 </li></ul>
 </li></ul></div><br />
 
 <hr /><span class="problem">Problem </span><br />
-I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $Cov(X,Y)$ and $\rho(X,Y)$. <i>Hint:</i> One way to solve this problem is to look at $Var(X+Y)$.
+I roll a fair die $n$ times. Let $X$ be the number of $1$'s that I observe and let $Y$ be the number of $2$'s that I observe. Find $\textrm{Cov}(X,Y)$ and $\rho(X,Y)$. <i>Hint:</i> One way to solve this problem is to look at $Var(X+Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   Note that you can look at this as a binomial experiment. In particular, we can say that $X$ and $Y$ are $Binomial(n,\frac{1}{6})$. Also, $X+Y$ is $Binomial(n,\frac{2}{6})$. Remember the variance of a $Binomial(n,p)$ random variable is $np(1-p)$. Thus, we can write
   \begin{align}%\label{}
   \nonumber  n\frac{2}{6}.\frac{4}{6}&=Var(X+Y)\\
-  \nonumber  &=Var(X)+Var(Y)+2Cov(X,Y)\\
-  \nonumber  &=n\frac{1}{6}.\frac{5}{6}+n\frac{1}{6}.\frac{5}{6}+2Cov(X,Y).
+  \nonumber  &=Var(X)+Var(Y)+2\textrm{Cov}(X,Y)\\
+  \nonumber  &=n\frac{1}{6}.\frac{5}{6}+n\frac{1}{6}.\frac{5}{6}+2\textrm{Cov}(X,Y).
   \end{align}
   Thus,
   \begin{align}%\label{}
-  \nonumber  Cov(X,Y)=-\frac{n}{36}.
+  \nonumber  \textrm{Cov}(X,Y)=-\frac{n}{36}.
   \end{align}
   And,
   \begin{align}%\label{}
-  \nonumber  \rho(X,Y)=\frac{Cov(X,Y)}{\sqrt{Var(X) Var(Y)}}=-\frac{1}{5}.
+  \nonumber  \rho(X,Y)=\frac{\textrm{Cov}(X,Y)}{\sqrt{Var(X) Var(Y)}}=-\frac{1}{5}.
   \end{align}
 </li></ul>
 </li></ul></div><br />
@@ -126,7 +126,7 @@ In this problem, you will provide another proof for the fact that $|\rho(X,Y)| \
 </li></ul></div><br />
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=\max(X,Y)$ and $W=\min(X,Y)$. Find $Cov(Z,W)$.
+Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=\max(X,Y)$ and $W=\min(X,Y)$. Find $\textrm{Cov}(Z,W)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
   It is useful to find the distributions of $Z$ and $W$. To find the CDF of $Z$, we can write
@@ -190,15 +190,15 @@ Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let also $Z=
     0 &  \text{otherwise}
   \end{array} \right.
   \end{equation}
-  From the above PDF we can verify that $EW=\frac{1}{3}$. Now, to find $Cov(Z,W)$, we can write
+  From the above PDF we can verify that $EW=\frac{1}{3}$. Now, to find $\textrm{Cov}(Z,W)$, we can write
   \begin{align}%\label{}
-  \nonumber Cov(Z,W)&=E[ZW]-EZEW \\
+  \nonumber \textrm{Cov}(Z,W)&=E[ZW]-EZEW \\
   \nonumber &=E[XY]-EZEW\\
   \nonumber &=E[X]E[Y]-E[Z]E[W] &(\textrm{since }X \textrm{ and }Y \textrm{ are independent})\\
   \nonumber &=\frac{1}{2}.\frac{1}{2}-\frac{2}{3}.\frac{1}{3}\\
   \nonumber &=\frac{1}{36}.
   \end{align}
-  Note that $Cov(Z,W)>0$ as we expect intuitively.
+  Note that $\textrm{Cov}(Z,W)>0$ as we expect intuitively.
 </li></ul>
 </li></ul></div><br />
 
@@ -209,7 +209,7 @@ Let $X$ and $Y$ be jointly (bivariate) normal, with $Var(X)=Var(Y)$. Show that t
 <ul><li>
    Note that since $X$ and $Y$ are jointly normal, we conclude that the random variables $X+Y$ and $X-Y$ are also jointly normal. We have
   \begin{align}%\label{}
-  \nonumber  Cov(X+Y,X-Y)&=Cov(X,X)-Cov(X,Y)+Cov(Y,X)-Cov(Y,Y)\\
+  \nonumber  \textrm{Cov}(X+Y,X-Y)&=\textrm{Cov}(X,X)-\textrm{Cov}(X,Y)+\textrm{Cov}(Y,X)-\textrm{Cov}(Y,Y)\\
   \nonumber  &=Var(X)-Var(Y)\\
   \nonumber  &=0.
   \end{align}
@@ -233,7 +233,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
   \nonumber &EU=EX+EY=-1,
   \end{align}
   \begin{align}
-  \nonumber Var(U)&=Var(X)+Var(Y)+2 Cov(X,Y) \\
+  \nonumber Var(U)&=Var(X)+Var(Y)+2 \textrm{Cov}(X,Y) \\
   \nonumber &=1+4+2 \sigma_X \sigma_Y \rho(X,Y)\\
   \nonumber &=5-2 \times 1\times2\times\frac{1}{2}\\
   \nonumber &=3.
@@ -245,9 +245,9 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
 	</li>
 
 
-  <li> Note that $aX+Y$ and $X+2Y$ are jointly normal. Thus, for them, independence is equivalent to having $Cov(aX+Y,X+2Y)=0$. Also, note that $Cov(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=-1$. We have
+  <li> Note that $aX+Y$ and $X+2Y$ are jointly normal. Thus, for them, independence is equivalent to having $\textrm{Cov}(aX+Y,X+2Y)=0$. Also, note that $\textrm{Cov}(X,Y)=\sigma_X \sigma_Y \rho(X,Y)=-1$. We have
   \begin{align}
-  \nonumber Cov(aX+Y,X+2Y)&=aCov(X,X)+2aCov(X,Y)+Cov(Y,X)+2Cov(Y,Y) \\
+  \nonumber \textrm{Cov}(aX+Y,X+2Y)&=a\textrm{Cov}(X,X)+2a\textrm{Cov}(X,Y)+\textrm{Cov}(Y,X)+2\textrm{Cov}(Y,Y) \\
   \nonumber &=a-(2a+1)+8\\
   \nonumber &=-a+7.
   \end{align}
@@ -261,15 +261,15 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=0$, $\
   \end{align}
   and
   \begin{align}%\label{}
-  \nonumber  Cov(U,V)&=Cov(X+Y,2X-Y)\\
-   &=2Cov(X,X)-Cov(X,Y)+2Cov(Y,X)-Cov(Y,Y)\\
-  \nonumber  &=2Var(X)+Cov(X,Y)-Var(Y)\\
+  \nonumber  \textrm{Cov}(U,V)&=\textrm{Cov}(X+Y,2X-Y)\\
+   &=2\textrm{Cov}(X,X)-\textrm{Cov}(X,Y)+2\textrm{Cov}(Y,X)-\textrm{Cov}(Y,Y)\\
+  \nonumber  &=2Var(X)+\textrm{Cov}(X,Y)-Var(Y)\\
   \nonumber  &=2-1-4\\
   \nonumber  &=-3.
   \end{align}
   Thus,
   \begin{align}%\label{}
-  \nonumber  \rho(U,V)&=\frac{Cov(U,V)}{\sqrt{Var(U) Var(V)}}\\
+  \nonumber  \rho(U,V)&=\frac{\textrm{Cov}(U,V)}{\sqrt{Var(U) Var(V)}}\\
   \nonumber  &=-\frac{1}{2}.
   \end{align}
 
