@@ -57,7 +57,7 @@
                </td>
               </tr>
 							</table>
-							<table>
+							<table style="margin-left:30px;">
 							<tr>
 <?php
   require_once('recaptchalib.php');
