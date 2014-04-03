@@ -27,7 +27,7 @@ Intuitively, the covariance between $X$ and $Y$ indicates how the values of $X$ 
 
 <!-- Example -->
 <br /><hr /><span class="example">Example </span><br />
-Suppose $X \sim Uniform(1,2)$, and given $X=x$, $Y$ is exponential with parameter $\lambda=x$. Find \textrm{Cov}$(X,Y)$.
+Suppose $X \sim Uniform(1,2)$, and given $X=x$, $Y$ is exponential with parameter $\lambda=x$. Find $\textrm{Cov}$(X,Y)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 We can use Cov$(X,Y)=EXY-EXEY$. We have $EX=\frac{3}{2}$ and
