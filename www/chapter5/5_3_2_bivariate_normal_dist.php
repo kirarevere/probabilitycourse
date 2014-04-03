@@ -49,7 +49,7 @@ Thus, $Z$ is a mixed random variable and its PDF is given by
 \nonumber  f_Z(z)&=\frac{1}{2} \delta(z)+\frac{1}{2} (\textrm{PDF of a $N(0,4)$ at $z$}) \\
 \nonumber  &=\frac{1}{2} \delta(z)+\frac{1}{4\sqrt{2 \pi}}e^{-\frac{z^2}{8}}.
 \end{align}
-In particular, note that  $X$ and $Y$ are both normal but their sum is not. Now, we are ready to define \textbf{bivariate normal} or \textbf{jointly normal} random variables.
+In particular, note that  $X$ and $Y$ are both normal but their sum is not. Now, we are ready to define <b>bivariate normal</b> or <b>jointly normal</b> random variables.
 </li></ul>
 </li></ul></div><hr /><br />
 <!-- /Example -->
@@ -136,9 +136,9 @@ First, note that since $Z_1$ and $Z_2$ are normal and independent, they are join
   \end{align}
   Therefore,
   \begin{align}
-  \nonumber \rho(X,Y) &=Cov(X,Y)\\
-  \nonumber &=Cov(Z_1,\rho Z_1 +\sqrt{1-\rho^2} Z_2)\\
-  \nonumber &=\rho Cov(Z_1,Z_1)+\sqrt{1-\rho^2} Cov(Z_1,Z_2)\\
+  \nonumber \rho(X,Y) &=\textrm{Cov}(X,Y)\\
+  \nonumber &=\textrm{Cov}(Z_1,\rho Z_1 +\sqrt{1-\rho^2} Z_2)\\
+  \nonumber &=\rho \textrm{Cov}(Z_1,Z_1)+\sqrt{1-\rho^2} \textrm{Cov}(Z_1,Z_2)\\
   \nonumber &=\rho \cdot 1+ \sqrt{1-\rho^2} \cdot 0\\
   \nonumber &=\rho.
   \end{align}
@@ -266,7 +266,7 @@ We conclude that given $X=x$, $Y$ is normally distributed with mean $\mu_Y$+ $\r
 Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\sigma^2_X=1$, $\mu_Y=0$, $\sigma^2_Y=4$, and $\rho=\frac{1}{2}$.
 <ol type="a">
   <li> Find $P(2X+Y \leq 3)$.</li>
-  <li> Find $Cov(X+Y,2X-Y)$.</li>
+  <li> Find $\textrm{Cov}(X+Y,2X-Y)$.</li>
   <li> Find $P(Y>1|X=2)$.</li>
 </ol>
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
@@ -277,7 +277,7 @@ Let $X$ and $Y$ be jointly normal random variables with parameters $\mu_X=1$, $\
   \nonumber &EV=2EX+EY=2,
   \end{align}
   \begin{align}
-  \nonumber Var(V)&=4Var(X)+Var(Y)+4 Cov(X,Y) \\
+  \nonumber Var(V)&=4Var(X)+Var(Y)+4 \textrm{Cov}(X,Y) \\
   \nonumber &=4+4+4 \sigma_X \sigma_Y \rho(X,Y)\\
   \nonumber &=8+4 \times 1\times2\times\frac{1}{2}\\
   \nonumber &=12.
