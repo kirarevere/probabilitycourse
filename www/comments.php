@@ -30,11 +30,7 @@
 			<p>Please fill out all the fields.</p>
 			
 			<form name="contactform" method="post" action="http://probabilitycourse.com/send_form_email.php">
-<?php
-  require_once('recaptchalib.php');
-  $publickey = "6Lf8IPESAAAAAL6JeronnI-mqzKcxYURgGuw2tiD"; // you got this from the signup page
-  echo recaptcha_get_html($publickey);
-?>
+
               <table width="450px">
               <tr>
                <td valign="top">
@@ -66,6 +62,11 @@
                </td>
               </tr>
               </table>
+<?php
+  require_once('recaptchalib.php');
+  $publickey = "6Lf8IPESAAAAAL6JeronnI-mqzKcxYURgGuw2tiD"; // you got this from the signup page
+  echo recaptcha_get_html($publickey);
+?>
               </form>
 			
 		</div>
