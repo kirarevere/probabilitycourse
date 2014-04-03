@@ -9,7 +9,7 @@
   if (!$resp->is_valid) {
     // What happens when the CAPTCHA was entered incorrectly
     die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
-         "(reCAPTCHA said: " . $resp->error . ")" . 
+         "(reCAPTCHA said: " . $resp->error . ")\n" . 
 				 "(<a href='http://probabilitycourse.com/comments.php'>Return to Comments</a>)");
   } else {
     // Your code here to handle a successful verification
