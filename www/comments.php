@@ -64,6 +64,7 @@
   echo recaptcha_get_html($publickey);
 ?>
 								</td>
+							<tr>
                <td  style="text-align:center">
                 <input type="submit" value="Submit">
                </td>
