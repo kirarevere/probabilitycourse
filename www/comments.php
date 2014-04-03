@@ -57,16 +57,18 @@
                </td>
               </tr>
               <tr>
-               <td colspan="2" style="text-align:center">
-                <input type="submit" value="Submit">
-               </td>
-              </tr>
-              </table>
+							 <td>
 <?php
   require_once('recaptchalib.php');
   $publickey = "6Lf8IPESAAAAAL6JeronnI-mqzKcxYURgGuw2tiD"; // you got this from the signup page
   echo recaptcha_get_html($publickey);
 ?>
+								</td>
+               <td  style="text-align:center">
+                <input type="submit" value="Submit">
+               </td>
+              </tr>
+              </table>
               </form>
 			
 		</div>
