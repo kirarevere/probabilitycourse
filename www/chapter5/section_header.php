@@ -10,6 +10,9 @@
 	<!-- Configuration for LaTeX rendering -->
 	<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({
+				"HTML-CSS": {
+				scale: "125"
+				},
     		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
   			});
 	</script>	
