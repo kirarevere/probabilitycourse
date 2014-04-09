@@ -333,8 +333,7 @@ least once.
 
 </p>
 <ol type='a'>
-<li>Show that you can write X = X0 + X1 +· · · +XN −1 , where Xi ∼ Geometric( N i
-).
+<li>Show that you can write $X = X_0 + X_1 +\cdots +X_{N −1}$ , where $X_i ∼ Geometric(\frac{N-i}{i})$.
 </li>
 <li>
 Find EX.
