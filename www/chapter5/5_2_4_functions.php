@@ -259,8 +259,8 @@ If $X \sim N(\mu_X,\sigma^2_X)$ and $Y \sim N(\mu_Y,\sigma^2_Y)$ are independent
 \begin{align}%\label{}
 \nonumber   X+Y \hspace{5pt} \sim \hspace{5pt} N\bigg(\mu_X+\mu_Y, \sigma_X^2+\sigma_Y^2\bigg).
 \end{align}
- We will see an easier proof of Theorem 5.2 when we discuss <i>moment generating functions</i>.
 </div>
+ We will see an easier proof of Theorem 5.2 when we discuss <i>moment generating functions</i>.
 
 <!-- /Section Content -->
 

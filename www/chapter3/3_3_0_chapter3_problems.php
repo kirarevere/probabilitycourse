@@ -323,8 +323,24 @@
                 <li>We pick a person in the town at random, and define the random variable $Y$ as the number 
 				of people in the household where the chosen person lives. Find the PMF and the expected value of $Y$.</li>
             </ol></p>
-			
 			<hr /><br />
+<span class='problem'>Problem </span>
+<p>
+Suppose that there are N different types of coupons.
+Each time you get a coupon, it is equally likely to be any of the N possible types. Let
+X be the number of coupons you will need to get before having observed each coupon at
+least once.
+−i
+</p>
+<ol type='a'>
+<li>Show that you can write X = X0 + X1 +· · · +XN −1 , where Xi ∼ Geometric( N i
+).
+</li>
+<li>
+(b) Find EX.
+</li>
+</ol>
+<hr /><br />
 			<span class='problem'>Problem </span> <a href="http://probabilitycourse.com/bibliography.html#wiki-St-Petersburg">(St. Petersburg Paradox)</a><br>
 			<p>Here is a famous problem called the St. Petersburg Paradox. Wikipedia states the problem as 
 			follows: "A casino offers a game of chance for a single player in which a fair coin is tossed at 
