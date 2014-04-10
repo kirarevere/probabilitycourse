@@ -46,7 +46,7 @@ The <b>expected value vector</b> or the <b>mean vector</b> of the random vector 
 \end{align}
 Similarly, a <b>random matrix</b> is a matrix whose elements are random variables. In particular, we can have an $m$ by $n$ random matrix <b>M</b> as
 \begin{align}
-\nonumber <b>M</b> = \begin{bmatrix}
+\nonumber M = \begin{bmatrix}
        X_{11} & X_{12} & ... & X_{1n}  \\%[5pt]
        X_{21} & X_{22} & ... & X_{2n} \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
@@ -56,7 +56,8 @@ Similarly, a <b>random matrix</b> is a matrix whose elements are random variable
 \end{bmatrix}.
 \end{align}
 We sometimes write this as <b>M</b>$=[X_{ij}]$, which means that $X_{ij}$ is the element in the $i$th row and $j$th column of <b>M</b>. The mean matrix of <b>M</b> is given by
-\nonumber E\textbf{M} = \begin{bmatrix}
+\begin{align}
+\nonumber EM = \begin{bmatrix}
        EX_{11} & EX_{12} & ... & EX_{1n}  \\%[5pt]
        EX_{21} & EX_{22} & ... & EX_{2n} \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
@@ -64,6 +65,7 @@ We sometimes write this as <b>M</b>$=[X_{ij}]$, which means that $X_{ij}$ is the
        .      &   .    &  .  &  .   \\[5pt]
        EX_{m1} & EX_{m2} & ... & EX_{mn}
 \end{bmatrix}.
+\end{align}
 
 Linearity of expectation is also valid for random vectors and matrices. In particular, let <b>X</b> be an $n$-dimensional random vector and the random vector  <b>Y</b> be defined as
 \begin{align}
@@ -71,7 +73,7 @@ Linearity of expectation is also valid for random vectors and matrices. In parti
 \end{align}
 where <b>A</b> is a fixed (non-random) $m$ by $n$ matrix and <b>b</b> is a fixed $m$-dimensional vector. Then we have
 \begin{align}
-  E<b>Y</b>=<b>A</b>E<b>X</b>+<b>b</b>.
+  EY=AEX+b.
 \end{align}
 Also, if $X_1$, $X_2$, $...$, $X_k$ are $n$-dimensional random vectors, then we have
 \begin{align}
@@ -117,12 +119,12 @@ The <b>covariance matrix</b>, <b>$C_X$</b>,  is defined as
 
 <br />
 \nonumber  &=  \begin{bmatrix}
-       \textrm{var}(X_1) & \textrm{cov}(X_1,X_2)& ... & \textrm{cov}(X_1,X_n)  \\%[5pt]
-       \textrm{cov}(X_2,X_1) & \textrm{var}(X_2) & ... & \textrm{cov}(X_2,X_n) \\%[5pt]
+       \textrm{var}(X_1) & \textrm{Cov}(X_1,X_2)& ... & \textrm{Cov}(X_1,X_n)  \\%[5pt]
+       \textrm{Cov}(X_2,X_1) & \textrm{var}(X_2) & ... & \textrm{Cov}(X_2,X_n) \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
        .      &   .    &  .  &  .   \\[-10pt]
        .      &   .    &  .  &  .   \\[5pt]
-       \textrm{cov}(X_n,X_1) & \textrm{cov}(X_n X_2)  & ... & \textrm{var}(X_n)
+       \textrm{Cov}(X_n,X_1) & \textrm{Cov}(X_n X_2)  & ... & \textrm{var}(X_n)
 \end{bmatrix}.
 \end{align}
 The covariance matrix is a generalization of the variance of a random variable. Remember that for a random variable, we have $\textrm{var}(X)=EX^2-(EX)^2$. The following example extends this formula to random vectors.
@@ -232,7 +234,7 @@ The correlation matrix $\textbf{R}_\textbf{U}$ is given by
 The covariance matrix $\textbf{C}_\textbf{U}$ is given by
 \nonumber \textbf{C}_\textbf{U}
 =  \begin{bmatrix}
-       \textrm{var}(X) & \cov(X,Y)  \\%[5pt]
+       \textrm{var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
        \textrm{Cov}(Y,X) & \textrm{var}(Y)
 \end{bmatrix}
 =  \begin{bmatrix}
@@ -245,7 +247,7 @@ The covariance matrix $\textbf{C}_\textbf{U}$ is given by
 <h2>Properties of the Covariance Matrix:</h2>
 The covariance matrix is the generalization of the variance to random vectors. It is an important matrix and is used extensively. Let us a take a moment and discuss its properties. Here, we use concepts from linear algebra such as eigenvalues and positive definiteness. First note that, for any random vector <b>X</b>, the covariance matrix <b>$C_X$</b> is a symmetric matrix. This is because if $C_X=[c_{ij}]$, then
 \begin{align}%\label{}
- c_{ij}=\cov(X_i,X_j)=\textrm{Cov}(X_j,X_i)=c_{ji}.
+ c_{ij}=\textrm{Cov}(X_i,X_j)=\textrm{Cov}(X_j,X_i)=c_{ji}.
 \end{align}
 Thus, the covariance matrix has all the nice properties of symmetric matrices. In particular, <b>$C_X$</b> can be diagonalized and all the eigenvalues of  <b>$C_X$</b> are real. Here, we assume <b>X</b> is a real random vector, i.e., the $X_i$'s can only take real values. A special important property of the covariance matrix is that it is positive semi-definite (PSD). Remember from linear algebra that a symmetric matrix <b>M</b> is <b>positive semi-definite (PSD)</b> if, for all vectors <b>b</b>, we have
 \begin{align}
@@ -296,16 +298,16 @@ Determine whether $\textbf{C}_\textbf{U}$ and $\textbf{C}_\textbf{V}$ are positi
 \begin{equation}
 \nonumber \textbf{C}_\textbf{U}
 =  \begin{bmatrix}
-       \var (X) & \cov(X,X+Y)  \\%[5pt]
-       \cov(X+Y,X) & \var(X+Y)
+       \textrm{Var}(X) & \textrm{Cov}(X,X+Y)  \\%[5pt]
+       \textrm{Cov}(X+Y,X) & \textrm{Var}(X+Y)
 \end{bmatrix}.
 \end{equation}
 Since $X$ and $Y$ are independent $Uniform(0,1)$ random variables, we have
 \begin{align}%\label{}
- \var(X)=\var(&Y)=\frac{1}{12},\\
- \cov(X,X+Y)&=\cov(X,X)+\cov(X,Y)\\
+ \textrm{var}(X)=\textrm{var}(&Y)=\frac{1}{12},\\
+ \textrm{Cov}(X,X+Y)&=\textrm{Cov}(X,X)+\textrm{Cov}(X,Y)\\
  &=\frac{1}{12}+0=\frac{1}{12},\\
- \var(X+Y)=&\var(X)+\var(Y)=\frac{1}{6}.
+ \textrm{Var}(X+Y)=&\textrm{Var}(X)+\textrm{Var}(Y)=\frac{1}{6}.
 \end{align}
 Thus,
 \begin{equation}
@@ -324,9 +326,9 @@ Therefore, $\textbf{C}_\textbf{U}$ is positive definite. For $\textbf{C}_\textbf
 \begin{align}
 \nonumber \textbf{C}_\textbf{V}
 &=  \begin{bmatrix}
-       \var (X) & \cov(X,Y) & \cov(X,X+Y)  \\%[5pt]
-       \cov(Y,X) & \var(Y) &\cov(Y,X+Y) \\
-       \cov(X+Y,X) &\cov(X+Y,Y) & \var(X+Y)
+       \textrm{Var}(X) & \textrm{Cov}(X,Y) & \textrm{Cov}(X,X+Y)  \\%[5pt]
+       \textrm{Cov}(Y,X) & \textrm{Var}(Y) &\textrm{Cov}(Y,X+Y) \\
+       \textrm{Cov}(X+Y,X) &\textrm{Cov}(X+Y,Y) & \textrm{Var}(X+Y)
 \end{bmatrix}\\
 &=  \begin{bmatrix}
        \frac{1}{12} & 0 & \frac{1}{12}  \\[5pt]
@@ -502,7 +504,7 @@ For a standard normal vector \textbf{Z}, where $Z_i$'s are i.i.d and $Z_i \sim N
 
 Now, we need to extend this formula to a general normal random vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}. This is very similar to when we defined general normal random variables from the standard normal random variable. We remember that if $Z \sim N(0,1)$, then the random variable $X=\sigma Z+ \mu$ has $N(\mu, \sigma^2)$ distribution. We would like to do the same thing for normal random vectors.
 
-Assume that I have a normal random vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. \footnote{The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem \ref{thm:PSD}), so $\det(\textbf{C}) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(\textbf{C})>0$ (Theorem \ref{thm:PD}). So here, we are only excluding the case $\det(\textbf{C})=0$. If $\det(\textbf{C})=0$, then you can show that you can write some $X_i$'s as a linear combination of others, so indeed we can remove them from the vector without losing any information.} Then from linear algebra we know that there exists an $n$ by $n$ matrix \textbf{Q} such that
+Assume that I have a normal random vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. \footnote{The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem \ref{thm:PSD}), so $\det(\textbf{C}) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(\textbf{C})>0$ (Theorem \ref{thm:PD}). So here, we are only excluding the case $\det(\textbf{C})=0$. If $\det(\textbf{C})=0$, then you can show that you can write some $X_i$&#39;s as a linear combination of others, so indeed we can remove them from the vector without losing any information.} Then from linear algebra we know that there exists an $n$ by $n$ matrix \textbf{Q} such that
 \begin{align}%\label{}
        &\textbf{Q}\textbf{Q}^T=\textbf{I}  \hsb (\textbf{I} \textrm{ is the identity matrix})\\
        &\textbf{C}= \textbf{Q} \textbf{D} \textbf{Q}^T,
@@ -599,8 +601,8 @@ Let $X$ and $Y$ be two jointly normal random variables with $X \sim N(\mu_X,\sig
 \begin{equation}
 \nonumber \textbf{C}
 =  \begin{bmatrix}
-       \var (X) & \cov(X,Y)  \\%[5pt]
-       \cov(Y,X) & \var(Y)
+       \textrm{Var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
+       \textrm{Cov}(Y,X) & \textrm{Var}(Y)
 \end{bmatrix}=\begin{bmatrix}
        \sigma^2_X & \rho \sigma_X \sigma_Y  \\%[5pt]
        \rho \sigma_X \sigma_Y   & \sigma^2_Y
@@ -653,7 +655,7 @@ Remember that two jointly normal random variables $X$ and $Y$ are independent if
 \fbox{\parbox{0.90\linewidth}{
 %\centering
 \vspace{10pt}
-If $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a normal random vector, and we know $\cov(X_i,X_j)=0$ for all $i \neq j$, then $X_1$,$X_2$, ..., $X_n$ are independent.
+If $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a normal random vector, and we know $\textrm{Cov}(X_i,X_j)=0$ for all $i \neq j$, then $X_1$,$X_2$, ..., $X_n$ are independent.
 \vspace{10pt}
 }}
 \vspace{10pt}
