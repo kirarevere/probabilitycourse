@@ -2,7 +2,7 @@
 	$section_no = "6.1.0";
 	$section_title = "Multiple Random Variables";
 	$section_prev = "chapter5/5_4_0_chapter_problems.php";
-	$section_next = "chapter6/6_1_1_two_or_more_vars.php";
+	$section_next = "chapter6/6_1_1_joint_distributions_independence.php";
 	include '../Control/autonumber.php';
 	initChapterHeaders(6);
 	include 'section_header.php'; 
