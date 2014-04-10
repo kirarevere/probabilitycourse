@@ -2,7 +2,7 @@
 	$section_no			= "6.1.5";
 	$section_title	= "Characteristic Functions";
 	$section_prev		= "chapter6/6_1_4_characteristic_functions.php";
-	$section_next		= "chapter6/6_1_6_#.php";
+	$section_next		= "chapter6/6_1_6_solved_probs.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(80);
 	include						"section_header.php";
