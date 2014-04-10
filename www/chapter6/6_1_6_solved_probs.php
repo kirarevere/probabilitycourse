@@ -74,14 +74,14 @@
       \frac{4}{3}EX+EX^2=14    \end{array} \right.
   \end{equation}
 
-We conclude $EX=3$, \,$EX^2=10$. Therefore,
+We conclude $EX=3$, $EX^2=10$. Therefore,
 \begin{equation}
       \left\{ \begin{array}{c}
       \mu=3  \\
      % &  \quad   \\
       \mu^2+\sigma^2=10 \end{array} \right.
 \end{equation}
-So, we obtain $\mu=3$,\,$\sigma=1$.
+So, we obtain $\mu=3$,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 <span class='problem'>Problem </span><br />
@@ -95,23 +95,22 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   \end{align}
   Find $EY$ and $\textrm{Var}(Y)$.
 
-<div class="solvedprob"><ul><li><a><b>Solution</b></a>
-<ul><li>
+<span class='problem'>Problem </span><br />
 
    We have
   \begin{align}
-  EY=EY_1+EY_2+EY_3=3EY_1, \hsb \textrm{by symmetry.}
+  EY=EY_1+EY_2+EY_3=3EY_1, \textrm{by symmetry.}
   \end{align}
   Also,
   \begin{align}
-  \textrm{Var}(Y)&=\textrm{Var}(Y_1)+\textrm{Var}(Y_2)+\textrm{Var}(Y_3)+2\cov(Y_1,Y_2)+2\cov(Y_1,Y_3)+2\cov(Y_2,Y_3)
+  \textrm{Var}(Y)&=\textrm{Var}(Y_1)+\textrm{Var}(Y_2)+\textrm{Var}(Y_3)+2\textrm{Cov}(Y_1,Y_2)+2\textrm{Cov}(Y_1,Y_3)+2\textrm{Cov}(Y_2,Y_3)
   \\ \quad \\
-  &=3\textrm{Var}(Y_1)+6\cov(Y_1,Y_2), \hsb \textrm{by symmetry.}
+  &=3\textrm{Var}(Y_1)+6\textrm{Cov}(Y_1,Y_2), \textrm{by symmetry.}
   \end{align}
   Note that $Y_i$'s are also Bernoulli random variables (but they are not independent). In particular, we have
   \begin{align}
   P(Y_1=1)&=P\big((X_1=1) \textrm{ or } (X_2=1)\big)\\
-  &=P(X_1=1)+P(X_2=1)-P(X_1=1,X_2=1) \hsa \textrm{(comma means "and")}\\
+  &=P(X_1=1)+P(X_2=1)-P(X_1=1,X_2=1) \textrm{(comma means "and")}\\
   &=2p-p^2.
   \end{align}
   Thus, $Y_1 \sim Bernoulli(2p-p^2)$, and we obtain
@@ -119,9 +118,9 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   &EY_1=2p-p^2=p(2-p)\\
   &\textrm{Var}(Y_1)=(2p-p^2)(1-2p+p^2)=p(2-p)(1-p)^2.
   \end{align}
-  It remains to find $\cov(Y_1,Y_2)$. We can write
+  It remains to find $\textrm{Cov}(Y_1,Y_2)$. We can write
   \begin{align}
-  \cov(Y_1,Y_2)&=E[Y_1 Y_2]-E[Y_1]E[Y_2]\\
+  \textrm{Cov}(Y_1,Y_2)&=E[Y_1 Y_2]-E[Y_1]E[Y_2]\\
   &=E[Y_1 Y_2]-p^2(2-p)^2.
   \end{align}
   Note that $Y_1Y_2$ is also a Bernoulli random variable. We have
@@ -133,7 +132,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   \end{align}
   Thus, we obtain
   \begin{align}
-  \cov(Y_1,Y_2)&=E[Y_1 Y_2]-p^2(2-p)^2\\
+  \textrm{Cov}(Y_1,Y_2)&=E[Y_1 Y_2]-p^2(2-p)^2\\
   &=p+p^2-p^3-p^2(2-p)^2.
  \end{align}
   Finally, we obtain
@@ -142,7 +141,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   \end{align}
   Also,
   \begin{align}
-  \textrm{Var}(Y)&=3\textrm{Var}(Y_1)+6\cov(Y_1,Y_2)\\
+  \textrm{Var}(Y)&=3\textrm{Var}(Y_1)+6\textrm{Cov}(Y_1,Y_2)\\
   &=3p(2-p)(1-p)^2+6(p+p^2-p^3-p^2(2-p)^2).
   \end{align}
 </li></ul>
@@ -182,11 +181,11 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
     &=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{sx} e^{-\frac{x^2}{2}}dx\\
     &=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{\frac{s^2}{2}} e^{-\frac{(x-s)^2}{2}}dx\\
     &=e^{\frac{s^2}{2}} \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{(x-s)^2}{2}}dx\\
-    &=e^{\frac{s^2}{2}} \hsb \hsb \textrm{(PDF of normal integrates to $1$)}.
+    &=e^{\frac{s^2}{2}} \textrm{(PDF of normal integrates to $1$)}.
   \end{align}
   Using problem \ref{prob:MGFaXb}, we obtain
  \begin{align}
-    M_X(s)=e^{s \mu + \frac{\sigma^2 s^2}{2}}, \hsb \hsb \textrm{for all} \quad s\in \mathbb{R}.
+    M_X(s)=e^{s \mu + \frac{\sigma^2 s^2}{2}}, \textrm{for all} \quad s\in \mathbb{R}.
   \end{align}
 </li></ul>
 </li></ul></div><hr /><br />
@@ -199,12 +198,12 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 
   We have
   \begin{equation}%\label{}
-    M_{X_i}(s)=e^{\lambda_i(e^s-1)}, \hsa \textrm{ for all } s\in \mathbb{R}.
+    M_{X_i}(s)=e^{\lambda_i(e^s-1)}, \textrm{ for all } s\in \mathbb{R}.
   \end{equation}
   Thus,
   \begin{align}%\label{}
     M_{Y}(s)&=\prod_{i=1}^{n}e^{\lambda_i(e^s-1)}\\
-    &=e^{(\sum_{i=1}^n \lambda_i) (e^s-1)}, \hsa \textrm{ for all } s\in \mathbb{R}.
+    &=e^{(\sum_{i=1}^n \lambda_i) (e^s-1)}, \textrm{ for all } s\in \mathbb{R}.
   \end{align}
   which is the MGF of a Poisson random variable with parameter $\lambda=\sum_{i=1}^n \lambda_i$, thus
   \begin{equation}%\label{}
@@ -253,7 +252,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
         \begin{align}%\label{}
           G_{X+Y}(Z)&=E[Z^{X+Y}]\\
           &=E[Z^X Z^Y]\\
-          &=E[Z^X] E[Z^Y] \hsb \textrm{since $X$ and $Y$ are independent}\\
+          &=E[Z^X] E[Z^Y] \textrm{since $X$ and $Y$ are independent}\\
           &=G_X(Z) G_Y(Z).
         \end{align}
 		</li><li>
@@ -381,7 +380,7 @@ Let $\mathbf{X}= \begin{bmatrix}
   =  \begin{bmatrix}
        0\\%[5pt]
        1
-  \end{bmatrix}, \hsb \mathbf{C}=\begin{bmatrix}
+  \end{bmatrix}, \mathbf{C}=\begin{bmatrix}
        1 & -1  \\%[5pt]
        -1 & 2
   \end{bmatrix}.
@@ -393,11 +392,11 @@ Let $\mathbf{X}= \begin{bmatrix}
        1 & 2\\%[5pt]
        2 & 1\\
        1 & 1
-  \end{bmatrix}, \hsb \mathbf{b}=\begin{bmatrix}
+  \end{bmatrix}, \mathbf{b}=\begin{bmatrix}
        0  \\%[5pt]
        1 \\
        2
-  \end{bmatrix}, \hsb \mathbf{Y}=\begin{bmatrix}
+  \end{bmatrix}, \mathbf{Y}=\begin{bmatrix}
        Y_1  \\%[5pt]
        Y_2  \\
        Y_3
@@ -506,7 +505,7 @@ P(Y_3 \leq 4) &= \Phi\left(\frac{4-3}{1}\right) =\Phi\left(1\right)=0.8413
      &=Q^TQDQ^TQ\\
      &=D \quad (\textrm{since} \quad Q^TQ=I).
      \end{align}
-  Therefore Y has a diagonal covariance matrix, and $\cov(Y_i,Y_j)=0$ if $i \neq j$.
+  Therefore Y has a diagonal covariance matrix, and $\textrm{Cov}(Y_i,Y_j)=0$ if $i \neq j$.
 </li></ul>
 </li></ul></div><hr /><br />
 <!-- /section content -->
