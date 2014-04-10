@@ -4,7 +4,7 @@
 	$section_prev		= "chapter6/6_1_0_multiple_random_variables.php";
 	$section_next		= "chapter6/#";
 	include						"../Control/autonumber.php";
-	loadHeaders(75);
+	loadHeaders(76);
 	include						"section_header.php";
 ?>
 
