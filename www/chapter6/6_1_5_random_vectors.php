@@ -475,31 +475,23 @@ where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$. Then, we have
 \end{align}
 
 
-
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
+<div class='cbox'>
 For a standard normal vector \textbf{Z}, where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$, the PDF is given by
 \begin{align}%\label{}
  f_{\mathbf{Z}}(\mathbf{z})=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
 \end{align}
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+</div><br />
 
-Now, we need to extend this formula to a general normal random vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}. This is very similar to when we defined general normal random variables from the standard normal random variable. We remember that if $Z \sim N(0,1)$, then the random variable $X=\sigma Z+ \mu$ has $N(\mu, \sigma^2)$ distribution. We would like to do the same thing for normal random vectors.
+Now, we need to extend this formula to a general normal random vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix \textbf{C}. This is very similar to when we defined general normal random variables from the standard normal random variable. We remember that if $Z \sim N(0,1)$, then the random variable $X=\sigma Z+ \mu$ has $N(\mu, \sigma^2)$ distribution. We would like to do the same thing for normal random vectors.
 
-Assume that I have a normal random vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. \footnote{The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem \ref{thm:PSD}), so $\det(\textbf{C}) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(\textbf{C})>0$ (Theorem \ref{thm:PD}). So here, we are only excluding the case $\det(\textbf{C})=0$. If $\det(\textbf{C})=0$, then you can show that you can write some $X_i$&#39;s as a linear combination of others, so indeed we can remove them from the vector without losing any information.} Then from linear algebra we know that there exists an $n$ by $n$ matrix \textbf{Q} such that
+Assume that I have a normal random vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix \textbf{C}. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem 6.2), so $\det(C) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(C)&gt;0$ (Theorem 6.3). So here, we are only excluding the case $\det(C)=0$. If $\det(C)=0$, then you can show that you can write some $X_i$&#39;s as a linear combination of others, so indeed we can remove them from the vector without losing any information. Then from linear algebra we know that there exists an $n$ by $n$ matrix <b>Q</b> such that
 \begin{align}%\label{}
-       &\textbf{Q}\textbf{Q}^T=\textbf{I}  \hsb (\textbf{I} \textrm{ is the identity matrix})\\
-       &\textbf{C}= \textbf{Q} \textbf{D} \textbf{Q}^T,
+       &QQ^T=I  (I \textrm{ is the identity matrix})\\
+       &C= Q D Q^T,
 \end{align}
-where \textbf{D} is a diagonal matrix
+where D is a diagonal matrix
 \begin{equation}
-  \nonumber \textbf{D} = \begin{bmatrix}
+  \nonumber D = \begin{bmatrix}
        d_{11} &  0 & ... & 0  \\%[5pt]
        0 & d_{22} & ... & 0 \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
@@ -510,7 +502,7 @@ where \textbf{D} is a diagonal matrix
 \end{equation}
 The positive definiteness assumption guarantees that all $d_{ii}$'s are positive. Let's define
 \begin{equation}
-  \nonumber \textbf{D}^{\frac{1}{2}} = \begin{bmatrix}
+  \nonumber D^{\frac{1}{2}} = \begin{bmatrix}
        \sqrt{d_{11}} &  0 & ... & 0  \\%[5pt]
        0 & \sqrt{d_{22}} & ... & 0 \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
@@ -519,15 +511,15 @@ The positive definiteness assumption guarantees that all $d_{ii}$'s are positive
        0      &   0    & ... & \sqrt{d_{nn}}
 \end{bmatrix}.
 \end{equation}
-We have $\textbf{D}^{\frac{1}{2}} \textbf{D}^{\frac{1}{2}}=\mathbf{D}$ and $\textbf{D}^{\frac{1}{2}}={\textbf{D}^{\frac{1}{2}}}^{T}$. Also define
+We have $D^{\frac{1}{2}} D^{\frac{1}{2}}=\mathbf{D}$ and $D^{\frac{1}{2}}={D^{\frac{1}{2}}}^{T}$. Also define
 \begin{align}%\label{}
- \mathbf{A}= \textbf{Q} \textbf{D}^{\frac{1}{2}} \textbf{Q}^T.
+ \mathbf{A}= Q D^{\frac{1}{2}} Q^T.
 \end{align}
 Then,
 \begin{align}%\label{}
  \mathbf{A} \mathbf{A}^{T}= \mathbf{A}^{T}\mathbf{A}=\mathbf{C}.
 \end{align}
-Now we are ready to define the transformation that converts a standard Gaussian vector to $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Let \textbf{Z} be a standard Gaussian vector, i.e., $\mathbf{Z} \sim N(\mathbf{0},\mathbf{I})$. Define
+Now we are ready to define the transformation that converts a standard Gaussian vector to $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Let Z be a standard Gaussian vector, i.e., $\mathbf{Z} \sim N(\mathbf{0},\mathbf{I})$. Define
 \begin{align}%\label{}
  \mathbf{X}=\mathbf{A}\mathbf{Z}+\mathbf{m}.
 \end{align}
