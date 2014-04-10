@@ -184,7 +184,7 @@ By definition, we have
 <hr /><span class='example'>Example </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 \begin{align}
- \nonumber f_{X,Y}(x,y) = \left\{
+ \nonumber f_{X,Y}(x,y) = \{
   \begin{array}{l l}
     \frac{3}{2}x^2+y  &  \quad 0&lt;x,y&lt;1  \\
       &  \quad   \\
@@ -195,7 +195,7 @@ and let the random vector <b>U</b> be defined as
 \nonumber U = \begin{bmatrix}
        X \\%[5pt]
        Y
-\end{bmatrix}.\right
+\end{bmatrix}.
 \end{align}
 Find the correlation and covariance matrices of <b>U</b>.
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
