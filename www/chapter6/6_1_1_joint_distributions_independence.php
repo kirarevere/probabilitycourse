@@ -46,7 +46,7 @@ Let $X, Y$ and $Z$ be three jointly continuous random variables with joint PDF
 
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
 <ul><li>
-	<ol><li>
+	<ol><li><br />
    \begin{align}%\label{}
   \nonumber  1&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{XYZ}(x,y,z)dxdydz\\
   \nonumber  &=\int_{0}^{1} \int_{0}^{1} \int_{0}^{1} c(x+2y+3z) \hspace{5pt} dxdydz\\
@@ -78,6 +78,41 @@ Let $X, Y$ and $Z$ be three jointly continuous random variables with joint PDF
 </li></ul></div><hr /><br />
 <hr /><br />
 <!-- /End Example -->
+
+<b>Independence:</b> The idea of independence is exactly the same as what we have seen before. We restate it here in terms of the joint PMF, joint PDF, and joint CDF. Random variables $X_1$, $X_2$, $...$ , $X_n$ are independent, if for all $(x_1, x_2, ..., x_n) \in \mathbb{R}^n$,
+\begin{align}%\label{}
+\nonumber  F_{X_1, X_2, ..., X_n}(x_1, x_2, ..., x_n)= F_{X_1}(x_1)F_{X_2}(x_2) \cdots F_{X_n}(x_n).
+\end{align}
+Equivalently, if  $X_1$, $X_2$, ..., $X_n$ are discrete, then they are independent, if for all $(x_1, x_2, ..., x_n) \in \mathbb{R}^n$, we have
+\begin{align}%\label{}
+\nonumber  P_{X_1, X_2, ..., X_n}(x_1, x_2, ..., x_n)= P_{X_1}(x_1)P_{X_2}(x_2) \cdots P_{X_n}(x_n).
+\end{align}
+If  $X_1$, $X_2$, ..., $X_n$ are continuous, then they are independent if for all $(x_1, x_2, ..., x_n) \in \mathbb{R}^n$, we have
+\begin{align}%\label{}
+\nonumber  f_{X_1,X_2, ..., X_n}(x_1, x_2, ..., x_n)= f_{X_1}(x_1)f_{X_2}(x_2) \cdots f_{X_n}(x_n).
+\end{align}
+If random variables $X_1$, $X_2$, ..., $X_n$ are independent, then we have
+\begin{align}%\label{}
+\nonumber  E[X_1 X_2 \cdots X_n]=E[X_1]E[X_2] \cdots E[X_n].
+\end{align}
+
+In some situations we are dealing with random variables that are independent and are also identically distributed, i.e, the have the same CDFs. It is usually easier to deal with such random variables, since independence and being identically distributed often simplify the analysis. We will see examples of such analyses shortly.
+
+<div class='cbox'>
+Random variables $X_1$, $X_2$, ..., $X_n$ are said to be \textbf{independent and identically distributed (i.i.d)} if they are \textit{independent}, and they have the <i>same marginal distributions</i>:
+\begin{align}%\label{}
+\nonumber  F_{X_1}(x)=F_{X_2}(x)=...=F_{X_n}(x), \hs \hs \textrm{ for all }x \in \mathbb{R}
+\end{align}
+</div><br />
+
+For example, if random variables $X_1$, $X_2$, ..., $X_n$ are i.i.d, they will have the same means and variances, so we can write
+\begin{align}%\label{}
+\nonumber  E[X_1 X_2 \cdots X_n]&=E[X_1]E[X_2] \cdots E[X_n] &(\textrm{because $X_i$'s are indepenednt})\\
+\no &= E[X_1]E[X_1] \cdots E[X_1]&(\textrm{because $X_i$'s are identically distributed})\\
+\no &=E[X_1]^n.
+\end{align}
+
+
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
