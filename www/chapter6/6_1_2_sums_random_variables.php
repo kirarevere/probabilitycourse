@@ -50,17 +50,17 @@ $N$ people sit around a round table, where $N&gt;5$. Each person tosses a coin. 
 <ul><li>
 Number the $N$ people from $1$ to $N$. Let $X_i$ be the indicator random variable for the $i$th person, that is, $X_i=1$ if the $i$th person receives a present and zero otherwise. Then
 \begin{align}%\label{}
-\no X=X_1+X_2+...+X_N.
+X=X_1+X_2+...+X_N.
 \end{align}
 First note that $P(X_i=1)=\frac{1}{4}$. This is the probability that the person to right has a different outcome times the probability that the person to the left has a different outcome. In other words, if we define $H_i$ and $T_i$ be the events that the $i$th person's outcome is heads and tails respectively, then we can write
 \begin{align}%\label{}
-\no EX_i &=P(X_i=1)\\
-\no &=P(H_{i-1},T_i,H_{i+1})+P(T_{i-1},H_i,T_{i+1})\\
-\no &=\frac{1}{8}+\frac{1}{8}=\frac{1}{4}.
+EX_i &=P(X_i=1)\\
+&=P(H_{i-1},T_i,H_{i+1})+P(T_{i-1},H_i,T_{i+1})\\
+&=\frac{1}{8}+\frac{1}{8}=\frac{1}{4}.
 \end{align}
 Thus, we find
 \begin{align}%\label{}
-\no EX=EX_1+EX_2+...+EX_N=\frac{N}{4}.
+EX=EX_1+EX_2+...+EX_N=\frac{N}{4}.
 \end{align}
 Next, we can write
 \begin{align}%\label{}
@@ -72,7 +72,7 @@ Since $X_i \sim Bernoulli(\frac{1}{4})$, we have
 \end{align}
 It remains to find $\textrm{cov}(X_i,X_j)$. First note that $X_i$ and $X_j$ are independent if $i$th person and the $j$th person do not share a neighbor. In other words, if $j>i+2$ or $i>j+2$, then $X_i$ and $X_j$ are independent, so
 \begin{align}%\label{}
-\no \textrm{cov}(X_i,X_j)=0, \hsb \textrm{ for $j>i+2$ or $i>j+2$.}
+\textrm{cov}(X_i,X_j)=0,  \textrm{ for $j>i+2$ or $i>j+2$.}
 \end{align}
 Also, note that there is a lot of symmetry in the problem:
 \begin{align}%\label{}
@@ -82,34 +82,34 @@ Also, note that there is a lot of symmetry in the problem:
 Thus, we can write
 \begin{align}%\label{}
 \nonumber \textrm{var} (X)&=N \textrm{var}(X_1)+ N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3)\\
-\no &=\frac{3N}{16}+N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3).
+&=\frac{3N}{16}+N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3).
 \end{align}
 So we need to find $\textrm{cov}(X_1,X_2)$ and $\textrm{cov}(X_1,X_3)$. We have
 \begin{align}%\label{}
-\no E[X_1X_2]&=P(X_1=1,X_2=1)\\
-\no &=P(H_N,T_1,H_2,T_3)+P(T_N,H_1,T_2,H_3) \\
-\no &=\frac{1}{16}+\frac{1}{16}=\frac{1}{8}.
+E[X_1X_2]&=P(X_1=1,X_2=1)\\
+&=P(H_N,T_1,H_2,T_3)+P(T_N,H_1,T_2,H_3) \\
+&=\frac{1}{16}+\frac{1}{16}=\frac{1}{8}.
 \end{align}
 Thus,
 \begin{align}%\label{}
-\no  \textrm{cov}(X_1,X_2)&=E[X_1X_2]-E[X_1]E[X_2]\\
-\no  &=\frac{1}{8}-\frac{1}{16}=\frac{1}{16},
+ \textrm{cov}(X_1,X_2)&=E[X_1X_2]-E[X_1]E[X_2]\\
+ &=\frac{1}{8}-\frac{1}{16}=\frac{1}{16},
 \end{align}
 \begin{align}%\label{}
-\no E[X_1X_3]&=P(X_1=1,X_3=1)\\
-\no &=P(H_N,T_1,H_2,T_3,H_4)+P(T_N,H_1,T_2,H_3,T_4) \\
-\no &=\frac{1}{32}+\frac{1}{32}=\frac{1}{16}.
+E[X_1X_3]&=P(X_1=1,X_3=1)\\
+&=P(H_N,T_1,H_2,T_3,H_4)+P(T_N,H_1,T_2,H_3,T_4) \\
+&=\frac{1}{32}+\frac{1}{32}=\frac{1}{16}.
 \end{align}
 Thus,
 \begin{align}%\label{}
-\no  \textrm{cov}(X_1,X_3)&=E[X_1X_3]-E[X_1]E[X_3]\\
-\no  &=\frac{1}{16}-\frac{1}{16}=0.
+ \textrm{cov}(X_1,X_3)&=E[X_1X_3]-E[X_1]E[X_3]\\
+ &=\frac{1}{16}-\frac{1}{16}=0.
 \end{align}
 Therefore,
 \begin{align}%\label{}
 \nonumber \textrm{var} (X)&=\frac{3N}{16}+N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3)\\
-\no &=\frac{3N}{16}+\frac{N}{16}\\
-\no &=\frac{N}{4}.
+&=\frac{3N}{16}+\frac{N}{16}\\
+&=\frac{N}{4}.
 \end{align}
 </li></ul>
 </li></ul></div><hr /><br />
