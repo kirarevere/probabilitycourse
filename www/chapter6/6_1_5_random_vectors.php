@@ -192,10 +192,12 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
   \end{array} \right.
 \end{equation}
 and let the random vector <b>U</b> be defined as
+\begin{equation}
 \nonumber U = \begin{bmatrix}
        X \\%[5pt]
        Y
 \end{bmatrix}.
+\end{equation}
 Find the correlation and covariance matrices of <b>U</b>.
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
 <ul><li>
