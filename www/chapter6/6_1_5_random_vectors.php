@@ -546,9 +546,9 @@ Thus, we have shown that <b>X</b> is  a random vector with mean $\mathbf{m}$ and
 \end{align}
 
 <div class='cbox'>
-For a normal vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}, the PDF is given by
+For a normal vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix \textbf{C}, the PDF is given by
 \begin{align}\label{eq:pdf-normal-vec}
-  f_{\mathbf{X}}(\mathbf{x})=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) \right\}.
+  f_{\mathbf{X}}(\mathbf{x})=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) \right\}. \hspace{20pt} (6.1)
 \end{align}
 </div><br />
 
@@ -558,7 +558,7 @@ Let $X$ and $Y$ be two jointly normal random variables with $X \sim N(\mu_X,\sig
        Y
 \end{bmatrix}$ is the same as $f_{X,Y}(x,y)$ given in Definition 5.4 in section 5.3.2. That is,
 \begin{align} \label{eq:bivariate-normal}
-  f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}} \hs \cdot \\
+  f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}} \cdot \\
   & \exp \left\{-\frac{1}{2 (1-\rho^2)}\bigg[\bigg(\frac{x-\mu_X}{\sigma_X}\bigg)^2
    +\bigg(\frac{y-\mu_Y}{\sigma_Y}\bigg)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \bigg] \right\}.
 \end{align}
