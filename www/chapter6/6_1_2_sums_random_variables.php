@@ -37,7 +37,7 @@ For $Y=X_1+X_2+ \cdots +X_n$, we can obtain a more general version of the above 
 </div><br />
 
 If the $X_i$'s are independent, then $\textrm{cov}(X_i,X_j)=0$ for $i \neq j$. In this case, we can write
-<div class='cbox'>
+<div class='cbox' style='width:700px;'>
 \begin{align}%\label{}
 \nonumber \textrm{If $X_1$, $X_2$,...,$X_n$ are independent, }\textrm{var} \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \textrm{var}(X_i).
 \end{align}
