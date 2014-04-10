@@ -224,6 +224,7 @@ From this, we also obtain
  &=-\frac{1}{96}.
 \end{align}
 The correlation matrix $R_U$ is given by
+\begin{equation}
 \nonumber R_U=E[UU^{T}]
 =  \begin{bmatrix}
        EX^2 & EXY  \\%[5pt]
@@ -233,6 +234,7 @@ The correlation matrix $R_U$ is given by
        \frac{7}{15} & \frac{17}{48}  \\[5pt]
        \frac{17}{48} & \frac{5}{12}
 \end{bmatrix}.
+\end{equation}
 The covariance matrix $C_U$ is given by
 \nonumber C_U
 =  \begin{bmatrix}
