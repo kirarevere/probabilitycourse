@@ -146,13 +146,12 @@ We have
 </li></ul>
 </li></ul></div><hr /><br />
 
-<div class='cbox'>
+<div class='cbox' style="width:800px;">
 \begin{align}
   &\textrm{Correlation matrix of X: } \\
 \nonumber & \hspace{80pt} R_X=E[X X^{T}] \\
-  &\textrm{Covariance matrix of \textbf{X}: }  \\
+  &\textrm{Covariance matrix of X: }  \\
 \nonumber & \hspace{80pt} C_X=E[(X-EX)(X-EX)^{T}]=R_X-EX EX^T \end{align}
-\end{center}
 </div>
 
 
@@ -184,7 +183,8 @@ By definition, we have
 
 <hr /><span class='example'>Example </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
- \nonumber f_{X,Y}(x,y) = \{
+\begin{align}
+ \nonumber f_{X,Y}(x,y) = \left\{
   \begin{array}{l l}
     \frac{3}{2}x^2+y  &  \quad 0&lt;x,y&lt;1  \\
       &  \quad   \\
@@ -195,7 +195,8 @@ and let the random vector <b>U</b> be defined as
 \nonumber U = \begin{bmatrix}
        X \\%[5pt]
        Y
-\end{bmatrix}.
+\end{bmatrix}.\right
+\end{align}
 Find the correlation and covariance matrices of <b>U</b>.
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
 <ul><li>
