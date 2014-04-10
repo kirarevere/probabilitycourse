@@ -32,11 +32,11 @@ For $Y=X_1+X_2+ \cdots +X_n$, we can obtain a more general version of the above 
 
 <div class='cbox'>
 \begin{align}%\label{}
-\nonumber \var \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \var(X_i)+2 \sum_{i<j} \cov(X_i,X_j)
+\nonumber \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \var(X_i)+2 \sum_{i&lt;j} \textrm{cov}(X_i,X_j)
 \end{align}
 </div><br />
 
-If the $X_i$'s are independent, then $\cov(X_i,X_j)=0$ for $i \neq j$. In this case, we can write
+If the $X_i$'s are independent, then $\textrm{cov}(X_i,X_j)=0$ for $i \neq j$. In this case, we can write
 <div class='cbox'>
 \begin{align}%\label{}
 \nonumber \textrm{If $X_1$, $X_2$,...,$X_n$ are independent, }\var \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \var(X_i).
