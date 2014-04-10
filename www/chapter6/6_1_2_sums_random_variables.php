@@ -23,10 +23,10 @@ We can also find the variance of $Y$ based on our discussion in Section 5.3. In 
 \nonumber  \textrm{Var}(X_1+X_2)=\textrm{Var}(X_1)+\textrm{Var}(X_2)+2 \textrm{Cov}(X_1,X_2).
 \end{align}
 For $Y=X_1+X_2+ \cdots +X_n$, we can obtain a more general version of the above equation. We can write
-\begin{align}%\label{}
+\begin{align}
 \nonumber \var (Y)&=\cov\left(\sum_{i=1}^{n}X_i,\sum_{j=1}^{n}X_j\right)\\
 \nonumber &=\sum_{i=1}^{n}\sum_{j=1}^{n} \cov(X_i,X_j)  &\textrm{(using part 7 of Lemma 5.3)}\\
-\nonumber &=\sum_{i=1}^{n} \var(X_i)+2 \sum_{i<j} \cov(X_i,X_j).
+\nonumber &=\sum_{i=1}^{n} \var(X_i)+2 \sum_{i&lt;j} \cov(X_i,X_j).
 \end{align}
 </p>
 
