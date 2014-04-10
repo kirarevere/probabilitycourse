@@ -119,15 +119,15 @@ The <b>covariance matrix</b>, <b>$C_X$</b>,  is defined as
 
 <br />
 \nonumber  &=  \begin{bmatrix}
-       \textrm{var}(X_1) & \textrm{Cov}(X_1,X_2)& ... & \textrm{Cov}(X_1,X_n)  \\%[5pt]
-       \textrm{Cov}(X_2,X_1) & \textrm{var}(X_2) & ... & \textrm{Cov}(X_2,X_n) \\%[5pt]
+       \textrm{Var}(X_1) & \textrm{Cov}(X_1,X_2)& ... & \textrm{Cov}(X_1,X_n)  \\%[5pt]
+       \textrm{Cov}(X_2,X_1) & \textrm{Var}(X_2) & ... & \textrm{Cov}(X_2,X_n) \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
        .      &   .    &  .  &  .   \\[-10pt]
        .      &   .    &  .  &  .   \\[5pt]
-       \textrm{Cov}(X_n,X_1) & \textrm{Cov}(X_n X_2)  & ... & \textrm{var}(X_n)
+       \textrm{Cov}(X_n,X_1) & \textrm{Cov}(X_n X_2)  & ... & \textrm{Var}(X_n)
 \end{bmatrix}.
 \end{align}
-The covariance matrix is a generalization of the variance of a random variable. Remember that for a random variable, we have $\textrm{var}(X)=EX^2-(EX)^2$. The following example extends this formula to random vectors.
+The covariance matrix is a generalization of the variance of a random variable. Remember that for a random variable, we have $\textrm{Var}(X)=EX^2-(EX)^2$. The following example extends this formula to random vectors.
 
 <hr /><span class='example'>Example </span><br />
 For a random vector <b>X</b>, show
@@ -234,8 +234,8 @@ The correlation matrix $\textbf{R}_\textbf{U}$ is given by
 The covariance matrix $\textbf{C}_\textbf{U}$ is given by
 \nonumber \textbf{C}_\textbf{U}
 =  \begin{bmatrix}
-       \textrm{var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
-       \textrm{Cov}(Y,X) & \textrm{var}(Y)
+       \textrm{Var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
+       \textrm{Cov}(Y,X) & \textrm{Var}(Y)
 \end{bmatrix}
 =  \begin{bmatrix}
        \frac{73}{960} & -\frac{1}{96}  \\[5pt]
@@ -304,7 +304,7 @@ Determine whether $\textbf{C}_\textbf{U}$ and $\textbf{C}_\textbf{V}$ are positi
 \end{equation}
 Since $X$ and $Y$ are independent $Uniform(0,1)$ random variables, we have
 \begin{align}%\label{}
- \textrm{var}(X)=\textrm{var}(&Y)=\frac{1}{12},\\
+ \textrm{Var}(X)=\textrm{Var}(&Y)=\frac{1}{12},\\
  \textrm{Cov}(X,X+Y)&=\textrm{Cov}(X,X)+\textrm{Cov}(X,Y)\\
  &=\frac{1}{12}+0=\frac{1}{12},\\
  \textrm{Var}(X+Y)=&\textrm{Var}(X)+\textrm{Var}(Y)=\frac{1}{6}.
