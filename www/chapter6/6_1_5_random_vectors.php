@@ -34,6 +34,7 @@ If the $X_i$'s are jointly continuous, the PDF of X can be written as
 
 <h2>Expectation: </h2>
 The <b>expected value vector</b> or the <b>mean vector</b> of the random vector <b>X</b> is defined as
+\begin{align}
 \nonumber EX = \begin{bmatrix}
        EX_1 \\%[5pt]
        EX_2 \\%[5pt]
@@ -42,8 +43,10 @@ The <b>expected value vector</b> or the <b>mean vector</b> of the random vector 
        .   \\[5pt]
        EX_n
 \end{bmatrix}.
-Similarly, a \textbf{random matrix} is a matrix whose elements are random variables. In particular, we can have an $m$ by $n$ random matrix <b>M</b> as
-\nonumber \textbf{M} = \begin{bmatrix}
+\end{align}
+Similarly, a <b>random matrix</b> is a matrix whose elements are random variables. In particular, we can have an $m$ by $n$ random matrix <b>M</b> as
+\begin{align}
+\nonumber <b>M</b> = \begin{bmatrix}
        X_{11} & X_{12} & ... & X_{1n}  \\%[5pt]
        X_{21} & X_{22} & ... & X_{2n} \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
@@ -51,6 +54,7 @@ Similarly, a \textbf{random matrix} is a matrix whose elements are random variab
        .      &   .    &  .  &  .   \\[5pt]
        X_{m1} & X_{m2} & ... & X_{mn}
 \end{bmatrix}.
+\end{align}
 We sometimes write this as <b>M</b>$=[X_{ij}]$, which means that $X_{ij}$ is the element in the $i$th row and $j$th column of <b>M</b>. The mean matrix of <b>M</b> is given by
 \nonumber E\textbf{M} = \begin{bmatrix}
        EX_{11} & EX_{12} & ... & EX_{1n}  \\%[5pt]
@@ -61,21 +65,22 @@ We sometimes write this as <b>M</b>$=[X_{ij}]$, which means that $X_{ij}$ is the
        EX_{m1} & EX_{m2} & ... & EX_{mn}
 \end{bmatrix}.
 
-Linearity of expectation is also valid for random vectors and matrices. In particular, let \textbf{X} be an $n$-dimensional random vector and the random vector  \textbf{Y} be defined as
-\begin{align}%\label{}
+Linearity of expectation is also valid for random vectors and matrices. In particular, let <b>X</b> be an $n$-dimensional random vector and the random vector  <b>Y</b> be defined as
+\begin{align}
   Y=AX+b,
 \end{align}
 where <b>A</b> is a fixed (non-random) $m$ by $n$ matrix and <b>b</b> is a fixed $m$-dimensional vector. Then we have
-\begin{align}%\label{}
+\begin{align}
   E<b>Y</b>=<b>A</b>E<b>X</b>+<b>b</b>.
 \end{align}
 Also, if $X_1$, $X_2$, $...$, $X_k$ are $n$-dimensional random vectors, then we have
-\begin{align}%\label{}
+\begin{align}
   E[X_1+X_2+ \cdots +X_k]=EX_1+EX_2+ \cdots +EX_k.
 \end{align}
 
 <h2>Correlation and Covariance Matrix</h2>
 For a random vector <b>$X$</b>, we define the <b>correlation matrix</b>,  <b>$R_X$</b>,  as
+\begin{align}
 \nonumber R_X=E[XX^{T}]
  = E \begin{bmatrix}
        X_1^2 & X_1 X_2 & ... & X_1 X_n  \\%[5pt]
@@ -93,6 +98,7 @@ For a random vector <b>$X$</b>, we define the <b>correlation matrix</b>,  <b>$R_
        .      &   .    &  .  &  .   \\[5pt]
        E[X_n X_1] & E[X_n X_2]  & ... & E[X_n^2]
 \end{bmatrix},
+\end{align}
 where $^T$ shows matrix transposition.
 <br />
 <br />
@@ -111,20 +117,20 @@ The <b>covariance matrix</b>, <b>$C_X$</b>,  is defined as
 
 <br />
 \nonumber  &=  \begin{bmatrix}
-       \var(X_1) & \cov(X_1,X_2)& ... & \cov(X_1,X_n)  \\%[5pt]
-       \cov(X_2,X_1) & \var(X_2) & ... & \cov(X_2,X_n) \\%[5pt]
+       \textrm{var}(X_1) & \textrm{cov}(X_1,X_2)& ... & \textrm{cov}(X_1,X_n)  \\%[5pt]
+       \textrm{cov}(X_2,X_1) & \textrm{var}(X_2) & ... & \textrm{cov}(X_2,X_n) \\%[5pt]
        .      &   .    &  .  &  .\\[-10pt]
        .      &   .    &  .  &  .   \\[-10pt]
        .      &   .    &  .  &  .   \\[5pt]
-       \cov(X_n,X_1) & \cov(X_n X_2)  & ... & \var(X_n)
+       \textrm{cov}(X_n,X_1) & \textrm{cov}(X_n X_2)  & ... & \textrm{var}(X_n)
 \end{bmatrix}.
 \end{align}
-The covariance matrix is a generalization of the variance of a random variable. Remember that for a random variable, we have $\var(X)=EX^2-(EX)^2$. The following example extends this formula to random vectors.
+The covariance matrix is a generalization of the variance of a random variable. Remember that for a random variable, we have $\textrm{var}(X)=EX^2-(EX)^2$. The following example extends this formula to random vectors.
 
 <hr /><span class='example'>Example </span><br />
 For a random vector <b>X</b>, show
 \begin{align}
-\no C_X= R_X-EX EX^T.
+C_X= R_X-EX EX^T.
 \end{align}
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
 <ul><li>
@@ -140,8 +146,8 @@ We have
 
 <div class='cbox'>
 \begin{align}
-  &\textrm{Correlation matrix of <b>X</b>: } \\
-\nonumber & \hspace{80pt} <b>R_X=E[X X^{T}]</b> \\
+  &\textrm{Correlation matrix of X: } \\
+\nonumber & \hspace{80pt} R_X=E[X X^{T}] \\
   &\textrm{Covariance matrix of \textbf{X}: }  \\
 \nonumber & \hspace{80pt} C_X=E[(X-EX)(X-EX)^{T}]=R_X-EX EX^T \end{align}
 \end{center}
@@ -176,15 +182,14 @@ By definition, we have
 
 <hr /><span class='example'>Example </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
- \nonumber f_{X,Y}(x,y) = \left\{
+ \nonumber f_{X,Y}(x,y) = \{
   \begin{array}{l l}
     \frac{3}{2}x^2+y  &  \quad 0&lt;x,y&lt;1  \\
       &  \quad   \\
     0 &  \quad \textrm{otherwise}
-  \end{array} \right.
+  \end{array} .
 \end{equation}
 and let the random vector <b>U</b> be defined as
-\begin{equation}
 \nonumber U = \begin{bmatrix}
        X \\%[5pt]
        Y
@@ -194,12 +199,12 @@ Find the correlation and covariance matrices of <b>U</b>.
 <ul><li>
 We first obtain the marginal PDFs of $X$ and $Y$. Note that $R_X=R_Y=(0,1)$. We have for $x \in R_X$
 \begin{align}
-f_X(x)&=\int_{0}^{1} \frac{3}{2}x^2+y dy\\
+f_X(x)&=\int_{0}^{1} \frac{3}{2}x^2+y \hspace{20pt}dy\\
 &=\frac{3}{2}x^2+\frac{1}{2}, \textrm{for $0&lt;x&lt;1$}.
 \end{align}
 Similarly, for $y \in R_Y$, we have
 \begin{align}
- f_Y(y)&=\int_{0}^{1} \frac{3}{2}x^2+y dx\\
+ f_Y(y)&=\int_{0}^{1} \frac{3}{2}x^2+y \hspace{20pt}dx\\
  &=y+\frac{1}{2}, \textrm{for $0&lt;y&lt;1$}.
 \end{align}
 From these, we obtain $EX=\frac{5}{8}$, $EX^2=\frac{7}{15}$, $EY=\frac{7}{12}$, and $EY^2=\frac{5}{12}$. We also need $EXY$. By LOTUS, we can write
@@ -210,12 +215,11 @@ From these, we obtain $EX=\frac{5}{8}$, $EX^2=\frac{7}{15}$, $EY=\frac{7}{12}$, 
 \end{align}
 From this, we also obtain
 \begin{align}
- \cov(X,Y)&=EXY-EXEY\\
+ \textrm{Cov}(X,Y)&=EXY-EXEY\\
  &=\frac{17}{48}-\frac{5}{8}\frac{7}{12}\\
  &=-\frac{1}{96}.
 \end{align}
 The correlation matrix $\textbf{R}_\textbf{U}$ is given by
-\begin{equation}
 \nonumber \textbf{R}_\textbf{U}=E[\textbf{UU}^{T}]
 =  \begin{bmatrix}
        EX^2 & EXY  \\%[5pt]
@@ -225,13 +229,11 @@ The correlation matrix $\textbf{R}_\textbf{U}$ is given by
        \frac{7}{15} & \frac{17}{48}  \\[5pt]
        \frac{17}{48} & \frac{5}{12}
 \end{bmatrix}.
-\end{equation}
 The covariance matrix $\textbf{C}_\textbf{U}$ is given by
-\begin{equation}
 \nonumber \textbf{C}_\textbf{U}
 =  \begin{bmatrix}
-       \var (X) & \cov(X,Y)  \\%[5pt]
-       \cov(Y,X) & \var(Y)
+       \textrm{var}(X) & \cov(X,Y)  \\%[5pt]
+       \textrm{Cov}(Y,X) & \textrm{var}(Y)
 \end{bmatrix}
 =  \begin{bmatrix}
        \frac{73}{960} & -\frac{1}{96}  \\[5pt]
@@ -241,37 +243,35 @@ The covariance matrix $\textbf{C}_\textbf{U}$ is given by
 </li></ul></div><hr /><br />
 
 <h2>Properties of the Covariance Matrix:</h2>
-The covariance matrix is the generalization of the variance to random vectors. It is an important matrix and is used extensively. Let us a take a moment and discuss its properties. Here, we use concepts from linear algebra such as eigenvalues and positive definiteness. First note that, for any random vector \textbf{X}, the covariance matrix $\textbf{C}_\textbf{X}$ is a symmetric matrix. This is because if $\textbf{C}_\textbf{X}=[c_{ij}]$, then
+The covariance matrix is the generalization of the variance to random vectors. It is an important matrix and is used extensively. Let us a take a moment and discuss its properties. Here, we use concepts from linear algebra such as eigenvalues and positive definiteness. First note that, for any random vector <b>X</b>, the covariance matrix <b>$C_X$</b> is a symmetric matrix. This is because if $C_X=[c_{ij}]$, then
 \begin{align}%\label{}
-\no  c_{ij}=\cov(X_i,X_j)=\cov(X_j,X_i)=c_{ji}.
+ c_{ij}=\cov(X_i,X_j)=\textrm{Cov}(X_j,X_i)=c_{ji}.
 \end{align}
-Thus, the covariance matrix has all the nice properties of symmetric matrices. In particular, $\textbf{C}_\textbf{X}$ can be diagonalized and all the eigenvalues of  $\textbf{C}_\textbf{X}$ are real.\footnote{Here, we assume \textbf{X} is a real random vector, i.e., the $X_i$'s can only take real values.} A special important property of the covariance matrix is that it is positive semi-definite (PSD). Remember from linear algebra that a symmetric matrix \textbf{M} is \textbf{positive semi-definite (PSD)} if, for all vectors \textbf{b}, we have
-\begin{align}%\label{}
-\no  \textbf{b}^T \textbf{M} \textbf{b} \geq 0.
+Thus, the covariance matrix has all the nice properties of symmetric matrices. In particular, <b>$C_X$</b> can be diagonalized and all the eigenvalues of  <b>$C_X$</b> are real. Here, we assume <b>X</b> is a real random vector, i.e., the $X_i$'s can only take real values. A special important property of the covariance matrix is that it is positive semi-definite (PSD). Remember from linear algebra that a symmetric matrix <b>M</b> is <b>positive semi-definite (PSD)</b> if, for all vectors <b>b</b>, we have
+\begin{align}
+  b^T M b \geq 0.
 \end{align}
-Also, \textbf{M} is said to be \textbf{Positive Definite (PD)}, if for all vectors \textbf{b}$\neq 0$, we have
-\begin{align}%\label{}
-\no  \textbf{b}^T \textbf{M} \textbf{b} > 0.
+Also, M is said to be <b>Positive Definite (PD)</b>, if for all vectors <b>b</b>$\neq 0$, we have
+\begin{align}
+  b^T M b &gt; 0.
 \end{align}
 By the above definitions, we note that every PD matrix is also PSD, but the converse is not generally true. Here, we show that covariance matrices are always PSD.
 
-\begin{thm} \label{thm:PSD}
-Let $X$ be a random vector with $n$ elements. Then, its covariance matrix $\textbf{C}_\textbf{X}$ is positive semi-definite(PSD).
-\end{thm}
-\begin{proof}
-Let \textbf{b} be any fixed vector with $n$ elements. Define the random variable $Y$ as
-\begin{align}%\label{}
-\no  Y=\textbf{b}^T (\textbf{X}-E\textbf{X}).
+<br /><span class='theorem'>Theorem </span>.
+Let $X$ be a random vector with $n$ elements. Then, its covariance matrix <b>$C_X$</b> is positive semi-definite(PSD).
+<br />
+Let <b>b</b> be any fixed vector with $n$ elements. Define the random variable $Y$ as
+\begin{align}
+  Y=b^T (X-EX).
 \end{align}
 We have
-\begin{align}%\label{}
-\no  0 &\leq EY^2\\
-\no  &=E(YY^T)\\
-\no  &=\textbf{b}^T E\big[(\textbf{X}-E\textbf{X})(\textbf{X}-E\textbf{X})^T\big]\textbf{b}\\
-\no  &=\textbf{b}^T \textbf{C}_\textbf{X} \textbf{b}.
+\begin{align}
+ 0 &\leq EY^2\\
+ &=E(YY^T)\\
+ &=b^T E\big[(X-EX)(X-EX)^T\big]b \\
+ &=b^T C_X b.
 \end{align}
-\end{proof}
-Note that the eigenvalues of a PSD matrix are always larger than or equal to zero. If all the eigenvalues are strictly larger than zero, then the matrix is positive definite.  From linear algebra, we know that a real symmetric matrix is positive definite if and only if all its eigenvalues are positive. Since $\textbf{C}_\textbf{X}$ is a real symmetric matrix, we can state the following theorem.
+Note that the eigenvalues of a PSD matrix are always larger than or equal to zero. If all the eigenvalues are strictly larger than zero, then the matrix is positive definite.  From linear algebra, we know that a real symmetric matrix is positive definite if and only if all its eigenvalues are positive. Since <b>$C_X$</b> is a real symmetric matrix, we can state the following theorem.
 <br /><span class='theorem'>Theorem </span>.
 Let $X$ be a random vector with $n$ elements. Then its covariance matrix $\textbf{C}_\textbf{X}$ is positive definite (PD), if and only if all its eigenvalues are larger than zero. Equivalently, $\textbf{C}_\textbf{X}$ is positive definite (PD), if and only if $\det(\textbf{C}_\textbf{X})>0$.
 \end{thm}
@@ -302,10 +302,10 @@ Determine whether $\textbf{C}_\textbf{U}$ and $\textbf{C}_\textbf{V}$ are positi
 \end{equation}
 Since $X$ and $Y$ are independent $Uniform(0,1)$ random variables, we have
 \begin{align}%\label{}
-\no  \var(X)=\var(&Y)=\frac{1}{12},\\
-\no  \cov(X,X+Y)&=\cov(X,X)+\cov(X,Y)\\
-\no  &=\frac{1}{12}+0=\frac{1}{12},\\
-\no  \var(X+Y)=&\var(X)+\var(Y)=\frac{1}{6}.
+ \var(X)=\var(&Y)=\frac{1}{12},\\
+ \cov(X,X+Y)&=\cov(X,X)+\cov(X,Y)\\
+ &=\frac{1}{12}+0=\frac{1}{12},\\
+ \var(X+Y)=&\var(X)+\var(Y)=\frac{1}{6}.
 \end{align}
 Thus,
 \begin{equation}
@@ -317,8 +317,8 @@ Thus,
 \end{equation}
 So we conclude
 \begin{align}%\label{}
-\no  \det(\textbf{C}_\textbf{U})&=\frac{1}{12} . \frac{1}{6} - \frac{1}{12} . \frac{1}{12}\\
-\no  &=\frac{1}{144}>0.
+ \det(\textbf{C}_\textbf{U})&=\frac{1}{12} . \frac{1}{6} - \frac{1}{12} . \frac{1}{12}\\
+ &=\frac{1}{144}>0.
 \end{align}
 Therefore, $\textbf{C}_\textbf{U}$ is positive definite. For $\textbf{C}_\textbf{V}$, we have
 \begin{align}
@@ -328,7 +328,7 @@ Therefore, $\textbf{C}_\textbf{U}$ is positive definite. For $\textbf{C}_\textbf
        \cov(Y,X) & \var(Y) &\cov(Y,X+Y) \\
        \cov(X+Y,X) &\cov(X+Y,Y) & \var(X+Y)
 \end{bmatrix}\\
-\no &=  \begin{bmatrix}
+&=  \begin{bmatrix}
        \frac{1}{12} & 0 & \frac{1}{12}  \\[5pt]
        0 & \frac{1}{12} & \frac{1}{12} \\[5pt]
        \frac{1}{12} & \frac{1}{12} & \frac{1}{6}
@@ -336,8 +336,8 @@ Therefore, $\textbf{C}_\textbf{U}$ is positive definite. For $\textbf{C}_\textbf
 \end{align}
 So we conclude
 \begin{align}%\label{}
-\no  \det(\textbf{C}_\textbf{V})&=\frac{1}{12} \left(\frac{1}{12} \cdot \frac{1}{6} - \frac{1}{12} \cdot \frac{1}{12} \right)-0+ \frac{1}{12} \left(0 - \frac{1}{12} \cdot \frac{1}{12} \right)\\
-\no  &=0.
+ \det(\textbf{C}_\textbf{V})&=\frac{1}{12} \left(\frac{1}{12} \cdot \frac{1}{6} - \frac{1}{12} \cdot \frac{1}{12} \right)-0+ \frac{1}{12} \left(0 - \frac{1}{12} \cdot \frac{1}{12} \right)\\
+ &=0.
 \end{align}
 Thus, $\textbf{C}_\textbf{V}$ is not positive definite (we already know that it is positive semi-definite).
 
@@ -403,13 +403,13 @@ and evaluated at $(y_1,y_2,...,y_n)$.
 \begin{example} \label{ex:PDF-vec-AXb}
 Let \textbf{X} be an $n$-dimensional random vector. Let \textbf{A} be a fixed (non-random) invertible $n$ by $n$ matrix, and \textbf{b} be a fixed $n$-dimensional vector. Define the random vector \textbf{Y} as
 \begin{align}%\label{}
-\no  \textbf{Y}=\textbf{A}\textbf{X}+\textbf{b}.
+ \textbf{Y}=\textbf{A}\textbf{X}+\textbf{b}.
 \end{align}
 Find the PDF of \textbf{Y} in terms of PDF of \textbf{X}.
 \end{example}
 \sol Since $A$ is invertible, we can write
 \begin{align}%\label{}
-\no  \textbf{X}=\textbf{A}^{-1}(\textbf{Y}-\textbf{b}).
+ \textbf{X}=\textbf{A}^{-1}(\textbf{Y}-\textbf{b}).
 \end{align}
 We can also check that
 \begin{align}
@@ -417,7 +417,7 @@ We can also check that
 \end{align}
 Thus, we conclude that
 \begin{align}
-  \no f_{\textbf{Y}}(\textbf{y})=\frac{1}{|\det\textbf{A}|}f_{\textbf{X}}\big(\textbf{A}^{-1}(\textbf{y}-\textbf{b}) \big).
+  f_{\textbf{Y}}(\textbf{y})=\frac{1}{|\det\textbf{A}|}f_{\textbf{X}}\big(\textbf{A}^{-1}(\textbf{y}-\textbf{b}) \big).
 \end{align}
 
 
@@ -434,7 +434,7 @@ We discussed two jointly normal random variables previously in Section \ref{subs
 \vspace{10pt}
 Random variables $X_1$, $X_2$,..., $X_n$ are said to be \textbf{jointly normal} if, for all $a_1$,$a_2$,..., $a_n$ $\in \mathbb{R}$, the random variable
 \begin{align}%\label{}
- \no  a_1X_1+a_2X_2+...+a_nX_n
+  a_1X_1+a_2X_2+...+a_nX_n
 \end{align}
 is a normal random variable.
 \vspace{10pt}
@@ -478,10 +478,10 @@ To find the general form for the PDF of a Gaussian random vector it is convenien
 \end{equation}
 where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$. Then, we have
 \begin{align}%\label{}
-\no  f_{\mathbf{Z}}(\mathbf{z})&=f_{Z_1, Z_2, ..., Z_n}(z_1, z_2, ..., z_n)\\
-\no  &=\prod_{i=1}^{n} f_{Z_i}(z_i)\\
-\no  &=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \sum_{i=1}^{n} z_i^2 \right\}\\
-\no  &=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
+ f_{\mathbf{Z}}(\mathbf{z})&=f_{Z_1, Z_2, ..., Z_n}(z_1, z_2, ..., z_n)\\
+ &=\prod_{i=1}^{n} f_{Z_i}(z_i)\\
+ &=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \sum_{i=1}^{n} z_i^2 \right\}\\
+ &=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
 \end{align}
 
 
@@ -493,7 +493,7 @@ where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$. Then, we have
 \vspace{10pt}
 For a standard normal vector \textbf{Z}, where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$, the PDF is given by
 \begin{align}%\label{}
-\no  f_{\mathbf{Z}}(\mathbf{z})=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
+ f_{\mathbf{Z}}(\mathbf{z})=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
 \end{align}
 \vspace{10pt}
 }}
@@ -504,8 +504,8 @@ Now, we need to extend this formula to a general normal random vector \textbf{X}
 
 Assume that I have a normal random vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. \footnote{The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem \ref{thm:PSD}), so $\det(\textbf{C}) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(\textbf{C})>0$ (Theorem \ref{thm:PD}). So here, we are only excluding the case $\det(\textbf{C})=0$. If $\det(\textbf{C})=0$, then you can show that you can write some $X_i$'s as a linear combination of others, so indeed we can remove them from the vector without losing any information.} Then from linear algebra we know that there exists an $n$ by $n$ matrix \textbf{Q} such that
 \begin{align}%\label{}
-      \no  &\textbf{Q}\textbf{Q}^T=\textbf{I}  \hsb (\textbf{I} \textrm{ is the identity matrix})\\
-      \no  &\textbf{C}= \textbf{Q} \textbf{D} \textbf{Q}^T,
+       &\textbf{Q}\textbf{Q}^T=\textbf{I}  \hsb (\textbf{I} \textrm{ is the identity matrix})\\
+       &\textbf{C}= \textbf{Q} \textbf{D} \textbf{Q}^T,
 \end{align}
 where \textbf{D} is a diagonal matrix
 \begin{equation}
@@ -531,35 +531,35 @@ The positive definiteness assumption guarantees that all $d_{ii}$'s are positive
 \end{equation}
 We have $\textbf{D}^{\frac{1}{2}} \textbf{D}^{\frac{1}{2}}=\mathbf{D}$ and $\textbf{D}^{\frac{1}{2}}={\textbf{D}^{\frac{1}{2}}}^{T}$. Also define
 \begin{align}%\label{}
-\no  \mathbf{A}= \textbf{Q} \textbf{D}^{\frac{1}{2}} \textbf{Q}^T.
+ \mathbf{A}= \textbf{Q} \textbf{D}^{\frac{1}{2}} \textbf{Q}^T.
 \end{align}
 Then,
 \begin{align}%\label{}
-\no  \mathbf{A} \mathbf{A}^{T}= \mathbf{A}^{T}\mathbf{A}=\mathbf{C}.
+ \mathbf{A} \mathbf{A}^{T}= \mathbf{A}^{T}\mathbf{A}=\mathbf{C}.
 \end{align}
 Now we are ready to define the transformation that converts a standard Gaussian vector to $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Let \textbf{Z} be a standard Gaussian vector, i.e., $\mathbf{Z} \sim N(\mathbf{0},\mathbf{I})$. Define
 \begin{align}%\label{}
-\no  \mathbf{X}=\mathbf{A}\mathbf{Z}+\mathbf{m}.
+ \mathbf{X}=\mathbf{A}\mathbf{Z}+\mathbf{m}.
 \end{align}
 We claim that $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. To see this first note that $\mathbf{X}$ is a normal random vector. The reason is that any linear combination of components of $\mathbf{X}$ is indeed a linear combination of components of $\mathbf{Z}$ plus a constant. Thus, every linear combination of components of $\mathbf{X}$ is a normal random variable. It remains to show that $E\mathbf{X}=\mathbf{m}$ and $\mathbf{C_X}=\mathbf{C}$.
 First note that by linearity of expectation we have
 \begin{align}%\label{}
-\no  E\mathbf{X} &= E \left[\mathbf{A}\mathbf{Z}+\mathbf{m}\right]\\
-\no &= \mathbf{A} E[\mathbf{Z}] +\mathbf{m}\\
-\no &= \mathbf{m}.
+ E\mathbf{X} &= E \left[\mathbf{A}\mathbf{Z}+\mathbf{m}\right]\\
+&= \mathbf{A} E[\mathbf{Z}] +\mathbf{m}\\
+&= \mathbf{m}.
 \end{align}
 Also, by Example \ref{ex:cov-mat-AXb} we have
 \begin{align}%\label{}
-\no  \textbf{C}_\textbf{X}&=\textbf{A} \textbf{C}_\textbf{Z} \textbf{A}^T\\
-\no &=\mathbf{A} \mathbf{A}^{T} & (\textrm{since } \textbf{C}_\textbf{Z}=\mathbf{I})\\
-\no &=\mathbf{C}.
+ \textbf{C}_\textbf{X}&=\textbf{A} \textbf{C}_\textbf{Z} \textbf{A}^T\\
+&=\mathbf{A} \mathbf{A}^{T} & (\textrm{since } \textbf{C}_\textbf{Z}=\mathbf{I})\\
+&=\mathbf{C}.
 \end{align}
 Thus, we have shown that \textbf{X} is  a random vector with mean $\mathbf{m}$ and covariance matrix \textbf{C}. Now we can use Example \ref{ex:PDF-vec-AXb} to find the PDF of \textbf{X}. We have
 \begin{align}
-  \no f_{\textbf{X}}(\textbf{x})&=\frac{1}{|\det\textbf{A}|}f_{\textbf{Z}}\big(\textbf{A}^{-1}(\textbf{x}-\textbf{m}) \big) \\
-  \no &=\frac{1}{(2\pi)^{\frac{n}{2}} |\det\textbf{A}|} \exp \left\{-\frac{1}{2} (\textbf{A}^{-1}(\textbf{x}-\textbf{m}))^T(\textbf{A}^{-1}(\textbf{x}-\textbf{m})) \right\}\\
-  \no &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T\textbf{A}^{-T} \mathbf{A}^{-1}(\textbf{x}-\textbf{m}) \right\}\\
-  \no &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) \right\}.
+  f_{\textbf{X}}(\textbf{x})&=\frac{1}{|\det\textbf{A}|}f_{\textbf{Z}}\big(\textbf{A}^{-1}(\textbf{x}-\textbf{m}) \big) \\
+  &=\frac{1}{(2\pi)^{\frac{n}{2}} |\det\textbf{A}|} \exp \left\{-\frac{1}{2} (\textbf{A}^{-1}(\textbf{x}-\textbf{m}))^T(\textbf{A}^{-1}(\textbf{x}-\textbf{m})) \right\}\\
+  &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T\textbf{A}^{-T} \mathbf{A}^{-1}(\textbf{x}-\textbf{m}) \right\}\\
+  &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) \right\}.
 \end{align}
 
 \begin{center}
@@ -583,14 +583,14 @@ Let $X$ and $Y$ be two jointly normal random variables with $X \sim N(\mu_X,\sig
        Y
 \end{bmatrix}$ is the same as $f_{X,Y}(x,y)$ given in Definition \ref{def:bivariate-normal-PDF} in section \ref{subsec:bivariate-normal}. That is,
 \begin{align} \label{eq:bivariate-normal}
-  \no f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}} \hs \cdot \\
-  \no & \exp \left\{-\frac{1}{2 (1-\rho^2)}\bigg[\bigg(\frac{x-\mu_X}{\sigma_X}\bigg)^2
+  f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}} \hs \cdot \\
+  & \exp \left\{-\frac{1}{2 (1-\rho^2)}\bigg[\bigg(\frac{x-\mu_X}{\sigma_X}\bigg)^2
    +\bigg(\frac{y-\mu_Y}{\sigma_Y}\bigg)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \bigg] \right\}.
 \end{align}
  \end{example}
 \sol Both formulas are in the form $ae^{-\frac{1}{2}b}$. Thus, it suffices to show that they have the same $a$ and $b$. Here we have
 \begin{equation}
-\no \textbf{m} = \begin{bmatrix}
+\textbf{m} = \begin{bmatrix}
        \mu_X \\%[5pt]
        \mu_Y
 \end{bmatrix}.
@@ -608,11 +608,11 @@ Let $X$ and $Y$ be two jointly normal random variables with $X \sim N(\mu_X,\sig
 \end{equation}
 From this, we obtain
 \begin{align}%\label{}
-\no  \det \mathbf{C}= \sigma^2_X \sigma^2_Y(1-\rho^2).
+ \det \mathbf{C}= \sigma^2_X \sigma^2_Y(1-\rho^2).
 \end{align}
 Thus, in both formulas for PDF $a$ is given by
 \begin{align}%\label{}
-\no  a= \frac{1}{2 \pi \sigma_X \sigma_Y\sqrt{1-\rho^2}}.
+ a= \frac{1}{2 \pi \sigma_X \sigma_Y\sqrt{1-\rho^2}}.
 \end{align}
 Next, we check $b$. We have
 \begin{equation}
@@ -624,8 +624,8 @@ Next, we check $b$. We have
 \end{equation}
 Now by matrix multiplication we obtain
 \begin{align}%\label{}
-\no  (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) &= \\
-\no  &\hspace{-40pt}=\frac{1}{\sigma^2_X \sigma^2_Y(1-\rho^2)} \begin{bmatrix}
+ (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) &= \\
+ &\hspace{-40pt}=\frac{1}{\sigma^2_X \sigma^2_Y(1-\rho^2)} \begin{bmatrix}
      x-\mu_X\\
      y-\mu_Y
      \end{bmatrix}^{T}
@@ -636,7 +636,7 @@ Now by matrix multiplication we obtain
      x-\mu_X\\
      y-\mu_Y
      \end{bmatrix}\\
-\no  &\hspace{-40pt}=-\frac{1}{2 (1-\rho^2)}\left[\left(\frac{x-\mu_X}{\sigma_X}\right)^2
+ &\hspace{-40pt}=-\frac{1}{2 (1-\rho^2)}\left[\left(\frac{x-\mu_X}{\sigma_X}\right)^2
    +\left(\frac{y-\mu_Y}{\sigma_Y}\right)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \right],
 \end{align}
 which agrees with the formula in Definition \ref{def:bivariate-normal-PDF}.
@@ -668,7 +668,7 @@ Another important result is that if  $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a norma
 \vspace{10pt}
 If $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a normal random vector, $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$, $\mathbf{A}$ is an $m$ by $n$ fixed matrix, and $\mathbf{b}$ is an $m$-dimensional fixed vector, then the random vector $\mathbf{Y}=\mathbf{A}\mathbf{X}+\mathbf{b}$ is a normal random vector with mean $\mathbf{A}E\mathbf{X}+\mathbf{b}$ and covariance matrix $\mathbf{A} \mathbf{C} \mathbf{A}^T$.
 \begin{align}%\label{}
-\no  \mathbf{Y} \sim N(\mathbf{A}E\mathbf{X}+\mathbf{b},\mathbf{A} \mathbf{C} \mathbf{A}^T)
+ \mathbf{Y} \sim N(\mathbf{A}E\mathbf{X}+\mathbf{b},\mathbf{A} \mathbf{C} \mathbf{A}^T)
 \end{align}
 
 \vspace{10pt}
