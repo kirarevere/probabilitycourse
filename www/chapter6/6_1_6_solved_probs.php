@@ -47,7 +47,7 @@
   &E[X^2Y+XYZ]=13 \\
   &E[XY^2+ZX^2]=14.
   \end{align}
-  Find $\mu$ and $\sigma$.\\
+  Find $\mu$ and $\sigma$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 
@@ -60,7 +60,7 @@
   \end{equation}
   Since $Y,Z \sim Uniform(0,2)$, we conclude
   \begin{equation}
-  \quad EY=EZ=1 ; \, \var(Y)=\var(Z)=\frac{(2-0)^2}{12}=\frac{1}{3}.
+  \quad EY=EZ=1 ; \, \textrm{Var}(Y)=\textrm{Var}(Z)=\frac{(2-0)^2}{12}=\frac{1}{3}.
   \end{equation}
   Therefore,
   \begin{equation}
@@ -93,7 +93,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   &Y_3=\max(X_2,X_3) \\
   &Y=Y_1+Y_2+Y_3.
   \end{align}
-  Find $EY$ and $\var(Y)$.
+  Find $EY$ and $\textrm{Var}(Y)$.
 
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
@@ -104,9 +104,9 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   \end{align}
   Also,
   \begin{align}
-  \var(Y)&=\var(Y_1)+\var(Y_2)+\var(Y_3)+2\cov(Y_1,Y_2)+2\cov(Y_1,Y_3)+2\cov(Y_2,Y_3)
+  \textrm{Var}(Y)&=\textrm{Var}(Y_1)+\textrm{Var}(Y_2)+\textrm{Var}(Y_3)+2\cov(Y_1,Y_2)+2\cov(Y_1,Y_3)+2\cov(Y_2,Y_3)
   \\ \quad \\
-  &=3\var(Y_1)+6\cov(Y_1,Y_2), \hsb \textrm{by symmetry.}
+  &=3\textrm{Var}(Y_1)+6\cov(Y_1,Y_2), \hsb \textrm{by symmetry.}
   \end{align}
   Note that $Y_i$'s are also Bernoulli random variables (but they are not independent). In particular, we have
   \begin{align}
@@ -117,7 +117,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   Thus, $Y_1 \sim Bernoulli(2p-p^2)$, and we obtain
   \begin{align}
   &EY_1=2p-p^2=p(2-p)\\
-  &\var(Y_1)=(2p-p^2)(1-2p+p^2)=p(2-p)(1-p)^2.
+  &\textrm{Var}(Y_1)=(2p-p^2)(1-2p+p^2)=p(2-p)(1-p)^2.
   \end{align}
   It remains to find $\cov(Y_1,Y_2)$. We can write
   \begin{align}
@@ -142,7 +142,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   \end{align}
   Also,
   \begin{align}
-  \var(Y)&=3\var(Y_1)+6\cov(Y_1,Y_2)\\
+  \textrm{Var}(Y)&=3\textrm{Var}(Y_1)+6\cov(Y_1,Y_2)\\
   &=3p(2-p)(1-p)^2+6(p+p^2-p^3-p^2(2-p)^2).
   \end{align}
 </li></ul>
@@ -315,7 +315,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 
 <span class='example'>Example </span><br />
 
- Let $M_X(s)$ be finite for $s \in [-c,c]$, where $c&gt;0$. Assume $EX=0$, and $\var(X)=1$. Prove
+ Let $M_X(s)$ be finite for $s \in [-c,c]$, where $c&gt;0$. Assume $EX=0$, and $\textrm{Var}(X)=1$. Prove
   \begin{align}%\label{}
    \lim_{n \rightarrow \infty} \left[M_X\left(\frac{s}{\sqrt{n}}\right)\right]^n=e^{\frac{s^2}{2}}.
   \end{align}
@@ -345,7 +345,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
   \begin{align}%\label{}
     \nonumber  M_{XY}(s,t)=E[e^{sX+tY}].
   \end{align}
-  Similar to the MGF of a single random variable, the MGF of the joint distributions uniquely determines the joint distribution. Let $X$ and $Y$ be two jointly normal random variables with $EX=\mu_X$, $EY=\mu_Y$, $\var(X)=\sigma^2_X$, $\var(Y)=\sigma^2_Y$, $\rho(X,Y)=\rho$ . Find $M_{XY}(s,t)$.
+  Similar to the MGF of a single random variable, the MGF of the joint distributions uniquely determines the joint distribution. Let $X$ and $Y$ be two jointly normal random variables with $EX=\mu_X$, $EY=\mu_Y$, $\textrm{Var}(X)=\sigma^2_X$, $\textrm{Var}(Y)=\sigma^2_Y$, $\rho(X,Y)=\rho$ . Find $M_{XY}(s,t)$.
 
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
@@ -353,7 +353,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 Note that $U=sX+tY$ is a linear combination of $X$ and $Y$ and thus it is a normal random variable. We have
 \begin{align}
   \nonumber EU &= sEX+tEY= s\mu_X+t\mu_Y,\\
-  \nonumber \var(U)&= s^2\var(X)+t^2\var(Y)+2st\rho(X,Y)\sigma_X\sigma_Y\\
+  \nonumber \textrm{Var}(U)&= s^2\textrm{Var}(X)+t^2\textrm{Var}(Y)+2st\rho(X,Y)\sigma_X\sigma_Y\\
   \nonumber &= s^2\sigma_X^2+t^2\sigma_Y^2+2st\rho\sigma_X\sigma_Y.
   \end{align}
  Thus
