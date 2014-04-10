@@ -111,7 +111,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
   Note that $Y_i$'s are also Bernoulli random variables (but they are not independent). In particular, we have
   \begin{align}
   P(Y_1=1)&=P\big((X_1=1) \textrm{ or } (X_2=1)\big)\\
-  &=P(X_1=1)+P(X_2=1)-P(X_1=1,X_2=1) \textrm{(comma means "and")}\\
+  &=P(X_1=1)+P(X_2=1)-P(X_1=1,X_2=1) \hspace{20pt}\textrm{(comma means "and")}\\
   &=2p-p^2.
   \end{align}
   Thus, $Y_1 \sim Bernoulli(2p-p^2)$, and we obtain
@@ -127,7 +127,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
   Note that $Y_1Y_2$ is also a Bernoulli random variable. We have
   \begin{align}
   E[Y_1 Y_2]&=P\big(Y_1=1,Y_2=1\big)\\
-  &=P\bigg((X_1=1) \textrm{ or } \big(X_2=1,X_3=1\big)\bigg)\\
+  &=P\big((X_1=1) \textrm{ or } \big(X_2=1,X_3=1\big)\big)\\
   &=P(X_1=1) + P\big(X_2=1,X_3=1\big)-P\big(X_1=1,X_2=1,X_3=1 \big)\\
   &=p+p^2-p^3.
   \end{align}
@@ -183,7 +183,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
     &=e^{\frac{s^2}{2}} \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{(x-s)^2}{2}}dx\\
     &=e^{\frac{s^2}{2}} \textrm{(PDF of normal integrates to $1$)}.
   \end{align}
-  Using problem \ref{prob:MGFaXb}, we obtain
+  Using problem 4, we obtain
  \begin{align}
     M_X(s)=e^{s \mu + \frac{\sigma^2 s^2}{2}}, \textrm{for all} \quad s\in \mathbb{R}.
   \end{align}
@@ -228,12 +228,12 @@ So, we obtain $\mu=3$,$\sigma=1$.
 			</li><li>
          Show that
         \begin{equation}%\label{}
-          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} \bigg{|}_{z=0}=P(X=k).
+          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} \big{|}_{z=0}=P(X=k).
         \end{equation}
 			</li><li>
          Show that
         \begin{equation}%\label{}
-          \frac{d^k G_X(z)}{dz^k} \bigg{|}_{z=1}=E[X(X-1)(X-2)...(X-k+1)].
+          \frac{d^k G_X(z)}{dz^k} \big{|}_{z=1}=E[X(X-1)(X-2)...(X-k+1)].
         \end{equation}
 			</li></ol>
 
@@ -266,7 +266,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
         \end{equation}
         Thus,
         \begin{equation}%\label{}
-          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} \bigg{|}_{z=0}=P(X=k).
+          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} \big{|}_{z=0}=P(X=k).
         \end{equation}
 		</li><li>
          By letting $Z=1$ in
@@ -275,7 +275,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
         \end{equation}
         we obtain
         \begin{equation}%\label{}
-          \frac{d^k G_X(z)}{dz^k}\bigg{|}_{z=1}=\sum_{n=k}^{\infty} n(n-1)(n-2)...(n-k+1)P(X=n),
+          \frac{d^k G_X(z)}{dz^k}\big{|}_{z=1}=\sum_{n=k}^{\infty} n(n-1)(n-2)...(n-k+1)P(X=n),
         \end{equation}
         which by LOTUS is equal to $E[X(X-1)(X-2)...(X-k+1)]$.
 			</li></ol>
@@ -302,10 +302,10 @@ So, we obtain $\mu=3$,$\sigma=1$.
    \lim_{n\rightarrow\infty} n\ln\left(M_{X}(\frac{s}{n})\right) &=\lim_{n\rightarrow\infty} \frac{\ln\left(M_{X}(\frac{s}{n})\right)}{\frac{1}{n}} \\
    &=\frac{0}{0}.
   \end{align}
-  So, we can use \'{L}H\^{o}pital's rule
+  So, we can use LHopital&#39;s rule
   \begin{align}
   \lim_{n\rightarrow\infty} \frac{\ln\left(M_{X}(\frac{s}{n})\right)}{\frac{1}{n}} &=\lim_{t \rightarrow 0} \frac{\ln\left(M_{X}(ts)\right)}{t} \quad (\textrm{let} \quad t=\frac{1}{n})\\
-  &=\lim_{t \rightarrow 0} \frac{\frac{sM_{X}^{'}(ts)}{M_{X}(ts)}}{1} \quad (\textrm{by \'{L}H\^{o}pital's rule})\\
+  &=\lim_{t \rightarrow 0} \frac{\frac{sM_{X}^{'}(ts)}{M_{X}(ts)}}{1} \quad (\textrm{by LHopital&#39;s rule})\\
   &= \frac{sM_{X}^{'}(0)}{M_{X}(0)} \\
   &=s\mu \quad (\textrm{since} \quad M_{X}^{'}(0)=\mu, M_{X}(0)=1).
   \end{align}
@@ -318,7 +318,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
   \begin{align}%\label{}
    \lim_{n \rightarrow \infty} \left[M_X\left(\frac{s}{\sqrt{n}}\right)\right]^n=e^{\frac{s^2}{2}}.
   \end{align}
-  \textit{Note:} From this, we can prove the Central Limit Theorem (CLT) which is discussed in Section \ref{sec:limit-thms}.
+  <i>Note:</i> From this, we can prove the Central Limit Theorem (CLT) which is discussed in Section 7.1.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
 <ul><li>
 
@@ -330,9 +330,9 @@ So, we obtain $\mu=3$,$\sigma=1$.
   \begin{align}
    \lim_{n\rightarrow\infty} n\ln\left(M_{X}(\frac{s}{\sqrt{n}})\right) &= \lim_{n\rightarrow\infty} \frac{\ln\left(M_{X}(\frac{s}{\sqrt{n}})\right)}{\frac{1}{n}} \quad (\textrm{let} \quad t=\frac{1}{\sqrt{n}})\\
    &= \lim_{t \rightarrow 0}\frac{\ln\left(M_{X}(ts)\right)}{t^2}\\
-   &= \lim_{t \rightarrow 0} \frac{\frac{sM_{X}^{'}(ts)}{M_{X}(ts)}}{2t} \quad (\textrm{by \'{L}H\^{o}pital's rule})\\
+   &= \lim_{t \rightarrow 0} \frac{\frac{sM_{X}^{'}(ts)}{M_{X}(ts)}}{2t} \quad (\textrm{by LHopital&#39;s rule})\\
    &= \lim_{t \rightarrow 0} \frac{sM_{X}^{'}(ts)}{2t} \quad (\textrm{again} \quad \frac{0}{0},)\\
-   &= \lim_{t \rightarrow 0} \frac{s^2M_{X}^{''}(ts)}{2} \quad (\textrm{by \'{L}H\^{o}pital's rule})\\
+   &= \lim_{t \rightarrow 0} \frac{s^2M_{X}^{''}(ts)}{2} \quad (\textrm{by LHopital&#39;s rule})\\
    &= \frac{s^2}{2} \quad (\textrm{since} \quad M_{X}^{''}(0)=EX^2=1).
   \end{align}
 </li></ul>
@@ -469,6 +469,8 @@ P(0\leq X_2 \leq 1) &= \Phi\left(\frac{1-1}{\sqrt2}\right)-\Phi\left(\frac{0-1}{
 \begin{align}
 P(Y_3 \leq 4) &= \Phi\left(\frac{4-3}{1}\right) =\Phi\left(1\right)=0.8413
  \end{align}
+</li></ul>
+</li></ul></div><hr /><br />
 
 
 <span class='problem'>Problem </span><br />
