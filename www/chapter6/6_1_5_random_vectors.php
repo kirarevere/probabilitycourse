@@ -406,9 +406,9 @@ and evaluated at $(y_1,y_2,...,y_n)$.
 <hr /><span class='example'>Example </span><br />
 Let <b>X</b> be an $n$-dimensional random vector. Let <b>A</b> be a fixed (non-random) invertible $n$ by $n$ matrix, and <b>b</b> be a fixed $n$-dimensional vector. Define the random vector <b>Y</b> as
 \begin{align}%\label{}
- \textbf{Y}=\textbf{A}\textbf{X}+\textbf{b}.
+ Y=AX+b.
 \end{align}
-Find the PDF of \textbf{Y} in terms of PDF of \textbf{X}.
+Find the PDF of Y in terms of PDF of X.
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
 <ul><li>
 Since $A$ is invertible, we can write
@@ -426,34 +426,21 @@ Thus, we conclude that
 </li></ul>
 </li></ul></div><hr /><br />
 
+<h2>Normal (Gaussian) Random Vectors:</h2>
 
+We discussed two jointly normal random variables previously in Section 5.3.2. In particular, two random variables $X$ and $Y$ are said to be <b>bivariate normal</b> or <b>jointly normal</b>, if $aX+bY$ has normal distribution for all $a,b \in \mathbb{R}$. We can extend this definition to $n$ jointly normal random variables.
 
-
-\subsubsection{\large{Normal (Gaussian) Random Vectors:}}
-
-We discussed two jointly normal random variables previously in Section \ref{subsec:bivariate-normal}. In particular, two random variables $X$ and $Y$ are said to be \textbf{bivariate normal} or \textbf{jointly normal}, if $aX+bY$ has normal distribution for all $a,b \in \mathbb{R}$. We can extend this definition to $n$ jointly normal random variables.
-
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
-Random variables $X_1$, $X_2$,..., $X_n$ are said to be \textbf{jointly normal} if, for all $a_1$,$a_2$,..., $a_n$ $\in \mathbb{R}$, the random variable
+<div class='cbox'>
+Random variables $X_1$, $X_2$,..., $X_n$ are said to be <b>jointly normal</b> if, for all $a_1$,$a_2$,..., $a_n$ $\in \mathbb{R}$, the random variable
 \begin{align}%\label{}
   a_1X_1+a_2X_2+...+a_nX_n
 \end{align}
 is a normal random variable.
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+</div><br />
 
 As before, we agree that the constant zero is a normal random variable with zero mean and variance, i.e., $N(0,0)$. When we have several jointly normal random variables, we often put them in a vector. The resulting random vector is a called a normal (Gaussian) random vector.
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
+
+<div class='cbox'>
 A random vector
 \begin{equation}
 \nonumber \textbf{X} = \begin{bmatrix}
@@ -465,11 +452,8 @@ A random vector
        X_n
 \end{bmatrix}.
 \end{equation}
-is said to be \textbf{normal} or \textbf{Gaussian} if the random variables $X_1$, $X_2$,..., $X_n$ are jointly normal.
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+is said to be <b>normal</b> or <b>Gaussian</b> if the random variables $X_1$, $X_2$,..., $X_n$ are jointly normal.
+</div><br />
 
 To find the general form for the PDF of a Gaussian random vector it is convenient to start from the simplest case where $X_i$'s are independent and identically distributed (i.i.d), $X_i \sim N(0,1)$. In this case, we know how to find the joint PDF. It is simply the product of the individual (marginal) PDFs. Let's call such a random vector the \textbf{standard normal vector}. So let
 \begin{equation}
