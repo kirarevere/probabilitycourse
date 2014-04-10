@@ -223,8 +223,8 @@ From this, we also obtain
  &=\frac{17}{48}-\frac{5}{8}\frac{7}{12}\\
  &=-\frac{1}{96}.
 \end{align}
-The correlation matrix $\textbf{R}_\textbf{U}$ is given by
-\nonumber \textbf{R}_\textbf{U}=E[\textbf{UU}^{T}]
+The correlation matrix $R_U$ is given by
+\nonumber R_U=E[UU^{T}]
 =  \begin{bmatrix}
        EX^2 & EXY  \\%[5pt]
        EYX & EY^2
@@ -233,8 +233,8 @@ The correlation matrix $\textbf{R}_\textbf{U}$ is given by
        \frac{7}{15} & \frac{17}{48}  \\[5pt]
        \frac{17}{48} & \frac{5}{12}
 \end{bmatrix}.
-The covariance matrix $\textbf{C}_\textbf{U}$ is given by
-\nonumber \textbf{C}_\textbf{U}
+The covariance matrix $C_U$ is given by
+\nonumber C_U
 =  \begin{bmatrix}
        \textrm{Var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
        \textrm{Cov}(Y,X) & \textrm{Var}(Y)
