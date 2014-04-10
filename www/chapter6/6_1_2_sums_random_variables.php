@@ -1,5 +1,5 @@
 <?php
-	$section_no			= "6.1.1";
+	$section_no			= "6.1.2";
 	$section_title	= "Joint Distributions and Independence";
 	$section_prev		= "chapter6/6_1_1_distributions_independence.php";
 	$section_next		= "chapter6/#";
@@ -24,28 +24,28 @@ We can also find the variance of $Y$ based on our discussion in Section 5.3. In 
 \end{align}
 For $Y=X_1+X_2+ \cdots +X_n$, we can obtain a more general version of the above equation. We can write
 \begin{align}
-\nonumber \var (Y)&=\cov\left(\sum_{i=1}^{n}X_i,\sum_{j=1}^{n}X_j\right)\\
-\nonumber &=\sum_{i=1}^{n}\sum_{j=1}^{n} \cov(X_i,X_j)  &\textrm{(using part 7 of Lemma 5.3)}\\
-\nonumber &=\sum_{i=1}^{n} \var(X_i)+2 \sum_{i&lt;j} \cov(X_i,X_j).
+\nonumber \textrm{var} (Y)&=\textrm{cov}\left(\sum_{i=1}^{n}X_i,\sum_{j=1}^{n}X_j\right)\\
+\nonumber &=\sum_{i=1}^{n}\sum_{j=1}^{n} \textrm{cov}(X_i,X_j)  &\textrm{(using part 7 of Lemma 5.3)}\\
+\nonumber &=\sum_{i=1}^{n} \textrm{var}(X_i)+2 \sum_{i&lt;j} \textrm{cov}(X_i,X_j).
 \end{align}
 </p>
 
 <div class='cbox'>
 \begin{align}%\label{}
-\nonumber \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \var(X_i)+2 \sum_{i&lt;j} \textrm{cov}(X_i,X_j)
+\nonumber \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \textrm{var}(X_i)+2 \sum_{i&lt;j} \textrm{cov}(X_i,X_j)
 \end{align}
 </div><br />
 
 If the $X_i$'s are independent, then $\textrm{cov}(X_i,X_j)=0$ for $i \neq j$. In this case, we can write
 <div class='cbox'>
 \begin{align}%\label{}
-\nonumber \textrm{If $X_1$, $X_2$,...,$X_n$ are independent, }\var \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \var(X_i).
+\nonumber \textrm{If $X_1$, $X_2$,...,$X_n$ are independent, }\textrm{var} \left(\sum_{i=1}^{n} X_i\right)=\sum_{i=1}^{n} \textrm{var}(X_i).
 \end{align}
 </div>
 
 <!-- Begin Example -->
 <hr /><span class='example'>Example </span><br />
-$N$ people sit around a round table, where $N&gt;5$. Each person tosses a coin. Anyone whose outcome is different from his/her two neighbors will receive a present. Let $X$ be the number of people who receive presents. Find $EX$ and $\var(X)$.
+$N$ people sit around a round table, where $N&gt;5$. Each person tosses a coin. Anyone whose outcome is different from his/her two neighbors will receive a present. Let $X$ be the number of people who receive presents. Find $EX$ and $\textrm{var}(X)$.
 <div class='solvedprob'><ul><li><a><b>Solution</b></a>
 <ul><li>
 Number the $N$ people from $1$ to $N$. Let $X_i$ be the indicator random variable for the $i$th person, that is, $X_i=1$ if the $i$th person receives a present and zero otherwise. Then
@@ -64,27 +64,27 @@ Thus, we find
 \end{align}
 Next, we can write
 \begin{align}%\label{}
-\nonumber \var (X)=\sum_{i=1}^{N} \var(X_i)+\sum_{i=1}^{N} \sum_{j \neq i} \cov(X_i,X_j).
+\nonumber \textrm{var} (X)=\sum_{i=1}^{N} \textrm{var}(X_i)+\sum_{i=1}^{N} \sum_{j \neq i} \textrm{cov}(X_i,X_j).
 \end{align}
 Since $X_i \sim Bernoulli(\frac{1}{4})$, we have
 \begin{align}%\label{}
-\nonumber \var (X_i)=\frac{1}{4} . \frac{3}{4}=\frac{3}{16}.
+\nonumber \textrm{var} (X_i)=\frac{1}{4} . \frac{3}{4}=\frac{3}{16}.
 \end{align}
-It remains to find $\cov(X_i,X_j)$. First note that $X_i$ and $X_j$ are independent if $i$th person and the $j$th person do not share a neighbor. In other words, if $j>i+2$ or $i>j+2$, then $X_i$ and $X_j$ are independent, so
+It remains to find $\textrm{cov}(X_i,X_j)$. First note that $X_i$ and $X_j$ are independent if $i$th person and the $j$th person do not share a neighbor. In other words, if $j>i+2$ or $i>j+2$, then $X_i$ and $X_j$ are independent, so
 \begin{align}%\label{}
-\no \cov(X_i,X_j)=0, \hsb \textrm{ for $j>i+2$ or $i>j+2$.}
+\no \textrm{cov}(X_i,X_j)=0, \hsb \textrm{ for $j>i+2$ or $i>j+2$.}
 \end{align}
 Also, note that there is a lot of symmetry in the problem:
 \begin{align}%\label{}
-\nonumber &\cov (X_1,X_2)=\cov (X_2,X_3)=\cov (X_3,X_4)=...=\cov (X_{N-1},X_{N})=\cov (X_N,X_1)\\
-\nonumber &\cov (X_1,X_3)=\cov (X_2,X_4)=\cov (X_3,X_5)=...=\cov (X_{N-1},X_{1})=\cov (X_N,X_2).
+\nonumber &\textrm{cov} (X_1,X_2)=\textrm{cov} (X_2,X_3)=\textrm{cov} (X_3,X_4)=...=\textrm{cov} (X_{N-1},X_{N})=\textrm{cov} (X_N,X_1)\\
+\nonumber &\textrm{cov} (X_1,X_3)=\textrm{cov} (X_2,X_4)=\textrm{cov} (X_3,X_5)=...=\textrm{cov} (X_{N-1},X_{1})=\textrm{cov} (X_N,X_2).
 \end{align}
 Thus, we can write
 \begin{align}%\label{}
-\nonumber \var (X)&=N \var(X_1)+ N \cov(X_1,X_2)+N\cov(X_1,X_3)\\
-\no &=\frac{3N}{16}+N \cov(X_1,X_2)+N\cov(X_1,X_3).
+\nonumber \textrm{var} (X)&=N \textrm{var}(X_1)+ N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3)\\
+\no &=\frac{3N}{16}+N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3).
 \end{align}
-So we need to find $\cov(X_1,X_2)$ and $\cov(X_1,X_3)$. We have
+So we need to find $\textrm{cov}(X_1,X_2)$ and $\textrm{cov}(X_1,X_3)$. We have
 \begin{align}%\label{}
 \no E[X_1X_2]&=P(X_1=1,X_2=1)\\
 \no &=P(H_N,T_1,H_2,T_3)+P(T_N,H_1,T_2,H_3) \\
@@ -92,7 +92,7 @@ So we need to find $\cov(X_1,X_2)$ and $\cov(X_1,X_3)$. We have
 \end{align}
 Thus,
 \begin{align}%\label{}
-\no  \cov(X_1,X_2)&=E[X_1X_2]-E[X_1]E[X_2]\\
+\no  \textrm{cov}(X_1,X_2)&=E[X_1X_2]-E[X_1]E[X_2]\\
 \no  &=\frac{1}{8}-\frac{1}{16}=\frac{1}{16},
 \end{align}
 \begin{align}%\label{}
@@ -102,12 +102,12 @@ Thus,
 \end{align}
 Thus,
 \begin{align}%\label{}
-\no  \cov(X_1,X_3)&=E[X_1X_3]-E[X_1]E[X_3]\\
+\no  \textrm{cov}(X_1,X_3)&=E[X_1X_3]-E[X_1]E[X_3]\\
 \no  &=\frac{1}{16}-\frac{1}{16}=0.
 \end{align}
 Therefore,
 \begin{align}%\label{}
-\nonumber \var (X)&=\frac{3N}{16}+N \cov(X_1,X_2)+N\cov(X_1,X_3)\\
+\nonumber \textrm{var} (X)&=\frac{3N}{16}+N \textrm{cov}(X_1,X_2)+N\textrm{cov}(X_1,X_3)\\
 \no &=\frac{3N}{16}+\frac{N}{16}\\
 \no &=\frac{N}{4}.
 \end{align}
