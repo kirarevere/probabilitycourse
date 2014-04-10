@@ -101,15 +101,15 @@ In some situations we are dealing with random variables that are independent and
 <div class='cbox'>
 Random variables $X_1$, $X_2$, ..., $X_n$ are said to be \textbf{independent and identically distributed (i.i.d)} if they are \textit{independent}, and they have the <i>same marginal distributions</i>:
 \begin{align}%\label{}
-\nonumber  F_{X_1}(x)=F_{X_2}(x)=...=F_{X_n}(x), \hs \hs \textrm{ for all }x \in \mathbb{R}
+\nonumber  F_{X_1}(x)=F_{X_2}(x)=...=F_{X_n}(x), \textrm{ for all }x \in \mathbb{R}
 \end{align}
 </div><br />
 
 For example, if random variables $X_1$, $X_2$, ..., $X_n$ are i.i.d, they will have the same means and variances, so we can write
 \begin{align}%\label{}
 \nonumber  E[X_1 X_2 \cdots X_n]&=E[X_1]E[X_2] \cdots E[X_n] &(\textrm{because $X_i$'s are indepenednt})\\
-\no &= E[X_1]E[X_1] \cdots E[X_1]&(\textrm{because $X_i$'s are identically distributed})\\
-\no &=E[X_1]^n.
+ &= E[X_1]E[X_1] \cdots E[X_1]&(\textrm{because $X_i$'s are identically distributed})\\
+ &=E[X_1]^n.
 \end{align}
 
 
