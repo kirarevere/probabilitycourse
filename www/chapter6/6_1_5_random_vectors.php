@@ -236,6 +236,7 @@ The correlation matrix $R_U$ is given by
 \end{bmatrix}.
 \end{equation}
 The covariance matrix $C_U$ is given by
+\begin{equation}
 \nonumber C_U
 =  \begin{bmatrix}
        \textrm{Var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
@@ -245,6 +246,7 @@ The covariance matrix $C_U$ is given by
        \frac{73}{960} & -\frac{1}{96}  \\[5pt]
        -\frac{1}{96} & \frac{11}{144}
 \end{bmatrix}.
+\end{equation}
 </li></ul>
 </li></ul></div><hr /><br />
 
