@@ -233,7 +233,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
 			</li><li>
          Show that
         \begin{equation}%\label{}
-          \frac{d^k G_X(z)}{dz^k} \big{|}_{z=1}=E[X(X-1)(X-2)...(X-k+1)].
+          \frac{d^k G_X(z)}{dz^k} |_{z=1}=E[X(X-1)(X-2)...(X-k+1)].
         \end{equation}
 			</li></ol>
 
@@ -266,7 +266,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
         \end{equation}
         Thus,
         \begin{equation}%\label{}
-          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} \big{|}_{z=0}=P(X=k).
+          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} |_{z=0}=P(X=k).
         \end{equation}
 		</li><li>
          By letting $Z=1$ in
@@ -275,7 +275,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
         \end{equation}
         we obtain
         \begin{equation}%\label{}
-          \frac{d^k G_X(z)}{dz^k}\big{|}_{z=1}=\sum_{n=k}^{\infty} n(n-1)(n-2)...(n-k+1)P(X=n),
+          \frac{d^k G_X(z)}{dz^k}|_{z=1}=\sum_{n=k}^{\infty} n(n-1)(n-2)...(n-k+1)P(X=n),
         \end{equation}
         which by LOTUS is equal to $E[X(X-1)(X-2)...(X-k+1)]$.
 			</li></ol>
