@@ -99,6 +99,7 @@ If random variables $X_1$, $X_2$, ..., $X_n$ are independent, then we have
 In some situations we are dealing with random variables that are independent and are also identically distributed, i.e, the have the same CDFs. It is usually easier to deal with such random variables, since independence and being identically distributed often simplify the analysis. We will see examples of such analyses shortly.
 
 <div class='cbox'>
+<span class='definition'>Definition </span>.
 Random variables $X_1$, $X_2$, ..., $X_n$ are said to be <b>independent and identically distributed (i.i.d)</b> if they are <i>independent</i>, and they have the <i>same marginal distributions</i>:
 \begin{align}%\label{}
 \nonumber  F_{X_1}(x)=F_{X_2}(x)=...=F_{X_n}(x), \textrm{ for all }x \in \mathbb{R}
