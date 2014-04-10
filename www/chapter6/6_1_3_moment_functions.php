@@ -104,7 +104,7 @@ Thus, the coefficient of $\frac{s^{k}}{k!}$ in the Taylor series for $M_Y(s)$ is
 We remember from calculus that the coefficient of $\frac{s^k}{k!}$ in the Taylor series of $M_X(s)$ is obtained by taking the $k$th derivative of $M_X(s)$ and evaluating it at $s=0$. Thus, we can write
 
 \begin{align}
-\nonumber  E[X^k]=\frac{d^k}{ds^k}M_X(s)\bigg{|}_{s=0}
+\nonumber  E[X^k]=\frac{d^k}{ds^k}M_X(s)|_{s=0}
 \end{align}
 
 <div class='cbox'>
@@ -113,7 +113,7 @@ We can obtain all moments of $X^k$ from its MGF:
 \nonumber  M_X(s)=\sum_{k=0}^{\infty} E[X^k] \frac{s^k}{k!}
 \end{align}
 \begin{align}%\label{}
-\nonumber  E[X^k]=\frac{d^k}{ds^k}M_X(s)\bigg{|}_{s=0}
+\nonumber  E[X^k]=\frac{d^k}{ds^k}M_X(s)|_{s=0}
 \end{align}
 </div>
 
