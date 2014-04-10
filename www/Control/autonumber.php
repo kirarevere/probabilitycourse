@@ -8,6 +8,7 @@
 	$chapterThreeDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter3/";
 	$chapterFourDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter4/";
 	$chapterFiveDir = $_SERVER['DOCUMENT_ROOT'] . "/chapter5/";
+	$chapterSixDir	= $_SERVER['DOCUMENT_ROOT'] . "/chapter6/";
 	$exCount; $thCount; $lmCount;
 
 	$currentChapter; $currentSection; $currentSubsection;
@@ -156,6 +157,7 @@
 		initElemCount($chapterThreeDir,"a",$dataFile);
 		initElemCount($chapterFourDir,"a",$dataFile);
 		initElemCount($chapterFiveDir,"a",$dataFile);
+		initElemCount($chapterSixDir,"a",$dataFile);
 		// create DATA
 		$data = file($DATA_DIR);
 	}
