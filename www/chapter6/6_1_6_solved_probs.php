@@ -228,7 +228,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
 			</li><li>
          Show that
         \begin{equation}%\label{}
-          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} \big{|}_{z=0}=P(X=k).
+          \frac{1}{k!} \frac{d^k G_X(z)}{dz^k} |_{z=0}=P(X=k).
         \end{equation}
 			</li><li>
          Show that
