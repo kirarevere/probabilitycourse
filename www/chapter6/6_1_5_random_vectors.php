@@ -268,7 +268,7 @@ By the above definitions, we note that every PD matrix is also PSD, but the conv
 <br /><span class='theorem'>Theorem </span>.
 Let $X$ be a random vector with $n$ elements. Then, its covariance matrix <b>$C_X$</b> is positive semi-definite(PSD).
 <br />
-Let <b>b</b> be any fixed vector with $n$ elements. Define the random variable $Y$ as
+<i>Proof.</i> Let <b>b</b> be any fixed vector with $n$ elements. Define the random variable $Y$ as
 \begin{align}
   Y=b^T (X-EX).
 \end{align}
@@ -281,28 +281,29 @@ We have
 \end{align}
 Note that the eigenvalues of a PSD matrix are always larger than or equal to zero. If all the eigenvalues are strictly larger than zero, then the matrix is positive definite.  From linear algebra, we know that a real symmetric matrix is positive definite if and only if all its eigenvalues are positive. Since <b>$C_X$</b> is a real symmetric matrix, we can state the following theorem.
 <br /><span class='theorem'>Theorem </span>.
-Let $X$ be a random vector with $n$ elements. Then its covariance matrix $\textbf{C}_\textbf{X}$ is positive definite (PD), if and only if all its eigenvalues are larger than zero. Equivalently, $\textbf{C}_\textbf{X}$ is positive definite (PD), if and only if $\det(\textbf{C}_\textbf{X})>0$.
-\end{thm}
-Note that the second part of the theorem is implied by the first part. This is because the determinant of a matrix is the product of its eigenvalues, and we already know that all eigenvalues of $\textbf{C}_\textbf{X}$ are larger than or equal to zero.
+Let $X$ be a random vector with $n$ elements. Then its covariance matrix <b>$C_X$</b> is positive definite (PD), if and only if all its eigenvalues are larger than zero. Equivalently, <b>$C_X$</b> is positive definite (PD), if and only if $\det(C_X)&gt;0$.
+<br />
+Note that the second part of the theorem is implied by the first part. This is because the determinant of a matrix is the product of its eigenvalues, and we already know that all eigenvalues of <b>$C_X$</b> are larger than or equal to zero.
 
 <hr /><span class='example'>Example </span><br />
 Let $X$ and $Y$ be two independent $Uniform(0,1)$ random variables. Let the random vectors \textbf{U} and  \textbf{V} be defined as
 \begin{equation}
-\nonumber \textbf{U} = \begin{bmatrix}
+\nonumber U = \begin{bmatrix}
        X \\%[5pt]
        X+Y
-\end{bmatrix}, \hsb \hsb
-\textbf{V} = \begin{bmatrix}
+\end{bmatrix}, 
+V = \begin{bmatrix}
        X \\%[5pt]
        Y \\
        X+Y
 \end{bmatrix}.
 \end{equation}
-Determine whether $\textbf{C}_\textbf{U}$ and $\textbf{C}_\textbf{V}$ are positive definite.
-\end{example}
-\sol Let us first find $\textbf{C}_\textbf{U}$. We have
+Determine whether $C_U$ and $C_V$ are positive definite.
+<div class='solvedprob'><ul><li><a><b>Solution</b></a>
+<ul><li>
+Let us first find $C_U$. We have
 \begin{equation}
-\nonumber \textbf{C}_\textbf{U}
+\nonumber C_U
 =  \begin{bmatrix}
        \textrm{Var}(X) & \textrm{Cov}(X,X+Y)  \\%[5pt]
        \textrm{Cov}(X+Y,X) & \textrm{Var}(X+Y)
@@ -317,7 +318,7 @@ Since $X$ and $Y$ are independent $Uniform(0,1)$ random variables, we have
 \end{align}
 Thus,
 \begin{equation}
-\nonumber \textbf{C}_\textbf{U}
+\nonumber C_U
 =  \begin{bmatrix}
        \frac{1}{12} &  \frac{1}{12} \\[5pt]
        \frac{1}{12} & \frac{1}{6}
@@ -325,12 +326,12 @@ Thus,
 \end{equation}
 So we conclude
 \begin{align}%\label{}
- \det(\textbf{C}_\textbf{U})&=\frac{1}{12} . \frac{1}{6} - \frac{1}{12} . \frac{1}{12}\\
+ \det(C_U)&=\frac{1}{12} . \frac{1}{6} - \frac{1}{12} . \frac{1}{12}\\
  &=\frac{1}{144}>0.
 \end{align}
-Therefore, $\textbf{C}_\textbf{U}$ is positive definite. For $\textbf{C}_\textbf{V}$, we have
+Therefore, $C_U$ is positive definite. For $C_V$, we have
 \begin{align}
-\nonumber \textbf{C}_\textbf{V}
+\nonumber C_V
 &=  \begin{bmatrix}
        \textrm{Var}(X) & \textrm{Cov}(X,Y) & \textrm{Cov}(X,X+Y)  \\%[5pt]
        \textrm{Cov}(Y,X) & \textrm{Var}(Y) &\textrm{Cov}(Y,X+Y) \\
@@ -344,24 +345,24 @@ Therefore, $\textbf{C}_\textbf{U}$ is positive definite. For $\textbf{C}_\textbf
 \end{align}
 So we conclude
 \begin{align}%\label{}
- \det(\textbf{C}_\textbf{V})&=\frac{1}{12} \left(\frac{1}{12} \cdot \frac{1}{6} - \frac{1}{12} \cdot \frac{1}{12} \right)-0+ \frac{1}{12} \left(0 - \frac{1}{12} \cdot \frac{1}{12} \right)\\
+ \det(C_V)&=\frac{1}{12} \left(\frac{1}{12} \cdot \frac{1}{6} - \frac{1}{12} \cdot \frac{1}{12} \right)-0+ \frac{1}{12} \left(0 - \frac{1}{12} \cdot \frac{1}{12} \right)\\
  &=0.
 \end{align}
-Thus, $\textbf{C}_\textbf{V}$ is not positive definite (we already know that it is positive semi-definite).
+Thus, $C_V$ is not positive definite (we already know that it is positive semi-definite).
+</li></ul>
+</li></ul></div><hr /><br />
 
-\begin{center}
-\line(1,0){250}
-\end{center}
 
-Finally, if we have two random vectors, \textbf{X} and \textbf{Y}, we can define the \textbf{cross correlation matrix} of \textbf{X} and \textbf{Y} as
+Finally, if we have two random vectors, X and Y, we can define the <b>cross correlation matrix</b> of <b>X</b> and <b>Y</b> as
 \begin{align}
-\nonumber \textbf{R}_\textbf{XY}=E[\textbf{X} \textbf{Y}^T].
+\nonumber R_XY=E[X Y^T].
 \end{align}
-Also, the \textbf{cross covariance matrix} of \textbf{X} and \textbf{Y} is
+Also, the <b>cross covariance matrix</b> of <b>X</b> and <b>Y</b> is
 \begin{align}
-\nonumber \textbf{C}_\textbf{XY}=E[(\textbf{X}-E\textbf{X})(\textbf{Y}-E\textbf{Y})^T].
+\nonumber C_XY=E[(X-EX)(Y-EY)^T].
 \end{align}
-\subsubsection{\large{Functions of Random Vectors: The Method of Transformations}}
+
+<h2>Functions of Random Vectors: The Method of Transformations</h2>
 
 A function of a random vector is a random vector. Thus, the methods that we discussed regarding functions of two random variables can be used to find distributions of functions of random vectors. For example, we can state a more general form of Theorem \ref{thm:pdf-transform-2} (method of transformations). Let us first explain the method and then see some examples on how to use it.
 
