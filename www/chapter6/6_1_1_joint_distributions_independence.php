@@ -26,6 +26,7 @@ The joint CDF of $n$ random variables $X_1$, $X_2$,...,$X_n$ is defined as
 \begin{align}%\label{}
 \nonumber  F_{X_1,X_2,...,X_n}(x_1,x_2,...,x_n)=P(X_1 \leq x_1,X_2 \leq x_2,...,X_n \leq x_n).
 \end{align}
+</p>
 
 <!-- Begin Example -->
 <hr /><span class='example'>Example </span><br />
@@ -42,9 +43,41 @@ Let $X, Y$ and $Z$ be three jointly continuous random variables with joint PDF
   <li> Find the constant $c$.</li>
   <li> Find the marginal PDF of $X$.</li>
 </ol>
+
+<div class='solvedprob'><ul><li><a><b>Solution</b></a>
+<ul><li>
+	<ol><li>
+   \begin{align}%\label{}
+  \nonumber  1&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{XYZ}(x,y,z)dxdydz\\
+  \nonumber  &=\int_{0}^{1} \int_{0}^{1} \int_{0}^{1} c(x+2y+3z) \hspace{5pt} dxdydz\\
+  \nonumber  &=\int_{0}^{1} \int_{0}^{1} c\left(\frac{1}{2}+2y+3z\right)  \hspace{5pt} dydz\\
+  \nonumber  &=\int_{0}^{1} c\left(\frac{3}{2}+3z\right)  \hspace{5pt} dz\\
+  \nonumber  &=3c.
+  \end{align}
+  Thus, $c=\frac{1}{3}$.
+	</li>
+	<li>
+  To find the marginal PDF of $X$, we note that $R_X=[0,1]$. For $0 \leq x \leq 1$, we can write
+  \begin{align}%\label{}
+  \nonumber  f_X(x)&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{XYZ}(x,y,z)dydz\\
+  \nonumber  &=\int_{0}^{1} \int_{0}^{1}  \frac{1}{3}(x+2y+3z) \hspace{5pt} dydz\\
+  \nonumber  &=\int_{0}^{1} \frac{1}{3}(x+1+3z)  \hspace{5pt} dz\\
+  \nonumber  &=\frac{1}{3}\left(x+\frac{5}{2}\right).
+  \end{align}
+  Thus,
+  \begin{equation}
+  \nonumber f_X(x) = \left\{
+  \begin{array}{l l}
+    \frac{1}{3}\left(x+\frac{5}{2}\right)  &  \quad  0 \leq x \leq 1 \\
+      &  \quad   \\
+    0 &  \quad \text{otherwise}
+  \end{array} \right.
+  \end{equation}
+	</li></ol>
+</li></ul>
+</li></ul></div><hr /><br />
 <hr /><br />
 <!-- /End Example -->
-</p>
 <!-- /Section Content -->
 
 <?php include 'section_footer.php'; ?>
