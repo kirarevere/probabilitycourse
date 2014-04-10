@@ -1,7 +1,7 @@
 <?php
 	$section_no			= "6.1.2";
 	$section_title	= "Joint Distributions and Independence";
-	$section_prev		= "chapter6/6_1_1_distributions_independence.php";
+	$section_prev		= "chapter6/6_1_1_joint_distributions_independence.php";
 	$section_next		= "chapter6/6_1_3_moment_functions.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(77);
