@@ -364,11 +364,11 @@ Also, the <b>cross covariance matrix</b> of <b>X</b> and <b>Y</b> is
 
 <h2>Functions of Random Vectors: The Method of Transformations</h2>
 
-A function of a random vector is a random vector. Thus, the methods that we discussed regarding functions of two random variables can be used to find distributions of functions of random vectors. For example, we can state a more general form of Theorem \ref{thm:pdf-transform-2} (method of transformations). Let us first explain the method and then see some examples on how to use it.
+A function of a random vector is a random vector. Thus, the methods that we discussed regarding functions of two random variables can be used to find distributions of functions of random vectors. For example, we can state a more general form of Theorem 5.1 (method of transformations). Let us first explain the method and then see some examples on how to use it.
 
-Let $\textbf{X}$ be an $n$-dimensional random vector with joint PDF $f_{\textbf{X}}(\textbf{\textit{x}})$. Let $G:\mathbb{R}^n \mapsto \mathbb{R}^n$ be a continuous and invertible function with continuous partial derivatives and let $H=G^{-1}$. Suppose that the random vector $\textbf{Y}$ is given by $\textbf{Y}=G(\textbf{X})$ and thus $\textbf{X}=G^{-1}(\textbf{Y})=H(\textbf{Y})$. That is,
+Let $\textbf{X}$ be an $n$-dimensional random vector with joint PDF $f_{X}(x)$. Let $G:\mathbb{R}^n \mapsto \mathbb{R}^n$ be a continuous and invertible function with continuous partial derivatives and let $H=G^{-1}$. Suppose that the random vector <b>$Y$</b> is given by <b>$Y=G(X)$</b> and thus $X=G^{-1}(Y)=H(Y)$. That is,
 \begin{equation}
-\nonumber \textbf{X} = \begin{bmatrix}
+\nonumber X = \begin{bmatrix}
        X_1 \\%[5pt]
        X_2 \\%[5pt]
        .   \\[-10pt]
@@ -385,19 +385,13 @@ Let $\textbf{X}$ be an $n$-dimensional random vector with joint PDF $f_{\textbf{
        H_n(Y_1,Y_2,...,Y_n)
 \end{bmatrix}.
 \end{equation}
-Then, the PDF of \textbf{Y}, $f_{Y_1,Y_2,...,Y_n}(y_1,y_2,...,y_n)$, is given by
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.50\linewidth}{
-%\centering
-%\vspace{10pt}
+Then, the PDF of Y, $f_{Y_1,Y_2,...,Y_n}(y_1,y_2,...,y_n)$, is given by
+
+<div class='cbox'>
 \begin{align}
   \nonumber f_{\textbf{Y}}(\textbf{y})=f_{\textbf{X}}\big(H(\textbf{y})\big) |J|
 \end{align}
-%\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+</div><br />
 where $J$ is the Jacobian of $H$ defined by
 \begin{align}
   \nonumber J=   \det  \begin{bmatrix}
@@ -409,25 +403,28 @@ where $J$ is the Jacobian of $H$ defined by
 \end{align}
 and evaluated at $(y_1,y_2,...,y_n)$.
 
-\begin{example} \label{ex:PDF-vec-AXb}
-Let \textbf{X} be an $n$-dimensional random vector. Let \textbf{A} be a fixed (non-random) invertible $n$ by $n$ matrix, and \textbf{b} be a fixed $n$-dimensional vector. Define the random vector \textbf{Y} as
+<hr /><span class='example'>Example </span><br />
+Let <b>X</b> be an $n$-dimensional random vector. Let <b>A</b> be a fixed (non-random) invertible $n$ by $n$ matrix, and <b>b</b> be a fixed $n$-dimensional vector. Define the random vector <b>Y</b> as
 \begin{align}%\label{}
  \textbf{Y}=\textbf{A}\textbf{X}+\textbf{b}.
 \end{align}
 Find the PDF of \textbf{Y} in terms of PDF of \textbf{X}.
-\end{example}
-\sol Since $A$ is invertible, we can write
+<div class='solvedprob'><ul><li><a><b>Solution</b></a>
+<ul><li>
+Since $A$ is invertible, we can write
 \begin{align}%\label{}
- \textbf{X}=\textbf{A}^{-1}(\textbf{Y}-\textbf{b}).
+ X=A^{-1}(Y-b).
 \end{align}
 We can also check that
 \begin{align}
-  \nonumber J= \det (\textbf{A}^{-1})=\frac{1}{\det\textbf{A}}.
+  \nonumber J= \det (A^{-1})=\frac{1}{\det(A)}.
 \end{align}
 Thus, we conclude that
 \begin{align}
-  f_{\textbf{Y}}(\textbf{y})=\frac{1}{|\det\textbf{A}|}f_{\textbf{X}}\big(\textbf{A}^{-1}(\textbf{y}-\textbf{b}) \big).
+  f_{Y}(y)=\frac{1}{|\det(A)|}f_{X}\big(A^{-1}(y-b) \big).
 \end{align}
+</li></ul>
+</li></ul></div><hr /><br />
 
 
 
