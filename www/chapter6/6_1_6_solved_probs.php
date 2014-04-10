@@ -95,7 +95,8 @@ So, we obtain $\mu=3$,$\sigma=1$.
   \end{align}
   Find $EY$ and $\textrm{Var}(Y)$.
 
-<span class='problem'>Problem </span><br />
+<div class="solvedprob"><ul><li><a><b>Solution</b></a>
+<ul><li>
 
    We have
   \begin{align}
@@ -147,8 +148,7 @@ So, we obtain $\mu=3$,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 
-<div class="solvedprob"><ul><li><a><b>Solution</b></a>
-<ul><li>
+<span class='problem'>Problem </span><br />
 
    Let $M_X(s)$ be finite for $s \in [-c,c]$, where $c>0$. Show that MGF of $Y=aX+b$ is given by
   \begin{equation}%\label{}
