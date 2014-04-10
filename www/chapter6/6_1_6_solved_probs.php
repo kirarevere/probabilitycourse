@@ -9,7 +9,7 @@
 ?>
 
 <!-- section content -->
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
    Let $X, Y$ and $Z$ be three jointly continuous random variables with joint PDF
   \begin{equation}
   \nonumber f_{XYZ}(x,y,z) = \left\{
@@ -41,7 +41,7 @@
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
    Let $X, Y$ and $Z$ be three independent random variables with $X \sim N(\mu, \sigma^2)$, and $Y,Z \sim Uniform(0,2)$. We also know that
   \begin{align}%\label{}
   &E[X^2Y+XYZ]=13 \\
@@ -84,7 +84,7 @@ We conclude $EX=3$, \,$EX^2=10$. Therefore,
 So, we obtain $\mu=3$,\,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
   Let $X_1$, $X_2$, and $X_3$ be three i.i.d $Bernoulli(p)$ random variables and
   \begin{align}
@@ -170,7 +170,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
    Let $Z \sim N(0,1)$ Find the MGF of $Z$. Extend your result to $X \sim N(\mu,\sigma)$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
@@ -191,7 +191,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
   Let $Y=X_1+X_2+X_3+...+X_n$, where $X_i$ are independent and $X_i \sim Poisson(\lambda_i)$. Find the distribution of $Y$.
 <div class="solvedprob"><ul><li><a><b>Solution</b></a>
@@ -213,7 +213,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
   <b>Probability Generating Functions (PGFs):</b> For many important discrete random variables, the range is a subset of $\{0,1$,$2,$...$\}$. For these random variables it is usually more useful to work with <i>probability generating functions (PGF)s</i>. defined as
       \begin{align}
@@ -285,7 +285,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 
 
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
  Let $M_X(s)$ be finite for $s \in [-c,c]$ where $c>0$. Prove
   \begin{equation}
@@ -313,7 +313,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
  Let $M_X(s)$ be finite for $s \in [-c,c]$, where $c&gt;0$. Assume $EX=0$, and $\textrm{Var}(X)=1$. Prove
   \begin{align}%\label{}
@@ -339,7 +339,7 @@ So, we obtain $\mu=3$,\,$\sigma=1$.
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
  We can define MGF for jointly distributed random variables as well. For example, for two random variables $(X,Y)$, the MGF is defined by
   \begin{align}%\label{}
@@ -370,7 +370,7 @@ Thus
 </li></ul>
 </li></ul></div><hr /><br />
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
 Let $\mathbf{X}= \begin{bmatrix}
   X_1\\
@@ -472,7 +472,7 @@ P(Y_3 \leq 4) &= \Phi\left(\frac{4-3}{1}\right) =\Phi\left(1\right)=0.8413
  \end{align}
 
 
-<span class='example'>Example </span><br />
+<span class='problem'>Problem </span><br />
 
  (Whitening/decorrelating transformation) Let <b>X</b> be an $n$-dimensional zero-mean random vector. Since $C_X$ is a real symmetric matrix, we conclude that it can be diagonalized. That is, there exists an $n$ by $n$ matrix <b>Q</b> such that
      \begin{align}%\label{}
