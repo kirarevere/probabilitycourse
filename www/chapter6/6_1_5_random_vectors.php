@@ -476,15 +476,16 @@ where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$. Then, we have
 
 
 <div class='cbox'>
-For a standard normal vector \textbf{Z}, where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$, the PDF is given by
+For a standard normal vector <b>Z</b>, where $Z_i$'s are i.i.d and $Z_i \sim N(0,1)$, the PDF is given by
 \begin{align}%\label{}
  f_{\mathbf{Z}}(\mathbf{z})=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
 \end{align}
 </div><br />
 
-Now, we need to extend this formula to a general normal random vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix \textbf{C}. This is very similar to when we defined general normal random variables from the standard normal random variable. We remember that if $Z \sim N(0,1)$, then the random variable $X=\sigma Z+ \mu$ has $N(\mu, \sigma^2)$ distribution. We would like to do the same thing for normal random vectors.
-
-Assume that I have a normal random vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix \textbf{C}. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem 6.2), so $\det(C) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(C)&gt;0$ (Theorem 6.3). So here, we are only excluding the case $\det(C)=0$. If $\det(C)=0$, then you can show that you can write some $X_i$&#39;s as a linear combination of others, so indeed we can remove them from the vector without losing any information. Then from linear algebra we know that there exists an $n$ by $n$ matrix <b>Q</b> such that
+Now, we need to extend this formula to a general normal random vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix <b>C</b>. This is very similar to when we defined general normal random variables from the standard normal random variable. We remember that if $Z \sim N(0,1)$, then the random variable $X=\sigma Z+ \mu$ has $N(\mu, \sigma^2)$ distribution. We would like to do the same thing for normal random vectors.
+<p>
+Assume that I have a normal random vector <b>X</b> with mean $\mathbf{m}$ and covariance matrix <b>C</b>. We write $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$. Further, assume that $\mathbf{C}$ is a positive definite matrix. The positive definiteness assumption here does not create any limitations. We already know that $\mathbf{C}$ is positive semi-definite (Theorem 6.2), so $\det(C) \geq 0$. We also know that $\mathbf{C}$ is positive definite if and only if $\det(C)&gt;0$ (Theorem 6.3). So here, we are only excluding the case $\det(C)=0$. If $\det(C)=0$, then you can show that you can write some $X_i$&#39;s as a linear combination of others, so indeed we can remove them from the vector without losing any information. Then from linear algebra we know that there exists an $n$ by $n$ matrix <b>Q</b> such that
+</p>
 \begin{align}%\label{}
        &QQ^T=I  (I \textrm{ is the identity matrix})\\
        &C= Q D Q^T,
@@ -530,56 +531,49 @@ First note that by linearity of expectation we have
 &= \mathbf{A} E[\mathbf{Z}] +\mathbf{m}\\
 &= \mathbf{m}.
 \end{align}
-Also, by Example \ref{ex:cov-mat-AXb} we have
+Also, by Example 6.12 we have
 \begin{align}%\label{}
- \textbf{C}_\textbf{X}&=\textbf{A} \textbf{C}_\textbf{Z} \textbf{A}^T\\
-&=\mathbf{A} \mathbf{A}^{T} & (\textrm{since } \textbf{C}_\textbf{Z}=\mathbf{I})\\
+ C_X&=A C_Z A^T\\
+&=\mathbf{A} \mathbf{A}^{T} & (\textrm{since } C_Z=\mathbf{I})\\
 &=\mathbf{C}.
 \end{align}
-Thus, we have shown that \textbf{X} is  a random vector with mean $\mathbf{m}$ and covariance matrix \textbf{C}. Now we can use Example \ref{ex:PDF-vec-AXb} to find the PDF of \textbf{X}. We have
+Thus, we have shown that <b>X</b> is  a random vector with mean $\mathbf{m}$ and covariance matrix <b>C</b>. Now we can use Example 6.15 to find the PDF of <b>X</b>. We have
 \begin{align}
-  f_{\textbf{X}}(\textbf{x})&=\frac{1}{|\det\textbf{A}|}f_{\textbf{Z}}\big(\textbf{A}^{-1}(\textbf{x}-\textbf{m}) \big) \\
-  &=\frac{1}{(2\pi)^{\frac{n}{2}} |\det\textbf{A}|} \exp \left\{-\frac{1}{2} (\textbf{A}^{-1}(\textbf{x}-\textbf{m}))^T(\textbf{A}^{-1}(\textbf{x}-\textbf{m})) \right\}\\
-  &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T\textbf{A}^{-T} \mathbf{A}^{-1}(\textbf{x}-\textbf{m}) \right\}\\
-  &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) \right\}.
+  f_{X}(x)&=\frac{1}{|\det(A)|}f_{Z}\big(A^{-1}(x-m) \big) \\
+  &=\frac{1}{(2\pi)^{\frac{n}{2}} |\det(A)|} \exp \left\{-\frac{1}{2} (A^{-1}(x-m))^T(A^{-1}(x-m)) \right\}\\
+  &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det(C)}} \exp \left\{-\frac{1}{2} (x-m)^TA^{-T} \mathbf{A}^{-1}(x-m) \right\}\\
+  &=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det(C)}} \exp \left\{-\frac{1}{2} (x-m)^T \mathbf{C}^{-1}(x-m) \right\}.
 \end{align}
 
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
+<div class='cbox'>
 For a normal vector \textbf{X} with mean $\mathbf{m}$ and covariance matrix \textbf{C}, the PDF is given by
 \begin{align}\label{eq:pdf-normal-vec}
   f_{\mathbf{X}}(\mathbf{x})=\frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{\det\textbf{C}}} \exp \left\{-\frac{1}{2} (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) \right\}.
 \end{align}
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+</div><br />
 
-
-\begin{example}
+<hr /><span class='example'>Example </span><br />
 Let $X$ and $Y$ be two jointly normal random variables with $X \sim N(\mu_X,\sigma_X)$, $Y \sim N(\mu_Y,\sigma_Y)$, and $\rho(X,Y)=\rho$. Show that the above PDF formula for PDF of $\begin{bmatrix}
        X \\%[5pt]
        Y
-\end{bmatrix}$ is the same as $f_{X,Y}(x,y)$ given in Definition \ref{def:bivariate-normal-PDF} in section \ref{subsec:bivariate-normal}. That is,
+\end{bmatrix}$ is the same as $f_{X,Y}(x,y)$ given in Definition 5.4 in section 5.3.2. That is,
 \begin{align} \label{eq:bivariate-normal}
   f_{XY}(x,y)&=\frac{1}{2 \pi \sigma_X \sigma_Y \sqrt{1-\rho^2}} \hs \cdot \\
   & \exp \left\{-\frac{1}{2 (1-\rho^2)}\bigg[\bigg(\frac{x-\mu_X}{\sigma_X}\bigg)^2
    +\bigg(\frac{y-\mu_Y}{\sigma_Y}\bigg)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \bigg] \right\}.
 \end{align}
- \end{example}
-\sol Both formulas are in the form $ae^{-\frac{1}{2}b}$. Thus, it suffices to show that they have the same $a$ and $b$. Here we have
+<div class='solvedprob'><ul><li><a><b>Solution</b></a>
+<ul><li>
+Both formulas are in the form $ae^{-\frac{1}{2}b}$. Thus, it suffices to show that they have the same $a$ and $b$. Here we have
 \begin{equation}
-\textbf{m} = \begin{bmatrix}
+m = \begin{bmatrix}
        \mu_X \\%[5pt]
        \mu_Y
 \end{bmatrix}.
 \end{equation}
  We also have
 \begin{equation}
-\nonumber \textbf{C}
+\nonumber C
 =  \begin{bmatrix}
        \textrm{Var}(X) & \textrm{Cov}(X,Y)  \\%[5pt]
        \textrm{Cov}(Y,X) & \textrm{Var}(Y)
@@ -598,7 +592,7 @@ Thus, in both formulas for PDF $a$ is given by
 \end{align}
 Next, we check $b$. We have
 \begin{equation}
-\nonumber \textbf{C}^{-1}
+\nonumber C^{-1}
 = \frac{1}{\sigma^2_X \sigma^2_Y(1-\rho^2)}\begin{bmatrix}
        \sigma^2_Y & -\rho \sigma_X \sigma_Y  \\%[5pt]
        -\rho \sigma_X \sigma_Y   & \sigma^2_X
@@ -606,7 +600,7 @@ Next, we check $b$. We have
 \end{equation}
 Now by matrix multiplication we obtain
 \begin{align}%\label{}
- (\textbf{x}-\textbf{m})^T \mathbf{C}^{-1}(\textbf{x}-\textbf{m}) &= \\
+ (x-m)^T \mathbf{C}^{-1}(x-m) &= \\
  &\hspace{-40pt}=\frac{1}{\sigma^2_X \sigma^2_Y(1-\rho^2)} \begin{bmatrix}
      x-\mu_X\\
      y-\mu_Y
@@ -621,46 +615,26 @@ Now by matrix multiplication we obtain
  &\hspace{-40pt}=-\frac{1}{2 (1-\rho^2)}\left[\left(\frac{x-\mu_X}{\sigma_X}\right)^2
    +\left(\frac{y-\mu_Y}{\sigma_Y}\right)^2-2\rho \frac{(x-\mu_X)(y-\mu_Y)}{\sigma_X \sigma_Y} \right],
 \end{align}
-which agrees with the formula in Definition \ref{def:bivariate-normal-PDF}.
-
-\begin{center}
-\line(1,0){250}
-\end{center}
-
-Remember that two jointly normal random variables $X$ and $Y$ are independent if and only if they are uncorrelated. We can extend this to multiple jointly normal random variables. Thus, if you have a normal random vector whose components are uncorrelated, you can conclude that the components are independent. To show this, note that if the $X_i$'s are uncorrelated, then the covariance matrix $\mathbf{C}_\mathbf{X}$ is diagonal, so its inverse $\mathbf{C}^{-1}_\mathbf{X}$ is also diagonal. You can see that in this case the PDF (Equation \ref{eq:pdf-normal-vec}) becomes the products of marginal PDFs.
+which agrees with the formula in Definition 5.4.
+</li></ul>
+</li></ul></div><hr /><br />
 
 
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
+Remember that two jointly normal random variables $X$ and $Y$ are independent if and only if they are uncorrelated. We can extend this to multiple jointly normal random variables. Thus, if you have a normal random vector whose components are uncorrelated, you can conclude that the components are independent. To show this, note that if the $X_i$'s are uncorrelated, then the covariance matrix $\mathbf{C}_\mathbf{X}$ is diagonal, so its inverse $\mathbf{C}^{-1}_\mathbf{X}$ is also diagonal. You can see that in this case the PDF (Equation 6.1) becomes the products of marginal PDFs.
+
+
+<div class='cbox'>
 If $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a normal random vector, and we know $\textrm{Cov}(X_i,X_j)=0$ for all $i \neq j$, then $X_1$,$X_2$, ..., $X_n$ are independent.
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
+</div><br />
 
 Another important result is that if  $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a normal random vector then $\mathbf{Y}=\mathbf{A}\mathbf{X}+\mathbf{b}$ is also a random vector because any linear combination of components of $\mathbf{Y}$ is also a linear combination of components of $X$ plus a constant value.
 
-\begin{center}
-\vspace{10pt}
-\fbox{\parbox{0.90\linewidth}{
-%\centering
-\vspace{10pt}
+<div class='cbox'>
 If $\mathbf{X}=[X_1,X_2,...,X_n]^T$ is a normal random vector, $\mathbf{X} \sim N(\mathbf{m},\mathbf{C})$, $\mathbf{A}$ is an $m$ by $n$ fixed matrix, and $\mathbf{b}$ is an $m$-dimensional fixed vector, then the random vector $\mathbf{Y}=\mathbf{A}\mathbf{X}+\mathbf{b}$ is a normal random vector with mean $\mathbf{A}E\mathbf{X}+\mathbf{b}$ and covariance matrix $\mathbf{A} \mathbf{C} \mathbf{A}^T$.
 \begin{align}%\label{}
  \mathbf{Y} \sim N(\mathbf{A}E\mathbf{X}+\mathbf{b},\mathbf{A} \mathbf{C} \mathbf{A}^T)
 \end{align}
-
-\vspace{10pt}
-}}
-\vspace{10pt}
-\end{center}
-
-
-
-
+</div><br />
 
 
 <!-- /section content -->
