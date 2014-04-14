@@ -228,3 +228,4 @@ For $p=\frac{1}{2}$ and $\alpha=\frac{3}{4}$, we obtain
 	</div>
 </body>
 </html>
+<?php include 'section_footer.php'; ?>

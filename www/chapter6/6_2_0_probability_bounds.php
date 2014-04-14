@@ -79,3 +79,4 @@ In this section, we will discuss several inequalities. Depending on the problem 
 	</div>
 </body>
 </html>
+<?php include 'section_footer.php'; ?>

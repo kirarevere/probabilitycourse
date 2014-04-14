@@ -169,3 +169,4 @@ The bound given by Markov is the "weakest" one. It is constant and does not chan
 	</div>
 </body>
 </html>
+<?php include 'section_footer.php'; ?>

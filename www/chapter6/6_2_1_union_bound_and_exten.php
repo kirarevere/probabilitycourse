@@ -310,3 +310,4 @@ which is indeed the righthand-side of the union bound. For example, from this we
 	</div>
 </body>
 </html>
+<?php include 'section_footer.php'; ?>

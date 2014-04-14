@@ -530,3 +530,4 @@ If $ g(X) = \ln{\sqrt{X}} = \frac{1}{2} \ln{X}$ then $g^{'}(X)=\frac{1}{2X}$ \qu
 	</div>
 </body>
 </html>
+<?php include 'section_footer.php'; ?>
