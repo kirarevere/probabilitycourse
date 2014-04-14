@@ -1,3 +1,12 @@
+<?php
+	$section_no			= "6.2.2";
+	$section_title	= "Markov and Chebyshev Inequalities";
+	$section_next		= "chapter6/6_2_4_chernov_bounds.php";
+	$section_prev		= "chapter6/6_2_1_union_bound_and_exten.php";
+	include						"../Control/autonumber.php";
+	loadHeaders(85);
+	include						"section_header.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -2,7 +2,7 @@
 	$section_no			= "6.1.6";
 	$section_title	= "Solved Problems";
 	$section_prev		= "chapter6/6_1_5_random_vectors.php";
-	$section_next		= "chapter6/6_2_0_#.php";
+	$section_next		= "chapter6/6_2_0_probability_bounds.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(81);
 	include						"section_header.php";

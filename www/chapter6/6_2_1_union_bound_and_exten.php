@@ -1,3 +1,12 @@
+<?php
+	$section_no			= "6.2.1";
+	$section_title	= "The Union Bound and Extension";
+	$section_next		= "chapter6/6_2_2_markov_chebyshev_inequalities.php";
+	$section_prev		= "chapter6/6_2_0_probability_bounds.php";
+	include						"../Control/autonumber.php";
+	loadHeaders(83);
+	include						"section_header.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

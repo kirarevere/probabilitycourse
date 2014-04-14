@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+	$section_no			= "6.2.5";
+	$section_title	= "Jensen's Inequality";
+	$section_next		= "chapter6/6_2_6_solved6_2.php";
+	$section_prev		= "chapter6/6_2_4_markov_chebyshev_inequalities.php";
+	include						"../Control/autonumber.php";
+	loadHeaders(88);
+	include						"section_header.php";
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<base href="../" />
