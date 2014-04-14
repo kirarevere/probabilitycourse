@@ -343,3 +343,4 @@ Let $X$ be a positive random variable with $EX=10$. What can you say about the f
 <span class='problem'>Problem </span><br />
 Let $X$ be a random variable with $EX=1$ and $R_X=(0,2)$. If $Y=X^3-6X^2$, show that $EY \leq -5$.
 
+<?php include "section_footer.php"; ?>
