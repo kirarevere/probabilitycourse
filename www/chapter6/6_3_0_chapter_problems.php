@@ -282,7 +282,7 @@ in $Geometric(p)$. Using Chebyshev&#39;s inequality find an upper bound for $P(|
 
 
 <span class='problem'>Problem </span><br />
-(Cantelli's inequality [<a href="http://probabilitycourse.com/bibliography#wiki-chebyshev.html">15</a>]) Let $X$ be a random variable with $EX=0$ and $\textrm{Var}(X)=\sigma^2$. We would like to prove that for any $a>0$, we have
+(Cantelli's inequality [<a href="http://probabilitycourse.com/bibliography.html#wiki-chebyshev">15</a>]) Let $X$ be a random variable with $EX=0$ and $\textrm{Var}(X)=\sigma^2$. We would like to prove that for any $a>0$, we have
   \begin{equation}%\label{}
     P(X \geq a) \leq \frac{\sigma^2}{\sigma^2+a^2}.
   \end{equation}
@@ -312,7 +312,7 @@ Let $X_i$ be i.i.d and $X_i \sim Exponential(\lambda)$. Using Chernoff bounds fi
 
 
 <span class='problem'>Problem </span><br />
-(Minkowski's inequality [<a href="http://probabilitycourse.com/bibliography#wiki-minowski.html">16</a>]) Prove for two random variables $X$ and $Y$ with finite moments, and $1 \leq p &lt; \infty$, we have
+(Minkowski's inequality [<a href="http://probabilitycourse.com/bibliography.html#wiki-minowski">16</a>]) Prove for two random variables $X$ and $Y$ with finite moments, and $1 \leq p &lt; \infty$, we have
   \begin{align}%\label{}
   E \big[\big{|}X+Y\big{|}^p \big]^{\frac{1}{p}} \leq E\big[|X|^p \big]^{\frac{1}{p}}+E\big[|Y|^p \big]^{\frac{1}{p}}.
   \end{align}
