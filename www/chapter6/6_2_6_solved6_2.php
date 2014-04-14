@@ -1,7 +1,7 @@
 <?php
 	$section_no			= "6.2.6";
 	$section_title	= "Solved Problems";
-	$section_next		= "chapter6/6_3_0_chapter_probs.php";
+	$section_next		= "chapter6/6_3_0_chapter_problems.php";
 	$section_prev		= "chapter6/6_2_5_jensen's_inequality.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(89);
