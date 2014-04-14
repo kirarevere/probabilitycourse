@@ -199,31 +199,39 @@ X= \begin{bmatrix}
   \end{bmatrix} 
 \end{align}
 be a normal random vector with the following mean and covariance matrices
-
-		<b>m</b>
-  =  \begin{bmatrix}
+\begin{align}
+	m =
+  \begin{bmatrix}
        1\\%[5pt]
        2
   \end{bmatrix}, C=\begin{bmatrix}
        4 & 1  \\%[5pt]
        1 & 1
   \end{bmatrix}.
+\end{align}
   Let also
-  <b>A</b>
-  =  \begin{bmatrix}
+\begin{align}
+  a = \begin{bmatrix}
        2 & 1\\%[5pt]
        -1 & 1\\
        1 & 3
-  \end{bmatrix}, b=\begin{bmatrix}
+  \end{bmatrix}
+\end{align}
+\begin{align}
+ b=\begin{bmatrix}
        -1  \\%[5pt]
        0 \\
        1
-  \end{bmatrix}, Y=\begin{bmatrix}
+  \end{bmatrix} 
+\end{align}
+\begin{align}
+Y=\begin{bmatrix}
        Y_1  \\%[5pt]
        Y_2  \\
        Y_3
   \end{bmatrix}
   =AX+b.
+\end{align}
 <ol>
     <li> Find $P( X_2 &lt; 0)$.</li>
     <li> Find expected value vector of $\mathbf{Y}$, $\mathbf{m_Y}=E\mathbf{Y}$.</li>
