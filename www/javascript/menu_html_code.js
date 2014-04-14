@@ -197,6 +197,11 @@ htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_5_jensen&
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_6_solved6_2.php">6.2.6 Solved Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
+htmlText +=	'		<li><a>6.3 Chapter Problems</a>';
+htmlText +=	'		<ul>';
+htmlText +=	'			<li><a href="http://probabilitycourse.com/chapter6/6_3_0_chapter_problems.php">6.3.0 Chapter Problems</a></li>';
+htmlText += '		</ul>';
+htmlText +=	'		</li>';
 htmlText += ' </ul>';
 htmlText += ' </li>';
 htmlText += '	<li><a href="http://probabilitycourse.com/bibliography.html">Bibliography</a>';
