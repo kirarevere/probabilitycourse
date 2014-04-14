@@ -175,3 +175,4 @@ On $(0, \infty)$, we can say $g''(x)$ is positive, if $a&lt;0$ or $a&gt;1$. It i
 	</div>
 </body>
 </html>
+<?php include 'section_footer.php'; ?>
