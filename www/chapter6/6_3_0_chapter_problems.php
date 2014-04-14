@@ -191,10 +191,15 @@ Let $X \sim Uniform(0,1)$. Suppose that given $X=x$, $Y$ and $Z$ are independent
 
 
 <span class='problem'>Problem </span><br />
-Let $\mathbf{X}= \begin{bmatrix}
+Let 
+\begin{align}
+X= \begin{bmatrix}
   X_1\\
   X_2
-  \end{bmatrix}$ be a normal random vector with the following mean and covariance matrices
+  \end{bmatrix} 
+\end{align}
+be a normal random vector with the following mean and covariance matrices
+
 \begin{align}
 		<b>m</b>
   =  \begin{bmatrix}
