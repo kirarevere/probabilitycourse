@@ -2,7 +2,7 @@
 	$section_no			= "6.2.5";
 	$section_title	= "Jensen's Inequality";
 	$section_next		= "chapter6/6_2_6_solved6_2.php";
-	$section_prev		= "chapter6/6_2_4_markov_chebyshev_inequalities.php";
+	$section_prev		= "chapter6/6_2_4_cauchy_schwarz.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(88);
 	include						"section_header.php";
