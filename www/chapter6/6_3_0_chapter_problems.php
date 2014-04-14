@@ -248,12 +248,15 @@ Let $X= \begin{bmatrix}
   X_3
   \end{bmatrix}$ be a normal random vector with the following mean and covariance
 \begin{align}
-  <b>m</b>
+  m
   =  \begin{bmatrix}
        1\\%[5pt]
        2 \\
        0
-  \end{bmatrix}, C=\begin{bmatrix}
+  \end{bmatrix}
+\end{align}
+\begin{align}
+ C=\begin{bmatrix}
        9 & 1  &-1 \\%[5pt]
        1 & 4  & 2\\
       -1 & 2  & 4
