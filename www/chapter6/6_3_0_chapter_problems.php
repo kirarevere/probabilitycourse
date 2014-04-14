@@ -315,17 +315,17 @@ Let $X_i$ be i.i.d and $X_i \sim Exponential(\lambda)$. Using Chernoff bounds fi
 <span class='problem'>Problem </span><br />
 (Minkowski's inequality [<a href="http://probabilitycourse.com/bibliography.html#wiki-minowski">16</a>]) Prove for two random variables $X$ and $Y$ with finite moments, and $1 \leq p &lt; \infty$, we have
   \begin{align}
-  E \big[\big{|}X+Y\big{|}^p \big]^{\frac{1}{p}} \leq E\big[|X|^p \big]^{\frac{1}{p}}+E\big[|Y|^p \big]^{\frac{1}{p}}.
+  E [|X+Y|^p ]^{\frac{1}{p}} \leq E[|X|^p ]^{\frac{1}{p}}+E[|Y|^p ]^{\frac{1}{p}}.
   \end{align}
   <i>Hint:</i> Note that
   \begin{align}
-   \big{|}X+Y\big{|}^p&= \big{|}X+Y\big{|}^{p-1} \big{|}X+Y\big{|} \\
-   & \leq \big{|}X+Y\big{|}^{p-1} \big(|X|+|Y| \big)\\
-   &\leq \big{|}X+Y\big{|}^{p-1} |X|+  \big{|}X+Y\big{|}^{p-1} |Y|.
+   |X+Y|^p&= |X+Y|^{p-1} |X+Y| \\
+   & \leq |X+Y|^{p-1} (|X|+|Y| )\\
+   &\leq |X+Y|^{p-1} |X|+  |X+Y|^{p-1} |Y|.
   \end{align}
   Therefore
   \begin{align}
-   E\big{|}X+Y\big{|}^p\leq E \big[\big{|}X+Y\big{|}^{p-1} |X| \big]+ E \big[\big{|}X+Y\big{|}^{p-1} |Y| \big].
+   E|X+Y|^p\leq E [{|}X+Y|^{p-1} |X| ]+ E [|X+Y|^{p-1} |Y| ].
   \end{align}
   Now, apply Holder&#39;s Ineqality.
 <hr /><br />
