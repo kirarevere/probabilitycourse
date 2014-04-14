@@ -8,56 +8,7 @@
 	include						"section_header.php";
 ?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<base href="../" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name='section'	content='6.2.3' />
-	<?php include '../Control/autonumber.php'; loadHeaders(45); ?>
-	
-	<script type="text/x-mathjax-config">
-  			MathJax.Hub.Config({
-    		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
-  			});
-	</script>	
-	<script type="text/javascript"
-  			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	
-	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
-	<script type="text/javascript" src="http://probabilitycourse.com/javascript/menu_js_code.js"></script>
-	<script type="text/javascript" src="http://probabilitycourse.com/javascript/solved_prob.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-
-	<title>Intro to Probability</title>
-
-</head><body>
-	<div id="container">
-		<span class="hide_print">
-			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
-		</span>
-		
-		<div id="wrapper">
-			<div id="content">
-			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter6/6_2_2_markov_chebyshev_inequalities.php">previous</a></div>
-    			<div class="right"><a href="chapter6/6_2_4_markov_chebyshev_inequalities.php">next</a><a> &rarr;</a></div>
-    			<div class="clear"></div>
-    		</div>
-			<hr />
-						
-			<div class="left"><h2>6.2.3 Chernoff Bounds</h2></div>
-    		<!--
-            <div class="right hide_print">
-			<a href="http://probabilitycourse.com/videos/chapter6/video4_3.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
-            -->
-    		<div class="clear"></div>
-			
-			<p>
-            If $X$ be a random variable, then for any $a \in \mathbb{R}$, we can write
+           If $X$ be a random variable, then for any $a \in \mathbb{R}$, we can write
 \begin{align}%\label{}
   P(X \geq a)= P(e^{sX} \geq e^{sa}),  &\qquad \textrm{ for } s>0 \\
   P(X \leq a)= P(e^{sX} \geq e^{sa}),  &\qquad \textrm{ for } s&lt;0.
@@ -152,21 +103,4 @@ For $p=\frac{1}{2}$ and $\alpha=\frac{3}{4}$, we obtain
 The bound given by Markov is the "weakest" one. It is constant and does not change as $n$ increases. The bound given by Chebyshev's inequality is "stronger" than the one given by Markov's inequality. In particular, note that $\frac{4}{n}$ goes to zero as $n$ goes to infinity. The strongest bound is the Chenoff bound. It goes to zero exponentially fast.
 </p>
 			
-			<hr />
-			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter6/6_2_2_markov_chebyshev_inequalities.php">previous</a></div>
-    			<div class="right"><a href="chapter6/6_2_4_markov_chebyshev_inequalities.php">next</a><a> &rarr;</a></div>
-    			<div class="clear"></div>
-    		</div>		
-		</div>
-		<div id="menu" class="hide_print">
-			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
-		</div>
-
-		<div id="footer" class="hide_print">
-			<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
-		</div>
-	</div>
-</body>
-</html>
 <?php include 'section_footer.php'; ?>

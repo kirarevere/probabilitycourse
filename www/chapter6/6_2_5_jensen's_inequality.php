@@ -6,55 +6,7 @@
 	include						"../Control/autonumber.php";
 	loadHeaders(88);
 	include						"section_header.php";
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<base href="../" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name='section'	content='6.2.5' />
-	<?php include '../Control/autonumber.php'; loadHeaders(45); ?>
-	
-	<script type="text/x-mathjax-config">
-  			MathJax.Hub.Config({
-    		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
-  			});
-	</script>	
-	<script type="text/javascript"
-  			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	
-	<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
-	<script type="text/javascript" src="http://probabilitycourse.com/javascript/menu_js_code.js"></script>
-	<script type="text/javascript" src="http://probabilitycourse.com/javascript/solved_prob.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="http://probabilitycourse.com/style_sheet.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-
-	<title>Intro to Probability</title>
-
-</head><body>
-	<div id="container">
-		<span class="hide_print">
-			<script type="text/javascript" src="http://probabilitycourse.com/javascript/top_page_html_code.js"></script>
-		</span>
-		
-		<div id="wrapper">
-			<div id="content">
-			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter6/6_2_4_markov_chebyshev_inequalities.php">previous</a></div>
-    			<div class="right"><a href="chapter6/6_2_6_solved6_2.php">next</a><a> &rarr;</a></div>
-    			<div class="clear"></div>
-    		</div>
-			<hr />
-						
-			<div class="left"><h2>6.2.5 Jensen's Inequality</h2></div>
-            <!--
-    		<div class="right hide_print">
-			<a href="http://probabilitycourse.com/videos/chapter6/video4_3.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
-			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
-            -->
-    		<div class="clear"></div>
-			
+?>	
 			<p>
            Remember that variance of every random variable $X$ is a positive value, i.e.,
 \begin{align}%\label{}
@@ -136,7 +88,7 @@ A twice-differentiable function $g: I \rightarrow \mathbb{R}$ is convex if and o
                           </tr>
 						  </table><br>
 
-So let's assume $a\neq 0,1$. Letting $g(x)=x^a$, we have
+So let&#39;s assume $a\neq 0,1$. Letting $g(x)=x^a$, we have
 \begin{align}%\label{}
  g''(x)=a(a-1)x^{a-2}.
 \end{align}
@@ -159,20 +111,4 @@ On $(0, \infty)$, we can say $g''(x)$ is positive, if $a&lt;0$ or $a&gt;1$. It i
 			</div>
 			<hr /><br>
 	
-			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter6/6_2_4_markov_chebyshev_inequalities.php">previous</a></div>
-    			<div class="right"><a href="chapter6/6_2_6_solved6_2.php">next</a><a> &rarr;</a></div>
-    			<div class="clear"></div>
-    		</div>		
-		</div>
-		<div id="menu" class="hide_print">
-			 <script type="text/javascript" src="javascript/menu_html_code.js"></script>
-		</div>
-
-		<div id="footer" class="hide_print">
-			<script type="text/javascript" src="http://probabilitycourse.com/javascript/footer_html_code.js"></script>
-		</div>
-	</div>
-</body>
-</html>
 <?php include 'section_footer.php'; ?>
