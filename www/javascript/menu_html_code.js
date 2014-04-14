@@ -195,6 +195,7 @@ htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_3_chernoff_bound
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_4_cauchy_schwarz.php">6.2.4 Cauchy Schwarz Inequality</a></li>';
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_5_jensen's_inequality.php">6.2.5 Jensen's Inequality</a></li>';
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_6_solved6_2.php">6.2.6 Solved Problems</a></li>';
+htmlText += '		</ul>';
 htmlText += ' </ul>';
 htmlText += ' </li>';
 htmlText += '	<li><a href="http://probabilitycourse.com/bibliography.html">Bibliography</a>';
