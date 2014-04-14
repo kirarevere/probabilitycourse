@@ -143,7 +143,7 @@ Let $X$ be a random variable with characteristic function $\phi_X(\omega)$. If $
 
 <span class='problem'>Problem </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
-  \begin{equation}
+\begin{align}
   \nonumber f_{X,Y}(x,y) = \left\{
   \begin{array}{l l}
     \frac{1}{2} (3x+y)  &  \quad 0 \leq x,y \leq 1  \\
@@ -157,7 +157,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
        X \\%[5pt]
        Y
   \end{bmatrix}.
-  \end{equation}
+\end{align}
 <ol>
    <li> Find the mean vector of <b>U</b>, $E\mathbf{U}$.</li>
     <li> Find the correlation matrix of <b>U</b>, $\mathbf{R}_{\mathbf{U}}$.</li>
@@ -171,13 +171,13 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 
 <span class='problem'>Problem </span><br />
 Let $X \sim Uniform(0,1)$. Suppose that given $X=x$, $Y$ and $Z$ are independent and $Y|X=x \sim Uniform(0,x)$ and $Z|X=x \sim Uniform(0,2x)$. Define the random vector <b>U</b> as
-  \begin{equation}
+\begin{align}
   \nonumber <b>U</b> = \begin{bmatrix}
        X \\%[5pt]
        Y \\
        Z
   \end{bmatrix}.
-  \end{equation}
+\end{align}
 <ol>
    <li> Find the PDFs of $Y$ and $Z$.</li>
     <li> Find PDF of <b>U</b>, $f_{\mathbf{U}}(\mathbf{u})$, by using
@@ -195,12 +195,12 @@ Let $\mathbf{X}= \begin{bmatrix}
   X_1\\
   X_2
   \end{bmatrix}$ be a normal random vector with the following mean and covariance matrices
-  \begin{equation}
+\begin{align}
 		<b>m</b>
   =  \begin{bmatrix}
        1\\%[5pt]
        2
-  \end{bmatrix}, \mathbf{C}=\begin{bmatrix}
+  \end{bmatrix}, C=\begin{bmatrix}
        4 & 1  \\%[5pt]
        1 & 1
   \end{bmatrix}.
@@ -212,17 +212,17 @@ Let $\mathbf{X}= \begin{bmatrix}
        2 & 1\\%[5pt]
        -1 & 1\\
        1 & 3
-  \end{bmatrix}, \mathbf{b}=\begin{bmatrix}
+  \end{bmatrix}, b=\begin{bmatrix}
        -1  \\%[5pt]
        0 \\
        1
-  \end{bmatrix}, \mathbf{Y}=\begin{bmatrix}
+  \end{bmatrix}, Y=\begin{bmatrix}
        Y_1  \\%[5pt]
        Y_2  \\
        Y_3
   \end{bmatrix}
-  =\mathbf{A}\mathbf{X}+\mathbf{b}.
-  \end{equation}
+  =AX+b.
+\end{align}
 <ol>
     <li> Find $P( X_2 &lt; 0)$.</li>
     <li> Find expected value vector of $\mathbf{Y}$, $\mathbf{m_Y}=E\mathbf{Y}$.</li>
@@ -233,23 +233,23 @@ Let $\mathbf{X}= \begin{bmatrix}
 
 
 <span class='problem'>Problem </span><br />
-Let $\mathbf{X}= \begin{bmatrix}
+Let $X= \begin{bmatrix}
   X_1\\
   X_2\\
   X_3
   \end{bmatrix}$ be a normal random vector with the following mean and covariance
-  \begin{equation}
+\begin{align}
   <b>m</b>
   =  \begin{bmatrix}
        1\\%[5pt]
        2 \\
        0
-  \end{bmatrix}, \mathbf{C}=\begin{bmatrix}
+  \end{bmatrix}, C=\begin{bmatrix}
        9 & 1  &-1 \\%[5pt]
        1 & 4  & 2\\
       -1 & 2  & 4
   \end{bmatrix}.
-  \end{equation}
+\end{align}
   Find the MGF of $\mathbf{X}$ defined as
   \begin{align}%\label{}
    M_{\mathbf{X}}(s,t,r)=E\left[e^{sX_1+tX_2+rX_3}\right].
@@ -300,7 +300,7 @@ The number of customers visiting a store during a day is a random variable with 
     P(X \leq 80    \textrm{ or }  X \geq 120).
    \end{equation}
 	</li><li>
-      Using the one-sided Chebyshev inequality (Problem \ref{Prob:one-sided-chebyshev}), find an upper bound for having more than $120$  customers in a day.
+      Using the one-sided Chebyshev inequality (Problem 21), find an upper bound for having more than $120$  customers in a day.
 		</li></ol>
 <hr /><br />
 
@@ -313,11 +313,11 @@ Let $X_i$ be i.i.d and $X_i \sim Exponential(\lambda)$. Using Chernoff bounds fi
 
 <span class='problem'>Problem </span><br />
 (Minkowski's inequality [<a href="http://probabilitycourse.com/bibliography.html#wiki-minowski">16</a>]) Prove for two random variables $X$ and $Y$ with finite moments, and $1 \leq p &lt; \infty$, we have
-  \begin{align}%\label{}
+  \begin{align}
   E \big[\big{|}X+Y\big{|}^p \big]^{\frac{1}{p}} \leq E\big[|X|^p \big]^{\frac{1}{p}}+E\big[|Y|^p \big]^{\frac{1}{p}}.
   \end{align}
   <i>Hint:</i> Note that
-  \begin{align}%\label{}
+  \begin{align}
    \big{|}X+Y\big{|}^p&= \big{|}X+Y\big{|}^{p-1} \big{|}X+Y\big{|} \\
    & \leq \big{|}X+Y\big{|}^{p-1} \big(|X|+|Y| \big)\\
    &\leq \big{|}X+Y\big{|}^{p-1} |X|+  \big{|}X+Y\big{|}^{p-1} |Y|.
