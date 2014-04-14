@@ -186,7 +186,7 @@ htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_1_5_random_
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_1_6_solved_probs.php">6.1.6 Solved Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
-htmlText += '		<li><a>6.2 Probability Bounds</a></li>';
+htmlText += '		<li><a>6.2 Probability Bounds</a>';
 htmlText += '		<ul>';
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_0_probability_bounds.php">6.2.0 Probability Bounds</a></li>';
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_1_union_bound_and_exten.php">6.2.1 Union Boundary and Extension</a></li>';
@@ -196,6 +196,7 @@ htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_4_cauchy_schwarz
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_5_jensen's_inequality.php">6.2.5 Jensen's Inequality</a></li>';
 htmlText += '			<li><a href="probabilitycourse.com/chapter6/6_2_6_solved6_2.php">6.2.6 Solved Problems</a></li>';
 htmlText += '		</ul>';
+htmlText += '		</li>';
 htmlText += ' </ul>';
 htmlText += ' </li>';
 htmlText += '	<li><a href="http://probabilitycourse.com/bibliography.html">Bibliography</a>';
