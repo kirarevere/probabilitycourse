@@ -1,5 +1,5 @@
 <?php
-	$section_no			= "6.2.5";
+	$section_no			= "6.2.4";
 	$section_title	= "Cauchy-Schwarz Inequality";
 	$section_next		= "chapter6/6_2_6_solved6_2.php";
 	$section_prev		= "chapter6/6_2_3_chernoff_bounds.php";
