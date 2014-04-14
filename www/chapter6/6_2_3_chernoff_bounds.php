@@ -1,7 +1,7 @@
 <?php
 	$section_no			= "6.2.3";
 	$section_title	= "Chernoff Bounds";
-	$section_next		= "chapter6/6_2_4_markov_chebyshev_inequalities.php";
+	$section_next		= "chapter6/6_2_4_cauchy_schwarz.php";
 	$section_prev		= "chapter6/6_2_2_markov_chebyshev_inequalities.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(86);
