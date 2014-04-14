@@ -1,7 +1,7 @@
 <?php
 	$section_no			= "6.2.2";
 	$section_title	= "Markov and Chebyshev Inequalities";
-	$section_next		= "chapter6/6_2_3_chernov_bounds.php";
+	$section_next		= "chapter6/6_2_3_chernoff_bounds.php";
 	$section_prev		= "chapter6/6_2_1_union_bound_and_exten.php";
 	include						"../Control/autonumber.php";
 	loadHeaders(85);
