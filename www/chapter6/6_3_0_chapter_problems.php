@@ -200,7 +200,6 @@ X= \begin{bmatrix}
 \end{align}
 be a normal random vector with the following mean and covariance matrices
 
-\begin{align}
 		<b>m</b>
   =  \begin{bmatrix}
        1\\%[5pt]
@@ -209,9 +208,7 @@ be a normal random vector with the following mean and covariance matrices
        4 & 1  \\%[5pt]
        1 & 1
   \end{bmatrix}.
-  \end{equation}
   Let also
-  \begin{equation}
   <b>A</b>
   =  \begin{bmatrix}
        2 & 1\\%[5pt]
@@ -227,7 +224,6 @@ be a normal random vector with the following mean and covariance matrices
        Y_3
   \end{bmatrix}
   =AX+b.
-\end{align}
 <ol>
     <li> Find $P( X_2 &lt; 0)$.</li>
     <li> Find expected value vector of $\mathbf{Y}$, $\mathbf{m_Y}=E\mathbf{Y}$.</li>
