@@ -26,7 +26,7 @@
 		<div id="wrapper">
 			<div id="content">
 			
-			<h2>Send us your feedback</h2>
+			<h2>We appreciate your feedback</h2>
 			<p>Please fill out all the fields.</p>
 			
 			<form name="contactform" method="post" action="http://probabilitycourse.com/send_form_email.php">
