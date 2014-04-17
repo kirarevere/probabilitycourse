@@ -161,7 +161,7 @@ It is an interesting exercise to calculate $P(B_n)$ exactly using the inclusion-
 \end{align}
             </div>
            
-            
+<br />            
 			<a name="ex64"></a>
 			<span class='example'>Example </span><br>
 			<p>
