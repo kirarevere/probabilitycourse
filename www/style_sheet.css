@@ -106,4 +106,7 @@
 .centered {
 	text-align: center;
 
-li { margin: 10px; }
+li { 
+	margin: 10px; 
+	margin-top:20px;
+}
