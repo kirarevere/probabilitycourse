@@ -189,7 +189,7 @@ htmlText += '		</li>';
 htmlText += '		<li><a>6.2 Probability Bounds</a>';
 htmlText += '		<ul>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_0_probability_bounds.php">6.2.0 Probability Bounds</a></li>';
-htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_1_union_bound_and_exten.php">6.2.1 Union Boundary and Extension</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_1_union_bound_and_exten.php">6.2.1 Union Bound and Extension</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_2_markov_chebyshev_inequalities.php">6.2.2 Markov Chebyshev Inequalities</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_3_chernoff_bounds.php">6.2.3 Chernoff Bounds</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter6/6_2_4_cauchy_schwarz.php">6.2.4 Cauchy Schwarz Inequality</a></li>';
