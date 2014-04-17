@@ -129,6 +129,14 @@ But since $P(B_n) \geq 0$, we conclude
 \begin{align}%\label{}
   \lim_{n\rightarrow \infty} P(B_n)=0.
 \end{align}
+            </li>
+					 </ul>
+					 </li>
+				 </ul>
+                 
+			</div>
+			<hr /><br>
+  
 It is an interesting exercise to calculate $P(B_n)$ exactly using the inclusion-exclusion principle:
 
 \begin{align}
@@ -152,14 +160,7 @@ It is an interesting exercise to calculate $P(B_n)$ exactly using the inclusion-
     & \hspace{160pt} .
 \end{align}
             </div>
-             </li>
-					 </ul>
-					 </li>
-				 </ul>
-                 
-			</div>
-			<hr /><br>
-            
+           
             
 			<a name="ex64"></a>
 			<span class='example'>Example </span><br>
