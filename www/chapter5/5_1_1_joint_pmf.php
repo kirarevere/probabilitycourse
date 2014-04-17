@@ -129,7 +129,7 @@ Figure 5.1 shows $P_{XY}(x,y)$.<br /><br />
 						<li>
 		Note that from the table,
 		\begin{align}%\label{}
-		\nonumber R_X=\{0,1\}  \textrm{ and }  R_Y=\{0,1,2\}.
+		\nonumber R_X=\{0,1\}  \hspace{20pt}\textrm{ and }\hspace{20pt}  R_Y=\{0,1,2\}.
 		\end{align}
 		Now we can use Equation 5.1 to find the marginal PMFs. For example, to find $P_X(0)$, we can write
 

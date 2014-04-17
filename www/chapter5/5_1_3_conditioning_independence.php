@@ -12,7 +12,7 @@
 <p>
 We have discussed conditional probability before, and you have already seen some problems regarding random variables and conditional probability. Here, we will discuss conditioning for random variables more in detail and introduce the conditional PMF, conditional CDF, and conditional expectation. We would like to emphasize that there is only one main formula regarding conditional probability which is
 \begin{align}\label{}
-  \nonumber P(A|B)=\frac{P(A \cap B)}{P(B)}, \textrm{ when } P(B)>0.
+  \nonumber P(A|B)=\frac{P(A \cap B)}{P(B)}, \textrm{ when } P(B)&gt;0.
 \end{align}
 Any other formula regarding conditional probability can be derived from the above formula. Specifically, if you have two random variables $X$ and $Y$, you can write
 \begin{align}\label{}
@@ -20,7 +20,7 @@ Any other formula regarding conditional probability can be derived from the abov
 \end{align}
 </p>
 <h2>Conditional PMF and CDF:</h2>
-Remember that the PMF is by definition a probability measure, i.e., it is $P(X=x_k)$. Thus, we can talk about the \textbf{conditional PMF}. Specifically, the conditional PMF of $X$ given event $A$, is defined as
+Remember that the PMF is by definition a probability measure, i.e., it is $P(X=x_k)$. Thus, we can talk about the <b>conditional PMF</b>. Specifically, the conditional PMF of $X$ given event $A$, is defined as
 \begin{align}%\label{}
 \nonumber  P_{X|A}(x_i)&=P(X=x_i|A) \\
 \nonumber  &=\frac{P(X=x_i \textrm{ and } A)}{P(A)}.
@@ -47,7 +47,7 @@ Also,
 \end{align}
 		</li></ul>
 	</li></ul>
-</div><hr /><br />
+</div><br />
 
 <div style="padding: 25px; border: 2px solid black; margin: 30px 40px;">
 For a discrete random variable $X$ and event $A$, the <b>conditional PMF</b> of $X$ given $A$ is defined as
