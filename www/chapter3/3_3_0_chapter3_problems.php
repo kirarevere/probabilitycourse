@@ -324,7 +324,7 @@
 				of people in the household where the chosen person lives. Find the PMF and the expected value of $Y$.</li>
             </ol></p>
 			<hr /><br />
-<span class='problem'>Problem </span>
+<span class='problem'>Problem </span>(<a href="http://probabilitycourse.com/bibliography.html">Coupon collector's problem</a>)
 <p>
 Suppose that there are N different types of coupons.
 Each time you get a coupon, it is equally likely to be any of the N possible types. Let
