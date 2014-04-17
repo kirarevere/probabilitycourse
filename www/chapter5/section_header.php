@@ -11,7 +11,7 @@
 	<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({
 				"HTML-CSS": {
-				scale: "125"
+				scale: "100"
 				},
     		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
   			});
