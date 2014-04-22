@@ -173,7 +173,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 <span class='problem'>Problem </span><br />
 Let $X \sim Uniform(0,1)$. Suppose that given $X=x$, $Y$ and $Z$ are independent and $Y|X=x \sim Uniform(0,x)$ and $Z|X=x \sim Uniform(0,2x)$. Define the random vector <b>U</b> as
 \begin{align}
-  \nonumber <b>U</b> = \begin{bmatrix}
+  \nonumber U = \begin{bmatrix}
        X \\%[5pt]
        Y \\
        Z
