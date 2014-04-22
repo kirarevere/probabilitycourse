@@ -144,11 +144,11 @@ Let $X$ be a random variable with characteristic function $\phi_X(\omega)$. If $
 <span class='problem'>Problem </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 \begin{align}
-  \nonumber f_{X,Y}(x,y) = \left\{
-  \begin{array}{l l}
-    \frac{1}{2} (3x+y)  &  \quad 0 \leq x,y \leq 1  \\
-      &  \quad   \\
-    0 &  \quad \text{otherwise}
+  \f_{X,Y}(x,y) = \left\{
+  \begin{array}
+    \frac{1}{2} (3x+y)  &  0 \leq x,y \leq 1  \\
+      &   \\
+    0 &   \text{otherwise}
   \end{array} \right.
   and let the random vector <b>U</b> be defined as
   \nonumber <b>U</b> = \begin{bmatrix}
