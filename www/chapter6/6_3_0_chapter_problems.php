@@ -144,7 +144,7 @@ Let $X$ be a random variable with characteristic function $\phi_X(\omega)$. If $
 <span class='problem'>Problem </span><br />
 Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
 \begin{align}
-  \f_{X,Y}(x,y) = \left\{
+  f_{X,Y}(x,y) = \left\{
   \begin{array}
     \frac{1}{2} (3x+y)  &  0 \leq x,y \leq 1  \\
       &   \\
