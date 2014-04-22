@@ -224,7 +224,7 @@ Define the random variable $Z$ as $Z=E[X|Y]$.
 
 
 <hr /><span class="problem">Problem </span><br />
-Let $X$, $Y$, and $Z=E[X|Y]$ be as in Problem 1. Define the random variable $V$ as $V=Var(X|Y)$.
+Let $X$, $Y$, and $Z=E[X|Y]$ be as in Problem 13. Define the random variable $V$ as $V=Var(X|Y)$.
 <ol type="a">
   <li> Find the PMF of $V$.</li>
   <li> Find $EV$.</li>
