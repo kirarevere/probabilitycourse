@@ -151,7 +151,8 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
     0 &   \text{otherwise}
   \end{array} \right.
   and let the random vector <b>U</b> be defined as
-  \nonumber <b>U</b> = \begin{bmatrix}
+  \nonumber \\ U = 
+	\begin{bmatrix}
        X \\%[5pt]
        Y
   \end{bmatrix}.
