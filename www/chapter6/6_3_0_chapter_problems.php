@@ -150,9 +150,7 @@ Let $X$ and $Y$ be two jointly continuous random variables with joint PDF
       &  \quad   \\
     0 &  \quad \text{otherwise}
   \end{array} \right.
-  \end{equation}
   and let the random vector <b>U</b> be defined as
-  \begin{equation}
   \nonumber <b>U</b> = \begin{bmatrix}
        X \\%[5pt]
        Y
