@@ -4,7 +4,7 @@
 	$section_next		= "chapter6/6_2_2_markov_chebyshev_inequalities.php";
 	$section_prev		= "chapter6/6_2_0_probability_bounds.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(83);
+	loadHeaders(76);
 	include						"section_header.php";
 ?>
 		

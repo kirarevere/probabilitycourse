@@ -4,7 +4,7 @@
 	$section_next		= "chapter6/6_2_5_jensen's_inequality.php";
 	$section_prev		= "chapter6/6_2_3_chernoff_bounds.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(87);
+	loadHeaders(79);
 	include						"section_header.php";
 ?>
 		

@@ -4,7 +4,7 @@
 	$section_next		= "chapter6/6_2_3_chernoff_bounds.php";
 	$section_prev		= "chapter6/6_2_1_union_bound_and_exten.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(85);
+	loadHeaders(77);
 	include						"section_header.php";
 ?>
 		

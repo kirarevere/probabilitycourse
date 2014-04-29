@@ -4,7 +4,7 @@
 	$section_next		= "chapter6/6_2_6_solved6_2.php";
 	$section_prev		= "chapter6/6_2_4_cauchy_schwarz.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(88);
+	loadHeaders(80);
 	include						"section_header.php";
 ?>	
 			<p>

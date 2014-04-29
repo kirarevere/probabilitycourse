@@ -4,7 +4,7 @@
 	<base href="../" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="section"	content="4.2.6" />
-	<?php include '../Control/autonumber.php'; loadHeaders(52); ?>
+	<?php include '../Control/autonumber.php'; loadHeaders(47); ?>
 	
 	<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({

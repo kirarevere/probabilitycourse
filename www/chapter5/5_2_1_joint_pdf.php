@@ -4,7 +4,7 @@
 	$section_prev		= "chapter5/5_2_0_continuous_vars.php";
 	$section_next		= "chapter5/5_2_2_joint_cdf.php";
 	include "../Control/autonumber.php";
-	loadHeaders(66);
+	loadHeaders(59);
 	include "section_header.php";
 ?>
 

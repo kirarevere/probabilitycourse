@@ -4,7 +4,7 @@
 	$section_prev		= "chapter5/5_1_4_functions_two_variables.php";
 	$section_next		= "chapter5/5_1_6_solved_prob.php";
 	include	'../Control/autonumber.php';
-	loadHeaders(63);
+	loadHeaders(56);
 	include	'section_header.php';
 ?>
 

@@ -4,7 +4,7 @@
 	$section_prev		= "chapter6/6_1_5_random_vectors.php";
 	$section_next		= "chapter6/6_2_0_probability_bounds.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(81);
+	loadHeaders(74);
 	include						"section_header.php";
 ?>
 

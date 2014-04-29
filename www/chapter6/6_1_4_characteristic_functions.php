@@ -4,7 +4,7 @@
 	$section_prev		= "chapter6/6_1_3_moment_functions.php";
 	$section_next		= "chapter6/6_1_5_random_vectors.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(79);
+	loadHeaders(72);
 	include						"section_header.php";
 ?>
 

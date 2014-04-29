@@ -4,7 +4,7 @@
 	$section_next		= "chapter6/6_3_0_chapter_problems.php";
 	$section_prev		= "chapter6/6_2_5_jensen's_inequality.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(89);
+	loadHeaders(81);
 	include						"section_header.php";
 ?>    		
 			<!-- Problem 1 Begin -->

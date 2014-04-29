@@ -4,7 +4,7 @@
 	$section_prev		= "chapter5/5_2_1_joint_pdf.php";
 	$section_next		= "chapter5/5_2_3_conditioning_independence.php";
 	include "../Control/autonumber.php";
-	loadHeaders(67);
+	loadHeaders(60);
 	include "section_header.php";
 ?>
 

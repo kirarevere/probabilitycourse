@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<base href="../" />
-	<?php include '../Control/autonumber.php'; loadHeaders(32); ?>
+	<?php include '../Control/autonumber.php'; loadHeaders(28); ?>
 	<meta name='section'	content='3.1.2' />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	

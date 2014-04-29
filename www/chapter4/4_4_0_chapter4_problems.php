@@ -4,7 +4,7 @@
 	<base href="../" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="section"	content="4.4.0" />
-		<?php include '../Control/autonumber.php'; loadHeaders(55); ?>
+		<?php include '../Control/autonumber.php'; loadHeaders(51); ?>
 	<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({
     		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }

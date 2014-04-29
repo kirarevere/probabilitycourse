@@ -3,7 +3,7 @@
 <head>
 	<base href="../" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<?php include '../Control/autonumber.php'; loadHeaders(39); ?>
+	<?php include '../Control/autonumber.php'; loadHeaders(35); ?>
 	<meta name='section'	content='3.2.3' />
 	<script type="text/x-mathjax-config">
   			MathJax.Hub.Config({

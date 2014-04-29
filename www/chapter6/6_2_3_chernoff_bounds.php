@@ -4,7 +4,7 @@
 	$section_next		= "chapter6/6_2_4_cauchy_schwarz.php";
 	$section_prev		= "chapter6/6_2_2_markov_chebyshev_inequalities.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(86);
+	loadHeaders(78);
 	include						"section_header.php";
 ?>
 <!DOCTYPE html>

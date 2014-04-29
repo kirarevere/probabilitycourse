@@ -4,7 +4,7 @@
 	$section_prev		=	"chapter5/5_3_1_covariance_correlation.php";
 	$section_next		=	"chapter5/5_3_3_solved_probs.php";
 	include						"../Control/autonumber.php";
-	loadHeaders(72);
+	loadHeaders(65);
 	include						"section_header.php";
 ?>
 
