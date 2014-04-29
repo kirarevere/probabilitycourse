@@ -188,6 +188,7 @@
 			of the $x_i$'s is larger than $10$?
 			$$x_1+x_2+x_3=100$$</p>
 			
+<!--
 			<hr /><br />
 			<span class='problem'>Problem </span><br>
 			<p>Solve the following recurrence equations, that is find a closed form formula for $a_n$.
@@ -217,6 +218,7 @@
 			Write a set of recursive equations to compute $a_n$.</p>		
 
 			<hr />
+-->
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_2_3_solved2_2.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_1_random_variables.php">next</a><a> &rarr;</a></div>
