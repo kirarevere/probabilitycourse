@@ -59,6 +59,7 @@ htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_4_unorder
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_5_solved2_1.php">2.1.5 Solved Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
+/*
 htmlText += '		<li><a>2.2 Recursions</a>';
 htmlText += '		<ul>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_2_0_using_recursion.php">2.2.0 Using Recursion</a></li>';
@@ -67,9 +68,10 @@ htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_2_2_recursi
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_2_3_solved2_2.php">2.2.3 Solved Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
-htmlText += '		<li><a>2.3 Problems</a>';
+*/
+htmlText += '		<li><a>2.2 Problems</a>';
 htmlText += '		<ul>';
-htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_3_0_chapter2_problems.php">2.3.0 End of Chapter Problems</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_3_0_chapter2_problems.php">2.2.0 End of Chapter Problems</a></li>';
 htmlText += '		</ul>';
 htmlText += '		</li>';
 htmlText += '	</ul>';
