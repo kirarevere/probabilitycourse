@@ -51,7 +51,7 @@ htmlText += '	<li><a>2 Combinatorics: Counting Methods</a>';
 htmlText += '	<ul>';
 htmlText += '		<li><a>2.1 Combinatorics</a>';
 htmlText += '		<ul>';
-htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_0_counting.php">2.1.0 Counting</a></li>';
+htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_0_counting.php">2.1.0 Finding Probabilities with Counting Methods</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_1_ordered_with_replacement.php">2.1.1 Ordered with Replacement</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_2_ordered_without_replacement.php">2.1.2 Ordered without Replacement</a></li>';
 htmlText += '			<li><a href="http://probabilitycourse.com/chapter2/2_1_3_unordered_without_replacement.php">2.1.3 Unordered without Replacement</a></li>';
