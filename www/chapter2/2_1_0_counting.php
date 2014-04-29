@@ -40,12 +40,15 @@
     		</div>
 			<hr />
 						
-			<div class="left"><h2>2.1 Counting</h2></div>
+			<div class="left"><h2>2.1.0 Finding Probabilities with Counting Methods</h2></div>
     		<div class="right hide_print">
 			<a href="http://probabilitycourse.com/videos/chapter2/video2_1.html"><img src="http://probabilitycourse.com/images/video_icon_lg.png" alt="Video Available" title="Video Available" border="0" style="vertical-align: middle;"/></a>
 			<img id="printButton" src="http://probabilitycourse.com/images/print.png" width="40" height="40" alt="Printer Friendly" title="Printer Friendly" style="vertical-align: middle;"/></div>
     		<div class="clear"></div>
-			
+<p>
+In this chapter, we will discuss counting methods that can be used in sample spaces with equally likely outcomes.
+</p>			
+
 			<p>Remember that for a finite sample space $S$ with equally likely outcomes, the probability of an 
 			event $A$ is given by
 			$$P(A)=\frac{|A|}{|S|}=\frac{M}{N}$$
