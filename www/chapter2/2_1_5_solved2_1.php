@@ -36,7 +36,7 @@
 			<div id="content">
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_1_4_unordered_with_replacement.php">previous</a></div>
-    			<div class="right"><a href="chapter2/2_2_0_using_recursion.php">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="chapter2/2_3_0_chapter2_problems.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>
 			<hr />
@@ -311,7 +311,7 @@
 			<hr />
 			<div class="thinblock hide_print">
 				<div class="left"><a>&larr; </a><a href="chapter2/2_1_4_unordered_with_replacement.php">previous</a></div>
-    			<div class="right"><a href="chapter2/2_2_0_using_recursion.php">next</a><a> &rarr;</a></div>
+    			<div class="right"><a href="chapter2/2_3_0_chapter2_problems.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
 		</div>

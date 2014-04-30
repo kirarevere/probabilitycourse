@@ -33,7 +33,7 @@
 		<div id="wrapper">
 			<div id="content">
 			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter2/2_2_3_solved2_2.php">previous</a></div>
+				<div class="left"><a>&larr; </a><a href="chapter2/2_1_5_solved2_1.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_1_random_variables.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>
@@ -220,7 +220,7 @@
 			<hr />
 -->
 			<div class="thinblock hide_print">
-				<div class="left"><a>&larr; </a><a href="chapter2/2_2_3_solved2_2.php">previous</a></div>
+				<div class="left"><a>&larr; </a><a href="chapter2/2_1_5_solved2_1.php">previous</a></div>
     			<div class="right"><a href="chapter3/3_1_1_random_variables.php">next</a><a> &rarr;</a></div>
     			<div class="clear"></div>
     		</div>		
